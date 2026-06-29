@@ -1,0 +1,23 @@
+settings:
+  first-join-kit: true
+  daily-reward: true
+  daily-cooldown-seconds: 86400
+
+messages:
+  prefix: "&6&lMSurvivalWelcome &8» &r"
+  no-permission: "&cNie masz uprawnień."
+  reload: "&aPrzeładowano config."
+  first-join-broadcast: "&6&lMSurvival &8» &e%player% &7dołączył pierwszy raz na serwer!"
+  join-title: "&6&lMSURVIVAL"
+  join-subtitle: "&7Witaj, &e%player%&7!"
+  daily-claimed: "&aOdebrałeś dzienną nagrodę."
+  daily-cooldown: "&cDzienną nagrodę odbierzesz później."
+
+first-join-commands:
+  - "give %player% bread 16"
+  - "give %player% stone_sword 1"
+  - "give %player% stone_pickaxe 1"
+
+daily-commands:
+  - "give %player% bread 16"
+  - "give %player% iron_ingot 4"

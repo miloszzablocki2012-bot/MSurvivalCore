@@ -1,0 +1,35 @@
+settings:
+  enabled: true
+  autosave-seconds: 20
+  join-load-delay-ticks: 40
+
+  # Swiaty z survivalem maja wspolny ekwipunek survival.
+  # Lobby ma osobny ekwipunek lobby.
+  groups:
+    Lobby: lobby
+    world: survival
+    world_nether: survival
+    world_the_end: survival
+
+  default-group: survival
+
+  # zostaw false, zeby kompasem dalej zajmowal sie MSurvivalLobby
+  manage-lobby-compass: false
+  lobby-group: lobby
+  compass-slot: 4
+
+compass:
+  material: COMPASS
+  name: "&6&lMSurvival Menu"
+  lore:
+    - "&8Nawigacja serwera"
+    - ""
+    - "&7PPM, aby otworzyc menu."
+
+messages:
+  prefix: "&6&lMSurvivalInventory &8» &r"
+  no-permission: "&cNie masz uprawnien."
+  reload: "&aPrzeladowano config."
+  saved: "&aZapisano ekwipunek."
+  loaded: "&aWczytano ekwipunek."
+  status: "&7Aktualna grupa: &e%group%"

@@ -1,0 +1,16 @@
+name: MSurvivalAuth
+version: 1.0
+main: pl.msurvival.auth.MSurvivalAuth
+api-version: '1.21'
+author: Milekz
+
+commands:
+  register:
+    usage: /register <haslo>
+  login:
+    usage: /login <haslo>
+  changepassword:
+    usage: /changepassword <stare> <nowe>
+permissions:
+  msurvivalauth.admin:
+    default: op

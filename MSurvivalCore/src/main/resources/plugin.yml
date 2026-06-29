@@ -1,0 +1,53 @@
+name: MSurvivalCore
+version: 1.0
+main: pl.msurvival.core.MSurvivalCore
+api-version: '1.21'
+author: Milekz
+
+commands:
+  menu:
+    usage: /menu
+  lobby:
+    usage: /lobby
+    aliases: [hub]
+  survival:
+    usage: /survival
+  setlobby:
+    usage: /setlobby
+  setsurvival:
+    usage: /setsurvival
+  keysmenu:
+    usage: /keysmenu
+  kits:
+    usage: /kits
+  keyadmin:
+    usage: /keyadmin <give|item|reset|reload> <gracz> <klucz> [ilosc]
+  setrank:
+    usage: /setrank <gracz> <ranga>
+  temprank:
+    usage: /temprank <gracz> <ranga> <czas>
+  rankremove:
+    usage: /rankremove <gracz>
+  ranks:
+    usage: /ranks
+  core:
+    usage: /core reload
+  vanish:
+    usage: /vanish
+    aliases: [v]
+  fly:
+    usage: /fly
+  gm:
+    usage: /gm <0|1|2|3>
+  heal:
+    usage: /heal [gracz]
+  feed:
+    usage: /feed [gracz]
+
+permissions:
+  msurvivalcore.admin:
+    default: op
+  msurvivalcore.ranks:
+    default: op
+  msurvivalcore.keys:
+    default: op

@@ -1,0 +1,12 @@
+settings:
+  require-login: true
+  session-minutes: 30
+
+messages:
+  prefix: "&6&lMSurvivalAuth &8» &r"
+  register: "&eZarejestruj się: &6/register <hasło>"
+  login: "&eZaloguj się: &6/login <hasło>"
+  registered: "&aZarejestrowano."
+  logged: "&aZalogowano."
+  wrong: "&cBłędne hasło."
+  already: "&cJesteś już zalogowany."

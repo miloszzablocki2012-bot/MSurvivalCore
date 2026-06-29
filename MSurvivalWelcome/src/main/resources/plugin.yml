@@ -1,0 +1,12 @@
+name: MSurvivalWelcome
+version: 1.0
+main: pl.msurvival.welcome.MSurvivalWelcome
+api-version: '1.21'
+author: Milekz
+
+commands:
+  welcome:
+    usage: /welcome reload
+permissions:
+  msurvivalwelcome.admin:
+    default: op

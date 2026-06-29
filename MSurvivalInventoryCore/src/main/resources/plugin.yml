@@ -1,0 +1,14 @@
+name: MSurvivalInventoryCore
+version: 1.0
+main: pl.msurvival.inventorycore.MSurvivalInventoryCore
+api-version: '1.21'
+author: Milekz
+
+commands:
+  invcore:
+    usage: /invcore <reload|save|load|status>
+    description: Automatyczny zapis ekwipunku
+
+permissions:
+  msurvivalinventorycore.admin:
+    default: op

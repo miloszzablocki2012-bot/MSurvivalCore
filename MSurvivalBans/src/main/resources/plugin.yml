@@ -1,0 +1,18 @@
+name: MSurvivalBans
+version: 1.0
+main: pl.msurvival.bans.MSurvivalBans
+api-version: '1.21'
+author: Milekz
+
+commands:
+  msban:
+    usage: /msban <gracz> <powod>
+  msunban:
+    usage: /msunban <gracz>
+  mskick:
+    usage: /mskick <gracz> <powod>
+  mswarn:
+    usage: /mswarn <gracz> <powod>
+permissions:
+  msurvivalbans.admin:
+    default: op
