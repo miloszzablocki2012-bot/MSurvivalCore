@@ -1,14 +1,9 @@
 name: MSurvivalLobby
-version: 4.5
+version: 5.0
 main: pl.msurvival.lobby.MSurvivalLobby
-api-version: 4.5
+api-version: 5.0
 author: Milekz
 commands:
-  lobby:
-    usage: /lobby
-    aliases: [hub]
-  survival:
-    usage: /survival
   menu:
     usage: /menu
   setlobby:

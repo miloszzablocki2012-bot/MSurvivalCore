@@ -1,30 +1,92 @@
 sidebar:
-  title: '&d✦ &6&lMSURVIVAL &d✦'
+  enabled: true
+  update-ticks: 80
+  title: '&6&l✦ MSURVIVAL ✦'
   lines:
     - '&8&m━━━━━━━━━━━━━━'
-    - '&6👑 &e&lPROFIL'
-    - '&d» &fNick: &e%player%'
-    - '&d» &fRanga: %rank%'
-    - '&d» &fKlan: &b%clan%'
-    - '&d» &fWygasa: &e%expires%'
+    - '&6♛ &e&lPROFIL'
+    - '&8» &fNick: &e%player%'
+    - '&8» &fRanga: %rank%'
+    - '&8» &fKlan: &b%clan%'
+    - '&8» &fWygasa: &e%expires%'
     - ''
-    - '&a💵 &2&lKASA'
-    - '&a» &fPortfel: &a%money%$'
+    - '&a$ &2&lKASA'
+    - '&8» &fPortfel: &a%money%$'
+    - '&8» &7/rynek &8| &7/sellall'
     - ''
     - '&b⚡ &3&lSERWER'
-    - '&b» &fOnline: &a%online%'
-    - '&b» &fPing: &a%ping%ms'
+    - '&8» &fOnline: &a%online%'
+    - '&8» &fPing: &a%ping%ms'
     - ''
     - '&6🌐 &e&lIP'
-    - '&6» &fmsurvival.6mc.pl'
+    - '&8» &fmsurvival.6mc.pl'
     - '&8&m━━━━━━━━━━━━━━'
+
+chat:
+  enabled: true
+  format: '%prefix%%player% &8» &f%message%'
+
+tab:
+  enabled: true
+  format: '%prefix%%player%'
+
 ranks:
-  wlasciciel: {display: '&6&lWŁAŚCICIEL', prefix: '&6&l👑 WŁAŚCICIEL &6'}
-  admin: {display: '&c&lADMIN', prefix: '&c&l🛡 ADMIN &c'}
-  mod: {display: '&2&lMOD', prefix: '&2&l🔨 MOD &2'}
-  helper: {display: '&a&lHELPER', prefix: '&a&l💬 HELPER &a'}
-  youtuber: {display: '&c&lYOUTUBE', prefix: '&c&l🎥 YOUTUBE &c'}
-  sponsor: {display: '&b&lSPONSOR', prefix: '&b&l💎 SPONSOR &b'}
-  vipplus: {display: '&e&lVIP+', prefix: '&e&l⭐ VIP+ &e'}
-  vip: {display: '&e&lVIP', prefix: '&e&l✦ VIP &e'}
-  gracz: {display: '&7GRACZ', prefix: '&7GRACZ &7'}
+  wlasciciel:
+    display: '&6&lWŁAŚCICIEL'
+    prefix: '&6&l👑 WŁAŚCICIEL &6'
+    weight: 100
+  admin:
+    display: '&c&lADMIN'
+    prefix: '&c&l🛡 ADMIN &c'
+    weight: 90
+  mod:
+    display: '&2&lMOD'
+    prefix: '&2&l🔨 MOD &2'
+    weight: 80
+  helper:
+    display: '&a&lHELPER'
+    prefix: '&a&l💬 HELPER &a'
+    weight: 70
+  youtuber:
+    display: '&c&lYOUTUBE'
+    prefix: '&c&l🎥 YOUTUBE &c'
+    weight: 60
+  sponsor:
+    display: '&b&lSPONSOR'
+    prefix: '&b&l💎 SPONSOR &b'
+    weight: 50
+  vipplus:
+    display: '&e&lVIP+'
+    prefix: '&e&l⭐ VIP+ &e'
+    weight: 40
+  vip:
+    display: '&e&lVIP'
+    prefix: '&e&l✦ VIP &e'
+    weight: 30
+  gracz:
+    display: '&7GRACZ'
+    prefix: '&7'
+    weight: 1
+
+messages:
+  prefix: '&6&lMSurvival &8» &r'
+  no-permission: '&cNie masz uprawnień.'
+  reload: '&aPrzeładowano rangi i sidebar.'
+  usage-setrank: '&c/setrank <gracz> <ranga>'
+  usage-setranktemp: '&c/setranktemp <gracz> <ranga> <czas np. 7d/12h/30m>'
+  rank-set: '&aUstawiono rangę %rank% &adla &e%player%&a.'
+  rank-temp-set: '&aUstawiono rangę %rank% &adla &e%player% &ana &e%time%&a.'
+  rank-reset: '&aZresetowano rangę gracza &e%player%&a.'
+  rank-expired: '&cTwoja ranga czasowa wygasła.'
+  rank-info:
+    - '&8&m━━━━━━━━━━━━━━━━━━━━'
+    - '&6&lMSURVIVAL &8» &fRanga gracza &e%player%'
+    - '&7Ranga: %rank%'
+    - '&7Wygasa: &e%expires%'
+    - '&8&m━━━━━━━━━━━━━━━━━━━━'
+  ranks-list:
+    - '&8&m━━━━━━━━━━━━━━━━━━━━'
+    - '&6&lMSURVIVAL &8» &fRangi'
+    - '&7Gracz, VIP, VIP+, Sponsor, YouTube'
+    - '&7Helper, Mod, Admin, Właściciel'
+    - '&8&m━━━━━━━━━━━━━━━━━━━━'

@@ -1,10 +1,24 @@
 name: MSurvivalRanks
-version: 4.6
+version: 5.0
 main: pl.msurvival.ranks.MSurvivalRanks
 api-version: '1.21'
+author: Milekz
 commands:
-  setrank: {usage: /setrank <gracz> <ranga>}
-  setranktemp: {usage: /setranktemp <gracz> <ranga> <czas>}
-  rank: {usage: /rank}
+  rank:
+    usage: /rank [gracz]
+  ranga:
+    usage: /ranga [gracz]
+  setrank:
+    usage: /setrank <gracz> <ranga>
+  setranktemp:
+    usage: /setranktemp <gracz> <ranga> <czas>
+    aliases: [temprank]
+  delrank:
+    usage: /delrank <gracz>
+  ranks:
+    usage: /ranks
+  ranksreload:
+    usage: /ranksreload
 permissions:
-  msurvival.ranks.admin: {default: op}
+  msurvival.ranks.admin:
+    default: op

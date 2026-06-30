@@ -1,11 +1,17 @@
 settings:
   premium-auto-login: true
+  require-repeat-register-password: false
   bypass:
     - 'Milekz21'
 messages:
   prefix: '&6&lAuth &8» &r'
   register: '&eZarejestruj się: &6/register <hasło>'
   login: '&eZaloguj się: &6/login <hasło>'
-  ok: '&aZalogowano.'
+  registered: '&aZarejestrowano i zalogowano.'
+  logged: '&aZalogowano.'
   wrong: '&cBłędne hasło.'
+  already-registered: '&cMasz już konto. Użyj &e/login <hasło>&c.'
+  not-registered: '&cNie masz konta. Użyj &e/register <hasło>&c.'
   premium: '&aKonto premium: automatycznie zalogowano.'
+  bypassed: '&aMasz bypass logowania.'
+  changed: '&aZmieniono hasło.'

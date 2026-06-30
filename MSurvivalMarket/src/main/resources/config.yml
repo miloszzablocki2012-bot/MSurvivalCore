@@ -18,3 +18,7 @@ keys:
   legendarny: 850000
   mityczny: 1500000
   boski: 3000000
+messages:
+  prefix: '&6&lRynek &8» &r'
+  no-money: '&cNie masz tyle pieniędzy.'
+  balance: '&aKasa: &e%money%$'

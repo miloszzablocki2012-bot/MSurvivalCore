@@ -1,10 +1,19 @@
 name: MSurvivalAuth
-version: 4.6
+version: 5.0
 main: pl.msurvival.auth.MSurvivalAuth
-api-version: '1.21'
+api-version: 5.0
+author: Milekz
 commands:
-  register: {usage: /register <haslo>}
-  login: {usage: /login <haslo>}
-  authbypass: {usage: /authbypass <add|remove> <gracz>}
+  register:
+    usage: /register <haslo>
+    aliases: [reg]
+  login:
+    usage: /login <haslo>
+    aliases: [l]
+  changepassword:
+    usage: /changepassword <stare> <nowe>
+  authbypass:
+    usage: /authbypass <add|remove|list> [gracz]
 permissions:
-  msurvival.auth.admin: {default: op}
+  msurvival.auth.admin:
+    default: op
