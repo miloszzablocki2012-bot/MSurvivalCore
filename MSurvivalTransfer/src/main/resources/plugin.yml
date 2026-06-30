@@ -1,7 +1,0 @@
-name: MSurvivalTransfer
-version: 4.7
-main: pl.msurvival.transfer.MSurvivalTransfer
-api-version: 4.7
-commands:
-  lobby: {usage: /lobby, aliases: [hub]}
-  survival: {usage: /survival}
