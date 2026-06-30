@@ -18,7 +18,9 @@ survival-spawn:
 
 lobby-items:
   enabled: true
-  clear-on-lobby-join: true
+  # WAŻNE: false = plugin NIE czyści ekwipunku gracza.
+  # Dzięki temu itemy z Survivalu nie znikają po wyjściu/wejściu.
+  clear-on-lobby-join: false
   compass-slot: 4
   compass-name: '&6&lMSurvival Menu'
   compass-lore:

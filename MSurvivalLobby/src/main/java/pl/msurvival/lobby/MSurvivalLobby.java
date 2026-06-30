@@ -58,7 +58,9 @@ public final class MSurvivalLobby extends JavaPlugin implements Listener {
         Location loc = loc("lobby-spawn", getConfig().getString("worlds.lobby", "Lobby"));
         if (loc != null) p.teleport(loc);
 
-        if (getConfig().getBoolean("lobby-items.clear-on-lobby-join", true)) p.getInventory().clear();
+        // Nie czyścimy całego ekwipunku, bo wtedy znikają itemy z Survivalu.
+        // Usuwamy tylko stare itemy lobby i dajemy nowe.
+        removeLobbyItems(p);
         giveLobbyItems(p);
         p.setFoodLevel(20);
         p.setSaturation(20);
@@ -66,6 +68,7 @@ public final class MSurvivalLobby extends JavaPlugin implements Listener {
     }
 
     private void toSurvival(Player p) {
+        // Przy wyjściu na Survival usuwamy wyłącznie itemy lobby, nie ruszamy reszty ekwipunku.
         removeLobbyItems(p);
         Location loc = p.getBedSpawnLocation();
         if (loc == null) loc = loc("survival-spawn", getConfig().getString("worlds.survival", "world"));
@@ -114,9 +117,10 @@ public final class MSurvivalLobby extends JavaPlugin implements Listener {
         Inventory inv = Bukkit.createInventory(null, 27, color("&6&lMSURVIVAL MENU"));
         ItemStack filler = item(Material.BLACK_STAINED_GLASS_PANE, " ");
         for (int i=0;i<27;i++) inv.setItem(i, filler);
-        inv.setItem(11, item(Material.NETHER_STAR, "&e&lLobby"));
-        inv.setItem(13, item(Material.GRASS_BLOCK, "&a&lSurvival"));
-        inv.setItem(15, item(Material.TRIPWIRE_HOOK, "&6&lKlucze i E-Kity"));
+        inv.setItem(10, item(Material.NETHER_STAR, "&e&lLobby"));
+        inv.setItem(12, item(Material.GRASS_BLOCK, "&a&lSurvival"));
+        inv.setItem(14, item(Material.TRIPWIRE_HOOK, "&6&lKlucze"));
+        inv.setItem(16, item(Material.CHEST, "&b&lE-Kity"));
         p.openInventory(inv);
     }
 
@@ -133,7 +137,8 @@ public final class MSurvivalLobby extends JavaPlugin implements Listener {
         p.closeInventory();
         if (name.contains("lobby")) toLobby(p);
         else if (name.contains("survival")) toSurvival(p);
-        else p.performCommand("kits");
+        else if (name.contains("klucze")) p.performCommand("keysmenu");
+        else if (name.contains("e-kity")) p.performCommand("kits");
     }
 
     @EventHandler public void breakBlock(BlockBreakEvent e){ if(inLobby(e.getPlayer()) && getConfig().getBoolean("protection.block-break", true)) e.setCancelled(true); }

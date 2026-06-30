@@ -153,20 +153,80 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
 
     private void giveKit(Player p, String key) {
         switch(key) {
-            case "klasyczny" -> p.getInventory().addItem(new ItemStack(Material.BREAD,32), item(Material.STONE_SWORD, "&fMiecz Klasyczny"), item(Material.STONE_PICKAXE, "&fKilof Klasyczny"), item(Material.STONE_AXE, "&fSiekiera Klasyczna"), item(Material.STONE_SHOVEL, "&fŁopata Klasyczna"), item(Material.STONE_HOE, "&fMotyka Klasyczna"));
-            case "zelazny" -> kitTools(p, Material.IRON_HELMET,Material.IRON_CHESTPLATE,Material.IRON_LEGGINGS,Material.IRON_BOOTS,Material.IRON_SWORD,Material.IRON_PICKAXE,Material.IRON_AXE,Material.IRON_SHOVEL,Material.IRON_HOE,"&7Żelazny",1);
-            case "diamentowy" -> kitTools(p, Material.DIAMOND_HELMET,Material.DIAMOND_CHESTPLATE,Material.DIAMOND_LEGGINGS,Material.DIAMOND_BOOTS,Material.DIAMOND_SWORD,Material.DIAMOND_PICKAXE,Material.DIAMOND_AXE,Material.DIAMOND_SHOVEL,Material.DIAMOND_HOE,"&bDiamentowy",3);
-            case "epic" -> kitTools(p, Material.DIAMOND_HELMET,Material.DIAMOND_CHESTPLATE,Material.DIAMOND_LEGGINGS,Material.DIAMOND_BOOTS,Material.DIAMOND_SWORD,Material.DIAMOND_PICKAXE,Material.DIAMOND_AXE,Material.DIAMOND_SHOVEL,Material.DIAMOND_HOE,"&5Epic",4);
-            case "legendarny", "mityczny", "boski" -> {
-                kitTools(p, Material.NETHERITE_HELMET,Material.NETHERITE_CHESTPLATE,Material.NETHERITE_LEGGINGS,Material.NETHERITE_BOOTS,Material.NETHERITE_SWORD,Material.NETHERITE_PICKAXE,Material.NETHERITE_AXE,Material.NETHERITE_SHOVEL,Material.NETHERITE_HOE,"&6"+key,5);
-                p.getInventory().addItem(enchant(Material.BOW, "&6Łuk", "power", 5), new ItemStack(Material.GOLDEN_APPLE, key.equals("boski") ? 64 : 16), new ItemStack(Material.TOTEM_OF_UNDYING, key.equals("boski") ? 5 : 2), enchant(Material.ELYTRA, "&6Elytry", "unbreaking", 3));
-                if(key.equals("boski")) p.getInventory().addItem(new ItemStack(Material.ENCHANTED_GOLDEN_APPLE, 16), enchant(Material.TRIDENT, "&3Trójząb Boga", "loyalty", 3), enchant(Material.CROSSBOW, "&6Kusza Boga", "quick_charge", 3));
+            case "klasyczny" -> p.getInventory().addItem(
+                    new ItemStack(Material.BREAD, 32),
+                    item(Material.STONE_SWORD, "&f&lKlasyczny Miecz"),
+                    item(Material.STONE_PICKAXE, "&f&lKlasyczny Kilof"),
+                    item(Material.STONE_AXE, "&f&lKlasyczna Siekiera"),
+                    item(Material.STONE_SHOVEL, "&f&lKlasyczna Łopata"),
+                    item(Material.STONE_HOE, "&f&lKlasyczna Motyka"),
+                    new ItemStack(Material.SHIELD)
+            );
+            case "zelazny" -> {
+                kitTools(p, Material.IRON_HELMET, Material.IRON_CHESTPLATE, Material.IRON_LEGGINGS, Material.IRON_BOOTS,
+                        Material.IRON_SWORD, Material.IRON_PICKAXE, Material.IRON_AXE, Material.IRON_SHOVEL, Material.IRON_HOE,
+                        "&7&lŻelazny");
+                p.getInventory().addItem(new ItemStack(Material.GOLDEN_APPLE, 4), new ItemStack(Material.SHIELD), new ItemStack(Material.ARROW, 64), bow("&7&lŻelazny Łuk"));
+            }
+            case "diamentowy" -> {
+                kitTools(p, Material.DIAMOND_HELMET, Material.DIAMOND_CHESTPLATE, Material.DIAMOND_LEGGINGS, Material.DIAMOND_BOOTS,
+                        Material.DIAMOND_SWORD, Material.DIAMOND_PICKAXE, Material.DIAMOND_AXE, Material.DIAMOND_SHOVEL, Material.DIAMOND_HOE,
+                        "&b&lDiamentowy");
+                p.getInventory().addItem(new ItemStack(Material.GOLDEN_APPLE, 12), new ItemStack(Material.TOTEM_OF_UNDYING, 1), bow("&b&lDiamentowy Łuk"));
+            }
+            case "epic" -> {
+                kitTools(p, Material.DIAMOND_HELMET, Material.DIAMOND_CHESTPLATE, Material.DIAMOND_LEGGINGS, Material.DIAMOND_BOOTS,
+                        Material.DIAMOND_SWORD, Material.DIAMOND_PICKAXE, Material.DIAMOND_AXE, Material.DIAMOND_SHOVEL, Material.DIAMOND_HOE,
+                        "&5&lEpic");
+                p.getInventory().addItem(new ItemStack(Material.GOLDEN_APPLE, 20), new ItemStack(Material.TOTEM_OF_UNDYING, 2), bow("&5&lEpic Łuk"));
+            }
+            case "legendarny" -> {
+                kitTools(p, Material.NETHERITE_HELMET, Material.NETHERITE_CHESTPLATE, Material.NETHERITE_LEGGINGS, Material.NETHERITE_BOOTS,
+                        Material.NETHERITE_SWORD, Material.NETHERITE_PICKAXE, Material.NETHERITE_AXE, Material.NETHERITE_SHOVEL, Material.NETHERITE_HOE,
+                        "&6&lLegendarny");
+                p.getInventory().addItem(bow("&6&lLegendarny Łuk"), crossbow("&6&lLegendarna Kusza"), elytra("&6&lLegendarne Elytry"),
+                        new ItemStack(Material.GOLDEN_APPLE, 32), new ItemStack(Material.ENCHANTED_GOLDEN_APPLE, 2), new ItemStack(Material.TOTEM_OF_UNDYING, 3),
+                        new ItemStack(Material.FIREWORK_ROCKET, 64));
+            }
+            case "mityczny" -> {
+                kitTools(p, Material.NETHERITE_HELMET, Material.NETHERITE_CHESTPLATE, Material.NETHERITE_LEGGINGS, Material.NETHERITE_BOOTS,
+                        Material.NETHERITE_SWORD, Material.NETHERITE_PICKAXE, Material.NETHERITE_AXE, Material.NETHERITE_SHOVEL, Material.NETHERITE_HOE,
+                        "&d&lMityczny");
+                p.getInventory().addItem(bow("&d&lMityczny Łuk"), crossbow("&d&lMityczna Kusza"), trident("&d&lMityczny Trójząb"), elytra("&d&lMityczne Elytry"),
+                        new ItemStack(Material.GOLDEN_APPLE, 48), new ItemStack(Material.ENCHANTED_GOLDEN_APPLE, 6), new ItemStack(Material.TOTEM_OF_UNDYING, 4),
+                        new ItemStack(Material.FIREWORK_ROCKET, 64));
+            }
+            case "boski" -> {
+                kitTools(p, Material.NETHERITE_HELMET, Material.NETHERITE_CHESTPLATE, Material.NETHERITE_LEGGINGS, Material.NETHERITE_BOOTS,
+                        Material.NETHERITE_SWORD, Material.NETHERITE_PICKAXE, Material.NETHERITE_AXE, Material.NETHERITE_SHOVEL, Material.NETHERITE_HOE,
+                        "&4&lBoski");
+                p.getInventory().addItem(
+                        bow("&4&lBoski Łuk"),
+                        crossbow("&4&lBoska Kusza"),
+                        trident("&4&lBoski Trójząb"),
+                        elytra("&4&lBoskie Elytry"),
+                        enchantMany(Material.SHIELD, "&4&lBoska Tarcza", "unbreaking", 3, "mending", 1),
+                        new ItemStack(Material.GOLDEN_APPLE, 64),
+                        new ItemStack(Material.ENCHANTED_GOLDEN_APPLE, 16),
+                        new ItemStack(Material.TOTEM_OF_UNDYING, 6),
+                        new ItemStack(Material.FIREWORK_ROCKET, 64)
+                );
             }
         }
     }
 
-    private void kitTools(Player p, Material h, Material c, Material l, Material b, Material sw, Material pick, Material ax, Material sh, Material hoe, String name, int lvl) {
-        p.getInventory().addItem(enchant(h, name+" Hełm","protection",Math.min(4,lvl)), enchant(c,name+" Napierśnik","protection",Math.min(4,lvl)), enchant(l,name+" Spodnie","protection",Math.min(4,lvl)), enchant(b,name+" Buty","feather_falling",Math.min(4,lvl)), enchant(sw,name+" Miecz","sharpness",Math.min(5,lvl)), enchant(pick,name+" Kilof","efficiency",Math.min(5,lvl)), enchant(ax,name+" Siekiera","efficiency",Math.min(5,lvl)), enchant(sh,name+" Łopata","efficiency",Math.min(5,lvl)), enchant(hoe,name+" Motyka","efficiency",Math.min(5,lvl)));
+    private void kitTools(Player p, Material h, Material c, Material l, Material b, Material sw, Material pick, Material ax, Material sh, Material hoe, String name) {
+        p.getInventory().addItem(
+                armor(h, name + " Hełm", false),
+                armor(c, name + " Napierśnik", false),
+                armor(l, name + " Spodnie", false),
+                armor(b, name + " Buty", true),
+                sword(sw, name + " Miecz"),
+                pickaxe(pick, name + " Kilof"),
+                axe(ax, name + " Siekiera"),
+                shovel(sh, name + " Łopata"),
+                hoe(hoe, name + " Motyka")
+        );
     }
 
     private ItemStack keyItem(String k, int amount) {
@@ -201,6 +261,12 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
         ItemStack item = new ItemStack(mat);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(color(name));
+        meta.setLore(List.of(
+                color("&8━━━━━━━━━━━━━━━━"),
+                color("&7Przedmiot z E-Kita"),
+                color("&6&lMSURVIVAL"),
+                color("&8━━━━━━━━━━━━━━━━")
+        ));
         item.setItemMeta(meta);
         return item;
     }
