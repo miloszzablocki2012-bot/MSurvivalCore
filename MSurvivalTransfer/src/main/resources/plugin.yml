@@ -1,7 +1,7 @@
 name: MSurvivalTransfer
-version: 4.5
+version: 4.7
 main: pl.msurvival.transfer.MSurvivalTransfer
-api-version: '1.21'
-author: Milekz
+api-version: 4.7
 commands:
-  itemtransfer: {usage: /itemtransfer}
+  lobby: {usage: /lobby, aliases: [hub]}
+  survival: {usage: /survival}

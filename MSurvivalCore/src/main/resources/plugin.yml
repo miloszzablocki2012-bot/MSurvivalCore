@@ -1,11 +1,43 @@
 name: MSurvivalCore
-version: 4.5
+version: 4.7
 main: pl.msurvival.core.MSurvivalCore
-api-version: 4.5
+api-version: '1.21'
 author: Milekz
 commands:
   mscore:
     usage: /mscore reload
+  sethome:
+    usage: /sethome [nazwa]
+  home:
+    usage: /home [nazwa]
+  delhome:
+    usage: /delhome <nazwa>
+  homes:
+    usage: /homes
+  spawn:
+    usage: /spawn
+  setspawn:
+    usage: /setspawn
+  back:
+    usage: /back
+  tpa:
+    usage: /tpa <gracz>
+  tpaccept:
+    usage: /tpaccept
+  tpdeny:
+    usage: /tpdeny
+  rtp:
+    usage: /rtp
+  workbench:
+    usage: /workbench
+    aliases: [wb]
+  enderchest:
+    usage: /enderchest
+    aliases: [ec]
 permissions:
   msurvival.core.admin:
     default: op
+  msurvival.core.workbench:
+    default: true
+  msurvival.core.enderchest:
+    default: true

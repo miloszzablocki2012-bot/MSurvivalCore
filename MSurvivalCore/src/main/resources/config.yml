@@ -1,8 +1,22 @@
 server:
   name: 'MSURVIVAL'
   ip: 'msurvival.6mc.pl'
-  donate: 'https://tipply.pl/@milekz'
+settings:
+  rtp-radius: 2500
+  max-homes: 3
 messages:
   prefix: '&6&lMSurvival &8» &r'
   reload: '&aPrzeładowano konfigurację.'
   no-permission: '&cNie masz uprawnień.'
+  home-set: '&aUstawiono home: &e%home%&a.'
+  home-not-found: '&cNie znaleziono home.'
+  home-deleted: '&aUsunięto home: &e%home%&a.'
+  homes: '&aTwoje home: &e%homes%'
+  spawn-set: '&aUstawiono spawn.'
+  teleported: '&aPrzeteleportowano.'
+  back-none: '&cNie masz miejsca powrotu.'
+  tpa-sent: '&aWysłano prośbę o teleportację do &e%player%&a.'
+  tpa-received: '&e%player% &achce się do Ciebie teleportować. Wpisz &e/tpaccept &alub &c/tpdeny&a.'
+  tpa-none: '&cNie masz prośby o teleportację.'
+  tpa-denied: '&cOdrzucono teleportację.'
+  max-homes: '&cMasz maksymalną ilość home.'

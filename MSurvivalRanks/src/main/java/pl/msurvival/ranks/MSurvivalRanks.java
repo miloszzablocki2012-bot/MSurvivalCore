@@ -8,213 +8,38 @@ import org.bukkit.event.*;
 import org.bukkit.event.player.*;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scoreboard.*;
-
 import java.io.File;
 import java.util.*;
 
 public final class MSurvivalRanks extends JavaPlugin implements Listener {
-    private File file;
-    private YamlConfiguration data;
-
-    @Override
-    public void onEnable() {
-        saveDefaultConfig();
-        file = new File(getDataFolder(), "players.yml");
-        if (!file.exists()) {
-            try { getDataFolder().mkdirs(); file.createNewFile(); } catch (Exception e) { e.printStackTrace(); }
-        }
-        data = YamlConfiguration.loadConfiguration(file);
-        Bukkit.getPluginManager().registerEvents(this, this);
-        Bukkit.getScheduler().runTaskTimer(this, () -> Bukkit.getOnlinePlayers().forEach(this::apply), 20L, 100L);
+    private File file; private YamlConfiguration data;
+    public void onEnable(){saveDefaultConfig(); file=new File(getDataFolder(),"players.yml"); try{getDataFolder().mkdirs(); file.createNewFile();}catch(Exception ignored){} data=YamlConfiguration.loadConfiguration(file); Bukkit.getPluginManager().registerEvents(this,this); Bukkit.getScheduler().runTaskTimer(this,()->Bukkit.getOnlinePlayers().forEach(this::sidebar),20,80);}
+    public boolean onCommand(CommandSender s, Command c, String l, String[] a){
+        if(c.getName().equalsIgnoreCase("rank") && s instanceof Player p){p.sendMessage(color("&7Ranga: "+display(rank(p)))); return true;}
+        if(c.getName().equalsIgnoreCase("setrank") || c.getName().equalsIgnoreCase("setranktemp")){
+            if(!s.hasPermission("msurvival.ranks.admin")) return true; if(a.length<2) return true;
+            long exp=0; if(c.getName().equalsIgnoreCase("setranktemp") && a.length>=3) exp=System.currentTimeMillis()+parse(a[2]);
+            data.set("players."+a[0].toLowerCase()+".rank", a[1].toLowerCase()); data.set("players."+a[0].toLowerCase()+".expires", exp); save();
+            Player p=Bukkit.getPlayerExact(a[0]); if(p!=null) sidebar(p); s.sendMessage(color("&aUstawiono rangę.")); return true;
+        } return true;
     }
-
-    @Override
-    public void onDisable() {
-        save();
+    @EventHandler public void join(PlayerJoinEvent e){Bukkit.getScheduler().runTaskLater(this,()->sidebar(e.getPlayer()),20);}
+    @EventHandler public void chat(AsyncPlayerChatEvent e){e.setFormat(color(prefix(rank(e.getPlayer()))+"%1$s &8» &f%2$s").replace("%","%%"));}
+    private void sidebar(Player p){
+        String r=rank(p); p.setPlayerListName(color(prefix(r)+p.getName()));
+        Scoreboard b=Bukkit.getScoreboardManager().getNewScoreboard(); Objective o=b.registerNewObjective("ms","dummy",color(getConfig().getString("sidebar.title"))); o.setDisplaySlot(DisplaySlot.SIDEBAR);
+        int sc=getConfig().getStringList("sidebar.lines").size(); Set<String> used=new HashSet<>(); String ex=expires(p);
+        for(String raw:getConfig().getStringList("sidebar.lines")){
+            if(raw.contains("%expires%") && ex.equals("nigdy")){sc--; continue;}
+            String line=color(raw.replace("%player%",p.getName()).replace("%rank%",display(r)).replace("%expires%",ex).replace("%money%",money(p.getName())).replace("%clan%",clan(p.getName())).replace("%online%",""+Bukkit.getOnlinePlayers().size()).replace("%ping%",""+p.getPing()));
+            while(used.contains(line)) line += ChatColor.RESET; used.add(line); o.getScore(line.length()>40?line.substring(0,40):line).setScore(sc--);
+        } p.setScoreboard(b);
     }
-
-    @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        String cmd = command.getName().toLowerCase(Locale.ROOT);
-
-        if (cmd.equals("setrank")) {
-            if (!admin(sender)) return true;
-            if (args.length < 2) { sender.sendMessage(color("&c/setrank <gracz> <ranga>")); return true; }
-            setRank(args[0], args[1], 0L);
-            sender.sendMessage(color(msg("rank-set").replace("%rank%", display(args[1])).replace("%player%", args[0])));
-            Player target = Bukkit.getPlayerExact(args[0]);
-            if (target != null) apply(target);
-            return true;
-        }
-
-        if (cmd.equals("setranktemp")) {
-            if (!admin(sender)) return true;
-            if (args.length < 3) { sender.sendMessage(color("&c/setranktemp <gracz> <ranga> <czas np. 7d/12h/30m>")); return true; }
-            long duration = parseTime(args[2]);
-            if (duration <= 0) { sender.sendMessage(color("&cZły czas. Przykład: 7d, 12h, 30m")); return true; }
-            setRank(args[0], args[1], System.currentTimeMillis() + duration);
-            sender.sendMessage(color(msg("rank-temp-set").replace("%rank%", display(args[1])).replace("%player%", args[0]).replace("%time%", args[2])));
-            Player target = Bukkit.getPlayerExact(args[0]);
-            if (target != null) apply(target);
-            return true;
-        }
-
-        if (cmd.equals("rank") && sender instanceof Player player) {
-            player.sendMessage(color("&7Twoja ranga: " + display(rank(player))));
-            String ex = expires(player);
-            if (!ex.equals("nigdy")) player.sendMessage(color("&7Wygasa za: &e" + ex));
-            return true;
-        }
-
-        if (cmd.equals("ranksreload")) {
-            if (!admin(sender)) return true;
-            reloadConfig();
-            data = YamlConfiguration.loadConfiguration(file);
-            Bukkit.getOnlinePlayers().forEach(this::apply);
-            sender.sendMessage(msg("reload"));
-            return true;
-        }
-
-        return true;
-    }
-
-    @EventHandler public void join(PlayerJoinEvent e) { Bukkit.getScheduler().runTaskLater(this, () -> apply(e.getPlayer()), 20L); }
-
-    @EventHandler
-    public void chat(AsyncPlayerChatEvent e) {
-        String format = color(prefix(rank(e.getPlayer())) + "%1$s &8» &f%2$s");
-        e.setFormat(format.replace("%", "%%"));
-    }
-
-    private void apply(Player player) {
-        String r = rank(player);
-        player.setPlayerListName(color(prefix(r) + player.getName()));
-        sidebar(player);
-    }
-
-    private void sidebar(Player player) {
-        if (!getConfig().getBoolean("sidebar.enabled", true)) return;
-
-        Scoreboard board = Bukkit.getScoreboardManager().getNewScoreboard();
-        Objective obj = board.registerNewObjective("msr", "dummy", color(getConfig().getString("sidebar.title", "&6MSURVIVAL")));
-        obj.setDisplaySlot(DisplaySlot.SIDEBAR);
-
-        List<String> lines = getConfig().getStringList("sidebar.lines");
-        int score = lines.size();
-        Set<String> used = new HashSet<>();
-
-        for (String raw : lines) {
-            String ex = expires(player);
-
-            // Dla rang dożywotnich linia "Wygasa" znika całkowicie.
-            if (raw.contains("%expires%") && ex.equals("nigdy")) {
-                score--;
-                continue;
-            }
-
-            String line = color(raw
-                    .replace("%player%", player.getName())
-                    .replace("%rank%", display(rank(player)))
-                    .replace("%expires%", ex)
-                    .replace("%money%", money(player.getName()))
-                    .replace("%clan%", clan(player.getName()))
-                    .replace("%online%", String.valueOf(Bukkit.getOnlinePlayers().size()))
-                    .replace("%ping%", String.valueOf(player.getPing())));
-
-            while (used.contains(line)) line += ChatColor.RESET;
-            used.add(line);
-            obj.getScore(line.length() > 40 ? line.substring(0, 40) : line).setScore(score--);
-        }
-
-        player.setScoreboard(board);
-    }
-
-    private void setRank(String player, String rank, long expiresAt) {
-        rank = rank.toLowerCase(Locale.ROOT);
-        if (!getConfig().contains("ranks." + rank)) rank = "gracz";
-        String base = "players." + player.toLowerCase(Locale.ROOT);
-        data.set(base + ".rank", rank);
-        data.set(base + ".expires", expiresAt);
-        save();
-    }
-
-    private String rank(Player player) {
-        String base = "players." + player.getName().toLowerCase(Locale.ROOT);
-        String r = data.getString(base + ".rank", "gracz");
-        long expiresAt = data.getLong(base + ".expires", 0L);
-
-        if (expiresAt > 0 && expiresAt <= System.currentTimeMillis()) {
-            data.set(base + ".rank", "gracz");
-            data.set(base + ".expires", 0L);
-            save();
-            player.sendMessage(msg("rank-expired"));
-            return "gracz";
-        }
-
-        if (!getConfig().contains("ranks." + r)) return "gracz";
-        return r;
-    }
-
-    private String expires(Player player) {
-        long expiresAt = data.getLong("players." + player.getName().toLowerCase(Locale.ROOT) + ".expires", 0L);
-        if (expiresAt <= 0) return "nigdy";
-        long left = expiresAt - System.currentTimeMillis();
-        if (left <= 0) return "0m";
-        return format(left);
-    }
-
-    private String money(String player) {
-        File f = new File(getDataFolder().getParentFile(), "MSurvivalMarket/balances.yml");
-        if (!f.exists()) return "0";
-        YamlConfiguration yml = YamlConfiguration.loadConfiguration(f);
-        double v = yml.getDouble("players." + player.toLowerCase(Locale.ROOT), 0D);
-        if (v == (long) v) return String.valueOf((long) v);
-        return String.format(Locale.US, "%.2f", v);
-    }
-
-    private String clan(String player) {
-        File f = new File(getDataFolder().getParentFile(), "MSurvivalClans/clans.yml");
-        if (!f.exists()) return "Brak";
-        YamlConfiguration yml = YamlConfiguration.loadConfiguration(f);
-        return yml.getString("players." + player.toLowerCase(Locale.ROOT) + ".clan", "Brak");
-    }
-
-    private String display(String rank) { return color(getConfig().getString("ranks." + rank.toLowerCase(Locale.ROOT) + ".display", rank)); }
-    private String prefix(String rank) { return getConfig().getString("ranks." + rank.toLowerCase(Locale.ROOT) + ".prefix", "&7GRACZ &7"); }
-
-    private long parseTime(String text) {
-        try {
-            long value = Long.parseLong(text.substring(0, text.length() - 1));
-            char unit = Character.toLowerCase(text.charAt(text.length() - 1));
-            return switch (unit) {
-                case 'm' -> value * 60_000L;
-                case 'h' -> value * 3_600_000L;
-                case 'd' -> value * 86_400_000L;
-                default -> 0L;
-            };
-        } catch (Exception e) {
-            return 0L;
-        }
-    }
-
-    private String format(long ms) {
-        long minutes = Math.max(1, ms / 60_000L);
-        long hours = minutes / 60L;
-        long days = hours / 24L;
-        if (days > 0) return days + "d " + (hours % 24) + "h";
-        if (hours > 0) return hours + "h " + (minutes % 60) + "m";
-        return minutes + "m";
-    }
-
-    private boolean admin(CommandSender sender) {
-        if (!sender.hasPermission("msurvival.ranks.admin")) {
-            sender.sendMessage(msg("no-permission"));
-            return false;
-        }
-        return true;
-    }
-
-    private void save() { try { data.save(file); } catch (Exception e) { e.printStackTrace(); } }
-    private String msg(String key) { return color(getConfig().getString("messages.prefix", "") + getConfig().getString("messages." + key, "")); }
-    private String color(String text) { return ChatColor.translateAlternateColorCodes('&', text == null ? "" : text); }
+    private String rank(Player p){String base="players."+p.getName().toLowerCase(); long exp=data.getLong(base+".expires",0); if(exp>0&&exp<System.currentTimeMillis()){data.set(base+".rank","gracz");data.set(base+".expires",0);save();return"gracz";} return data.getString(base+".rank","gracz");}
+    private String expires(Player p){long exp=data.getLong("players."+p.getName().toLowerCase()+".expires",0); if(exp<=0)return"nigdy"; long m=Math.max(1,(exp-System.currentTimeMillis())/60000); long h=m/60,d=h/24; if(d>0)return d+"d "+(h%24)+"h"; if(h>0)return h+"h "+(m%60)+"m"; return m+"m";}
+    private String money(String name){File f=new File(getDataFolder().getParentFile(),"MSurvivalMarket/balances.yml"); if(!f.exists())return"0"; return ""+(long)YamlConfiguration.loadConfiguration(f).getDouble("players."+name.toLowerCase(),0);}
+    private String clan(String name){File f=new File(getDataFolder().getParentFile(),"MSurvivalClans/clans.yml"); if(!f.exists())return"Brak"; return YamlConfiguration.loadConfiguration(f).getString("players."+name.toLowerCase()+".clan","Brak");}
+    private long parse(String t){try{long v=Long.parseLong(t.substring(0,t.length()-1)); char u=t.charAt(t.length()-1); return u=='d'?v*86400000:u=='h'?v*3600000:v*60000;}catch(Exception e){return 0;}}
+    private String display(String r){return color(getConfig().getString("ranks."+r+".display",r));} private String prefix(String r){return getConfig().getString("ranks."+r+".prefix","&7GRACZ &7");}
+    private void save(){try{data.save(file);}catch(Exception e){}} private String color(String s){return ChatColor.translateAlternateColorCodes('&',s==null?"":s);}
 }

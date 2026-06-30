@@ -1,10 +1,11 @@
 settings:
-  bypass: ['Milekz21']
-  login-timeout-seconds: 60
+  premium-auto-login: true
+  bypass:
+    - 'Milekz21'
 messages:
   prefix: '&6&lAuth &8» &r'
   register: '&eZarejestruj się: &6/register <hasło>'
   login: '&eZaloguj się: &6/login <hasło>'
   ok: '&aZalogowano.'
   wrong: '&cBłędne hasło.'
-  timeout: '&cNie zalogowałeś się na czas.'
+  premium: '&aKonto premium: automatycznie zalogowano.'

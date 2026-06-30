@@ -1,5 +1,4 @@
 sidebar:
-  enabled: true
   title: '&d✦ &6&lMSURVIVAL &d✦'
   lines:
     - '&8&m━━━━━━━━━━━━━━'
@@ -7,6 +6,7 @@ sidebar:
     - '&d» &fNick: &e%player%'
     - '&d» &fRanga: %rank%'
     - '&d» &fKlan: &b%clan%'
+    - '&d» &fWygasa: &e%expires%'
     - ''
     - '&a💵 &2&lKASA'
     - '&a» &fPortfel: &a%money%$'
@@ -18,7 +18,6 @@ sidebar:
     - '&6🌐 &e&lIP'
     - '&6» &fmsurvival.6mc.pl'
     - '&8&m━━━━━━━━━━━━━━'
-
 ranks:
   wlasciciel: {display: '&6&lWŁAŚCICIEL', prefix: '&6&l👑 WŁAŚCICIEL &6'}
   admin: {display: '&c&lADMIN', prefix: '&c&l🛡 ADMIN &c'}
@@ -29,11 +28,3 @@ ranks:
   vipplus: {display: '&e&lVIP+', prefix: '&e&l⭐ VIP+ &e'}
   vip: {display: '&e&lVIP', prefix: '&e&l✦ VIP &e'}
   gracz: {display: '&7GRACZ', prefix: '&7GRACZ &7'}
-
-messages:
-  prefix: '&6&lMSurvival &8» &r'
-  no-permission: '&cNie masz uprawnień.'
-  reload: '&aPrzeładowano rangi.'
-  rank-set: '&aUstawiono rangę %rank% &adla &e%player%&a.'
-  rank-temp-set: '&aUstawiono rangę %rank% &adla &e%player% &ana &e%time%&a.'
-  rank-expired: '&cTwoja ranga czasowa wygasła.'
