@@ -1,7 +1,7 @@
 name: MSurvivalAuth
-version: 4.0
+version: 4.3
 main: pl.msurvival.auth.MSurvivalAuth
-api-version: '1.21'
+api-version: 4.3
 author: Milekz
 commands:
   register: {usage: /register <haslo>}

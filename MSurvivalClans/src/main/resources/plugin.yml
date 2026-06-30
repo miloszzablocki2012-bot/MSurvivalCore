@@ -1,0 +1,12 @@
+name: MSurvivalClans
+version: 4.3
+main: pl.msurvival.clans.MSurvivalClans
+api-version: 4.3
+author: Milekz
+commands:
+  clan:
+    usage: /clan <create|invite|join|leave|info|disband>
+    aliases: [klan, clany]
+permissions:
+  msurvival.clans.admin:
+    default: op

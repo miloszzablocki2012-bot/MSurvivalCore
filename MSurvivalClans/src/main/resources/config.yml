@@ -1,0 +1,15 @@
+settings:
+  min-tag-length: 2
+  max-tag-length: 6
+messages:
+  prefix: '&b&lKlany &8» &r'
+  usage: '&e/clan create <tag>, /clan invite <gracz>, /clan join <tag>, /clan leave, /clan info'
+  created: '&aUtworzono klan &b%clan%&a.'
+  already-in-clan: '&cJesteś już w klanie.'
+  not-in-clan: '&cNie jesteś w klanie.'
+  invited: '&aZaproszono gracza &e%player% &ado klanu &b%clan%&a.'
+  invite-received: '&aDostałeś zaproszenie do klanu &b%clan%&a. Wpisz &e/clan join %clan%'
+  joined: '&aDołączyłeś do klanu &b%clan%&a.'
+  left: '&aOpuściłeś klan.'
+  disbanded: '&cRozwiązano klan.'
+  only-owner: '&cTylko właściciel klanu może to zrobić.'
