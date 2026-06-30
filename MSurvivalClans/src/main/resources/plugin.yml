@@ -1,7 +1,7 @@
 name: MSurvivalClans
-version: 4.3
+version: 4.5
 main: pl.msurvival.clans.MSurvivalClans
-api-version: 4.3
+api-version: 4.5
 author: Milekz
 commands:
   clan:

@@ -1,7 +1,7 @@
 name: MSurvivalWelcome
-version: 4.3
+version: 4.5
 main: pl.msurvival.welcome.MSurvivalWelcome
-api-version: 4.3
+api-version: 4.5
 author: Milekz
 commands:
   pomoc: {usage: /pomoc}

@@ -1,7 +1,7 @@
 name: MSurvivalCore
-version: 4.3
+version: 4.5
 main: pl.msurvival.core.MSurvivalCore
-api-version: 4.3
+api-version: 4.5
 author: Milekz
 commands:
   mscore:

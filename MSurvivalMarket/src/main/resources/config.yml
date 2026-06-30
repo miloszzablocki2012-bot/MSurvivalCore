@@ -1,12 +1,58 @@
+currency: '$'
 sell:
-  BAMBOO: 25
-  SUGAR_CANE: 30
-  DIAMOND: 500
-  EMERALD: 450
-  NETHERITE_INGOT: 5000
+  BAMBOO: 35
+  SUGAR_CANE: 40
+  CACTUS: 28
+  MELON_SLICE: 12
+  PUMPKIN: 45
+  WHEAT: 16
+  CARROT: 18
+  POTATO: 18
+  BEETROOT: 20
+  SWEET_BERRIES: 22
+  NETHER_WART: 55
+  KELP: 12
+  OAK_LOG: 22
+  SPRUCE_LOG: 22
+  BIRCH_LOG: 22
+  CHERRY_LOG: 28
+  STONE: 5
+  COBBLESTONE: 4
+  COAL: 75
+  IRON_INGOT: 180
+  GOLD_INGOT: 220
+  COPPER_INGOT: 90
+  REDSTONE: 55
+  LAPIS_LAZULI: 65
+  QUARTZ: 70
+  DIAMOND: 900
+  EMERALD: 850
+  NETHERITE_SCRAP: 4500
+  NETHERITE_INGOT: 18000
+  BLAZE_ROD: 300
+  ENDER_PEARL: 350
+  GHAST_TEAR: 1500
+  SHULKER_SHELL: 3500
+  ELYTRA: 120000
+  NETHER_STAR: 250000
 server-shop:
-  boski-key-price: 1500000
+  keys:
+    klasyczny: 25000
+    zelazny: 75000
+    diamentowy: 180000
+    epic: 400000
+    legendarny: 850000
+    mityczny: 1500000
+    boski: 3000000
+  items:
+    GOLDEN_APPLE: 15000
+    ENCHANTED_GOLDEN_APPLE: 250000
+    TOTEM_OF_UNDYING: 175000
+    ELYTRA: 1000000
+    FIREWORK_ROCKET: 2500
+    SHULKER_BOX: 180000
+    NETHERITE_INGOT: 120000
 messages:
   prefix: '&6&lRynek &8» &r'
   no-money: '&cNie masz tyle pieniędzy.'
-  balance: '&aMasz: &e%money%$'
+  balance: '&aStan konta: &e%money%$'

@@ -1,0 +1,7 @@
+name: MSurvivalTransfer
+version: 4.5
+main: pl.msurvival.transfer.MSurvivalTransfer
+api-version: '1.21'
+author: Milekz
+commands:
+  itemtransfer: {usage: /itemtransfer}
