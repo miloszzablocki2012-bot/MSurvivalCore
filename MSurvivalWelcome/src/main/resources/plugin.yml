@@ -1,16 +1,10 @@
 name: MSurvivalWelcome
-version: 3.2
+version: 4.0
 main: pl.msurvival.welcome.MSurvivalWelcome
 api-version: '1.21'
 author: Milekz
 commands:
-  pomoc:
-    usage: /pomoc
-  komendy:
-    usage: /komendy
-  regulamin:
-    usage: /regulamin
-  donate:
-    usage: /donate
-  social:
-    usage: /social
+  pomoc: {usage: /pomoc}
+  komendy: {usage: /komendy}
+  regulamin: {usage: /regulamin}
+  donate: {usage: /donate}

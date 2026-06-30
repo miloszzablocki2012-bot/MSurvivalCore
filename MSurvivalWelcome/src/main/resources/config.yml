@@ -1,77 +1,15 @@
-title:
-  enabled: true
-  title: '&6&lMSURVIVAL'
-  subtitle: '&eWitaj na serwerze!'
-
-sound:
-  enabled: true
-  name: ENTITY_PLAYER_LEVELUP
-
-welcome-message:
-  - ''
+title: {enabled: true, title: '&6&lMSURVIVAL', subtitle: '&eWitaj na serwerze!'}
+welcome:
   - '&6&l✦━━━━━━━━━━ &e&lMSURVIVAL &6&l━━━━━━━━━━✦'
   - '&b⚡ &fOficjalny serwer twórcy &e&lMilekz &b⚡'
-  - ''
   - '&f👋 Witaj &e&l%player%&f!'
-  - '&7Cieszymy się, że dołączyłeś do naszej społeczności.'
-  - '&7Życzymy Ci świetnej zabawy!'
-  - ''
-  - 'DELAY:200'
-  - '&6&l📖 INFORMACJE'
-  - '&e➜ &fSurvival na &e&lnajnowszej wersji Minecraft.'
-  - '&e➜ &fSerwer działa &a24/7&f.'
-  - '&e➜ &fRegularne aktualizacje i nowe funkcje.'
-  - '&e➜ &fAktywna administracja.'
-  - '&e➜ &fIP: &6&lmsurvival.6mc.pl'
-  - ''
-  - 'DELAY:200'
-  - '&a&l⌨ DOSTĘPNE KOMENDY'
-  - '&e➜ &f/pomoc &7- lista komend'
-  - '&e➜ &f/rank &7- sprawdź swoją rangę'
-  - '&e➜ &f/keysmenu &7- sprawdź klucze'
-  - '&e➜ &f/kits &7- użyj E-Kita'
-  - ''
-  - 'DELAY:200'
-  - '&c&l⚖ REGULAMIN'
-  - '&c✘ &fNie kradnij innym graczom.'
-  - '&c✘ &fNie używaj cheatów ani X-Raya.'
-  - '&c✘ &fNie griefuj cudzych budowli.'
-  - '&c✘ &fSzanuj innych graczy i administrację.'
-  - '&a✔ &fGraj uczciwie i baw się dobrze.'
-  - ''
-  - 'DELAY:200'
-  - '&d&l📱 MEDIA'
-  - '&c▶ &fYouTube: &e&l@Milekz'
-  - '&d♫ &fTikTok: &e&l@Milekz'
-  - '&9✦ &fDiscord: &7Link znajdziesz na YouTube.'
-  - ''
-  - 'DELAY:200'
-  - '&a&l🎮 POWODZENIA!'
-  - '&a⚡ &fMiłej gry na &6MSurvival&f!'
-  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+  - '&e/pomoc &7- komendy &8| &e/keysmenu &7- klucze &8| &e/kits &7- E-Kity &8| &e/rynek &7- rynek'
   - '&6&lmsurvival.6mc.pl'
-  - ''
-
-help-message:
-  - ''
-  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
-  - '&6&lMSURVIVAL &8» &fDostępne komendy'
-  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
-  - ''
-  - '&e/pomoc &8- &7lista komend'
-  - '&e/regulamin &8- &7regulamin'
+help:
+  - '&6&lMSURVIVAL &8» &fKomendy'
+  - '&e/pomoc &8- &7komendy'
   - '&e/keysmenu &8- &7klucze'
   - '&e/kits &8- &7E-Kity'
-  - '&e/donate &8- &7wsparcie'
-  - ''
-  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
-  - '&6&lmsurvival.6mc.pl'
-  - ''
-
-donate-message:
-  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
-  - '&6&lMSURVIVAL &8» &dWsparcie'
-  - '&eDonate: &bhttps://tipply.pl/@milekz'
-  - '&7Po wsparciu napisz do administracji na Discordzie.'
-  - '&7Link do Discorda jest na kanale YouTube.'
-  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+  - '&e/rynek &8- &7rynek'
+donate:
+  - '&6Donate: &bhttps://tipply.pl/@milekz'

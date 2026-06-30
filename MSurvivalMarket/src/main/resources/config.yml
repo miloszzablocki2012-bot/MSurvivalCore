@@ -1,0 +1,12 @@
+sell:
+  BAMBOO: 25
+  SUGAR_CANE: 30
+  DIAMOND: 500
+  EMERALD: 450
+  NETHERITE_INGOT: 5000
+server-shop:
+  boski-key-price: 1500000
+messages:
+  prefix: '&6&lRynek &8» &r'
+  no-money: '&cNie masz tyle pieniędzy.'
+  balance: '&aMasz: &e%money%$'

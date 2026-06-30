@@ -4,5 +4,5 @@ server:
   donate: 'https://tipply.pl/@milekz'
 messages:
   prefix: '&6&lMSurvival &8» &r'
-  reload: '&aPrzeładowano MSurvivalCore.'
+  reload: '&aPrzeładowano konfigurację.'
   no-permission: '&cNie masz uprawnień.'

@@ -1,5 +1,5 @@
 name: MSurvivalKeys
-version: 3.2
+version: 4.0
 main: pl.msurvival.keys.MSurvivalKeys
 api-version: '1.21'
 author: Milekz
@@ -13,7 +13,7 @@ commands:
   weeklykey:
     usage: /weeklykey
   keyadmin:
-    usage: /keyadmin <give|item|reset|reload> <gracz> <klucz> [ilosc]
+    usage: /keyadmin <give|item> <gracz> <klucz> [ilosc]
 permissions:
   msurvival.keys.admin:
     default: op

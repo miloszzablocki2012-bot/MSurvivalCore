@@ -1,20 +1,8 @@
 settings:
   survival-world: 'world'
   weekly-cooldown-seconds: 604800
-
 key-item:
   material: TRIPWIRE_HOOK
-  name: '&6&l✦ %key_name% &6&l✦'
-  lore:
-    - '&8━━━━━━━━━━━━━━━━'
-    - '&7Typ: %key_name%'
-    - '&7Przedmiot: &eZaczep na linkę'
-    - ''
-    - '&fTo jest klucz do &bE-Kita&f.'
-    - '&cNie klikaj PPM.'
-    - '&7Wejdź na &aSurvival &7i użyj &e/kits&7.'
-    - '&8━━━━━━━━━━━━━━━━'
-
 keys:
   klasyczny: '&f&lKlucz Klasyczny'
   zelazny: '&7&lKlucz Żelazny'
@@ -23,19 +11,17 @@ keys:
   legendarny: '&6&lKlucz Legendarny'
   mityczny: '&d&lKlucz Mityczny'
   boski: '&4&lKlucz Boski'
-
 weekly:
-  klasyczny: 85
-  zelazny: 15
-
+  klasyczny: 80
+  zelazny: 20
 messages:
   prefix: '&6&lMSurvival &8» &r'
   no-permission: '&cNie masz uprawnień.'
-  only-survival: '&cE-Kity i fizyczne klucze odbierasz tylko na &aSurvivalu&c.'
-  withdrawn: '&a✔ Wyjęto klucz: %key%'
-  claimed: '&a✔ Odebrałeś klucz: %key%'
-  no-key: '&c✘ Nie masz wymaganego klucza: %key%'
-  opened: '&a✔ Otworzono E-Kit: &e%kit%'
-  cooldown: '&cCotygodniowy klucz odbierzesz za: &e%time%'
-  disabled-ppm: '&cTego klucza nie otwierasz PPM. Użyj &e/kits&c.'
-  admin-give: '&aDodano &e%amount%x %key% &adla &e%player%&a.'
+  only-survival: '&cKlucze i E-Kity odbierasz tylko na Survivalu.'
+  disabled-ppm: '&cKlucza nie używasz PPM. Otwórz /kits.'
+  no-key: '&cNie masz klucza: %key%'
+  withdrawn: '&aWyjęto klucz: %key%'
+  claimed: '&aOdebrałeś klucz: %key%'
+  opened: '&aOtworzono E-Kit: &e%kit%'
+  cooldown: '&cWeeklykey za: &e%time%'
+  admin-give: '&aDodano &e%amount%x %key% &adla &e%player%'

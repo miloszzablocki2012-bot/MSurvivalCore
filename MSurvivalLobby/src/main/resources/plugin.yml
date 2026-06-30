@@ -1,5 +1,5 @@
 name: MSurvivalLobby
-version: 3.2
+version: 4.0
 main: pl.msurvival.lobby.MSurvivalLobby
 api-version: '1.21'
 author: Milekz
@@ -9,12 +9,12 @@ commands:
     aliases: [hub]
   survival:
     usage: /survival
+  menu:
+    usage: /menu
   setlobby:
     usage: /setlobby
   setsurvival:
     usage: /setsurvival
-  menu:
-    usage: /menu
 permissions:
   msurvival.lobby.admin:
     default: op

@@ -1,47 +1,15 @@
 worlds:
   lobby: 'Lobby'
   survival: 'world'
-
-lobby-spawn:
-  x: 0.5
-  y: 100.0
-  z: 0.5
-  yaw: 0.0
-  pitch: 0.0
-
-survival-spawn:
-  x: 0.5
-  y: 100.0
-  z: 0.5
-  yaw: 0.0
-  pitch: 0.0
-
-lobby-items:
-  enabled: true
-  # WAŻNE: false = plugin NIE czyści ekwipunku gracza.
-  # Dzięki temu itemy z Survivalu nie znikają po wyjściu/wejściu.
-  clear-on-lobby-join: false
+lobby: {x: 0.5, y: 100.0, z: 0.5, yaw: 0.0, pitch: 0.0}
+survival: {x: 0.5, y: 100.0, z: 0.5, yaw: 0.0, pitch: 0.0}
+items:
   compass-slot: 4
   compass-name: '&6&lMSurvival Menu'
-  compass-lore:
-    - '&8Nawigacja serwera'
-    - ''
-    - '&7PPM, aby otworzyć menu.'
-
-protection:
-  block-break: true
-  block-place: true
-  pvp: false
-  damage: false
-  hunger: false
-  drop: false
-  pickup: false
-  inventory-move: true
-
 messages:
   prefix: '&6&lMSurvival &8» &r'
   lobby: '&aPrzeniesiono do lobby.'
   survival: '&aPrzeniesiono na Survival.'
+  set-lobby: '&aUstawiono lobby.'
+  set-survival: '&aUstawiono Survival.'
   no-permission: '&cNie masz uprawnień.'
-  lobby-set: '&aUstawiono spawn lobby.'
-  survival-set: '&aUstawiono spawn survival.'

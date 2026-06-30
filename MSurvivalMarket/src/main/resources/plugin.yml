@@ -1,0 +1,17 @@
+name: MSurvivalMarket
+version: 4.0
+main: pl.msurvival.market.MSurvivalMarket
+api-version: '1.21'
+author: Milekz
+commands:
+  rynek:
+    usage: /rynek
+  kasa:
+    usage: /kasa
+  pay:
+    usage: /pay <gracz> <kwota>
+  rynekadmin:
+    usage: /rynekadmin give <gracz> <kwota>
+permissions:
+  msurvival.market.admin:
+    default: op
