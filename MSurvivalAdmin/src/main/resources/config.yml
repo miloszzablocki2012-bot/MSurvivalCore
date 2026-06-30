@@ -1,2 +1,18 @@
 messages:
+  prefix: '&c&lAdmin &8» &r'
   no-permission: '&cNie masz uprawnień.'
+  vanish-on: '&aVanish włączony.'
+  vanish-off: '&cVanish wyłączony.'
+  staff-on: '&aStaffMode włączony.'
+  staff-off: '&cStaffMode wyłączony.'
+  freeze-on: '&cZamrożono gracza &e%player%&c.'
+  freeze-off: '&aOdmrożono gracza &e%player%&a.'
+  frozen: '&cJesteś zamrożony przez administrację.'
+  socialspy-on: '&aSocialSpy włączone.'
+  socialspy-off: '&cSocialSpy wyłączone.'
+  staffchat-format: '&c&l[SC] &f%player% &8» &7%message%'
+vanish:
+  actionbar: '&d👻 &fVANISH &aWŁĄCZONY'
+  persist: true
+staff-items:
+  enabled: true

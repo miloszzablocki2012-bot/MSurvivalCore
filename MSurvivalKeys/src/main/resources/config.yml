@@ -1,8 +1,10 @@
 settings:
   survival-world: 'world'
   weekly-cooldown-seconds: 604800
+
 key-item:
   material: TRIPWIRE_HOOK
+
 keys:
   klasyczny: '&f&lKlucz Klasyczny'
   zelazny: '&7&lKlucz Żelazny'
@@ -11,14 +13,16 @@ keys:
   legendarny: '&6&lKlucz Legendarny'
   mityczny: '&d&lKlucz Mityczny'
   boski: '&4&lKlucz Boski'
+
 weekly:
   klasyczny: 80
   zelazny: 20
+
 messages:
   prefix: '&6&lMSurvival &8» &r'
   no-permission: '&cNie masz uprawnień.'
-  only-survival: '&cKlucze i E-Kity odbierasz tylko na Survivalu.'
-  disabled-ppm: '&cKlucza nie używasz PPM. Otwórz /kits.'
+  only-survival: '&cKlucze i E-Kity odbierasz tylko na &aSurvivalu&c.'
+  disabled-ppm: '&cKlucza nie używasz PPM. Otwórz &e/kits&c.'
   no-key: '&cNie masz klucza: %key%'
   withdrawn: '&aWyjęto klucz: %key%'
   claimed: '&aOdebrałeś klucz: %key%'
