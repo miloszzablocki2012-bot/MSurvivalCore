@@ -1,137 +1,33 @@
-settings:
-  default-rank: gracz
-  update-chat: true
-  update-tab: true
-  update-nametag: true
-  update-sidebar: true
-  refresh-seconds: 20
-  use-permissions-if-no-rank-set: true
-
 sidebar:
-  title: "&6&lMSURVIVAL"
+  enabled: true
+  title: '&6&lMSURVIVAL'
   lines:
-    - "&8&m----------------"
-    - "&fNick: &e%player%"
-    - "&fRanga: %rank%"
-    - "&fWygasa: &e%expires%"
-    - ""
-    - "&fOnline: &a%online%"
-    - "&fTryb: &aSurvival"
-    - "&8&m----------------"
-    - "&6msurvival.6mc.pl"
-
-messages:
-  prefix: "&6&lMSurvivalRanks &8» &r"
-  no-permission: "&cNie masz uprawnien."
-  usage-setrank: "&cUzycie: &e/setrank <gracz> <ranga>"
-  usage-temprank: "&cUzycie: &e/temprank <gracz> <ranga> <czas>"
-  usage-rankremove: "&cUzycie: &e/rankremove <gracz>"
-  unknown-rank: "&cNie ma takiej rangi."
-  bad-time: "&cZly czas. Uzyj np. &e10m, 2h, 7d, 30d"
-  set-rank: "&aUstawiono range %rank% &adla &e%player%&a."
-  temp-rank: "&aUstawiono range %rank% &adla &e%player% &ana &e%time%&a."
-  removed-rank: "&aUsunieto range gracza &e%player%&a."
-  reload: "&aPrzeladowano plugin."
-  your-rank: "&aRanga gracza &e%player%&a: %rank% &7Wygasa: &e%expires%"
-  list-header: "&6Dostepne rangi:"
-  list-line: "&8- &e%rank% &7=> %prefix%"
+    - '&8&m━━━━━━━━━━━━'
+    - '&6&lPROFIL'
+    - '&fNick: &e%player%'
+    - '&fRanga: %rank%'
+    - '&fWygasa: &e%expires%'
+    - ''
+    - '&6&lSERWER'
+    - '&fOnline: &a%online%'
+    - '&fPing: &a%ping%ms'
+    - ''
+    - '&6&lIP SERWERA'
+    - '&fmsurvival.6mc.pl'
+    - '&8&m━━━━━━━━━━━━'
 
 ranks:
-  wlasciciel:
-    display: "&6&lWŁAŚCICIEL"
-    prefix: "&6&l👑 WŁAŚCICIEL &6"
-    chat-prefix: "&6&l👑 WŁAŚCICIEL &6"
-    tab-prefix: "&6&l👑 "
-    name-color: "&6"
-    priority: 100
-    permission: "msurvivalranks.rank.wlasciciel"
+  wlasciciel: {display: '&6&lWŁAŚCICIEL', prefix: '&6&l👑 WŁAŚCICIEL &6', tab: '&6&l👑 ', color: '&6', priority: 100}
+  admin: {display: '&c&lADMIN', prefix: '&c&l🛡 ADMIN &c', tab: '&c&l🛡 ', color: '&c', priority: 80}
+  mod: {display: '&2&lMOD', prefix: '&2&l🔨 MOD &2', tab: '&2&l🔨 ', color: '&2', priority: 70}
+  helper: {display: '&a&lHELPER', prefix: '&a&l💬 HELPER &a', tab: '&a&l💬 ', color: '&a', priority: 60}
+  youtuber: {display: '&c&lYOUTUBE', prefix: '&c&l🎥 YOUTUBE &c', tab: '&c&l🎥 ', color: '&c', priority: 50}
+  tiktoker: {display: '&d&lTIKTOK', prefix: '&d&l📱 TIKTOK &d', tab: '&d&l📱 ', color: '&d', priority: 45}
+  sponsor: {display: '&b&lSPONSOR', prefix: '&b&l💎 SPONSOR &b', tab: '&b&l💎 ', color: '&b', priority: 40}
+  vipplus: {display: '&e&lVIP+', prefix: '&e&l⭐ VIP+ &e', tab: '&e&l⭐ ', color: '&e', priority: 30}
+  vip: {display: '&e&lVIP', prefix: '&e&l✦ VIP &e', tab: '&e&l✦ ', color: '&e', priority: 20}
+  gracz: {display: '&7GRACZ', prefix: '&7GRACZ &7', tab: '&7', color: '&7', priority: 0}
 
-  developer:
-    display: "&b&lDEVELOPER"
-    prefix: "&b&l⚙ DEVELOPER &b"
-    chat-prefix: "&b&l⚙ DEVELOPER &b"
-    tab-prefix: "&b&l⚙ "
-    name-color: "&b"
-    priority: 90
-    permission: "msurvivalranks.rank.developer"
-
-  admin:
-    display: "&c&lADMIN"
-    prefix: "&c&l🛡 ADMIN &c"
-    chat-prefix: "&c&l🛡 ADMIN &c"
-    tab-prefix: "&c&l🛡 "
-    name-color: "&c"
-    priority: 80
-    permission: "msurvivalranks.rank.admin"
-
-  mod:
-    display: "&2&lMOD"
-    prefix: "&2&l🔨 MOD &2"
-    chat-prefix: "&2&l🔨 MOD &2"
-    tab-prefix: "&2&l🔨 "
-    name-color: "&2"
-    priority: 70
-    permission: "msurvivalranks.rank.mod"
-
-  helper:
-    display: "&a&lHELPER"
-    prefix: "&a&l💬 HELPER &a"
-    chat-prefix: "&a&l💬 HELPER &a"
-    tab-prefix: "&a&l💬 "
-    name-color: "&a"
-    priority: 60
-    permission: "msurvivalranks.rank.helper"
-
-  youtuber:
-    display: "&c&lYOUTUBE"
-    prefix: "&c&l🎥 YOUTUBE &c"
-    chat-prefix: "&c&l🎥 YOUTUBE &c"
-    tab-prefix: "&c&l🎥 "
-    name-color: "&c"
-    priority: 50
-    permission: "msurvivalranks.rank.youtuber"
-
-  tiktoker:
-    display: "&d&lTIKTOK"
-    prefix: "&d&l📱 TIKTOK &d"
-    chat-prefix: "&d&l📱 TIKTOK &d"
-    tab-prefix: "&d&l📱 "
-    name-color: "&d"
-    priority: 45
-    permission: "msurvivalranks.rank.tiktoker"
-
-  sponsor:
-    display: "&b&lSPONSOR"
-    prefix: "&b&l💎 SPONSOR &b"
-    chat-prefix: "&b&l💎 SPONSOR &b"
-    tab-prefix: "&b&l💎 "
-    name-color: "&b"
-    priority: 40
-    permission: "msurvivalranks.rank.sponsor"
-
-  vipplus:
-    display: "&e&lVIP+"
-    prefix: "&e&l⭐ VIP+ &e"
-    chat-prefix: "&e&l⭐ VIP+ &e"
-    tab-prefix: "&e&l⭐ "
-    name-color: "&e"
-    priority: 30
-    permission: "msurvivalranks.rank.vipplus"
-
-  vip:
-    display: "&e&lVIP"
-    prefix: "&e&l✦ VIP &e"
-    chat-prefix: "&e&l✦ VIP &e"
-    tab-prefix: "&e&l✦ "
-    name-color: "&e"
-    priority: 20
-    permission: "msurvivalranks.rank.vip"
-
-  gracz:
-    display: "&7GRACZ"
-    prefix: "&7GRACZ &7"
-    chat-prefix: "&7GRACZ &7"
-    tab-prefix: "&7"
-    name-color: "&7"
-    priority: 0
-    permission: ""
+messages:
+  prefix: '&6&lMSurvival &8» &r'
+  no-permission: '&cNie masz uprawnień.'

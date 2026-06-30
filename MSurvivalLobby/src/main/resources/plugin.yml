@@ -1,16 +1,20 @@
 name: MSurvivalLobby
-version: 3.1
+version: 3.0
 main: pl.msurvival.lobby.MSurvivalLobby
 api-version: '1.21'
 author: Milekz
-softdepend: [MSurvivalKeys]
 commands:
-  menu: {usage: /menu}
-  menuitem: {usage: /menuitem}
-  lobby: {usage: /lobby, aliases: [hub]}
-  survival: {usage: /survival}
-  setlobby: {usage: /setlobby}
-  setsurvival: {usage: /setsurvival}
-  lobbyreload: {usage: /lobbyreload}
+  lobby:
+    usage: /lobby
+    aliases: [hub]
+  survival:
+    usage: /survival
+  setlobby:
+    usage: /setlobby
+  setsurvival:
+    usage: /setsurvival
+  menu:
+    usage: /menu
 permissions:
-  msurvivallobby.admin: {default: op}
+  msurvival.lobby.admin:
+    default: op

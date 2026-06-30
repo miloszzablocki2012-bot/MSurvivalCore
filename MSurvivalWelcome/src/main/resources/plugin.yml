@@ -1,12 +1,16 @@
 name: MSurvivalWelcome
-version: 1.0
+version: 3.0
 main: pl.msurvival.welcome.MSurvivalWelcome
 api-version: '1.21'
 author: Milekz
-
 commands:
-  welcome:
-    usage: /welcome reload
-permissions:
-  msurvivalwelcome.admin:
-    default: op
+  pomoc:
+    usage: /pomoc
+  komendy:
+    usage: /komendy
+  regulamin:
+    usage: /regulamin
+  donate:
+    usage: /donate
+  social:
+    usage: /social

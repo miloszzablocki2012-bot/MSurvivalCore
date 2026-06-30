@@ -1,193 +1,41 @@
 settings:
-  cooldown-seconds: 604800
-
-blocked-worlds:
-  - Lobby
-
-weekly:
-  slot: 4
-  material: CHEST
-  name: "&a&lCotygodniowy klucz"
-  lore:
-    - "&7Nagroda co 7 dni."
-    - "&7Status: %status%"
-    - ""
-    - "&f85% &7Klasyczny"
-    - "&f15% &7Żelazny"
-
-gui:
-  keys-title: "&6&lTWOJE KLUCZE"
-  kits-title: "&b&lKITY ZA KLUCZE"
-  filler: BLACK_STAINED_GLASS_PANE
+  survival-world: 'world'
+  weekly-cooldown-seconds: 604800
 
 key-item:
   material: TRIPWIRE_HOOK
-  name: "&6&l✦ %key_name% &6&l✦"
+  name: '&6&l✦ %key_name% &6&l✦'
   lore:
-    - "&8━━━━━━━━━━━━━━━━"
-    - "&7Typ klucza: &f%key_name%"
-    - "&7Przedmiot: &eZaczep na linkę"
-    - ""
-    - "&7To jest przepustka do kitu."
-    - "&eOtwórz &b/kits&e i wybierz kit."
-    - ""
-    - "&6MSurvival.pl"
-    - "&8━━━━━━━━━━━━━━━━"
-messages:
-  prefix: "&6&lMSurvivalKeys &8» &r"
-  no-permission: "&cNie masz uprawnień."
-  reload: "&aPrzeładowano config."
-  cooldown: "&cKlucz tygodniowy za: &e%time%"
-  claimed: "&8[&6MSurvival&8] &aOdebrałeś cotygodniowy klucz: &e%key%&a!"
-  no-key: "&cNie masz wymaganego klucza: &e%key%"
-  blocked: "&cKity otwieraj na survivalu, nie w lobby."
-  key-right-click-disabled: "&cKlucza nie otwierasz PPM. Wpisz &e/kits &ci wybierz kit."
-  opened: "&aOtworzono kit: &e%kit%"
-  withdrawn: "&8[&6MSurvival&8] &aWyjęto do ekwipunku: &e%key%&a."
-  admin-give: "&8[&6MSurvival&8] &aDodano &e%amount%x %key% &adla gracza &e%player%&a."
-  admin-item: "&8[&6MSurvival&8] &aPrzyznano fizyczny klucz &e%amount%x %key% &agraczowi &e%player%&a."
+    - '&8━━━━━━━━━━━━━━━━'
+    - '&7Typ: %key_name%'
+    - '&7Przedmiot: &eZaczep na linkę'
+    - ''
+    - '&fTo jest klucz do &bE-Kita&f.'
+    - '&cNie klikaj PPM.'
+    - '&7Wejdź na &aSurvival &7i użyj &e/kits&7.'
+    - '&8━━━━━━━━━━━━━━━━'
 
 keys:
-  klasyczny:
-    display: "&f&lKlucz Klasyczny"
-  zelazny:
-    display: "&7&lKlucz Żelazny"
-  diamentowy:
-    display: "&b&lKlucz Diamentowy"
-  epic:
-    display: "&5&lKlucz Epic"
-  legendarny:
-    display: "&6&lKlucz Legendarny"
-  mityczny:
-    display: "&d&lKlucz Mityczny"
-  boski:
-    display: "&4&lKlucz Boski"
+  klasyczny: '&f&lKlucz Klasyczny'
+  zelazny: '&7&lKlucz Żelazny'
+  diamentowy: '&b&lKlucz Diamentowy'
+  epic: '&5&lKlucz Epic'
+  legendarny: '&6&lKlucz Legendarny'
+  mityczny: '&d&lKlucz Mityczny'
+  boski: '&4&lKlucz Boski'
 
-weekly-random:
+weekly:
   klasyczny: 85
   zelazny: 15
 
-kits:
-  klasyczny:
-    slot: 10
-    material: TRIPWIRE_HOOK
-    name: "&f&lKit Klasyczny"
-    required-key: klasyczny
-    rewards:
-      - "give %player% bread 32"
-      - "give %player% copper_ingot 32"
-      - "give %player% iron_ingot 16"
-      - "give %player% stone_sword 1"
-      - "give %player% stone_pickaxe 1"
-
-  zelazny:
-    slot: 11
-    material: TRIPWIRE_HOOK
-    name: "&7&lKit Żelazny"
-    required-key: zelazny
-    rewards:
-      - "give %player% iron_helmet 1"
-      - "give %player% iron_chestplate 1"
-      - "give %player% iron_leggings 1"
-      - "give %player% iron_boots 1"
-      - "give %player% iron_sword 1"
-      - "give %player% iron_pickaxe 1"
-      - "give %player% bow 1"
-      - "give %player% arrow 32"
-      - "give %player% golden_apple 2"
-
-  diamentowy:
-    slot: 12
-    material: TRIPWIRE_HOOK
-    name: "&b&lKit Diamentowy"
-    required-key: diamentowy
-    rewards:
-      - "give %player% diamond_helmet 1"
-      - "give %player% diamond_chestplate 1"
-      - "give %player% diamond_leggings 1"
-      - "give %player% diamond_boots 1"
-      - "give %player% diamond_sword 1"
-      - "give %player% diamond_pickaxe 1"
-      - "give %player% bow 1"
-      - "give %player% arrow 64"
-      - "give %player% golden_apple 6"
-
-  epic:
-    slot: 13
-    material: TRIPWIRE_HOOK
-    name: "&5&lKit Epic"
-    required-key: epic
-    rewards:
-      - "give %player% diamond_helmet 1"
-      - "give %player% diamond_chestplate 1"
-      - "give %player% diamond_leggings 1"
-      - "give %player% diamond_boots 1"
-      - "give %player% diamond_sword 1"
-      - "give %player% diamond_pickaxe 1"
-      - "give %player% golden_apple 10"
-      - "give %player% ender_pearl 16"
-
-  legendarny:
-    slot: 14
-    material: TRIPWIRE_HOOK
-    name: "&6&lKit Legendarny"
-    required-key: legendarny
-    random-rewards:
-      legendarny: 80
-      mityczny: 15
-      boski: 5
-
-  mityczny:
-    slot: 15
-    material: TRIPWIRE_HOOK
-    name: "&d&lKit Mityczny"
-    required-key: mityczny
-    random-rewards:
-      mityczny: 80
-      boski: 20
-
-  boski:
-    slot: 16
-    material: TRIPWIRE_HOOK
-    name: "&4&lKit Boski"
-    required-key: boski
-    owner-set: true
-    rewards:
-      - "give %player% golden_apple 64"
-      - "give %player% enchanted_golden_apple 16"
-      - "give %player% firework_rocket 64"
-      - "give %player% netherite_ingot 16"
-      - "give %player% totem_of_undying 5"
-      - "give %player% arrow 64"
-      - "give %player% shield 1"
-
-reward-sets:
-  legendarny:
-    rewards:
-      - "give %player% netherite_helmet 1"
-      - "give %player% netherite_chestplate 1"
-      - "give %player% netherite_leggings 1"
-      - "give %player% netherite_boots 1"
-      - "give %player% netherite_sword 1"
-      - "give %player% netherite_pickaxe 1"
-      - "give %player% golden_apple 16"
-      - "give %player% netherite_ingot 4"
-  mityczny:
-    rewards:
-      - "give %player% netherite_helmet 1"
-      - "give %player% netherite_chestplate 1"
-      - "give %player% netherite_leggings 1"
-      - "give %player% netherite_boots 1"
-      - "give %player% netherite_sword 1"
-      - "give %player% netherite_pickaxe 1"
-      - "give %player% golden_apple 24"
-      - "give %player% enchanted_golden_apple 2"
-      - "give %player% netherite_ingot 8"
-  boski:
-    owner-set: true
-    rewards:
-      - "give %player% golden_apple 64"
-      - "give %player% enchanted_golden_apple 16"
-      - "give %player% firework_rocket 64"
-      - "give %player% netherite_ingot 16"
-      - "give %player% totem_of_undying 5"
+messages:
+  prefix: '&6&lMSurvival &8» &r'
+  no-permission: '&cNie masz uprawnień.'
+  only-survival: '&cE-Kity i fizyczne klucze odbierasz tylko na &aSurvivalu&c.'
+  withdrawn: '&a✔ Wyjęto klucz: %key%'
+  claimed: '&a✔ Odebrałeś klucz: %key%'
+  no-key: '&c✘ Nie masz wymaganego klucza: %key%'
+  opened: '&a✔ Otworzono E-Kit: &e%kit%'
+  cooldown: '&cCotygodniowy klucz odbierzesz za: &e%time%'
+  disabled-ppm: '&cTego klucza nie otwierasz PPM. Użyj &e/kits&c.'
+  admin-give: '&aDodano &e%amount%x %key% &adla &e%player%&a.'

@@ -3,18 +3,30 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 <modelVersion>4.0.0</modelVersion>
 <groupId>pl.msurvival</groupId>
-<artifactId>MSurvival</artifactId>
-<version>1.0</version>
+<artifactId>MSurvival-v3</artifactId>
+<version>3.0</version>
 <packaging>pom</packaging>
+
 <modules>
   <module>MSurvivalCore</module>
-  <module>MSurvivalKeys</module>
-  <module>MSurvivalInventoryCore</module>
-  <module>MSurvivalRanks</module>
-  <module>MSurvivalAdmin</module>
   <module>MSurvivalLobby</module>
-  <module>MSurvivalWelcome</module>
+  <module>MSurvivalKeys</module>
+  <module>MSurvivalRanks</module>
   <module>MSurvivalAuth</module>
+  <module>MSurvivalWelcome</module>
+  <module>MSurvivalAdmin</module>
   <module>MSurvivalBans</module>
 </modules>
+
+<properties>
+  <maven.compiler.release>25</maven.compiler.release>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
+
+<repositories>
+  <repository>
+    <id>papermc</id>
+    <url>https://repo.papermc.io/repository/maven-public/</url>
+  </repository>
+</repositories>
 </project>

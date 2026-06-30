@@ -1,21 +1,19 @@
 name: MSurvivalKeys
-version: 4.2
+version: 3.0
 main: pl.msurvival.keys.MSurvivalKeys
 api-version: '1.21'
 author: Milekz
-
 commands:
   keysmenu:
     usage: /keysmenu
+    aliases: [key, keys, klucze]
   kits:
     usage: /kits
-  kit:
-    usage: /kit <nazwa>
-  key:
-    usage: /key use <typ>
+    aliases: [kit, ekit, ekits]
+  weeklykey:
+    usage: /weeklykey
   keyadmin:
-    usage: /keyadmin <give|item|reset|reload> <gracz> [typ] [ilosc]
-
+    usage: /keyadmin <give|item|reset|reload> <gracz> <klucz> [ilosc]
 permissions:
-  msurvivalkeys.admin:
+  msurvival.keys.admin:
     default: op

@@ -1,9 +1,3 @@
 messages:
-  prefix: "&c&lMSurvivalAdmin &8» &r"
-  no-permission: "&cNie masz uprawnień."
-  vanish-on: "&aVanish włączony."
-  vanish-off: "&cVanish wyłączony."
-  fly-on: "&aFly włączony."
-  fly-off: "&cFly wyłączony."
-  frozen: "&cZostałeś zamrożony przez administrację."
-  unfrozen: "&aZostałeś odmrożony."
+  prefix: '&c&lAdmin &8» &r'
+  no-permission: '&cNie masz uprawnień.'

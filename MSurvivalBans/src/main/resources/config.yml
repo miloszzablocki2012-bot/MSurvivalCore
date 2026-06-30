@@ -1,8 +1,2 @@
 messages:
-  prefix: "&c&lMSurvivalBans &8» &r"
-  no-permission: "&cNie masz uprawnień."
-  banned: "&cZbanowano gracza &e%player%&c. Powód: &e%reason%"
-  unbanned: "&aOdbanowano gracza &e%player%&a."
-  kicked: "&cWyrzucono gracza &e%player%&c."
-  warned: "&eOstrzeżono gracza &6%player%&e."
-  ban-screen: "&cZostałeś zbanowany z MSurvival!\n&7Powód: &e%reason%"
+  ban-screen: '&cZbanowano z MSURVIVAL\n&7Powód: &e%reason%'

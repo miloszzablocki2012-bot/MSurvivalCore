@@ -1,38 +1,19 @@
 name: MSurvivalAdmin
-version: 1.0
+version: 3.0
 main: pl.msurvival.admin.MSurvivalAdmin
 api-version: '1.21'
 author: Milekz
-
 commands:
-  vanish:
-    usage: /vanish
-    aliases: [v]
-  fly:
-    usage: /fly
-  gm:
-    usage: /gm <0|1|2|3>
-  heal:
-    usage: /heal [gracz]
-  feed:
-    usage: /feed [gracz]
-  invsee:
-    usage: /invsee <gracz>
-  endersee:
-    usage: /endersee <gracz>
-    aliases: [ecsee]
-  freeze:
-    usage: /freeze <gracz>
-  unfreeze:
-    usage: /unfreeze <gracz>
-  clearchat:
-    usage: /clearchat
-  staffchat:
-    usage: /staffchat <wiadomosc>
-    aliases: [sc]
-  admin:
-    usage: /admin
-
+  vanish: {usage: /vanish, aliases: [v]}
+  fly: {usage: /fly}
+  gm: {usage: /gm <0|1|2|3>}
+  heal: {usage: /heal [gracz]}
+  feed: {usage: /feed [gracz]}
+  invsee: {usage: /invsee <gracz>}
+  ecsee: {usage: /ecsee <gracz>}
+  staffchat: {usage: /staffchat <tekst>, aliases: [sc]}
+  freeze: {usage: /freeze <gracz>}
+  unfreeze: {usage: /unfreeze <gracz>}
 permissions:
-  msurvivaladmin.admin:
+  msurvival.admin:
     default: op

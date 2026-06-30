@@ -1,36 +1,172 @@
 package pl.msurvival.lobby;
-import org.bukkit.*;import org.bukkit.configuration.file.YamlConfiguration;import org.bukkit.entity.Player;import org.bukkit.event.*;import org.bukkit.event.block.*;import org.bukkit.event.entity.*;import org.bukkit.event.inventory.*;import org.bukkit.event.player.*;import org.bukkit.inventory.*;import org.bukkit.inventory.meta.ItemMeta;import org.bukkit.persistence.PersistentDataType;import org.bukkit.plugin.java.JavaPlugin;import java.io.*;import java.util.*;
+
+import org.bukkit.*;
+import org.bukkit.entity.Player;
+import org.bukkit.event.*;
+import org.bukkit.event.block.*;
+import org.bukkit.event.entity.*;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.player.*;
+import org.bukkit.inventory.*;
+import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.persistence.PersistentDataType;
+import org.bukkit.plugin.java.JavaPlugin;
+
+import java.util.ArrayList;
+import java.util.Locale;
+
 @SuppressWarnings("deprecation")
-public final class MSurvivalLobby extends JavaPlugin implements Listener{
- NamespacedKey menuKey,actionKey; File dataFile; YamlConfiguration data;
- public void onEnable(){saveDefaultConfig();menuKey=new NamespacedKey(this,"menu_item");actionKey=new NamespacedKey(this,"menu_action");loadData();Bukkit.getPluginManager().registerEvents(this,this);cmds();long t=Math.max(20,getConfig().getLong("settings.auto-save-seconds",20)*20);Bukkit.getScheduler().runTaskTimer(this,()->{for(Player p:Bukkit.getOnlinePlayers())saveCurrent(p);saveData();},t,t);}
- public void onDisable(){for(Player p:Bukkit.getOnlinePlayers())saveCurrent(p);saveData();}
- void cmds(){
-  getCommand("menu").setExecutor((s,c,l,a)->{if(s instanceof Player p)openMenu(p);return true;});
-  getCommand("menuitem").setExecutor((s,c,l,a)->{if(s instanceof Player p){p.getInventory().addItem(menuItem());p.sendMessage(color("&aDano kompas."));}return true;});
-  getCommand("lobby").setExecutor((s,c,l,a)->{if(s instanceof Player p)toLobby(p,true);return true;});
-  getCommand("survival").setExecutor((s,c,l,a)->{if(s instanceof Player p)toSurvival(p,true);return true;});
-  getCommand("setlobby").setExecutor((s,c,l,a)->{if(s instanceof Player p&&admin(p)){saveLoc("lobby",p.getLocation());p.sendMessage(msg("lobby-set"));}return true;});
-  getCommand("setsurvival").setExecutor((s,c,l,a)->{if(s instanceof Player p&&admin(p)){saveLoc("survival",p.getLocation());p.sendMessage(msg("survival-set"));}return true;});
-  getCommand("lobbyreload").setExecutor((s,c,l,a)->{if(!s.hasPermission("msurvivallobby.admin")){s.sendMessage(msg("no-permission"));return true;}reloadConfig();loadData();s.sendMessage(msg("reload"));return true;});
- }
- @EventHandler public void join(PlayerJoinEvent e){Player p=e.getPlayer(); if(!data.contains("survival."+p.getUniqueId()+".contents"))saveSurv(p); if(getConfig().getBoolean("settings.teleport-to-lobby-on-join",true))Bukkit.getScheduler().runTaskLater(this,()->{if(p.isOnline())toLobby(p,false);},getConfig().getLong("settings.join-delay-ticks",2));}
- @EventHandler public void quit(PlayerQuitEvent e){saveCurrent(e.getPlayer());saveData();}
- void saveCurrent(Player p){if(inLobby(p))saveLobby(p);else saveSurv(p);}
- void toLobby(Player p,boolean m){if(!inLobby(p))saveSurv(p);loadLobby(p);Location l=loc("lobby");if(l!=null)p.teleport(l);p.setFoodLevel(20);p.setSaturation(20);if(m)p.sendMessage(msg("lobby"));}
- void toSurvival(Player p,boolean m){if(inLobby(p))saveLobby(p);loadSurv(p);removeMenu(p);Location l=null;if(getConfig().getBoolean("survival.use-bed-spawn",true))l=p.getBedSpawnLocation();if(l==null)l=loc("survival");if(l!=null)p.teleport(l);if(m)p.sendMessage(msg("survival"));}
- void saveSurv(Player p){try{String x="survival."+p.getUniqueId();PlayerInventory i=p.getInventory();data.set(x+".contents",ser(i.getContents()));data.set(x+".armor",ser(i.getArmorContents()));data.set(x+".offhand",ser(new ItemStack[]{i.getItemInOffHand()}));data.set(x+".level",p.getLevel());data.set(x+".exp",p.getExp());}catch(Exception e){getLogger().warning("Nie zapisano survival: "+p.getName());}}
- void loadSurv(Player p){String x="survival."+p.getUniqueId();try{PlayerInventory i=p.getInventory();i.clear();i.setArmorContents(null);i.setItemInOffHand(null);if(data.contains(x+".contents")){i.setContents(des(data.getString(x+".contents")));i.setArmorContents(des(data.getString(x+".armor")));ItemStack[] off=des(data.getString(x+".offhand"));i.setItemInOffHand(off.length>0?off[0]:null);p.setLevel(data.getInt(x+".level",0));p.setExp((float)data.getDouble(x+".exp",0));}p.updateInventory();}catch(Exception e){getLogger().warning("Nie wczytano survival: "+p.getName());}}
- void saveLobby(Player p){try{data.set("lobby."+p.getUniqueId()+".contents",ser(p.getInventory().getContents()));}catch(Exception e){}}
- void loadLobby(Player p){try{PlayerInventory i=p.getInventory();i.clear();i.setArmorContents(null);i.setItemInOffHand(null);String x="lobby."+p.getUniqueId();if(data.contains(x+".contents"))i.setContents(des(data.getString(x+".contents")));}catch(Exception e){} if(!hasMenu(p)){int s=getConfig().getInt("menu-item.slot",4);if(s>=0&&s<=35)p.getInventory().setItem(s,menuItem());else p.getInventory().addItem(menuItem());}p.updateInventory();}
- void openMenu(Player p){Inventory inv=Bukkit.createInventory(null,27,color(getConfig().getString("gui.title")));ItemStack f=named(mat(getConfig().getString("gui.filler"))," ");for(int i=0;i<27;i++)inv.setItem(i,f);inv.setItem(10,gui(Material.NETHER_STAR,"&e&lLobby","lobby","&7Powrót do lobby."));inv.setItem(12,gui(Material.GRASS_BLOCK,"&a&lSurvival","survival","&7Wejście na survival."));inv.setItem(14,gui(Material.LIGHTNING_ROD,"&6&lKlucze","keys","&7Sprawdź klucze."));inv.setItem(16,gui(Material.CHEST,"&b&lKity","kits","&7Kity za klucze."));p.openInventory(inv);}
- @EventHandler public void inv(InventoryClickEvent e){if(!(e.getWhoClicked() instanceof Player p))return;if(e.getView().getTitle().equals(color(getConfig().getString("gui.title")))){e.setCancelled(true);ItemStack it=e.getCurrentItem();if(it==null||!it.hasItemMeta())return;String a=it.getItemMeta().getPersistentDataContainer().get(actionKey,PersistentDataType.STRING);if(a==null)return;p.closeInventory();if(a.equals("lobby"))toLobby(p,true);if(a.equals("survival"))toSurvival(p,true);if(a.equals("keys"))Bukkit.dispatchCommand(p,"keysmenu");if(a.equals("kits"))Bukkit.dispatchCommand(p,"kits");return;}if(inLobby(p)&&!getConfig().getBoolean("protection.inventory-click",false)&&!bypass(p))e.setCancelled(true);}
- @EventHandler(priority=EventPriority.HIGHEST) public void click(PlayerInteractEvent e){Action a=e.getAction();if(a!=Action.RIGHT_CLICK_AIR&&a!=Action.RIGHT_CLICK_BLOCK)return;if(!isMenu(e.getItem()))return;e.setCancelled(true);openMenu(e.getPlayer());}
- @EventHandler public void br(BlockBreakEvent e){if(blocked(e.getPlayer(),"block-break"))e.setCancelled(true);}@EventHandler public void pl(BlockPlaceEvent e){if(blocked(e.getPlayer(),"block-place"))e.setCancelled(true);}@EventHandler public void dr(PlayerDropItemEvent e){if(blocked(e.getPlayer(),"drop"))e.setCancelled(true);}@EventHandler public void pi(PlayerPickupItemEvent e){if(blocked(e.getPlayer(),"pickup"))e.setCancelled(true);}@EventHandler public void food(FoodLevelChangeEvent e){if(e.getEntity() instanceof Player p&&inLobby(p)&&!getConfig().getBoolean("protection.hunger",false)){e.setCancelled(true);p.setFoodLevel(20);}}@EventHandler public void dmg(EntityDamageEvent e){if(e.getEntity() instanceof Player p&&inLobby(p)&&!getConfig().getBoolean("protection.damage",false))e.setCancelled(true);}@EventHandler public void pvp(EntityDamageByEntityEvent e){if(getConfig().getBoolean("protection.pvp",false))return;if(e.getDamager() instanceof Player p&&inLobby(p))e.setCancelled(true);if(e.getEntity() instanceof Player p&&inLobby(p))e.setCancelled(true);}
- boolean blocked(Player p,String k){return inLobby(p)&&getConfig().getBoolean("protection."+k,true)&&!bypass(p);}boolean bypass(Player p){return p.hasPermission("msurvivallobby.admin")&&p.getGameMode()==GameMode.CREATIVE;}boolean admin(Player p){if(!p.hasPermission("msurvivallobby.admin")){p.sendMessage(msg("no-permission"));return false;}return true;}
- ItemStack gui(Material m,String n,String a,String l){ItemStack it=named(m,n);ItemMeta meta=it.getItemMeta();meta.setLore(List.of(color(l)));meta.getPersistentDataContainer().set(actionKey,PersistentDataType.STRING,a);it.setItemMeta(meta);return it;}ItemStack menuItem(){ItemStack it=named(mat(getConfig().getString("menu-item.material")),getConfig().getString("menu-item.name"));ItemMeta meta=it.getItemMeta();List<String> lore=new ArrayList<>();for(String s:getConfig().getStringList("menu-item.lore"))lore.add(color(s));meta.setLore(lore);meta.getPersistentDataContainer().set(menuKey,PersistentDataType.STRING,"true");it.setItemMeta(meta);return it;}
- boolean hasMenu(Player p){for(ItemStack i:p.getInventory().getContents())if(isMenu(i))return true;return false;}boolean isMenu(ItemStack i){return i!=null&&i.hasItemMeta()&&i.getItemMeta().getPersistentDataContainer().has(menuKey,PersistentDataType.STRING);}void removeMenu(Player p){ItemStack[] c=p.getInventory().getContents();for(int i=0;i<c.length;i++)if(isMenu(c[i]))p.getInventory().setItem(i,null);}
- void saveLoc(String k,Location l){getConfig().set(k+".world",l.getWorld().getName());getConfig().set(k+".x",l.getX());getConfig().set(k+".y",l.getY());getConfig().set(k+".z",l.getZ());getConfig().set(k+".yaw",l.getYaw());getConfig().set(k+".pitch",l.getPitch());saveConfig();}Location loc(String k){World w=Bukkit.getWorld(getConfig().getString(k+".world","world"));return w==null?null:new Location(w,getConfig().getDouble(k+".x"),getConfig().getDouble(k+".y"),getConfig().getDouble(k+".z"),(float)getConfig().getDouble(k+".yaw"),(float)getConfig().getDouble(k+".pitch"));}
- boolean inLobby(Player p){return p.getWorld().getName().equalsIgnoreCase(getConfig().getString("lobby.world","Lobby"));}String ser(ItemStack[] it)throws Exception{ByteArrayOutputStream o=new ByteArrayOutputStream();ObjectOutputStream d=new ObjectOutputStream(o);d.writeInt(it.length);for(ItemStack i:it)d.writeObject(i);d.close();return Base64.getEncoder().encodeToString(o.toByteArray());}ItemStack[] des(String s)throws Exception{if(s==null||s.isBlank())return new ItemStack[0];ObjectInputStream d=new ObjectInputStream(new ByteArrayInputStream(Base64.getDecoder().decode(s)));int l=d.readInt();ItemStack[] r=new ItemStack[l];for(int i=0;i<l;i++)r[i]=(ItemStack)d.readObject();d.close();return r;}
- ItemStack named(Material m,String n){ItemStack it=new ItemStack(m);ItemMeta meta=it.getItemMeta();meta.setDisplayName(color(n));it.setItemMeta(meta);return it;}Material mat(String s){try{return Material.valueOf(s.toUpperCase(Locale.ROOT));}catch(Exception e){return Material.STONE;}}void loadData(){dataFile=new File(getDataFolder(),"inventories.yml");if(!dataFile.exists())try{getDataFolder().mkdirs();dataFile.createNewFile();}catch(IOException e){e.printStackTrace();}data=YamlConfiguration.loadConfiguration(dataFile);}void saveData(){try{data.save(dataFile);}catch(IOException e){e.printStackTrace();}}String msg(String k){return color(getConfig().getString("messages.prefix","")+getConfig().getString("messages."+k,""));}String color(String s){return s==null?"":ChatColor.translateAlternateColorCodes('&',s);}
+public final class MSurvivalLobby extends JavaPlugin implements Listener {
+    private NamespacedKey menuKey;
+
+    @Override
+    public void onEnable() {
+        saveDefaultConfig();
+        menuKey = new NamespacedKey(this, "menu_item");
+        Bukkit.getPluginManager().registerEvents(this, this);
+
+        getCommand("lobby").setExecutor((s,c,l,a)->{ if(s instanceof Player p) toLobby(p); return true; });
+        getCommand("survival").setExecutor((s,c,l,a)->{ if(s instanceof Player p) toSurvival(p); return true; });
+        getCommand("menu").setExecutor((s,c,l,a)->{ if(s instanceof Player p) openMenu(p); return true; });
+
+        getCommand("setlobby").setExecutor((s,c,l,a)->{
+            if (!(s instanceof Player p)) return true;
+            if (!p.hasPermission("msurvival.lobby.admin")) { p.sendMessage(msg("no-permission")); return true; }
+            saveLocation("lobby-spawn", p.getLocation());
+            p.sendMessage(msg("lobby-set"));
+            return true;
+        });
+
+        getCommand("setsurvival").setExecutor((s,c,l,a)->{
+            if (!(s instanceof Player p)) return true;
+            if (!p.hasPermission("msurvival.lobby.admin")) { p.sendMessage(msg("no-permission")); return true; }
+            saveLocation("survival-spawn", p.getLocation());
+            p.sendMessage(msg("survival-set"));
+            return true;
+        });
+    }
+
+    @EventHandler
+    public void onJoin(PlayerJoinEvent e) {
+        Bukkit.getScheduler().runTaskLater(this, () -> {
+            if (!e.getPlayer().isOnline()) return;
+            toLobby(e.getPlayer());
+        }, 10L);
+    }
+
+    private void toLobby(Player p) {
+        Location loc = loc("lobby-spawn", getConfig().getString("worlds.lobby", "Lobby"));
+        if (loc != null) p.teleport(loc);
+
+        if (getConfig().getBoolean("lobby-items.clear-on-lobby-join", true)) p.getInventory().clear();
+        giveLobbyItems(p);
+        p.setFoodLevel(20);
+        p.setSaturation(20);
+        p.sendMessage(msg("lobby"));
+    }
+
+    private void toSurvival(Player p) {
+        removeLobbyItems(p);
+        Location loc = p.getBedSpawnLocation();
+        if (loc == null) loc = loc("survival-spawn", getConfig().getString("worlds.survival", "world"));
+        if (loc != null) p.teleport(loc);
+        p.sendMessage(msg("survival"));
+    }
+
+    private boolean inLobby(Player p) {
+        return p.getWorld().getName().equalsIgnoreCase(getConfig().getString("worlds.lobby", "Lobby"));
+    }
+
+    private void giveLobbyItems(Player p) {
+        if (!getConfig().getBoolean("lobby-items.enabled", true)) return;
+        p.getInventory().setItem(getConfig().getInt("lobby-items.compass-slot", 4), menuItem());
+    }
+
+    private ItemStack menuItem() {
+        ItemStack item = new ItemStack(Material.COMPASS);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName(color(getConfig().getString("lobby-items.compass-name", "&6Menu")));
+        ArrayList<String> lore = new ArrayList<>();
+        for (String line : getConfig().getStringList("lobby-items.compass-lore")) lore.add(color(line));
+        meta.setLore(lore);
+        meta.getPersistentDataContainer().set(menuKey, PersistentDataType.STRING, "true");
+        item.setItemMeta(meta);
+        return item;
+    }
+
+    private boolean isLobbyItem(ItemStack item) {
+        return item != null && item.hasItemMeta() && item.getItemMeta().getPersistentDataContainer().has(menuKey, PersistentDataType.STRING);
+    }
+
+    private void removeLobbyItems(Player p) {
+        ItemStack[] items = p.getInventory().getContents();
+        for (int i = 0; i < items.length; i++) if (isLobbyItem(items[i])) p.getInventory().setItem(i, null);
+    }
+
+    @EventHandler public void interact(PlayerInteractEvent e) {
+        if (isLobbyItem(e.getItem())) {
+            e.setCancelled(true);
+            openMenu(e.getPlayer());
+        }
+    }
+
+    private void openMenu(Player p) {
+        Inventory inv = Bukkit.createInventory(null, 27, color("&6&lMSURVIVAL MENU"));
+        ItemStack filler = item(Material.BLACK_STAINED_GLASS_PANE, " ");
+        for (int i=0;i<27;i++) inv.setItem(i, filler);
+        inv.setItem(11, item(Material.NETHER_STAR, "&e&lLobby"));
+        inv.setItem(13, item(Material.GRASS_BLOCK, "&a&lSurvival"));
+        inv.setItem(15, item(Material.TRIPWIRE_HOOK, "&6&lKlucze i E-Kity"));
+        p.openInventory(inv);
+    }
+
+    @EventHandler public void menuClick(InventoryClickEvent e) {
+        if (!(e.getWhoClicked() instanceof Player p)) return;
+        if (!e.getView().getTitle().equals(color("&6&lMSURVIVAL MENU"))) {
+            if (inLobby(p) && getConfig().getBoolean("protection.inventory-move", true)) e.setCancelled(true);
+            return;
+        }
+        e.setCancelled(true);
+        ItemStack clicked = e.getCurrentItem();
+        if (clicked == null || !clicked.hasItemMeta()) return;
+        String name = ChatColor.stripColor(clicked.getItemMeta().getDisplayName()).toLowerCase(Locale.ROOT);
+        p.closeInventory();
+        if (name.contains("lobby")) toLobby(p);
+        else if (name.contains("survival")) toSurvival(p);
+        else p.performCommand("kits");
+    }
+
+    @EventHandler public void breakBlock(BlockBreakEvent e){ if(inLobby(e.getPlayer()) && getConfig().getBoolean("protection.block-break", true)) e.setCancelled(true); }
+    @EventHandler public void placeBlock(BlockPlaceEvent e){ if(inLobby(e.getPlayer()) && getConfig().getBoolean("protection.block-place", true)) e.setCancelled(true); }
+    @EventHandler public void drop(PlayerDropItemEvent e){ if(inLobby(e.getPlayer()) && getConfig().getBoolean("protection.drop", true)) e.setCancelled(true); }
+    @EventHandler public void pickup(PlayerPickupItemEvent e){ if(inLobby(e.getPlayer()) && getConfig().getBoolean("protection.pickup", true)) e.setCancelled(true); }
+    @EventHandler public void hunger(FoodLevelChangeEvent e){ if(e.getEntity() instanceof Player p && inLobby(p) && !getConfig().getBoolean("protection.hunger", false)){ e.setCancelled(true); p.setFoodLevel(20); } }
+    @EventHandler public void damage(EntityDamageEvent e){ if(e.getEntity() instanceof Player p && inLobby(p) && !getConfig().getBoolean("protection.damage", false)) e.setCancelled(true); }
+    @EventHandler public void pvp(EntityDamageByEntityEvent e){ if(!getConfig().getBoolean("protection.pvp", false)){ if(e.getDamager() instanceof Player p && inLobby(p)) e.setCancelled(true); if(e.getEntity() instanceof Player p && inLobby(p)) e.setCancelled(true); } }
+
+    private ItemStack item(Material m, String name) {
+        ItemStack item = new ItemStack(m);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName(color(name));
+        item.setItemMeta(meta);
+        return item;
+    }
+
+    private void saveLocation(String path, Location loc) {
+        getConfig().set(path + ".x", loc.getX());
+        getConfig().set(path + ".y", loc.getY());
+        getConfig().set(path + ".z", loc.getZ());
+        getConfig().set(path + ".yaw", loc.getYaw());
+        getConfig().set(path + ".pitch", loc.getPitch());
+        saveConfig();
+    }
+
+    private Location loc(String path, String worldName) {
+        World world = Bukkit.getWorld(worldName);
+        if (world == null) return null;
+        return new Location(world, getConfig().getDouble(path+".x"), getConfig().getDouble(path+".y"), getConfig().getDouble(path+".z"), (float)getConfig().getDouble(path+".yaw"), (float)getConfig().getDouble(path+".pitch"));
+    }
+
+    private String msg(String key){ return color(getConfig().getString("messages.prefix","") + getConfig().getString("messages."+key,"")); }
+    private String color(String s){ return ChatColor.translateAlternateColorCodes('&', s == null ? "" : s); }
 }

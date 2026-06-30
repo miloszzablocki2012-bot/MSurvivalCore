@@ -1,12 +1,13 @@
 settings:
-  require-login: true
-  session-minutes: 30
-
+  lobby-world: 'Lobby'
+  login-timeout-seconds: 60
+  bypass:
+    - 'Milekz21'
 messages:
-  prefix: "&6&lMSurvivalAuth &8» &r"
-  register: "&eZarejestruj się: &6/register <hasło>"
-  login: "&eZaloguj się: &6/login <hasło>"
-  registered: "&aZarejestrowano."
-  logged: "&aZalogowano."
-  wrong: "&cBłędne hasło."
-  already: "&cJesteś już zalogowany."
+  prefix: '&6&lMSurvivalAuth &8» &r'
+  register: '&eZarejestruj konto: &6/register <hasło>'
+  login: '&eZaloguj się: &6/login <hasło>'
+  registered: '&aZarejestrowano i zalogowano.'
+  logged: '&aZalogowano.'
+  wrong: '&cBłędne hasło.'
+  timeout: '&cNie zalogowałeś się na czas.'
