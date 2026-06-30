@@ -1,5 +1,5 @@
 name: MSurvivalAuth
-version: 3.0
+version: 3.2
 main: pl.msurvival.auth.MSurvivalAuth
 api-version: '1.21'
 author: Milekz

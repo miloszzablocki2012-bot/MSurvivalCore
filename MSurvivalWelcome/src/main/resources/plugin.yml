@@ -1,5 +1,5 @@
 name: MSurvivalWelcome
-version: 3.0
+version: 3.2
 main: pl.msurvival.welcome.MSurvivalWelcome
 api-version: '1.21'
 author: Milekz
