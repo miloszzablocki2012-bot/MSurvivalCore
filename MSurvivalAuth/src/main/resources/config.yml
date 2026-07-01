@@ -1,13 +1,14 @@
 settings:
   premium-auto-login: true
   require-repeat-register-password: false
+  center-title: true
   bypass:
     - 'Milekz21'
   force-password:
     - 'Milekz21'
 
 messages:
-  prefix: '&6&lAuth &8» &r'
+  prefix: '&6Auth &8» &r'
   register: '&eNie masz konta. Zarejestruj się komendą: &6/register <hasło>'
   login: '&eZaloguj się komendą: &6/login <hasło>'
   registered: '&aZarejestrowano i zalogowano.'
@@ -18,5 +19,13 @@ messages:
   premium: '&aKonto premium wykryte. Zalogowano automatycznie.'
   bypassed: '&aBypass logowania aktywny. Zalogowano.'
   changed: '&aZmieniono hasło.'
-  force-on: '&aWłączono wymaganie hasła dla &e%player%&a.'
-  force-off: '&cWyłączono wymaganie hasła dla &e%player%&c.'
+  premium-on: '&aWłączono automatyczne logowanie premium.'
+  premium-off: '&cWyłączono automatyczne logowanie premium. Premium też musi się logować.'
+  premium-status: '&eAutomatyczne logowanie premium: &f%status%'
+titles:
+  logged-title: '&a&lZALOGOWANO'
+  logged-subtitle: '&7Miłej gry na &6MSURVIVAL'
+  registered-title: '&a&lZAREJESTROWANO I ZALOGOWANO'
+  registered-subtitle: '&7Twoje konto zostało zabezpieczone'
+  premium-title: '&a&lZALOGOWANO'
+  premium-subtitle: '&7Konto premium wykryte'

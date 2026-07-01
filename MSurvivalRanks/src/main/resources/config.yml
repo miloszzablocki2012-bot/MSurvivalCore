@@ -3,49 +3,41 @@ sidebar:
   update-ticks: 60
   title: '&6&l✦ MSURVIVAL ✦'
   lines:
-    - '&8&m━━━━━━━━━━━━━━━━'
-    - '&6♛ &e&lPROFIL'
-    - '&8» &fNick: &e%player%'
-    - '&8» &fRanga: %rank%'
-    - '&8» &fKlan: &b%clan%'
-    - '&8» &fWygasa: &e%expires%'
+    - '&e&lPROFIL'
+    - '&7Nick: &f%player%'
+    - '&7Ranga: %rank%'
+    - '&7Klan: &b%clan%'
+    - '&7Wygasa: &e%expires%'
     - ''
-    - '&a$ &2&lEKONOMIA'
-    - '&8» &fPortfel: &a%money%$'
-    - '&8» &fBank: &e%bank%$'
+    - '&a&lEKONOMIA'
+    - '&7Portfel: &a%money%$'
+    - '&7Bank: &e%bank%$'
     - ''
-    - '&c⚔ &4&lSTATYSTYKI'
-    - '&8» &fZabójstwa: &c%kills%'
-    - '&8» &fŚmierci: &c%deaths%'
-    - '&8» &fBloki: &a%blocks%'
-    - '&8» &fCzas gry: &b%playtime%'
+    - '&c&lSTATYSTYKI'
+    - '&7Zabójstwa: &c%kills%'
+    - '&7Śmierci: &c%deaths%'
+    - '&7Bloki: &a%blocks%'
+    - '&7Czas: &b%playtime%'
     - ''
-    - '&6🏪 &e&lRYNEK'
-    - '&8» &fRynek: &e/rynek'
-    - '&8» &fAukcje: &6/ah'
-    - '&8» &fWystaw: &a/sellhand'
+    - '&6&lRYNEK'
+    - '&7Rynek: &e/rynek'
+    - '&7Gracze: &6/ah'
     - ''
-    - '&d🎁 &5&lNAGRODY'
-    - '&8» &fDaily: &e/daily'
-    - '&8» &fWeekly: &6/weeklykey'
+    - '&b&lSERWER'
+    - '&7Online: &a%online%'
+    - '&7Ping: &a%ping%ms'
     - ''
-    - '&b⚡ &3&lSERWER'
-    - '&8» &fOnline: &a%online%'
-    - '&8» &fPing: &a%ping%ms'
-    - ''
-    - '&6🌐 &e&lIP SERWERA'
-    - '&8» &fmsurvival.6mc.pl'
-    - '&8&m━━━━━━━━━━━━━━━━'
+    - '&fmsurvival.6mc.pl'
 
 ranks:
-  wlasciciel: {display: '&6&lWŁAŚCICIEL', prefix: '&6&l👑 WŁAŚCICIEL &6'}
-  admin: {display: '&c&lADMIN', prefix: '&c&l🛡 ADMIN &c'}
-  mod: {display: '&2&lMODERATOR', prefix: '&2&l🔨 MOD &2'}
-  helper: {display: '&a&lPOMOCNIK', prefix: '&a&l💬 POMOCNIK &a'}
-  youtuber: {display: '&c&lYOUTUBER', prefix: '&c&l🎥 YOUTUBE &c'}
-  sponsor: {display: '&b&lSPONSOR', prefix: '&b&l💎 SPONSOR &b'}
-  vipplus: {display: '&e&lVIP+', prefix: '&e&l⭐ VIP+ &e'}
-  vip: {display: '&e&lVIP', prefix: '&e&l✦ VIP &e'}
+  wlasciciel: {display: '&6&lWŁAŚCICIEL', prefix: '&6&lWŁAŚCICIEL &6'}
+  admin: {display: '&c&lADMIN', prefix: '&c&lADMIN &c'}
+  mod: {display: '&2&lMODERATOR', prefix: '&2&lMOD &2'}
+  helper: {display: '&a&lPOMOCNIK', prefix: '&a&lPOMOCNIK &a'}
+  youtuber: {display: '&c&lYOUTUBER', prefix: '&c&lYOUTUBE &c'}
+  sponsor: {display: '&b&lSPONSOR', prefix: '&b&lSPONSOR &b'}
+  vipplus: {display: '&e&lVIP+', prefix: '&e&lVIP+ &e'}
+  vip: {display: '&e&lVIP', prefix: '&e&lVIP &e'}
   gracz: {display: '&7GRACZ', prefix: '&7'}
 
 aliases:
@@ -58,7 +50,7 @@ aliases:
   moderator: 'mod'
 
 messages:
-  prefix: '&6&lMSurvival &8» &r'
+  prefix: '&6MSurvival &8» &r'
   no-permission: '&cNie masz uprawnień.'
   reload: '&aPrzeładowano sidebar i rangi.'
   rank-not-found: '&cNie ma takiej rangi.'

@@ -1,7 +1,7 @@
 name: MSurvivalRanks
-version: 6.0
+version: 6.1
 main: pl.msurvival.ranks.MSurvivalRanks
-api-version: 6.0
+api-version: 6.1
 author: Milekz
 commands:
   rank:

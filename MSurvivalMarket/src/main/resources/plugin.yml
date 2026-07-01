@@ -1,7 +1,7 @@
 name: MSurvivalMarket
-version: 5.8
+version: 6.1
 main: pl.msurvival.market.MSurvivalMarket
-api-version: 5.8
+api-version: 6.1
 author: Milekz
 commands:
   rynek:

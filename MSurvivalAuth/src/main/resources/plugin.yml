@@ -1,7 +1,7 @@
 name: MSurvivalAuth
-version: 6.0
+version: 6.1
 main: pl.msurvival.auth.MSurvivalAuth
-api-version: 6.0
+api-version: '1.21'
 author: Milekz
 commands:
   register:
@@ -16,6 +16,8 @@ commands:
     usage: /authbypass <add|remove|list> [gracz]
   authforce:
     usage: /authforce <add|remove|list> [gracz]
+  authpremium:
+    usage: /authpremium <on|off|status>
 permissions:
   msurvival.auth.admin:
     default: op

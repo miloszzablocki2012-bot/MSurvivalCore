@@ -15,13 +15,13 @@ sell:
   NETHER_STAR: 250000
 
 keys:
-  klasyczny: 25000
-  zelazny: 75000
-  diamentowy: 180000
-  epic: 400000
-  legendarny: 850000
+  klasyczny: 5000
+  zelazny: 15000
+  diamentowy: 75000
+  epic: 250000
+  legendarny: 750000
   mityczny: 1500000
-  boski: 3000000
+  boski: 5000000
 
 server-shop:
   OAK_LOG: 500
