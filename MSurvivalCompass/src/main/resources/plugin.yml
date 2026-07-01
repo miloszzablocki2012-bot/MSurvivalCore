@@ -1,7 +1,7 @@
 name: MSurvivalCompass
-version: 5.1
+version: 5.2
 main: pl.msurvival.compass.MSurvivalCompass
-api-version: 5.1
+api-version: '1.21'
 author: Milekz
 commands:
   lobby:
@@ -13,6 +13,10 @@ commands:
     usage: /menu
   compassreload:
     usage: /compassreload
+  compassbypass:
+    usage: /compassbypass <on|off>
 permissions:
   msurvival.compass.admin:
+    default: op
+  msurvival.compass.bypass:
     default: op

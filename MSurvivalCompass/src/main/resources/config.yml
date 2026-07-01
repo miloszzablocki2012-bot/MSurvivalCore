@@ -1,26 +1,28 @@
 worlds:
   lobby: 'Lobby'
   survival: 'world'
-
 compass:
   slot: 4
-  name: '&6&lMSurvival Menu'
+  material: COMPASS
+  name: '&6&l✦ &e&lMSURVIVAL MENU &6&l✦'
   lore:
-    - '&8━━━━━━━━━━━━━━━━'
+    - '&8━━━━━━━━━━━━━━━━━━━━'
     - '&7Kliknij, aby otworzyć menu.'
-    - '&6&lMSURVIVAL'
-    - '&8━━━━━━━━━━━━━━━━'
-
+    - '&eSurvival &8• &6Klucze &8• &bE-Kity &8• &aRynek'
+    - '&8━━━━━━━━━━━━━━━━━━━━'
+    - '&6&lmsurvival.6mc.pl'
+  remove-normal-compasses-in-lobby: true
 menu:
-  title: '&6&lMSURVIVAL MENU'
+  title: '&6&l✦ MSURVIVAL MENU ✦'
   survival-name: '&a&lSurvival'
   keys-name: '&6&lKlucze'
   kits-name: '&b&lE-Kity'
   market-name: '&e&lRynek'
-
 messages:
   prefix: '&6&lMSurvival &8» &r'
   lobby: '&aPrzeniesiono do Lobby.'
   survival: '&aPrzeniesiono na Survival.'
   no-world: '&cNie znaleziono świata.'
   reload: '&aPrzeładowano konfigurację.'
+  bypass-on: '&aBypass kompasu włączony. Kompas nie będzie Ci nadawany.'
+  bypass-off: '&cBypass kompasu wyłączony. Kompas znowu będzie nadawany w Lobby.'
