@@ -15,6 +15,14 @@ import java.util.*;
 public final class MSurvivalRanks extends JavaPlugin implements Listener {
     private File dataFile;
     private YamlConfiguration data;
+    private boolean saveQueued;
+    private final Map<String, Double> moneyCache = new HashMap<>();
+    private final Map<String, Double> bankCache = new HashMap<>();
+    private final Map<String, String> clanCache = new HashMap<>();
+    private final Map<String, Long> killsCache = new HashMap<>();
+    private final Map<String, Long> deathsCache = new HashMap<>();
+    private final Map<String, Long> blocksCache = new HashMap<>();
+    private final Map<String, Long> playtimeCache = new HashMap<>();
 
     @Override public void onEnable() {
         saveDefaultConfig();
@@ -22,9 +30,11 @@ public final class MSurvivalRanks extends JavaPlugin implements Listener {
         try { getDataFolder().mkdirs(); if (!dataFile.exists()) dataFile.createNewFile(); } catch (Exception ignored) {}
         data = YamlConfiguration.loadConfiguration(dataFile);
         Bukkit.getPluginManager().registerEvents(this, this);
+        refreshExternalCache();
+        Bukkit.getScheduler().runTaskTimer(this, this::refreshExternalCache, 20L, 200L);
         Bukkit.getScheduler().runTaskTimer(this, () -> Bukkit.getOnlinePlayers().forEach(this::apply), 20L, Math.max(20L, getConfig().getLong("sidebar.update-ticks", 60L)));
     }
-    @Override public void onDisable() { saveData(); }
+    @Override public void onDisable() { try { data.save(dataFile); } catch (Exception ignored) {} }
 
     @Override public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         String cmd = command.getName().toLowerCase(Locale.ROOT);
@@ -141,37 +151,77 @@ public final class MSurvivalRanks extends JavaPlugin implements Listener {
         try { long v = Long.parseLong(text.substring(0, text.length() - 1)); char u = Character.toLowerCase(text.charAt(text.length() - 1)); if (u == 'd') return v*86400000L; if (u == 'h') return v*3600000L; if (u == 'm') return v*60000L; } catch (Exception ignored) {}
         return 0L;
     }
-    private String money(String player) {
-        File f = new File(getDataFolder().getParentFile(), "MSurvivalMarket/balances.yml");
-        if (!f.exists()) return "0";
-        return format(YamlConfiguration.loadConfiguration(f).getDouble("players." + player.toLowerCase(Locale.ROOT), 0D));
+    private void refreshExternalCache() {
+        moneyCache.clear(); bankCache.clear(); clanCache.clear();
+        killsCache.clear(); deathsCache.clear(); blocksCache.clear(); playtimeCache.clear();
+        loadMoneyCache(new File(getDataFolder().getParentFile(), "MSurvivalMarket/balances.yml"));
+        YamlConfiguration economy = loadYaml(new File(getDataFolder().getParentFile(), "MSurvivalEconomyPlus/data.yml"));
+        if (economy != null && economy.isConfigurationSection("players")) {
+            for (String player : economy.getConfigurationSection("players").getKeys(false)) {
+                String base = "players." + player;
+                bankCache.put(player, economy.getDouble(base + ".bank.balance", 0D));
+                killsCache.put(player, economy.getLong(base + ".stats.kills", 0L));
+                deathsCache.put(player, economy.getLong(base + ".stats.deaths", 0L));
+                blocksCache.put(player, economy.getLong(base + ".stats.blocks", 0L));
+                playtimeCache.put(player, economy.getLong(base + ".stats.playtime_minutes", 0L));
+            }
+        }
+        YamlConfiguration clans = loadYaml(new File(getDataFolder().getParentFile(), "MSurvivalClans/clans.yml"));
+        if (clans != null && clans.isConfigurationSection("players")) {
+            for (String player : clans.getConfigurationSection("players").getKeys(false)) {
+                clanCache.put(player, clans.getString("players." + player + ".clan", "Brak"));
+            }
+        }
     }
-    private String bank(String player) {
-        File f = new File(getDataFolder().getParentFile(), "MSurvivalEconomyPlus/data.yml");
-        if (!f.exists()) return "0";
-        return format(YamlConfiguration.loadConfiguration(f).getDouble("players." + player.toLowerCase(Locale.ROOT) + ".bank.balance", 0D));
+
+    private void loadMoneyCache(File file) {
+        YamlConfiguration yaml = loadYaml(file);
+        if (yaml == null || !yaml.isConfigurationSection("players")) return;
+        for (String player : yaml.getConfigurationSection("players").getKeys(false)) {
+            moneyCache.put(player, yaml.getDouble("players." + player, 0D));
+        }
     }
+
+    private YamlConfiguration loadYaml(File file) {
+        if (!file.exists()) return null;
+        return YamlConfiguration.loadConfiguration(file);
+    }
+
+    private String money(String player) { return format(moneyCache.getOrDefault(player.toLowerCase(Locale.ROOT), 0D)); }
+    private String bank(String player) { return format(bankCache.getOrDefault(player.toLowerCase(Locale.ROOT), 0D)); }
     private String stat(String player, String stat) {
-        File f = new File(getDataFolder().getParentFile(), "MSurvivalEconomyPlus/data.yml");
-        if (!f.exists()) return "0";
-        return String.valueOf(YamlConfiguration.loadConfiguration(f).getLong("players." + player.toLowerCase(Locale.ROOT) + ".stats." + stat, 0L));
+        String key = player.toLowerCase(Locale.ROOT);
+        return Long.toString(switch (stat) {
+            case "kills" -> killsCache.getOrDefault(key, 0L);
+            case "deaths" -> deathsCache.getOrDefault(key, 0L);
+            case "blocks" -> blocksCache.getOrDefault(key, 0L);
+            default -> 0L;
+        });
     }
     private String playtime(String player) {
-        File f = new File(getDataFolder().getParentFile(), "MSurvivalEconomyPlus/data.yml");
-        if (!f.exists()) return "0h";
-        long min = YamlConfiguration.loadConfiguration(f).getLong("players." + player.toLowerCase(Locale.ROOT) + ".stats.playtime_minutes", 0L);
+        long min = playtimeCache.getOrDefault(player.toLowerCase(Locale.ROOT), 0L);
         return (min / 60L) + "h " + (min % 60L) + "m";
     }
-    private String clan(String player) {
-        File f = new File(getDataFolder().getParentFile(), "MSurvivalClans/clans.yml");
-        if (!f.exists()) return "Brak";
-        return YamlConfiguration.loadConfiguration(f).getString("players." + player.toLowerCase(Locale.ROOT) + ".clan", "Brak");
-    }
+    private String clan(String player) { return clanCache.getOrDefault(player.toLowerCase(Locale.ROOT), "Brak"); }
     private String display(String rank) { return color(getConfig().getString("ranks." + rank + ".display", rank)); }
     private String prefix(String rank) { return getConfig().getString("ranks." + rank + ".prefix", "&7"); }
     private String format(double v) { if (v == (long)v) return String.valueOf((long)v); return String.format(Locale.US, "%.2f", v); }
     private boolean admin(CommandSender s) { if (!s.hasPermission("msurvival.ranks.admin")) { s.sendMessage(msg("no-permission")); return false; } return true; }
-    private void saveData() { try { data.save(dataFile); } catch (Exception ignored) {} }
+    private void saveData() {
+        if (!isEnabled()) {
+            try { data.save(dataFile); } catch (Exception ignored) {}
+            return;
+        }
+        if (saveQueued) return;
+        saveQueued = true;
+        Bukkit.getScheduler().runTaskLater(this, () -> {
+            saveQueued = false;
+            String snapshot = data.saveToString();
+            Bukkit.getScheduler().runTaskAsynchronously(this, () -> {
+                try { java.nio.file.Files.writeString(dataFile.toPath(), snapshot, java.nio.charset.StandardCharsets.UTF_8); } catch (Exception ignored) {}
+            });
+        }, 20L);
+    }
     private String msg(String key) { return color(getConfig().getString("messages.prefix", "") + getConfig().getString("messages." + key, "")); }
     private String color(String text) { return ChatColor.translateAlternateColorCodes('&', text == null ? "" : text); }
 }

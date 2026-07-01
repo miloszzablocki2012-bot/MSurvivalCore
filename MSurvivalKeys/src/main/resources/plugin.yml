@@ -1,7 +1,7 @@
 name: MSurvivalKeys
-version: 6.1
+version: 6.3
 main: pl.msurvival.keys.MSurvivalKeys
-api-version: 6.1
+api-version: '1.21'
 author: Milekz
 commands:
   keysmenu:

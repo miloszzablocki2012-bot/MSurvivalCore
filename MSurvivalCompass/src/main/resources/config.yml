@@ -20,7 +20,7 @@ compass:
     - '&eSurvival &8• &6Klucze &8• &bE-Kity &8• &aRynek'
     - '&8━━━━━━━━━━━━━━━━━━━━'
     - '&6&lmsurvival.6mc.pl'
-  remove-normal-compasses-in-lobby: true
+  remove-normal-compasses-in-lobby: false
 
 menu:
   title: '&6&l✦ MSURVIVAL MENU ✦'

@@ -14,6 +14,7 @@ import java.util.*;
 public final class MSurvivalCore extends JavaPlugin implements Listener {
     private File dataFile;
     private YamlConfiguration data;
+    private boolean saveQueued;
     private final Map<UUID, Location> back = new HashMap<>();
     private final Map<UUID, UUID> tpaRequests = new HashMap<>();
     private final Random random = new Random();
@@ -36,7 +37,7 @@ public final class MSurvivalCore extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-        saveData();
+        try { data.save(dataFile); } catch (Exception ignored) {}
     }
 
     @EventHandler
@@ -133,6 +134,10 @@ public final class MSurvivalCore extends JavaPlugin implements Listener {
                 if (requesterId == null) p.sendMessage(msg("tpa-none"));
                 else p.sendMessage(msg("tpa-denied"));
             }
+            case "tpacancel" -> {
+                boolean removed = tpaRequests.values().removeIf(id -> id.equals(p.getUniqueId()));
+                p.sendMessage(removed ? msg("tpa-cancelled") : msg("tpa-none"));
+            }
             case "rtp" -> {
                 rtp(p);
             }
@@ -151,12 +156,30 @@ public final class MSurvivalCore extends JavaPlugin implements Listener {
 
     private void rtp(Player p) {
         World world = p.getWorld();
-        int radius = getConfig().getInt("settings.rtp-radius", 2500);
-        int x = random.nextInt(radius * 2 + 1) - radius;
-        int z = random.nextInt(radius * 2 + 1) - radius;
-        int y = world.getHighestBlockYAt(x, z) + 1;
-        p.teleport(new Location(world, x + 0.5, y, z + 0.5));
-        p.sendMessage(msg("teleported"));
+        int radius = Math.max(100, getConfig().getInt("settings.rtp-radius", 2500));
+        for (int attempt = 0; attempt < 80; attempt++) {
+            int x = random.nextInt(radius * 2 + 1) - radius;
+            int z = random.nextInt(radius * 2 + 1) - radius;
+            int y = world.getHighestBlockYAt(x, z);
+            Location target = new Location(world, x + 0.5, y + 1, z + 0.5);
+            if (!safeRtpLocation(target)) continue;
+            p.teleport(target);
+            p.sendMessage(msg("teleported"));
+            return;
+        }
+        p.sendMessage(msg("rtp-failed"));
+    }
+
+    private boolean safeRtpLocation(Location target) {
+        if (target.getWorld() == null) return false;
+        Material ground = target.clone().subtract(0, 1, 0).getBlock().getType();
+        Material feet = target.getBlock().getType();
+        Material head = target.clone().add(0, 1, 0).getBlock().getType();
+        if (!feet.isAir() || !head.isAir()) return false;
+        if (!ground.isSolid()) return false;
+        String name = ground.name();
+        if (name.contains("LEAVES") || name.contains("WATER") || name.contains("LAVA")) return false;
+        return ground != Material.MAGMA_BLOCK && ground != Material.CACTUS && ground != Material.CAMPFIRE && ground != Material.SOUL_CAMPFIRE;
     }
 
     private Set<String> homes(Player p) {
@@ -201,11 +224,19 @@ public final class MSurvivalCore extends JavaPlugin implements Listener {
     }
 
     private void saveData() {
-        try {
-            data.save(dataFile);
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (!isEnabled()) {
+            try { data.save(dataFile); } catch (Exception ignored) {}
+            return;
         }
+        if (saveQueued) return;
+        saveQueued = true;
+        Bukkit.getScheduler().runTaskLater(this, () -> {
+            saveQueued = false;
+            String snapshot = data.saveToString();
+            Bukkit.getScheduler().runTaskAsynchronously(this, () -> {
+                try { java.nio.file.Files.writeString(dataFile.toPath(), snapshot, java.nio.charset.StandardCharsets.UTF_8); } catch (Exception ignored) {}
+            });
+        }, 20L);
     }
 
     private String msg(String key) {

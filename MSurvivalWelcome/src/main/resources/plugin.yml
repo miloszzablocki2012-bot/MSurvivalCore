@@ -1,7 +1,7 @@
 name: MSurvivalWelcome
-version: 6.1
+version: 6.3
 main: pl.msurvival.welcome.MSurvivalWelcome
-api-version: 6.1
+api-version: '1.21'
 author: Milekz
 commands:
   pomoc:
@@ -14,6 +14,9 @@ commands:
     usage: /donate
   welcome:
     usage: /welcome reload
+  skipwelcome:
+    usage: /skipwelcome
+    aliases: [skipintro]
 permissions:
   msurvival.welcome.admin:
     default: op

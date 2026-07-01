@@ -1,7 +1,7 @@
 name: MSurvivalPro
-version: 6.0
+version: 6.3
 main: pl.msurvival.pro.MSurvivalPro
-api-version: 6.0
+api-version: '1.21'
 author: Milekz
 commands:
   mspro:
@@ -18,12 +18,6 @@ commands:
     usage: /delwarp <nazwa>
   warpy:
     usage: /warpy
-  regulamin:
-    usage: /regulamin
-  media:
-    usage: /media
-  donate:
-    usage: /donate
   event:
     usage: /event
   alert:

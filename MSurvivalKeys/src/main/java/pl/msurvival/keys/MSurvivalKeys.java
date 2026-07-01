@@ -19,6 +19,7 @@ import java.util.*;
 public final class MSurvivalKeys extends JavaPlugin implements Listener {
     private File dataFile;
     private YamlConfiguration data;
+    private boolean saveQueued;
     private NamespacedKey keyType;
     private NamespacedKey actionKey;
     private final Random random = new Random();
@@ -33,7 +34,7 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
         Bukkit.getPluginManager().registerEvents(this, this);
     }
 
-    @Override public void onDisable() { saveData(); }
+    @Override public void onDisable() { try { data.save(dataFile); } catch (Exception ignored) {} }
 
     @Override public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         String cmd = command.getName().toLowerCase(Locale.ROOT);
@@ -262,7 +263,21 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
     private String norm(String s) { return s==null?"":s.toLowerCase(Locale.ROOT); }
     private int parse(String s) { try { return Math.max(1, Integer.parseInt(s)); } catch(Exception e) { return 1; } }
     private String time(long ms) { long sec=Math.max(1, ms/1000); long d=sec/86400; sec%=86400; long h=sec/3600; sec%=3600; long m=sec/60; long s=sec%60; return d+" dni, "+h+" godzin, "+m+" minut, "+s+" sekund"; }
-    private void saveData() { try { data.save(dataFile); } catch(Exception ignored) {} }
+    private void saveData() {
+        if (!isEnabled()) {
+            try { data.save(dataFile); } catch (Exception ignored) {}
+            return;
+        }
+        if (saveQueued) return;
+        saveQueued = true;
+        Bukkit.getScheduler().runTaskLater(this, () -> {
+            saveQueued = false;
+            String snapshot = data.saveToString();
+            Bukkit.getScheduler().runTaskAsynchronously(this, () -> {
+                try { java.nio.file.Files.writeString(dataFile.toPath(), snapshot, java.nio.charset.StandardCharsets.UTF_8); } catch (Exception ignored) {}
+            });
+        }, 20L);
+    }
     private String msg(String k) { return color(getConfig().getString("messages.prefix","")+getConfig().getString("messages."+k,"")); }
     private String color(String s) { return ChatColor.translateAlternateColorCodes('&', s==null?"":s); }
 }

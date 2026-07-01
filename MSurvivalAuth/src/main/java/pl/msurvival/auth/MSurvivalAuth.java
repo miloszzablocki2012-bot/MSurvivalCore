@@ -11,11 +11,15 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.security.MessageDigest;
+import java.security.SecureRandom;
 import java.util.*;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.PBEKeySpec;
 
 public final class MSurvivalAuth extends JavaPlugin implements Listener {
     private File file;
     private YamlConfiguration data;
+    private boolean saveQueued;
     private final Set<UUID> logged = new HashSet<>();
 
     @Override public void onEnable() {
@@ -26,7 +30,7 @@ public final class MSurvivalAuth extends JavaPlugin implements Listener {
         Bukkit.getPluginManager().registerEvents(this, this);
     }
 
-    @Override public void onDisable() { save(); }
+    @Override public void onDisable() { try { data.save(file); } catch (Exception ignored) {} }
 
     @Override public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         String cmd = command.getName().toLowerCase(Locale.ROOT);
@@ -99,7 +103,12 @@ public final class MSurvivalAuth extends JavaPlugin implements Listener {
         if (cmd.equals("login")) {
             if (!registered(p)) { p.sendMessage(msg("not-registered")); return true; }
             if (args.length < 1) { p.sendMessage(msg("login")); return true; }
-            if (hash(args[0]).equals(data.getString(path(p) + ".password", ""))) {
+            String storedPassword = data.getString(path(p) + ".password", "");
+            if (verifyPassword(args[0], storedPassword)) {
+                if (!storedPassword.startsWith("pbkdf2$")) {
+                    data.set(path(p) + ".password", hash(args[0]));
+                    save();
+                }
                 logged.add(p.getUniqueId());
                 p.sendMessage(msg("logged"));
                 title(p, "titles.logged-title", "titles.logged-subtitle");
@@ -109,7 +118,7 @@ public final class MSurvivalAuth extends JavaPlugin implements Listener {
 
         if (cmd.equals("changepassword")) {
             if (!registered(p) || args.length < 2) return true;
-            if (!hash(args[0]).equals(data.getString(path(p) + ".password", ""))) { p.sendMessage(msg("wrong")); return true; }
+            if (!verifyPassword(args[0], data.getString(path(p) + ".password", ""))) { p.sendMessage(msg("wrong")); return true; }
             data.set(path(p) + ".password", hash(args[1]));
             save();
             p.sendMessage(msg("changed"));
@@ -163,10 +172,60 @@ public final class MSurvivalAuth extends JavaPlugin implements Listener {
         p.sendTitle(color(getConfig().getString(titlePath, "")), color(getConfig().getString(subtitlePath, "")), 10, 50, 15);
     }
 
-    private String hash(String s) {
-        try { MessageDigest md = MessageDigest.getInstance("SHA-256"); byte[] b = md.digest(s.getBytes()); StringBuilder sb = new StringBuilder(); for(byte x:b) sb.append(String.format("%02x",x)); return sb.toString(); } catch(Exception e) { return s; }
+    private boolean verifyPassword(String password, String stored) {
+        if (stored == null || stored.isBlank()) return false;
+        if (!stored.startsWith("pbkdf2$")) {
+            // Kompatybilność ze starymi kontami SHA-256. Po poprawnym logowaniu hasło zostanie podniesione przy zmianie hasła.
+            return legacySha256(password).equals(stored);
+        }
+        try {
+            String[] parts = stored.split("\\$", 3);
+            byte[] salt = Base64.getDecoder().decode(parts[1]);
+            byte[] expected = Base64.getDecoder().decode(parts[2]);
+            byte[] actual = pbkdf2(password.toCharArray(), salt);
+            return MessageDigest.isEqual(expected, actual);
+        } catch (Exception ignored) {
+            return false;
+        }
     }
-    private void save() { try { data.save(file); } catch(Exception ignored) {} }
+
+    private String hash(String password) {
+        try {
+            byte[] salt = new byte[16];
+            new SecureRandom().nextBytes(salt);
+            return "pbkdf2$" + Base64.getEncoder().encodeToString(salt) + "$" + Base64.getEncoder().encodeToString(pbkdf2(password.toCharArray(), salt));
+        } catch (Exception ignored) {
+            return legacySha256(password);
+        }
+    }
+
+    private byte[] pbkdf2(char[] password, byte[] salt) throws Exception {
+        PBEKeySpec spec = new PBEKeySpec(password, salt, 120_000, 256);
+        try {
+            return SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256").generateSecret(spec).getEncoded();
+        } finally {
+            spec.clearPassword();
+        }
+    }
+
+    private String legacySha256(String s) {
+        try { MessageDigest md = MessageDigest.getInstance("SHA-256"); byte[] b = md.digest(s.getBytes(java.nio.charset.StandardCharsets.UTF_8)); StringBuilder sb = new StringBuilder(); for(byte x:b) sb.append(String.format("%02x",x)); return sb.toString(); } catch(Exception e) { return s; }
+    }
+    private void save() {
+        if (!isEnabled()) {
+            try { data.save(file); } catch (Exception ignored) {}
+            return;
+        }
+        if (saveQueued) return;
+        saveQueued = true;
+        Bukkit.getScheduler().runTaskLater(this, () -> {
+            saveQueued = false;
+            String snapshot = data.saveToString();
+            Bukkit.getScheduler().runTaskAsynchronously(this, () -> {
+                try { java.nio.file.Files.writeString(file.toPath(), snapshot, java.nio.charset.StandardCharsets.UTF_8); } catch (Exception ignored) {}
+            });
+        }, 20L);
+    }
     private String msg(String k) { return color(getConfig().getString("messages.prefix","")+getConfig().getString("messages."+k,"")); }
     private String color(String s) { return ChatColor.translateAlternateColorCodes('&', s==null?"":s); }
 }

@@ -19,6 +19,7 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
     private NamespacedKey compassKey;
     private File dataFile;
     private YamlConfiguration data;
+    private boolean saveQueued;
 
     @Override
     public void onEnable() {
@@ -43,7 +44,7 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-        saveData();
+        try { data.save(dataFile); } catch (Exception ignored) {}
     }
 
     @Override
@@ -265,7 +266,7 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
         ItemStack compass = compass();
         int slot = getConfig().getInt("compass.slot", 4);
 
-        if (slot >= 0 && slot < player.getInventory().getSize()) {
+        if (slot >= 0 && slot < 36) {
             ItemStack current = player.getInventory().getItem(slot);
             if (current == null || current.getType() == Material.AIR) {
                 player.getInventory().setItem(slot, compass);
@@ -274,11 +275,18 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
         }
 
         int empty = player.getInventory().firstEmpty();
-        if (empty != -1) player.getInventory().setItem(empty, compass);
+        if (empty != -1) {
+            player.getInventory().setItem(empty, compass);
+            return;
+        }
+
+        if (player.getInventory().getItemInOffHand().getType() == Material.AIR) {
+            player.getInventory().setItemInOffHand(compass);
+        }
     }
 
     private void removeAllCompasses(Player player) {
-        boolean removeNormal = getConfig().getBoolean("compass.remove-normal-compasses-in-lobby", true);
+        boolean removeNormal = getConfig().getBoolean("compass.remove-normal-compasses-in-lobby", false);
         ItemStack[] contents = player.getInventory().getContents();
 
         for (int i = 0; i < contents.length; i++) {
@@ -322,7 +330,19 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
     }
 
     private void saveData() {
-        try { data.save(dataFile); } catch (Exception ignored) {}
+        if (!isEnabled()) {
+            try { data.save(dataFile); } catch (Exception ignored) {}
+            return;
+        }
+        if (saveQueued) return;
+        saveQueued = true;
+        Bukkit.getScheduler().runTaskLater(this, () -> {
+            saveQueued = false;
+            String snapshot = data.saveToString();
+            Bukkit.getScheduler().runTaskAsynchronously(this, () -> {
+                try { java.nio.file.Files.writeString(dataFile.toPath(), snapshot, java.nio.charset.StandardCharsets.UTF_8); } catch (Exception ignored) {}
+            });
+        }, 20L);
     }
 
     private String msg(String key) {

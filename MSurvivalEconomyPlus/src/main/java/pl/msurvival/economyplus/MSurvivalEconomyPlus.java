@@ -22,6 +22,7 @@ import java.util.*;
 public final class MSurvivalEconomyPlus extends JavaPlugin implements Listener {
     private File dataFile;
     private YamlConfiguration data;
+    private boolean saveQueued;
     private NamespacedKey actionKey;
     private final Random random = new Random();
 
@@ -37,7 +38,7 @@ public final class MSurvivalEconomyPlus extends JavaPlugin implements Listener {
         Bukkit.getScheduler().runTaskTimer(this, this::expireOffers, 20L * 60L, 20L * 60L * 10L);
     }
 
-    @Override public void onDisable() { save(); }
+    @Override public void onDisable() { try { data.save(dataFile); } catch (Exception ignored) {} }
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -568,7 +569,21 @@ public final class MSurvivalEconomyPlus extends JavaPlugin implements Listener {
         return item.getItemMeta().getPersistentDataContainer().get(actionKey, PersistentDataType.STRING);
     }
 
-    private void save() { try { data.save(dataFile); } catch (Exception ignored) {} }
+    private void save() {
+        if (!isEnabled()) {
+            try { data.save(dataFile); } catch (Exception ignored) {}
+            return;
+        }
+        if (saveQueued) return;
+        saveQueued = true;
+        Bukkit.getScheduler().runTaskLater(this, () -> {
+            saveQueued = false;
+            String snapshot = data.saveToString();
+            Bukkit.getScheduler().runTaskAsynchronously(this, () -> {
+                try { java.nio.file.Files.writeString(dataFile.toPath(), snapshot, java.nio.charset.StandardCharsets.UTF_8); } catch (Exception ignored) {}
+            });
+        }, 20L);
+    }
     private String msg(String key) { return color(getConfig().getString("messages.prefix", "") + getConfig().getString("messages." + key, "")); }
     private String color(String s) { return ChatColor.translateAlternateColorCodes('&', s == null ? "" : s); }
 }

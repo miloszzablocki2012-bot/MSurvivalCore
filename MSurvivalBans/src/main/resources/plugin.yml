@@ -1,7 +1,7 @@
 name: MSurvivalBans
-version: 5.8
+version: 6.3
 main: pl.msurvival.bans.MSurvivalBans
-api-version: 5.8
+api-version: '1.21'
 author: Milekz
 commands:
   msban: {usage: /msban <gracz> <powod>}

@@ -1,0 +1,22 @@
+{
+  "version": "5.8",
+  "server": "MSURVIVAL",
+  "ip": "msurvival.6mc.pl",
+  "systems": [
+    "Core commands",
+    "Compass menu",
+    "Ranks sidebar",
+    "Market server shop",
+    "Player market",
+    "Bank",
+    "Daily rewards",
+    "Weekly key",
+    "Achievements",
+    "Stats",
+    "Friends",
+    "Teams",
+    "BetterRTP",
+    "Warps",
+    "Rules/media/donate menus"
+  ]
+}

@@ -13,6 +13,8 @@ messages:
   home-deleted: '&aUsunięto home: &e%home%&a.'
   homes: '&aTwoje home: &e%homes%'
   spawn-set: '&aUstawiono spawn.'
+  rtp-failed: '&cNie udało się znaleźć bezpiecznego miejsca. Spróbuj ponownie.'
+  tpa-cancelled: '&aAnulowano prośbę TPA.'
   teleported: '&aPrzeteleportowano.'
   back-none: '&cNie masz miejsca powrotu.'
   tpa-sent: '&aWysłano prośbę o teleportację do &e%player%&a.'

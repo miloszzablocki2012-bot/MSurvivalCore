@@ -62,8 +62,13 @@ public final class MSurvivalMarket extends JavaPlugin implements Listener {
             return true;
         }
 
-        if (cmd.equals("kasa")) {
+        if (cmd.equals("kasa") || cmd.equals("bal")) {
             if (sender instanceof Player p) p.sendMessage(msg("balance").replace("%money%", money(balance(p.getName()))));
+            return true;
+        }
+
+        if (cmd.equals("baltop")) {
+            sendBaltop(sender);
             return true;
         }
 
@@ -110,7 +115,7 @@ public final class MSurvivalMarket extends JavaPlugin implements Listener {
             return true;
         }
 
-        if (cmd.equals("moneyadmin") || cmd.equals("kasaadmin")) {
+        if (cmd.equals("moneyadmin") || cmd.equals("kasaadmin") || cmd.equals("adminmoney") || cmd.equals("eco")) {
             if (!sender.hasPermission("msurvival.market.admin")) { sender.sendMessage(msg("no-permission")); return true; }
             if (args.length < 3) {
                 sender.sendMessage(color("&c/moneyadmin <give|take|set> <gracz> <kwota>"));
@@ -344,6 +349,18 @@ public final class MSurvivalMarket extends JavaPlugin implements Listener {
         }
     }
 
+    private void sendBaltop(CommandSender sender) {
+        ConfigurationSection section = balances.getConfigurationSection("players");
+        if (section == null) { sender.sendMessage(prefix() + color("&cBrak danych ekonomii.")); return; }
+        List<String> players = new ArrayList<>(section.getKeys(false));
+        players.sort((a, b) -> Double.compare(balance(b), balance(a)));
+        sender.sendMessage(color("&6&lTOP KASA"));
+        for (int i = 0; i < Math.min(10, players.size()); i++) {
+            String player = players.get(i);
+            sender.sendMessage(color("&e" + (i + 1) + ". &f" + player + " &8» &a" + money(balance(player)) + "$"));
+        }
+    }
+
     private void sellHand(Player p, String[] args) {
         if (args.length < 1) { p.sendMessage(color("&c/sellhand <cena>")); return; }
         if (countOffers(p.getName()) >= getConfig().getInt("settings.max-offers-per-player", 20)) {
@@ -382,7 +399,7 @@ public final class MSurvivalMarket extends JavaPlugin implements Listener {
         double tax = getConfig().getDouble("settings.player-market-tax-percent", 5.0) / 100.0;
         double sellerMoney = price * (1.0 - tax);
         add(seller, sellerMoney);
-        p.getInventory().addItem(item);
+        giveOrDrop(p, item);
         offers.set("offers." + id, null);
         saveOffers();
 
@@ -399,7 +416,7 @@ public final class MSurvivalMarket extends JavaPlugin implements Listener {
         if (!seller.equalsIgnoreCase(p.getName()) && !p.hasPermission("msurvival.market.admin")) return;
 
         ItemStack item = offers.getItemStack("offers." + id + ".item");
-        if (item != null) p.getInventory().addItem(item);
+        if (item != null) giveOrDrop(p, item);
         offers.set("offers." + id, null);
         saveOffers();
         p.sendMessage(msg("offer-cancelled").replace("%id%", id));
@@ -416,10 +433,12 @@ public final class MSurvivalMarket extends JavaPlugin implements Listener {
                 ItemStack item = offers.getItemStack("offers." + id + ".item");
                 Player p = seller == null ? null : Bukkit.getPlayerExact(seller);
                 if (p != null && item != null) {
-                    p.getInventory().addItem(item);
+                    giveOrDrop(p, item);
                     p.sendMessage(color("&eTwoja oferta ID " + id + " wygasła i wróciła do ekwipunku."));
+                    offers.set("offers." + id, null);
+                } else {
+                    offers.set("offers." + id + ".expired", true);
                 }
-                offers.set("offers." + id, null);
             }
         }
         saveOffers();
@@ -433,6 +452,13 @@ public final class MSurvivalMarket extends JavaPlugin implements Listener {
             if (player.equalsIgnoreCase(offers.getString("offers." + id + ".seller", ""))) count++;
         }
         return count;
+    }
+
+    private void giveOrDrop(Player player, ItemStack item) {
+        Map<Integer, ItemStack> leftovers = player.getInventory().addItem(item);
+        for (ItemStack leftover : leftovers.values()) {
+            player.getWorld().dropItemNaturally(player.getLocation(), leftover);
+        }
     }
 
     private boolean takeMoney(Player p, double amount) {

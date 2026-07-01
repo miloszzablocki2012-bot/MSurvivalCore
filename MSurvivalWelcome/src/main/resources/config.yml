@@ -1,41 +1,136 @@
-title:
-  enabled: true
-  title: '&6&lMSURVIVAL'
-  subtitle: '&eWitaj na serwerze!'
-
 settings:
-  message-delay-ticks: 10
+  server-name: 'MSurvival'
+  server-ip: 'msurvival.6mc.pl'
   first-join-broadcast: '&6MSurvival &8» &e%player% &fpierwszy raz dołączył na serwer!'
   join-message: '&8[&a+&8] &e%player% &7dołączył na serwer.'
   quit-message: '&8[&c-&8] &e%player% &7opuścił serwer.'
 
-welcome:
-  - '&6MSurvival &8» &fWitaj &e%player% &fna serwerze &6MSURVIVAL&f.'
-  - '&6MSurvival &8» &fTo survival z ekonomią, rynkiem, kluczami, E-Kitami i klanami.'
-  - '&6MSurvival &8» &fZarabiaj pieniądze przez farmy, kopanie, handel i sprzedaż itemów.'
-  - '&6MSurvival &8» &fGłówny rynek znajdziesz pod komendą &e/rynek&f.'
-  - '&6MSurvival &8» &fSklep graczy i oferty znajdziesz pod komendą &e/ah&f.'
-  - '&6MSurvival &8» &fWystaw item z ręki komendą &e/sellhand <cena>&f.'
-  - '&6MSurvival &8» &fKlucze znajdziesz pod &e/keysmenu&f, a E-Kity pod &e/kits&f.'
-  - '&6MSurvival &8» &fCodzienną nagrodę odbierzesz przez &e/daily&f.'
-  - '&6MSurvival &8» &fCotygodniowy klucz odbierzesz przez &e/weeklykey&f.'
-  - '&6MSurvival &8» &fDom ustawisz przez &e/sethome&f, a wrócisz przez &e/home&f.'
-  - '&6MSurvival &8» &fBezpieczny losowy teleport wykonasz komendą &e/betterrtp&f.'
-  - '&6MSurvival &8» &fRegulamin zobaczysz pod &e/regulamin&f.'
-  - '&6MSurvival &8» &fMedia znajdziesz pod &e/media&f.'
-  - '&6MSurvival &8» &fMiłej gry na &emsurvival.6mc.pl&f!'
+title:
+  enabled: true
+  title: '&6&lWITAJ NA MSURVIVAL'
+  subtitle: '&fNajlepszy Survival Minecraft 1.21.8'
+  fade-in: 15
+  stay: 60
+  fade-out: 20
+
+actionbar:
+  login: '&a✔ Konto zostało pomyślnie zalogowane.'
+
+bossbar:
+  enabled: true
+  title: '&6Miłej gry! Otwórz MENU kompasem znajdującym się w ekwipunku.'
+  color: YELLOW
+  style: SOLID
+  remove-after-ticks: 160
+
+sounds:
+  title:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 0.6
+    pitch: 1.2
+
+sequence:
+  title:
+    delay-ticks: 30       # 1.5 sekundy po wejściu
+  actionbar:
+    delay-ticks: 80       # 4 sekundy
+  bossbar:
+    delay-ticks: 140      # 7 sekund
+  chat:
+    start-delay-ticks: 200 # 10 sekund
+    section-gap-ticks: 120 # co 6 sekund
+    sections:
+      - welcome-main
+      - account-info
+      - commands
+      - economy
+      - keys
+      - community
+      - finish
+
+skip:
+  actionbar: '&aPominięto wiadomości powitalne.'
+  chat: '&6MSurvival &8» &aPominięto intro powitalne. Miłej gry!'
+
+messages:
+  welcome-main:
+    - '&6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+    - ''
+    - '&eWitaj &6%player%&e!'
+    - ''
+    - '&fDziękujemy za dołączenie na serwer &6%server%&f.'
+    - '&fPrzed Tobą survival z ekonomią, rynkiem, kluczami,'
+    - '&fklanami, domami, teleportami i rozwojem własnej bazy.'
+    - ''
+    - '&6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+  account-info:
+    - '&b&lINFORMACJE O KONCIE'
+    - ''
+    - '&a✔ Konto zostało poprawnie zalogowane.'
+    - '&a✔ Dane gracza zostały wczytane.'
+    - '&a✔ Ranga i prefix zostały zsynchronizowane.'
+    - '&a✔ Ekonomia została połączona z serwerem.'
+    - '&a✔ Możesz już normalnie grać.'
+  commands:
+    - '&6&lNAJWAŻNIEJSZE KOMENDY'
+    - ''
+    - '&e/menu &7- menu główne serwera'
+    - '&e/spawn &7- teleport na spawn'
+    - '&e/sethome &7- ustaw dom'
+    - '&e/home &7- wróć do domu'
+    - '&e/tpa &7- teleport do gracza'
+    - '&e/rtp &7- losowa bezpieczna teleportacja'
+    - '&e/ah &7- aukcje graczy'
+    - '&e/sklep &7- sklep serwerowy'
+    - '&e/kasa &7- stan konta'
+    - '&e/clan &7- system klanów'
+  economy:
+    - '&d&lEKONOMIA I RYNEK'
+    - ''
+    - '&fNa serwerze działa rozbudowany system ekonomii.'
+    - '&fZarabiaj przez kopanie, farmienie, handel i sprzedaż itemów.'
+    - '&fSklep serwera znajdziesz pod &e/sklep&f.'
+    - '&fRynek graczy znajdziesz pod &e/ah&f.'
+    - '&fItem z ręki wystawisz komendą &e/sellhand <cena>&f.'
+    - '&fPieniądze możesz trzymać w banku i odbierać odsetki.'
+  keys:
+    - '&6&lSKRZYNKI I NAGRODY'
+    - ''
+    - '&fCodziennie możesz odebrać &aDailyKey&f.'
+    - '&fCo tydzień dostępny jest &eWeeklyKey&f.'
+    - '&fKlucze mają procentowe szanse na nagrody.'
+    - '&fDostępne skrzynki: Klasyczna, Żelazna, Diamentowa,'
+    - '&fEpic, Legendarna, Mityczna i Boska.'
+  community:
+    - '&a&lSPOŁECZNOŚĆ'
+    - ''
+    - '&fIP serwera: &e%ip%'
+    - '&fOnline teraz: &a%online%'
+    - '&fDiscord: &ediscord.gg/msurvival'
+    - '&fYouTube: &e@Milekz'
+    - '&fTikTok: &e@Milekz'
+  finish:
+    - '&6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+    - ''
+    - '&aTo już wszystko!'
+    - '&fŻyczymy Ci udanej gry na serwerze &6%server%&f.'
+    - '&fKompas w ekwipunku otwiera menu główne.'
+    - '&fW razie problemów wpisz &e/pomoc&f.'
+    - ''
+    - '&6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
 
 help:
-  - '&6Pomoc &8» &e/rynek &7- rynek serwera'
+  - '&6Pomoc &8» &e/menu &7- menu główne'
+  - '&6Pomoc &8» &e/sklep &7- rynek serwera'
   - '&6Pomoc &8» &e/ah &7- sklep graczy'
-  - '&6Pomoc &8» &e/sellhand <cena> &7- wystaw item'
+  - '&6Pomoc &8» &e/sellhand <cena> &7- wystaw item z ręki'
   - '&6Pomoc &8» &e/kasa &7- sprawdź pieniądze'
   - '&6Pomoc &8» &e/bank &7- bank'
   - '&6Pomoc &8» &e/daily &7- codzienna nagroda'
   - '&6Pomoc &8» &e/weeklykey &7- cotygodniowy klucz'
   - '&6Pomoc &8» &e/sethome, /home &7- dom'
   - '&6Pomoc &8» &e/tpa &7- teleport do gracza'
-  - '&6Pomoc &8» &e/betterrtp &7- losowy teleport'
+  - '&6Pomoc &8» &e/rtp &7- losowy teleport'
 
 regulamin:
   - '&cRegulamin &8» &fZakaz cheatów, X-Ray, macro, bugowania i duplikowania.'
@@ -46,7 +141,7 @@ regulamin:
 media:
   - '&cYouTube &8» &e@Milekz'
   - '&dTikTok &8» &e@Milekz'
-  - '&9Discord &8» &7link znajdziesz na YouTube'
+  - '&9Discord &8» &ediscord.gg/msurvival'
 
 donate:
   - '&dDonate &8» &bhttps://tipply.pl/@milekz'
