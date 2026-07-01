@@ -88,18 +88,19 @@ public final class MSurvivalAuth extends JavaPlugin implements Listener {
             return true;
         }
 
-        if (!forcePassword(p) && premium(p) && registered(p)) {
-            logged.add(p.getUniqueId());
-            p.sendMessage(msg("premium"));
-            title(p, "titles.premium-title", "titles.premium-subtitle");
-            return true;
-        }
+        // Premium nie omija pierwszego logowania.
+        // Auto-login działa dopiero po tym, gdy gracz raz poprawnie zaloguje się hasłem
+        // i konto zostanie oznaczone jako premium-verified.
 
         if (cmd.equals("register")) {
             if (registered(p)) { p.sendMessage(msg("already-registered")); return true; }
             if (args.length < 1) { p.sendMessage(msg("register")); return true; }
             data.set(path(p) + ".uuid", p.getUniqueId().toString());
             data.set(path(p) + ".password", hash(args[0]));
+            if (premiumDetected(p)) {
+                data.set(path(p) + ".premium-verified", true);
+                data.set(path(p) + ".premium-uuid", p.getUniqueId().toString());
+            }
             logged.add(p.getUniqueId());
             save();
             p.sendMessage(msg("registered"));
@@ -114,6 +115,11 @@ public final class MSurvivalAuth extends JavaPlugin implements Listener {
             if (verifyPassword(args[0], storedPassword)) {
                 if (!storedPassword.startsWith("pbkdf2$")) {
                     data.set(path(p) + ".password", hash(args[0]));
+                    save();
+                }
+                if (premiumDetected(p) && getConfig().getBoolean("settings.premium-auto-login", true)) {
+                    data.set(path(p) + ".premium-verified", true);
+                    data.set(path(p) + ".premium-uuid", p.getUniqueId().toString());
                     save();
                 }
                 logged.add(p.getUniqueId());
@@ -142,16 +148,25 @@ public final class MSurvivalAuth extends JavaPlugin implements Listener {
             Bukkit.getScheduler().runTaskLater(this, () -> { p.sendMessage(msg("bypassed")); title(p, "titles.logged-title", "titles.logged-subtitle"); }, 10L);
             return;
         }
-        if (!forcePassword(p) && premium(p) && registered(p)) {
+        if (!forcePassword(p) && premiumAutoAllowed(p)) {
             logged.add(p.getUniqueId());
-            Bukkit.getScheduler().runTaskLater(this, () -> { p.sendMessage(msg("premium")); title(p, "titles.premium-title", "titles.premium-subtitle"); }, 10L);
+            Bukkit.getScheduler().runTaskLater(this, () -> {
+                if (!p.isOnline()) return;
+                p.sendMessage(msg("premium"));
+                title(p, "titles.premium-title", "titles.premium-subtitle");
+            }, 10L);
             return;
         }
         Bukkit.getScheduler().runTaskLater(this, () -> {
             if (!p.isOnline()) return;
-            if (premium(p) && !registered(p) && getConfig().getBoolean("settings.premium-first-join-register", true)) {
+            if (premiumDetected(p) && !registered(p) && getConfig().getBoolean("settings.premium-first-join-register", true)) {
                 p.sendMessage(msg("premium-first-register"));
                 title(p, "titles.premium-first-title", "titles.premium-first-subtitle");
+                return;
+            }
+            if (premiumDetected(p) && registered(p) && !premiumAutoAllowed(p)) {
+                p.sendMessage(msg("premium-first-login"));
+                title(p, "titles.premium-login-title", "titles.premium-login-subtitle");
                 return;
             }
             p.sendMessage(registered(p) ? msg("login") : msg("register"));
@@ -176,8 +191,16 @@ public final class MSurvivalAuth extends JavaPlugin implements Listener {
 
     private String path(Player p) { return "players." + p.getName().toLowerCase(Locale.ROOT); }
     private boolean registered(Player p) { return data.contains(path(p) + ".password"); }
-    private boolean locked(Player p) { return !logged.contains(p.getUniqueId()) && (forcePassword(p) || (!premium(p) && !bypass(p))); }
-    private boolean premium(Player p) { return getConfig().getBoolean("settings.premium-auto-login", true) && p.getUniqueId().version() == 4; }
+    private boolean locked(Player p) { return !logged.contains(p.getUniqueId()) && !bypass(p); }
+    private boolean premiumDetected(Player p) { return p.getUniqueId().version() == 4; }
+    private boolean premiumAutoAllowed(Player p) {
+        if (!getConfig().getBoolean("settings.premium-auto-login", true)) return false;
+        if (!premiumDetected(p)) return false;
+        if (!registered(p)) return false;
+        if (!data.getBoolean(path(p) + ".premium-verified", false)) return false;
+        String verifiedUuid = data.getString(path(p) + ".premium-uuid", "");
+        return verifiedUuid.isBlank() || verifiedUuid.equals(p.getUniqueId().toString());
+    }
     private boolean bypass(Player p) { return listContains("settings.bypass", p.getName()); }
     private boolean forcePassword(Player p) { return listContains("settings.force-password", p.getName()); }
     private boolean listContains(String path, String name) { for (String n : getConfig().getStringList(path)) if (n.equalsIgnoreCase(name)) return true; return false; }

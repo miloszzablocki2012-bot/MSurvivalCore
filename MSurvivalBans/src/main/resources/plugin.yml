@@ -1,5 +1,5 @@
 name: MSurvivalBans
-version: 6.4
+version: 6.5
 main: pl.msurvival.bans.MSurvivalBans
 api-version: '1.21'
 author: Milekz
