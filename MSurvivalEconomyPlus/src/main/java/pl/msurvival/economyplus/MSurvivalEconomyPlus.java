@@ -7,6 +7,7 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.*;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
@@ -154,9 +155,21 @@ public final class MSurvivalEconomyPlus extends JavaPlugin implements Listener {
     }
 
     // STATS
-    @EventHandler public void blockBreak(BlockBreakEvent e) {
-        addStat(e.getPlayer(), "blocks", 1);
-        checkAchievements(e.getPlayer());
+    @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
+    public void blockBreak(BlockBreakEvent e) {
+        Player player = e.getPlayer();
+        if (isProtectedWorld(player.getWorld())) return;
+        addStat(player, "blocks", 1);
+        checkAchievements(player);
+    }
+
+    private boolean isProtectedWorld(World world) {
+        if (world == null) return true;
+        String name = world.getName().toLowerCase(Locale.ROOT);
+        for (String protectedWorld : getConfig().getStringList("settings.no-stat-worlds")) {
+            if (name.equals(protectedWorld.toLowerCase(Locale.ROOT))) return true;
+        }
+        return false;
     }
 
     @EventHandler public void death(PlayerDeathEvent e) {

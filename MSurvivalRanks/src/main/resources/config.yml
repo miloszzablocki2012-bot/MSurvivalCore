@@ -1,22 +1,27 @@
 sidebar:
   enabled: true
-  update-ticks: 80
+  update-ticks: 60
   title: '&x&5&C&F&F&8&D&lMSURVIVAL'
   lines:
     - '&x&F&F&D&7&0&0&lPROFIL'
     - '&fNick &x&5&C&F&F&8&D%player%'
-    - '&fRanga %rank%'
-    - '&fKlan &b%clan%'
+    - '&fRanga &x&A&8&6&4&F&F%rank%'
+    - '&fKlan &x&5&C&F&F&8&D%clan%'
     - '&x&5&C&F&F&8&D&lEKONOMIA'
-    - '&fPortfel &a%money%$'
-    - '&fBank &e%bank%$'
-    - '&x&F&F&6&B&6&B&lSTATYSTYKI'
-    - '&fZabójstwa &c%kills%'
+    - '&fPortfel &x&F&F&D&7&0&0%money%$'
+    - '&fBank &x&A&8&6&4&F&F%bank%$'
+    - '&x&A&8&6&4&F&F&lSTATYSTYKI'
+    - '&fZabójstwa &x&F&F&4&4&4&4%kills%'
     - '&fŚmierci &7%deaths%'
-    - '&fBloki &e%blocks%'
-    - '&x&B&B&8&C&F&F&lSERWER'
-    - '&fOnline &a%online%'
-    - '&fPing &e%ping% ms'
+    - '&fBloki &x&F&F&D&7&0&0%blocks%'
+    - '&fCzas gry &x&5&C&F&F&8&D%playtime%'
+    - '&x&F&F&D&7&0&0&lRYNEK'
+    - '&fAukcje &x&5&C&F&F&8&D%ah_active%'
+    - '&fSprzedane &x&A&8&6&4&F&F%ah_sold%'
+    - '&x&5&C&F&F&8&D&lSERWER'
+    - '&fOnline &x&5&C&F&F&8&D%online%'
+    - '&fPing &x&F&F&D&7&0&0%ping% ms'
+    - '&fTPS &x&A&8&6&4&F&F%tps%'
     - '&x&F&F&D&7&0&0msurvival.6mc.pl'
 
 ranks:

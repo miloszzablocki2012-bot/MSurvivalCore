@@ -1,5 +1,5 @@
 name: MSurvivalAdmin
-version: 7.0
+version: 7.1
 main: pl.msurvival.admin.MSurvivalAdmin
 api-version: '1.21'
 author: Milekz

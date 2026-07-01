@@ -1,5 +1,5 @@
 name: MSurvivalWelcome
-version: 7.0
+version: 7.1
 main: pl.msurvival.welcome.MSurvivalWelcome
 api-version: '1.21'
 author: Milekz

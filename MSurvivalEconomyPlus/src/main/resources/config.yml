@@ -1,4 +1,8 @@
 settings:
+  no-stat-worlds:
+    - 'Lobby'
+    - 'lobby'
+    - 'world_lobby'
   currency: '$'
   daily-cooldown-seconds: 86400
   daily-money: 5000
