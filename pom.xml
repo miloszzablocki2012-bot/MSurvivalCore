@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>pl.msurvival</groupId>
   <artifactId>MSurvival-v4</artifactId>
-  <version>5.0</version>
+  <version>5.1</version>
   <packaging>pom</packaging>
   <modules>
     <module>MSurvivalCore</module>
@@ -17,5 +17,6 @@
     <module>MSurvivalAdmin</module>
     <module>MSurvivalBans</module>
     <module>MSurvivalClans</module>
+      <module>MSurvivalCompass</module>
   </modules>
 </project>
