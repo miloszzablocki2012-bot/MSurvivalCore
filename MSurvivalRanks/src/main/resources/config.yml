@@ -1,28 +1,23 @@
 sidebar:
   enabled: true
-  update-ticks: 60
-  title: '&6&l👁 MSURVIVAL'
+  update-ticks: 80
+  title: '&x&5&C&F&F&8&D&lMSURVIVAL'
   lines:
-    - '&e&l👤 PROFIL'
-    - '&fNick &8» &6%player%'
-    - '&fRanga &8» %rank%'
-    - '&fKlan &8» &b%clan%'
-    - '&fWygasa &8» &e%expires%'
-    - '&a&l💰 EKONOMIA'
-    - '&fPortfel &8» &a%money%$'
-    - '&fBank &8» &e%bank%$'
-    - '&c&l⚔ STATYSTYKI'
-    - '&fZabójstwa &8» &c%kills%'
-    - '&fŚmierci &8» &7%deaths%'
-    - '&fBloki &8» &e%blocks%'
-    - '&fCzas gry &8» &b%playtime%'
-    - '&d&l🛒 RYNEK'
-    - '&fSklep &8» &e/sklep'
-    - '&fAukcje &8» &6/ah'
-    - '&9&l🌐 SERWER'
-    - '&fOnline &8» &a%online%'
-    - '&fPing &8» &e%ping% ms'
-    - '&6msurvival.6mc.pl'
+    - '&x&F&F&D&7&0&0&lPROFIL'
+    - '&fNick &x&5&C&F&F&8&D%player%'
+    - '&fRanga %rank%'
+    - '&fKlan &b%clan%'
+    - '&x&5&C&F&F&8&D&lEKONOMIA'
+    - '&fPortfel &a%money%$'
+    - '&fBank &e%bank%$'
+    - '&x&F&F&6&B&6&B&lSTATYSTYKI'
+    - '&fZabójstwa &c%kills%'
+    - '&fŚmierci &7%deaths%'
+    - '&fBloki &e%blocks%'
+    - '&x&B&B&8&C&F&F&lSERWER'
+    - '&fOnline &a%online%'
+    - '&fPing &e%ping% ms'
+    - '&x&F&F&D&7&0&0msurvival.6mc.pl'
 
 ranks:
   wlasciciel: {display: '&6&lWŁAŚCICIEL', prefix: '&6&lWŁAŚCICIEL &6'}
@@ -30,7 +25,8 @@ ranks:
   mod: {display: '&2&lMODERATOR', prefix: '&2&lMOD &2'}
   helper: {display: '&a&lPOMOCNIK', prefix: '&a&lPOMOCNIK &a'}
   youtuber: {display: '&c&lYOUTUBER', prefix: '&c&lYOUTUBE &c'}
-  sponsor: {display: '&b&lSPONSOR', prefix: '&b&lSPONSOR &b'}
+  tworca: {display: '&b&lTWÓRCA', prefix: '&b&lTWÓRCA &b'}
+  sponsor: {display: '&d&lSPONSOR', prefix: '&d&lSPONSOR &d'}
   vipplus: {display: '&e&lVIP+', prefix: '&e&lVIP+ &e'}
   vip: {display: '&e&lVIP', prefix: '&e&lVIP &e'}
   gracz: {display: '&7GRACZ', prefix: '&7'}
@@ -41,11 +37,13 @@ aliases:
   vip+: 'vipplus'
   yt: 'youtuber'
   youtube: 'youtuber'
+  creator: 'tworca'
+  twórca: 'tworca'
   pomocnik: 'helper'
   moderator: 'mod'
 
 messages:
-  prefix: '&6MSurvival &8» &r'
+  prefix: '&x&5&C&F&F&8&DMSurvival &r'
   no-permission: '&cNie masz uprawnień.'
   reload: '&aPrzeładowano sidebar i rangi.'
   rank-not-found: '&cNie ma takiej rangi.'

@@ -7,8 +7,8 @@ key-item:
   material: TRIPWIRE_HOOK
 
 keys:
-  codzienny: '&a&lCodzienny Klucz'
-  cotygodniowy: '&e&lCotygodniowy Klucz'
+  codzienny: '&a&lKlucz Codzienny'
+  cotygodniowy: '&e&lKlucz Cotygodniowy'
   klasyczny: '&7&lKlucz Klasyczny'
   zelazny: '&f&lKlucz Żelazny'
   zloty: '&6&lKlucz Złoty'
@@ -20,8 +20,40 @@ keys:
   boski: '&4&lKlucz Boski'
   administracyjny: '&c&lKlucz Administracyjny'
 
+timed-keys:
+  daily:
+    rewards:
+      klasyczny:
+        chance: 70.0
+      zelazny:
+        chance: 25.0
+      zloty:
+        chance: 5.0
+  weekly:
+    rewards:
+      klasyczny:
+        chance: 30.0
+      zelazny:
+        chance: 20.0
+      zloty:
+        chance: 15.0
+      diamentowy:
+        chance: 12.0
+      szmaragdowy:
+        chance: 8.0
+      epic:
+        chance: 6.0
+      legendarny:
+        chance: 4.0
+      mityczny:
+        chance: 3.0
+      boski:
+        chance: 1.8
+      administracyjny:
+        chance: 0.2
+
 messages:
-  prefix: '&6MSurvival &8» &r'
+  prefix: ''
   no-permission: '&cNie masz uprawnień.'
   only-survival: '&cKlucze i E-Kity odbierasz tylko na Survivalu.'
   disabled-ppm: '&cKlucza nie używasz PPM. Otwórz /kits albo /keysmenu.'
@@ -29,12 +61,15 @@ messages:
   withdrawn: '&aWyjęto klucz: %key%'
   admin-give: '&aDodano &e%amount%x %key% &adla &e%player%'
   opened: '&aOtworzono E-Kit: &e%kit%'
-  weekly-ready:
-    - '&6Cotygodniowy Klucz &8» &aMożesz odebrać swój klucz komendą &e/weeklykey&a.'
-    - '&7Szanse: Klasyczny 65%, Żelazny 18%, Złoty 8%, Diamentowy 5%, Szmaragdowy 2%, Epic 1.2%, Legendarny 0.55%, Mityczny 0.2%, Boski 0.05%.'
+  daily-claimed:
+    - '&aOdebrano Klucz Codzienny.'
+    - '&7Wylosowano: %key%'
+  daily-cooldown:
+    - '&cKlucz Codzienny został już odebrany.'
+    - '&7Następny odbiór za: &e%time%'
   weekly-claimed:
-    - '&6Cotygodniowy Klucz &8» &aOdebrano klucz.'
+    - '&eOdebrano Klucz Cotygodniowy.'
     - '&7Wylosowano: %key%'
   weekly-cooldown:
-    - '&6Cotygodniowy Klucz &8» &cKlucz został już odebrany.'
+    - '&cKlucz Cotygodniowy został już odebrany.'
     - '&7Następny odbiór za: &e%time%'

@@ -1,5 +1,5 @@
 name: MSurvivalMarket
-version: 6.5
+version: 7.0
 main: pl.msurvival.market.MSurvivalMarket
 api-version: '1.21'
 author: Milekz

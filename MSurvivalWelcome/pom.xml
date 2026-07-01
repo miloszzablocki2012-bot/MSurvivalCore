@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>pl.msurvival</groupId>
   <artifactId>MSurvivalWelcome</artifactId>
-  <version>6.4</version>
+  <version>7.0</version>
   <packaging>jar</packaging>
   <properties>
     <maven.compiler.release>25</maven.compiler.release>

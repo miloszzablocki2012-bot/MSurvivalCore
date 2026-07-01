@@ -2,6 +2,7 @@ package pl.msurvival.keys;
 
 import org.bukkit.*;
 import org.bukkit.command.*;
+import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
@@ -41,7 +42,8 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
 
         if (cmd.equals("keysmenu")) { if (sender instanceof Player p) openKeys(p); return true; }
         if (cmd.equals("kits")) { if (sender instanceof Player p) openKits(p); return true; }
-        if (cmd.equals("weeklykey")) { if (sender instanceof Player p) weekly(p); return true; }
+        if (cmd.equals("dailykey")) { if (sender instanceof Player p) claimTimedKey(p, "daily"); return true; }
+        if (cmd.equals("weeklykey")) { if (sender instanceof Player p) claimTimedKey(p, "weekly"); return true; }
 
         if (cmd.equals("keyadmin")) {
             if (!sender.hasPermission("msurvival.keys.admin")) { sender.sendMessage(msg("no-permission")); return true; }
@@ -63,55 +65,64 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
         return true;
     }
 
-    private void weekly(Player p) {
-        long cd = getConfig().getLong("settings.weekly-cooldown-seconds", 604800L) * 1000L;
-        long last = data.getLong(path(p.getName()) + ".weekly", 0L);
+    private void claimTimedKey(Player p, String type) {
+        long cd = getConfig().getLong("settings." + type + "-cooldown-seconds", type.equals("daily") ? 86400L : 604800L) * 1000L;
+        long last = data.getLong(path(p.getName()) + "." + type, 0L);
         long left = cd - (System.currentTimeMillis() - last);
         if (last > 0 && left > 0) {
-            sendList(p, "messages.weekly-cooldown", Map.of("%time%", time(left)));
+            sendList(p, "messages." + type + "-cooldown", Map.of("%time%", time(left)));
             return;
         }
-        String key = rollWeekly();
-        data.set(path(p.getName()) + ".weekly", System.currentTimeMillis());
+        String key = roll(type);
+        data.set(path(p.getName()) + "." + type, System.currentTimeMillis());
         addVirtual(p.getName(), key, 1);
         saveData();
-        p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1f, 1f);
-        p.sendTitle(color("&e&lCOTYGODNIOWY KLUCZ"), display(key), 5, 55, 10);
-        sendList(p, "messages.weekly-claimed", Map.of("%key%", display(key)));
-        if (key.equals("boski") || key.equals("mityczny") || key.equals("legendarny")) {
-            
-            Bukkit.broadcastMessage(color("&6&lMSurvival &8» &e" + p.getName() + " &fwylosował " + display(key) + "&f z &6WeeklyKey&f!"));
-            
+        p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1f, type.equals("daily") ? 1.25f : 1f);
+        p.sendTitle(color(type.equals("daily") ? "&a&lKLUCZ CODZIENNY" : "&e&lKLUCZ COTYGODNIOWY"), display(key), 5, 55, 10);
+        sendList(p, "messages." + type + "-claimed", Map.of("%key%", display(key)));
+        if (List.of("administracyjny", "boski", "mityczny", "legendarny").contains(key)) {
+            Bukkit.broadcastMessage(color("&x&F&F&D&7&0&0" + p.getName() + " &fwylosował " + display(key) + "&f!"));
         }
     }
 
-    private String rollWeekly() {
-        int roll = random.nextInt(1_000_000) + 1;
-        if (roll == 1) return "boski";
-        if (roll <= 2) return "mityczny";       // 1:500 000
-        if (roll <= 10) return "legendarny";    // 1:100 000
-        if (roll <= 100) return "epic";         // 1:10 000
-        if (roll <= 1000) return "diamentowy";  // 1:1 000
-        if (roll <= 10000) return "zelazny";    // 1:100
-        return "klasyczny";
+    private String roll(String type) {
+        ConfigurationSection rewards = getConfig().getConfigurationSection("timed-keys." + type + ".rewards");
+        if (rewards == null) return type.equals("daily") ? "klasyczny" : "zelazny";
+        double total = 0D;
+        for (String key : rewards.getKeys(false)) total += Math.max(0D, rewards.getDouble(key + ".chance", 0D));
+        if (total <= 0D) return "klasyczny";
+        double rolled = random.nextDouble() * total;
+        double current = 0D;
+        for (String key : rewards.getKeys(false)) {
+            current += Math.max(0D, rewards.getDouble(key + ".chance", 0D));
+            if (rolled <= current) return norm(key);
+        }
+        return rewards.getKeys(false).iterator().next();
     }
 
     private void openKeys(Player p) {
-        Inventory inv = Bukkit.createInventory(null, 54, color("&6&lKLUCZE SERWERA"));
+        Inventory inv = Bukkit.createInventory(null, 54, color("&x&5&C&F&F&8&D&lKLUCZE MSURVIVAL"));
         fill(inv);
-        inv.setItem(4, gui(Material.CHEST, "&6&lCotygodniowy Klucz", "weekly", List.of(
-                "&7Szanse na top klucze:",
-                "&4Boski &8» &c0.05%",
-                "&dMityczny &8» &d0.20%",
-                "&6Legendarny &8» &60.55%",
-                "",
-                "&aKliknij, aby odebrać."
+        inv.setItem(3, gui(Material.LIME_DYE, "&a&lKlucz Codzienny", "daily", List.of(
+                "&7Odbiór co 24 godziny",
+                "&fKlasyczny &a70%",
+                "&fŻelazny &a25%",
+                "&fZłoty &a5%",
+                "&aKliknij, aby odebrać"
+        )));
+        inv.setItem(5, gui(Material.GOLD_INGOT, "&e&lKlucz Cotygodniowy", "weekly", List.of(
+                "&7Odbiór co 7 dni",
+                "&fNagrody z całej puli kluczy",
+                "&fBoski &e1.8%",
+                "&fAdministracyjny &e0.2%",
+                "&aKliknij, aby odebrać"
         )));
         int slot = 10;
         for (String key : getConfig().getConfigurationSection("keys").getKeys(false)) {
+            if (key.equals("codzienny") || key.equals("cotygodniowy")) continue;
             inv.setItem(slot, gui(Material.TRIPWIRE_HOOK, display(key), "withdraw:" + key, List.of(
-                    "&7Wirtualne &8» &e" + getVirtual(p.getName(), key),
-                    "&7Fizyczne &8» &e" + countPhysical(p, key),
+                    "&7Wirtualne &f" + getVirtual(p.getName(), key),
+                    "&7Fizyczne &f" + countPhysical(p, key),
                     "&aKliknij, aby wyjąć 1 klucz"
             )));
             slot++;
@@ -121,31 +132,35 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
     }
 
     private void openKits(Player p) {
-        Inventory inv = Bukkit.createInventory(null, 27, color("&b&lE-KITY ZA KLUCZE"));
+        Inventory inv = Bukkit.createInventory(null, 36, color("&x&B&B&8&C&F&F&lE-KITY ZA KLUCZE"));
         fill(inv);
-        kitButton(inv, 10, Material.STONE_PICKAXE, "klasyczny", "&f&lE-Kit Klasyczny");
+        kitButton(inv, 10, Material.STONE_SWORD, "klasyczny", "&f&lE-Kit Klasyczny");
         kitButton(inv, 11, Material.IRON_CHESTPLATE, "zelazny", "&7&lE-Kit Żelazny");
-        kitButton(inv, 12, Material.DIAMOND_CHESTPLATE, "diamentowy", "&b&lE-Kit Diamentowy");
-        kitButton(inv, 13, Material.DIAMOND_SWORD, "epic", "&5&lE-Kit Epic");
-        kitButton(inv, 14, Material.NETHERITE_CHESTPLATE, "legendarny", "&6&lE-Kit Legendarny");
-        kitButton(inv, 15, Material.NETHER_STAR, "mityczny", "&d&lE-Kit Mityczny");
-        kitButton(inv, 16, Material.DRAGON_EGG, "boski", "&4&lE-Kit Boski");
+        kitButton(inv, 12, Material.GOLDEN_APPLE, "zloty", "&6&lE-Kit Złoty");
+        kitButton(inv, 13, Material.DIAMOND_CHESTPLATE, "diamentowy", "&b&lE-Kit Diamentowy");
+        kitButton(inv, 14, Material.EMERALD, "szmaragdowy", "&a&lE-Kit Szmaragdowy");
+        kitButton(inv, 15, Material.DIAMOND_SWORD, "epic", "&5&lE-Kit Epic");
+        kitButton(inv, 16, Material.NETHERITE_CHESTPLATE, "legendarny", "&6&lE-Kit Legendarny");
+        kitButton(inv, 20, Material.NETHER_STAR, "mityczny", "&d&lE-Kit Mityczny");
+        kitButton(inv, 22, Material.DRAGON_EGG, "boski", "&4&lE-Kit Boski");
+        kitButton(inv, 24, Material.COMMAND_BLOCK, "administracyjny", "&c&lE-Kit Administracyjny");
         p.openInventory(inv);
     }
 
     private void kitButton(Inventory inv, int slot, Material material, String key, String name) {
-        inv.setItem(slot, gui(material, name, "kit:" + key, List.of("&7Wymagany: " + display(key), "&aKliknij, aby odebrać")));
+        inv.setItem(slot, gui(material, name, "kit:" + key, List.of("&7Wymagany klucz", display(key), "&aKliknij, aby odebrać")));
     }
 
     @EventHandler public void click(InventoryClickEvent e) {
         if (!(e.getWhoClicked() instanceof Player p)) return;
         String title = e.getView().getTitle();
-        if (!title.equals(color("&6&lKLUCZE SERWERA")) && !title.equals(color("&b&lE-KITY ZA KLUCZE"))) return;
+        if (!title.equals(color("&x&5&C&F&F&8&D&lKLUCZE MSURVIVAL")) && !title.equals(color("&x&B&B&8&C&F&F&lE-KITY ZA KLUCZE"))) return;
         e.setCancelled(true);
         String action = action(e.getCurrentItem());
         if (action == null) return;
         p.closeInventory();
-        if (action.equals("weekly")) weekly(p);
+        if (action.equals("daily")) claimTimedKey(p, "daily");
+        else if (action.equals("weekly")) claimTimedKey(p, "weekly");
         else if (action.startsWith("withdraw:")) withdraw(p, action.substring(9));
         else if (action.startsWith("kit:")) openKit(p, action.substring(4));
     }
@@ -169,7 +184,7 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
         if (!takeKey(p, key)) { p.sendMessage(color(msg("no-key").replace("%key%", display(key)))); return; }
         giveKit(p, key);
         p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
-        p.sendTitle(color("&6&lE-KIT OTWARTY"), display(key), 5, 45, 10);
+        p.sendTitle(color("&x&F&F&D&7&0&0&lE-KIT OTWARTY"), display(key), 5, 45, 10);
     }
 
     private boolean takeKey(Player p, String key) {
@@ -185,20 +200,77 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
     }
 
     private void giveKit(Player p, String key) {
-        boolean god = key.equals("boski") || key.equals("mityczny") || key.equals("legendarny") || key.equals("epic");
-        Material armor = switch (key) { case "zelazny" -> Material.IRON_CHESTPLATE; case "klasyczny" -> Material.LEATHER_CHESTPLATE; case "diamentowy", "epic" -> Material.DIAMOND_CHESTPLATE; default -> Material.NETHERITE_CHESTPLATE; };
-        String name = switch (key) { case "boski" -> "&4&lBoski"; case "mityczny" -> "&d&lMityczny"; case "legendarny" -> "&6&lLegendarny"; case "epic" -> "&5&lEpic"; case "diamentowy" -> "&b&lDiamentowy"; case "zelazny" -> "&7&lŻelazny"; default -> "&f&lKlasyczny"; };
-        Material sword = armor == Material.IRON_CHESTPLATE ? Material.IRON_SWORD : armor == Material.DIAMOND_CHESTPLATE ? Material.DIAMOND_SWORD : armor == Material.LEATHER_CHESTPLATE ? Material.STONE_SWORD : Material.NETHERITE_SWORD;
-        p.getInventory().addItem(sword(sword, name + " Miecz", god), new ItemStack(Material.GOLDEN_APPLE, key.equals("boski") ? 64 : 16), new ItemStack(Material.TOTEM_OF_UNDYING, key.equals("boski") ? 6 : 2));
+        KitPower power = kitPower(key);
+        Material armorMaterial = power.armor;
+        p.getInventory().addItem(
+                armor(helmet(armorMaterial), power.name + " Hełm", power.protection, power.unbreaking),
+                armor(chestplate(armorMaterial), power.name + " Klata", power.protection, power.unbreaking),
+                armor(leggings(armorMaterial), power.name + " Spodnie", power.protection, power.unbreaking),
+                armor(boots(armorMaterial), power.name + " Buty", power.protection, power.unbreaking),
+                sword(power.sword, power.name + " Miecz", power.sharpness, power.looting, power.unbreaking),
+                tool(power.pickaxe, power.name + " Kilof", power.efficiency, power.fortune, power.unbreaking),
+                tool(power.axe, power.name + " Siekiera", power.efficiency, power.fortune, power.unbreaking),
+                bow(power.name + " Łuk", power.sharpness, power.unbreaking),
+                new ItemStack(Material.GOLDEN_APPLE, power.gapples),
+                new ItemStack(Material.ENCHANTED_GOLDEN_APPLE, power.egapples),
+                new ItemStack(Material.TOTEM_OF_UNDYING, power.totems),
+                new ItemStack(Material.ENDER_PEARL, power.pearls)
+        );
     }
 
-    private ItemStack sword(Material mat, String name, boolean god) {
+    private KitPower kitPower(String key) {
+        return switch (key) {
+            case "administracyjny" -> new KitPower("&c&lAdministracyjny", Material.NETHERITE_CHESTPLATE, Material.NETHERITE_SWORD, Material.NETHERITE_PICKAXE, Material.NETHERITE_AXE, 10, 10, 10, 8, 10, 8, 64, 32, 16, 32);
+            case "boski" -> new KitPower("&4&lBoski", Material.NETHERITE_CHESTPLATE, Material.NETHERITE_SWORD, Material.NETHERITE_PICKAXE, Material.NETHERITE_AXE, 8, 7, 7, 6, 7, 6, 64, 12, 8, 24);
+            case "mityczny" -> new KitPower("&d&lMityczny", Material.NETHERITE_CHESTPLATE, Material.NETHERITE_SWORD, Material.NETHERITE_PICKAXE, Material.NETHERITE_AXE, 7, 6, 6, 5, 6, 5, 48, 8, 6, 16);
+            case "legendarny" -> new KitPower("&6&lLegendarny", Material.NETHERITE_CHESTPLATE, Material.NETHERITE_SWORD, Material.NETHERITE_PICKAXE, Material.NETHERITE_AXE, 6, 5, 5, 4, 5, 4, 32, 5, 4, 12);
+            case "epic" -> new KitPower("&5&lEpic", Material.DIAMOND_CHESTPLATE, Material.DIAMOND_SWORD, Material.DIAMOND_PICKAXE, Material.DIAMOND_AXE, 5, 5, 4, 3, 5, 3, 24, 3, 3, 8);
+            case "szmaragdowy" -> new KitPower("&a&lSzmaragdowy", Material.DIAMOND_CHESTPLATE, Material.DIAMOND_SWORD, Material.DIAMOND_PICKAXE, Material.DIAMOND_AXE, 4, 4, 3, 3, 4, 2, 20, 2, 2, 6);
+            case "diamentowy" -> new KitPower("&b&lDiamentowy", Material.DIAMOND_CHESTPLATE, Material.DIAMOND_SWORD, Material.DIAMOND_PICKAXE, Material.DIAMOND_AXE, 4, 3, 3, 2, 4, 2, 16, 1, 2, 4);
+            case "zloty" -> new KitPower("&6&lZłoty", Material.IRON_CHESTPLATE, Material.IRON_SWORD, Material.IRON_PICKAXE, Material.IRON_AXE, 3, 3, 2, 1, 3, 1, 12, 0, 1, 2);
+            case "zelazny" -> new KitPower("&7&lŻelazny", Material.IRON_CHESTPLATE, Material.IRON_SWORD, Material.IRON_PICKAXE, Material.IRON_AXE, 2, 2, 1, 1, 2, 1, 8, 0, 1, 0);
+            default -> new KitPower("&f&lKlasyczny", Material.LEATHER_CHESTPLATE, Material.STONE_SWORD, Material.STONE_PICKAXE, Material.STONE_AXE, 1, 1, 1, 0, 1, 1, 6, 0, 0, 0);
+        };
+    }
+
+    private record KitPower(String name, Material armor, Material sword, Material pickaxe, Material axe, int protection, int sharpness, int efficiency, int fortune, int unbreaking, int looting, int gapples, int egapples, int totems, int pearls) {
+        int power() { return sharpness; }
+    }
+
+    private Material helmet(Material chest) { return switch (chest) { case NETHERITE_CHESTPLATE -> Material.NETHERITE_HELMET; case DIAMOND_CHESTPLATE -> Material.DIAMOND_HELMET; case IRON_CHESTPLATE -> Material.IRON_HELMET; default -> Material.LEATHER_HELMET; }; }
+    private Material chestplate(Material chest) { return chest; }
+    private Material leggings(Material chest) { return switch (chest) { case NETHERITE_CHESTPLATE -> Material.NETHERITE_LEGGINGS; case DIAMOND_CHESTPLATE -> Material.DIAMOND_LEGGINGS; case IRON_CHESTPLATE -> Material.IRON_LEGGINGS; default -> Material.LEATHER_LEGGINGS; }; }
+    private Material boots(Material chest) { return switch (chest) { case NETHERITE_CHESTPLATE -> Material.NETHERITE_BOOTS; case DIAMOND_CHESTPLATE -> Material.DIAMOND_BOOTS; case IRON_CHESTPLATE -> Material.IRON_BOOTS; default -> Material.LEATHER_BOOTS; }; }
+
+    private ItemStack armor(Material mat, String name, int protection, int unbreaking) {
         ItemStack item = named(mat, name);
-        add(item, "sharpness", god ? 7 : 5); add(item, "fire_aspect", 2); add(item, "looting", god ? 5 : 3); add(item, "unbreaking", 3); add(item, "mending", 1);
+        add(item, "protection", protection);
+        add(item, "unbreaking", unbreaking);
+        add(item, "mending", 1);
+        if (mat.name().endsWith("BOOTS")) add(item, "feather_falling", Math.max(4, protection));
+        return item;
+    }
+
+    private ItemStack sword(Material mat, String name, int sharpness, int looting, int unbreaking) {
+        ItemStack item = named(mat, name);
+        add(item, "sharpness", sharpness); add(item, "fire_aspect", 2); add(item, "looting", looting); add(item, "unbreaking", unbreaking); add(item, "mending", 1);
+        return item;
+    }
+
+    private ItemStack tool(Material mat, String name, int efficiency, int fortune, int unbreaking) {
+        ItemStack item = named(mat, name);
+        add(item, "efficiency", efficiency); add(item, "fortune", fortune); add(item, "unbreaking", unbreaking); add(item, "mending", 1);
+        return item;
+    }
+
+    private ItemStack bow(String name, int power, int unbreaking) {
+        ItemStack item = named(Material.BOW, name);
+        add(item, "power", power); add(item, "flame", 1); add(item, "punch", Math.min(3, Math.max(1, power / 3))); add(item, "unbreaking", unbreaking); add(item, "mending", 1);
         return item;
     }
 
     private void add(ItemStack item, String ench, int lvl) {
+        if (lvl <= 0) return;
         Enchantment e = Enchantment.getByKey(NamespacedKey.minecraft(ench));
         if (e != null) item.addUnsafeEnchantment(e, lvl);
     }
@@ -206,8 +278,8 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
     private ItemStack keyItem(String key, int amount) {
         ItemStack item = new ItemStack(Material.valueOf(getConfig().getString("key-item.material", "TRIPWIRE_HOOK")), amount);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(color("&6&l✦ " + display(key) + " &6&l✦"));
-        meta.setLore(List.of(color("&7Klucz do E-Kita."), color("&eUżyj &6/kits&e na Survivalu.")));
+        meta.setDisplayName(color(display(key)));
+        meta.setLore(List.of(color("&7Klucz do E-Kita"), color("&eUżyj /kits na Survivalu")));
         meta.addEnchant(Enchantment.UNBREAKING, 1, true);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS, ItemFlag.HIDE_ATTRIBUTES);
         meta.getPersistentDataContainer().set(keyType, PersistentDataType.STRING, key);
@@ -230,7 +302,7 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
         ItemStack item = new ItemStack(mat);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(color(name));
-        meta.setLore(List.of(color("&6&lMSURVIVAL")));
+        meta.setLore(List.of(color("&x&5&C&F&F&8&D&lMSURVIVAL")));
         item.setItemMeta(meta);
         return item;
     }

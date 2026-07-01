@@ -1,5 +1,5 @@
 name: MSurvivalKeys
-version: 6.5
+version: 7.0
 main: pl.msurvival.keys.MSurvivalKeys
 api-version: '1.21'
 author: Milekz
@@ -10,6 +10,9 @@ commands:
   kits:
     usage: /kits
     aliases: [kit, ekit, ekits]
+  dailykey:
+    usage: /dailykey
+    aliases: [daily, dzienny, codzienny]
   weeklykey:
     usage: /weeklykey
   keyadmin:
