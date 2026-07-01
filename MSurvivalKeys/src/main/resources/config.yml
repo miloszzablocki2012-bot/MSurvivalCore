@@ -14,9 +14,21 @@ keys:
   mityczny: '&d&lKlucz Mityczny'
   boski: '&4&lKlucz Boski'
 
-weekly:
-  klasyczny: 80
-  zelazny: 20
+# System 1 na X.
+# Boski = 1 na 1 000 000
+# Mityczny = 1 na 500 000
+# Legendarny = 1 na 100 000
+# Epic = 1 na 10 000
+# Diamentowy = 1 na 1 000
+# Żelazny = 1 na 100
+# Klasyczny = wszystko pozostałe
+weekly-chances:
+  zelazny: 100
+  diamentowy: 1000
+  epic: 10000
+  legendarny: 100000
+  mityczny: 500000
+  boski: 1000000
 
 messages:
   prefix: '&6&lMSurvival &8» &r'
@@ -25,7 +37,44 @@ messages:
   disabled-ppm: '&cKlucza nie używasz PPM. Otwórz &e/kits&c.'
   no-key: '&cNie masz klucza: %key%'
   withdrawn: '&aWyjęto klucz: %key%'
-  claimed: '&aOdebrałeś klucz: %key%'
-  opened: '&aOtworzono E-Kit: &e%kit%'
-  cooldown: '&cWeeklykey za: &e%time%'
   admin-give: '&aDodano &e%amount%x %key% &adla &e%player%'
+  opened: '&aOtworzono E-Kit: &e%kit%'
+  weekly-ready:
+    - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+    - '&6&l✦ COTYGODNIOWY KLUCZ ✦'
+    - ''
+    - '&a✔ Możesz odebrać swój klucz!'
+    - '&7Wpisz &e/weeklykey&7, aby odebrać.'
+    - ''
+    - '&7Szanse:'
+    - '&7Żelazny &8- &e1:100'
+    - '&bDiamentowy &8- &b1:1 000'
+    - '&5Epic &8- &d1:10 000'
+    - '&6Legendarny &8- &61:100 000'
+    - '&dMityczny &8- &d1:500 000'
+    - '&4Boski &8- &c1:1 000 000'
+    - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+  weekly-claimed:
+    - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+    - '&6&l✦ COTYGODNIOWY KLUCZ ✦'
+    - ''
+    - '&a✔ Odebrano cotygodniowy klucz!'
+    - '&7Wylosowano: %key%'
+    - ''
+    - '&7Szanse:'
+    - '&7Żelazny &8- &e1:100'
+    - '&bDiamentowy &8- &b1:1 000'
+    - '&5Epic &8- &d1:10 000'
+    - '&6Legendarny &8- &61:100 000'
+    - '&dMityczny &8- &d1:500 000'
+    - '&4Boski &8- &c1:1 000 000'
+    - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+  weekly-cooldown:
+    - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+    - '&6&l✦ COTYGODNIOWY KLUCZ ✦'
+    - ''
+    - '&cKlucz został już odebrany.'
+    - '&7Następny klucz za:'
+    - '&e%time%'
+    - ''
+    - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'

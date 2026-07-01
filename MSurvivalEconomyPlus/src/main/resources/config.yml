@@ -1,0 +1,73 @@
+settings:
+  currency: '$'
+  daily-cooldown-seconds: 86400
+  daily-money: 5000
+  daily-key-command: 'keyadmin give %player% klasyczny 1'
+  bank-interest-percent: 2.0
+  bank-interest-cooldown-seconds: 86400
+  offer-expire-hours: 168
+  auction-expire-hours: 24
+  tax-percent: 5.0
+  rtp-world: 'world'
+  rtp-radius: 2500
+  rtp-countdown-seconds: 5
+  rtp-max-attempts: 24
+
+server-shop:
+  OAK_LOG: 500
+  COBBLESTONE: 120
+  IRON_INGOT: 2500
+  GOLD_INGOT: 3500
+  DIAMOND: 15000
+  ENDER_PEARL: 7000
+  GOLDEN_APPLE: 25000
+  TOTEM_OF_UNDYING: 250000
+  SHULKER_BOX: 300000
+
+achievements:
+  blocks_100:
+    type: 'blocks'
+    amount: 100
+    reward: 5000
+    name: '&aPierwsze kopanie'
+  blocks_10000:
+    type: 'blocks'
+    amount: 10000
+    reward: 250000
+    name: '&6Kopalniany wojownik'
+  kills_10:
+    type: 'kills'
+    amount: 10
+    reward: 50000
+    name: '&cŁowca graczy'
+  playtime_60:
+    type: 'playtime_minutes'
+    amount: 60
+    reward: 30000
+    name: '&bGodzina gry'
+
+messages:
+  prefix: '&6&lMSurvival+ &8» &r'
+  no-money: '&cNie masz tyle pieniędzy.'
+  daily-claimed: '&aOdebrano daily reward: &e%money%$ &a+ klucz.'
+  daily-cooldown: '&cDaily możesz odebrać za: &e%time%'
+  bank-balance: '&aPortfel: &e%wallet%$ &8| &aBank: &e%bank%$'
+  bank-deposit: '&aWpłacono do banku: &e%amount%$'
+  bank-withdraw: '&aWypłacono z banku: &e%amount%$'
+  bank-interest: '&aOdebrano odsetki: &e%amount%$'
+  bank-interest-cooldown: '&cOdsetki za: &e%time%'
+  offer-created: '&aWystawiono ofertę ID &e%id% &aza &e%price%$'
+  offer-bought: '&aKupiono ofertę ID &e%id%&a.'
+  offer-sold: '&aTwoja oferta ID &e%id% &azostała sprzedana. Otrzymano &e%money%$'
+  offer-cancelled: '&aAnulowano ofertę ID &e%id%&a.'
+  auction-created: '&aUtworzono aukcję ID &e%id%&a.'
+  bid-placed: '&aZłożono ofertę &e%amount%$ &ana aukcji ID &e%id%&a.'
+  friend-request: '&aWysłano zaproszenie do znajomych.'
+  friend-received: '&e%player% &achce dodać Cię do znajomych. Wpisz &e/friend accept %player%'
+  friend-added: '&aDodano znajomego: &e%player%'
+  team-created: '&aUtworzono drużynę &e%team%&a.'
+  team-invite: '&aZaproszono gracza &e%player%&a.'
+  team-received: '&e%player% &azaprosił Cię do drużyny &e%team%&a. Wpisz &e/team join %team%'
+  rtp-start: '&aLosowanie bezpiecznego miejsca... Teleport za &e%seconds%s'
+  rtp-success: '&aPrzeteleportowano bezpiecznie.'
+  reload: '&aPrzeładowano EconomyPlus.'

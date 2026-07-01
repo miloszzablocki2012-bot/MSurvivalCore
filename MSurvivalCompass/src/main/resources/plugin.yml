@@ -1,7 +1,7 @@
 name: MSurvivalCompass
-version: 5.2
+version: 5.3
 main: pl.msurvival.compass.MSurvivalCompass
-api-version: '1.21'
+api-version: 5.3
 author: Milekz
 commands:
   lobby:

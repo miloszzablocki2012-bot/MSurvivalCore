@@ -1,0 +1,44 @@
+name: MSurvivalEconomyPlus
+version: 5.4
+main: pl.msurvival.economyplus.MSurvivalEconomyPlus
+api-version: '1.21'
+author: Milekz
+commands:
+  bank:
+    usage: /bank [deposit|withdraw|interest] [kwota]
+    aliases: [bankier]
+  daily:
+    usage: /daily
+  stats:
+    usage: /stats [gracz]
+  osiagniecia:
+    usage: /osiagniecia
+    aliases: [achievements, ach]
+  friend:
+    usage: /friend <add|accept|remove|list> [gracz]
+    aliases: [friends, znajomy, znajomi]
+  team:
+    usage: /team <create|invite|join|leave|info|disband> [nazwa/gracz]
+    aliases: [druzyna, party]
+  betterrtp:
+    usage: /betterrtp
+    aliases: [brtp, losuj]
+  playershop:
+    usage: /playershop
+    aliases: [ah, aukcje, oferty]
+  sellhand:
+    usage: /sellhand <cena>
+  buyoffer:
+    usage: /buyoffer <id>
+  canceloffer:
+    usage: /canceloffer <id>
+  bid:
+    usage: /bid <id> <kwota>
+  servermarket:
+    usage: /servermarket
+    aliases: [sklepserwera, sklep]
+  econplus:
+    usage: /econplus reload
+permissions:
+  msurvival.economyplus.admin:
+    default: op

@@ -94,8 +94,27 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
 
     private void toSurvival(Player p) {
         removeAllCompasses(p);
+
+        String mode = getConfig().getString("survival-teleport.mode", "command").toLowerCase(Locale.ROOT);
+        if (mode.equals("none")) {
+            p.sendMessage(msg("survival"));
+            return;
+        }
+
+        if (mode.equals("command")) {
+            String command = getConfig().getString("survival-teleport.command", "spawn");
+            if (command != null && !command.isBlank()) {
+                p.performCommand(command.startsWith("/") ? command.substring(1) : command);
+            }
+            p.sendMessage(msg("survival"));
+            return;
+        }
+
         World w = Bukkit.getWorld(getConfig().getString("worlds.survival", "world"));
-        if (w == null) { p.sendMessage(msg("no-world")); return; }
+        if (w == null) {
+            p.sendMessage(msg("no-world"));
+            return;
+        }
         p.teleport(w.getSpawnLocation());
         p.sendMessage(msg("survival"));
     }

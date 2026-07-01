@@ -18,63 +18,53 @@ public final class MSurvivalAuth extends JavaPlugin implements Listener {
     private YamlConfiguration data;
     private final Set<UUID> logged = new HashSet<>();
 
-    @Override
-    public void onEnable() {
+    @Override public void onEnable() {
         saveDefaultConfig();
         file = new File(getDataFolder(), "auth.yml");
-        if (!file.exists()) {
-            try {
-                getDataFolder().mkdirs();
-                file.createNewFile();
-            } catch (Exception ignored) {}
-        }
+        try { getDataFolder().mkdirs(); if (!file.exists()) file.createNewFile(); } catch (Exception ignored) {}
         data = YamlConfiguration.loadConfiguration(file);
         Bukkit.getPluginManager().registerEvents(this, this);
     }
 
-    @Override
-    public void onDisable() {
-        save();
-    }
+    @Override public void onDisable() { save(); }
 
-    @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+    @Override public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         String cmd = command.getName().toLowerCase(Locale.ROOT);
 
-        if (cmd.equals("authbypass")) {
+        if (cmd.equals("authbypass") || cmd.equals("authforce")) {
             if (!sender.hasPermission("msurvival.auth.admin")) return true;
-            List<String> list = new ArrayList<>(getConfig().getStringList("settings.bypass"));
+            String listPath = cmd.equals("authbypass") ? "settings.bypass" : "settings.force-password";
+            List<String> list = new ArrayList<>(getConfig().getStringList(listPath));
             if (args.length == 0 || args[0].equalsIgnoreCase("list")) {
-                sender.sendMessage(color("&aBypass: &e" + String.join(", ", list)));
+                sender.sendMessage(color("&a" + listPath + ": &e" + String.join(", ", list)));
                 return true;
             }
-            if (args.length >= 2 && args[0].equalsIgnoreCase("add")) list.add(args[1]);
-            if (args.length >= 2 && args[0].equalsIgnoreCase("remove")) list.removeIf(x -> x.equalsIgnoreCase(args[1]));
-            getConfig().set("settings.bypass", list);
-            saveConfig();
-            sender.sendMessage(color("&aZmieniono bypass."));
+            if (args.length >= 2 && args[0].equalsIgnoreCase("add")) {
+                if (list.stream().noneMatch(x -> x.equalsIgnoreCase(args[1]))) list.add(args[1]);
+                getConfig().set(listPath, list); saveConfig();
+                sender.sendMessage(color("&aDodano &e" + args[1] + " &ado " + listPath));
+            }
+            if (args.length >= 2 && args[0].equalsIgnoreCase("remove")) {
+                list.removeIf(x -> x.equalsIgnoreCase(args[1]));
+                getConfig().set(listPath, list); saveConfig();
+                sender.sendMessage(color("&cUsunięto &e" + args[1] + " &cz " + listPath));
+            }
             return true;
         }
 
         if (!(sender instanceof Player p)) return true;
 
-        if (premium(p) || bypass(p)) {
+        if (!forcePassword(p) && (premium(p) || bypass(p))) {
             logged.add(p.getUniqueId());
             p.sendMessage(premium(p) ? msg("premium") : msg("bypassed"));
             return true;
         }
 
         if (cmd.equals("register")) {
-            if (registered(p)) {
-                p.sendMessage(msg("already-registered"));
-                return true;
-            }
-            if (args.length < 1) {
-                p.sendMessage(msg("register"));
-                return true;
-            }
-            data.set("players." + p.getUniqueId() + ".name", p.getName());
-            data.set("players." + p.getUniqueId() + ".password", hash(args[0]));
+            if (registered(p)) { p.sendMessage(msg("already-registered")); return true; }
+            if (args.length < 1) { p.sendMessage(msg("register")); return true; }
+            data.set("players." + p.getName().toLowerCase(Locale.ROOT) + ".uuid", p.getUniqueId().toString());
+            data.set("players." + p.getName().toLowerCase(Locale.ROOT) + ".password", hash(args[0]));
             logged.add(p.getUniqueId());
             save();
             p.sendMessage(msg("registered"));
@@ -82,30 +72,19 @@ public final class MSurvivalAuth extends JavaPlugin implements Listener {
         }
 
         if (cmd.equals("login")) {
-            if (!registered(p)) {
-                p.sendMessage(msg("not-registered"));
-                return true;
-            }
-            if (args.length < 1) {
-                p.sendMessage(msg("login"));
-                return true;
-            }
-            if (hash(args[0]).equals(data.getString("players." + p.getUniqueId() + ".password", ""))) {
+            if (!registered(p)) { p.sendMessage(msg("not-registered")); return true; }
+            if (args.length < 1) { p.sendMessage(msg("login")); return true; }
+            if (hash(args[0]).equals(data.getString("players." + p.getName().toLowerCase(Locale.ROOT) + ".password", ""))) {
                 logged.add(p.getUniqueId());
                 p.sendMessage(msg("logged"));
-            } else {
-                p.sendMessage(msg("wrong"));
-            }
+            } else p.sendMessage(msg("wrong"));
             return true;
         }
 
         if (cmd.equals("changepassword")) {
             if (!registered(p) || args.length < 2) return true;
-            if (!hash(args[0]).equals(data.getString("players." + p.getUniqueId() + ".password", ""))) {
-                p.sendMessage(msg("wrong"));
-                return true;
-            }
-            data.set("players." + p.getUniqueId() + ".password", hash(args[1]));
+            if (!hash(args[0]).equals(data.getString("players." + p.getName().toLowerCase(Locale.ROOT) + ".password", ""))) { p.sendMessage(msg("wrong")); return true; }
+            data.set("players." + p.getName().toLowerCase(Locale.ROOT) + ".password", hash(args[1]));
             save();
             p.sendMessage(msg("changed"));
             return true;
@@ -114,87 +93,40 @@ public final class MSurvivalAuth extends JavaPlugin implements Listener {
         return true;
     }
 
-    @EventHandler
-    public void join(PlayerJoinEvent e) {
+    @EventHandler public void join(PlayerJoinEvent e) {
         Player p = e.getPlayer();
-
-        if (premium(p)) {
-            logged.add(p.getUniqueId());
-            Bukkit.getScheduler().runTaskLater(this, () -> p.sendMessage(msg("premium")), 10L);
-            return;
-        }
-
-        if (bypass(p)) {
-            logged.add(p.getUniqueId());
-            Bukkit.getScheduler().runTaskLater(this, () -> p.sendMessage(msg("bypassed")), 10L);
-            return;
-        }
-
-        Bukkit.getScheduler().runTaskLater(this, () -> {
-            if (!p.isOnline()) return;
-            if (registered(p)) p.sendMessage(msg("login"));
-            else p.sendMessage(msg("register"));
-        }, 20L);
+        if (!forcePassword(p) && premium(p)) { logged.add(p.getUniqueId()); Bukkit.getScheduler().runTaskLater(this, () -> p.sendMessage(msg("premium")), 10L); return; }
+        if (!forcePassword(p) && bypass(p)) { logged.add(p.getUniqueId()); Bukkit.getScheduler().runTaskLater(this, () -> p.sendMessage(msg("bypassed")), 10L); return; }
+        Bukkit.getScheduler().runTaskLater(this, () -> { if (p.isOnline()) p.sendMessage(registered(p) ? msg("login") : msg("register")); }, 20L);
     }
 
     @EventHandler public void quit(PlayerQuitEvent e) { logged.remove(e.getPlayer().getUniqueId()); }
     @EventHandler public void move(PlayerMoveEvent e) { if (locked(e.getPlayer())) e.setCancelled(true); }
     @EventHandler public void chat(AsyncPlayerChatEvent e) { if (locked(e.getPlayer())) e.setCancelled(true); }
     @EventHandler public void interact(PlayerInteractEvent e) { if (locked(e.getPlayer())) e.setCancelled(true); }
-    @EventHandler public void breakBlock(BlockBreakEvent e) { if (locked(e.getPlayer())) e.setCancelled(true); }
-    @EventHandler public void placeBlock(BlockPlaceEvent e) { if (locked(e.getPlayer())) e.setCancelled(true); }
+    @EventHandler public void br(BlockBreakEvent e) { if (locked(e.getPlayer())) e.setCancelled(true); }
+    @EventHandler public void bp(BlockPlaceEvent e) { if (locked(e.getPlayer())) e.setCancelled(true); }
 
-    @EventHandler
-    public void command(PlayerCommandPreprocessEvent e) {
+    @EventHandler public void command(PlayerCommandPreprocessEvent e) {
         if (!locked(e.getPlayer())) return;
         String m = e.getMessage().toLowerCase(Locale.ROOT);
         if (!m.startsWith("/login") && !m.startsWith("/l ") && !m.startsWith("/register") && !m.startsWith("/reg ")) {
             e.setCancelled(true);
-            if (registered(e.getPlayer())) e.getPlayer().sendMessage(msg("login"));
-            else e.getPlayer().sendMessage(msg("register"));
+            e.getPlayer().sendMessage(registered(e.getPlayer()) ? msg("login") : msg("register"));
         }
     }
 
-    private boolean registered(Player p) {
-        return data.contains("players." + p.getUniqueId() + ".password");
-    }
-
-    private boolean locked(Player p) {
-        return !logged.contains(p.getUniqueId()) && !premium(p) && !bypass(p);
-    }
-
-    private boolean premium(Player p) {
-        return getConfig().getBoolean("settings.premium-auto-login", true) && p.getUniqueId().version() == 4;
-    }
-
-    private boolean bypass(Player p) {
-        for (String n : getConfig().getStringList("settings.bypass")) {
-            if (n.equalsIgnoreCase(p.getName())) return true;
-        }
-        return false;
-    }
+    private boolean registered(Player p) { return data.contains("players." + p.getName().toLowerCase(Locale.ROOT) + ".password"); }
+    private boolean locked(Player p) { return !logged.contains(p.getUniqueId()) && (forcePassword(p) || (!premium(p) && !bypass(p))); }
+    private boolean premium(Player p) { return getConfig().getBoolean("settings.premium-auto-login", true) && p.getUniqueId().version() == 4; }
+    private boolean bypass(Player p) { return listContains("settings.bypass", p.getName()); }
+    private boolean forcePassword(Player p) { return listContains("settings.force-password", p.getName()); }
+    private boolean listContains(String path, String name) { for (String n : getConfig().getStringList(path)) if (n.equalsIgnoreCase(name)) return true; return false; }
 
     private String hash(String s) {
-        try {
-            MessageDigest md = MessageDigest.getInstance("SHA-256");
-            byte[] b = md.digest(s.getBytes());
-            StringBuilder sb = new StringBuilder();
-            for (byte x : b) sb.append(String.format("%02x", x));
-            return sb.toString();
-        } catch (Exception e) {
-            return s;
-        }
+        try { MessageDigest md = MessageDigest.getInstance("SHA-256"); byte[] b = md.digest(s.getBytes()); StringBuilder sb = new StringBuilder(); for(byte x:b) sb.append(String.format("%02x",x)); return sb.toString(); } catch(Exception e) { return s; }
     }
-
-    private void save() {
-        try { data.save(file); } catch (Exception ignored) {}
-    }
-
-    private String msg(String key) {
-        return color(getConfig().getString("messages.prefix", "") + getConfig().getString("messages." + key, ""));
-    }
-
-    private String color(String text) {
-        return ChatColor.translateAlternateColorCodes('&', text == null ? "" : text);
-    }
+    private void save() { try { data.save(file); } catch(Exception ignored) {} }
+    private String msg(String k) { return color(getConfig().getString("messages.prefix","")+getConfig().getString("messages."+k,"")); }
+    private String color(String s) { return ChatColor.translateAlternateColorCodes('&', s==null?"":s); }
 }

@@ -1,6 +1,14 @@
 worlds:
   lobby: 'Lobby'
   survival: 'world'
+
+survival-teleport:
+  # world-spawn = teleport na spawn świata survival
+  # command = wykona komendę z pola command poniżej, np. spawn
+  # none = tylko usuwa kompas i nie teleportuje
+  mode: 'command'
+  command: 'spawn'
+
 compass:
   slot: 4
   material: COMPASS
@@ -12,12 +20,14 @@ compass:
     - '&8━━━━━━━━━━━━━━━━━━━━'
     - '&6&lmsurvival.6mc.pl'
   remove-normal-compasses-in-lobby: true
+
 menu:
   title: '&6&l✦ MSURVIVAL MENU ✦'
   survival-name: '&a&lSurvival'
   keys-name: '&6&lKlucze'
   kits-name: '&b&lE-Kity'
   market-name: '&e&lRynek'
+
 messages:
   prefix: '&6&lMSurvival &8» &r'
   lobby: '&aPrzeniesiono do Lobby.'
