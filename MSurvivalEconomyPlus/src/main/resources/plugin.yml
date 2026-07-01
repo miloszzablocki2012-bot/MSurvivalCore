@@ -1,7 +1,7 @@
 name: MSurvivalEconomyPlus
-version: 5.4
+version: 5.5
 main: pl.msurvival.economyplus.MSurvivalEconomyPlus
-api-version: '1.21'
+api-version: 5.5
 author: Milekz
 commands:
   bank:

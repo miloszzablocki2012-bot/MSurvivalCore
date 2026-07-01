@@ -23,13 +23,12 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
         saveDefaultConfig();
         compassKey = new NamespacedKey(this, "msurvival_compass");
         dataFile = new File(getDataFolder(), "data.yml");
-        try { getDataFolder().mkdirs(); if (!dataFile.exists()) dataFile.createNewFile(); } catch(Exception ignored) {}
+        try { getDataFolder().mkdirs(); if (!dataFile.exists()) dataFile.createNewFile(); } catch (Exception ignored) {}
         data = YamlConfiguration.loadConfiguration(dataFile);
         Bukkit.getPluginManager().registerEvents(this, this);
         Bukkit.getScheduler().runTaskTimer(this, () -> {
             for (Player p : Bukkit.getOnlinePlayers()) {
-                if (isLobby(p)) giveCompassSafely(p);
-                else removeAllCompasses(p);
+                if (isLobby(p)) giveCompassSafely(p); else removeAllCompasses(p);
             }
         }, 40L, 100L);
     }
@@ -44,16 +43,27 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
         }
         if (!(sender instanceof Player p)) return true;
 
+        if (cmd.equals("setmsspawn")) {
+            if (!p.hasPermission("msurvival.compass.admin")) return true;
+            if (args.length < 1 || (!args[0].equalsIgnoreCase("lobby") && !args[0].equalsIgnoreCase("survival"))) {
+                p.sendMessage(color("&c/setmsspawn <lobby|survival>"));
+                return true;
+            }
+            saveSpawn(args[0].toLowerCase(Locale.ROOT), p.getLocation());
+            p.sendMessage(msg("spawn-set").replace("%type%", args[0].toLowerCase(Locale.ROOT)));
+            return true;
+        }
+
         if (cmd.equals("compassbypass")) {
             if (!p.hasPermission("msurvival.compass.bypass")) return true;
             if (args.length < 1) { p.sendMessage(color("&c/compassbypass <on|off>")); return true; }
             boolean enabled = args[0].equalsIgnoreCase("on") || args[0].equalsIgnoreCase("true");
-            data.set("bypass." + p.getUniqueId(), enabled);
-            saveData();
+            data.set("bypass." + p.getUniqueId(), enabled); saveData();
             if (enabled) { removeAllCompasses(p); p.sendMessage(msg("bypass-on")); }
             else { p.sendMessage(msg("bypass-off")); if (isLobby(p)) giveCompassSafely(p); }
             return true;
         }
+
         if (cmd.equals("lobby")) { toLobby(p); return true; }
         if (cmd.equals("survival")) { toSurvival(p); return true; }
         if (cmd.equals("menu")) { openMenu(p); return true; }
@@ -61,7 +71,7 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
     }
 
     @EventHandler public void join(PlayerJoinEvent e) {
-        Bukkit.getScheduler().runTaskLater(this, () -> { if (e.getPlayer().isOnline()) { if (isLobby(e.getPlayer())) giveCompassSafely(e.getPlayer()); else removeAllCompasses(e.getPlayer()); } }, 10L);
+        Bukkit.getScheduler().runTaskLater(this, () -> { Player p=e.getPlayer(); if(p.isOnline()) { if(isLobby(p)) giveCompassSafely(p); else removeAllCompasses(p); }}, 10L);
     }
     @EventHandler public void world(PlayerChangedWorldEvent e) { if (isLobby(e.getPlayer())) giveCompassSafely(e.getPlayer()); else removeAllCompasses(e.getPlayer()); }
     @EventHandler public void interact(PlayerInteractEvent e) { if (isCompass(e.getItem())) { e.setCancelled(true); openMenu(e.getPlayer()); } }
@@ -85,38 +95,43 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
     }
 
     private void toLobby(Player p) {
-        World w = Bukkit.getWorld(getConfig().getString("worlds.lobby", "Lobby"));
-        if (w == null) { p.sendMessage(msg("no-world")); return; }
-        p.teleport(w.getSpawnLocation());
+        teleportToSpawn(p, "lobby", getConfig().getString("worlds.lobby", "Lobby"));
         Bukkit.getScheduler().runTaskLater(this, () -> giveCompassSafely(p), 5L);
         p.sendMessage(msg("lobby"));
     }
 
     private void toSurvival(Player p) {
         removeAllCompasses(p);
-
-        String mode = getConfig().getString("survival-teleport.mode", "command").toLowerCase(Locale.ROOT);
-        if (mode.equals("none")) {
-            p.sendMessage(msg("survival"));
-            return;
-        }
-
-        if (mode.equals("command")) {
-            String command = getConfig().getString("survival-teleport.command", "spawn");
-            if (command != null && !command.isBlank()) {
-                p.performCommand(command.startsWith("/") ? command.substring(1) : command);
-            }
-            p.sendMessage(msg("survival"));
-            return;
-        }
-
-        World w = Bukkit.getWorld(getConfig().getString("worlds.survival", "world"));
-        if (w == null) {
-            p.sendMessage(msg("no-world"));
-            return;
-        }
-        p.teleport(w.getSpawnLocation());
+        teleportToSpawn(p, "survival", getConfig().getString("worlds.survival", "world"));
         p.sendMessage(msg("survival"));
+    }
+
+    private void teleportToSpawn(Player p, String type, String fallbackWorldName) {
+        Location saved = getSpawn(type);
+        if (saved != null) { p.teleport(saved); return; }
+        World w = Bukkit.getWorld(fallbackWorldName);
+        if (w == null) { p.sendMessage(msg("no-world").replace("%world%", fallbackWorldName)); return; }
+        p.teleport(w.getSpawnLocation());
+    }
+
+    private void saveSpawn(String type, Location loc) {
+        String path = "spawns." + type;
+        getConfig().set(path + ".world", loc.getWorld().getName());
+        getConfig().set(path + ".x", loc.getX());
+        getConfig().set(path + ".y", loc.getY());
+        getConfig().set(path + ".z", loc.getZ());
+        getConfig().set(path + ".yaw", loc.getYaw());
+        getConfig().set(path + ".pitch", loc.getPitch());
+        saveConfig();
+    }
+
+    private Location getSpawn(String type) {
+        String path = "spawns." + type;
+        String worldName = getConfig().getString(path + ".world");
+        if (worldName == null) return null;
+        World world = Bukkit.getWorld(worldName);
+        if (world == null) return null;
+        return new Location(world, getConfig().getDouble(path+".x"), getConfig().getDouble(path+".y"), getConfig().getDouble(path+".z"), (float)getConfig().getDouble(path+".yaw"), (float)getConfig().getDouble(path+".pitch"));
     }
 
     private void openMenu(Player p) {
@@ -148,9 +163,7 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
         ItemStack[] contents = p.getInventory().getContents();
         for (int i=0;i<contents.length;i++) {
             ItemStack item = contents[i];
-            if (isCompass(item) || (removeNormal && isLobby(p) && item != null && item.getType() == Material.COMPASS)) {
-                p.getInventory().setItem(i, null);
-            }
+            if (isCompass(item) || (removeNormal && isLobby(p) && item != null && item.getType() == Material.COMPASS)) p.getInventory().setItem(i, null);
         }
     }
 
@@ -167,9 +180,7 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
         return item;
     }
 
-    private boolean isCompass(ItemStack item) {
-        return item != null && item.hasItemMeta() && item.getItemMeta().getPersistentDataContainer().has(compassKey, PersistentDataType.STRING);
-    }
+    private boolean isCompass(ItemStack item) { return item != null && item.hasItemMeta() && item.getItemMeta().getPersistentDataContainer().has(compassKey, PersistentDataType.STRING); }
     private boolean isLobby(Player p) { return p.getWorld().getName().equalsIgnoreCase(getConfig().getString("worlds.lobby", "Lobby")); }
     private ItemStack named(Material mat, String name) { ItemStack item = new ItemStack(mat); ItemMeta meta = item.getItemMeta(); meta.setDisplayName(color(name)); item.setItemMeta(meta); return item; }
     private void saveData() { try { data.save(dataFile); } catch(Exception ignored) {} }
