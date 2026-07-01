@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>pl.msurvival</groupId>
-  <artifactId>MSurvivalLobby</artifactId>
+  <artifactId>MSurvivalPro</artifactId>
   <version>5.8</version>
   <packaging>jar</packaging>
   <properties>
@@ -25,7 +25,7 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>MSurvivalLobby</finalName>
+    <finalName>MSurvivalPro</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

@@ -1,0 +1,6999 @@
+quest_1:
+  name: '&6Zadanie #1'
+  type: 'blocks'
+  amount: 50
+  reward: 250
+  message: '&aUkończono zadanie #1!'
+
+quest_2:
+  name: '&6Zadanie #2'
+  type: 'blocks'
+  amount: 100
+  reward: 500
+  message: '&aUkończono zadanie #2!'
+
+quest_3:
+  name: '&6Zadanie #3'
+  type: 'blocks'
+  amount: 150
+  reward: 750
+  message: '&aUkończono zadanie #3!'
+
+quest_4:
+  name: '&6Zadanie #4'
+  type: 'blocks'
+  amount: 200
+  reward: 1000
+  message: '&aUkończono zadanie #4!'
+
+quest_5:
+  name: '&6Zadanie #5'
+  type: 'blocks'
+  amount: 250
+  reward: 1250
+  message: '&aUkończono zadanie #5!'
+
+quest_6:
+  name: '&6Zadanie #6'
+  type: 'blocks'
+  amount: 300
+  reward: 1500
+  message: '&aUkończono zadanie #6!'
+
+quest_7:
+  name: '&6Zadanie #7'
+  type: 'blocks'
+  amount: 350
+  reward: 1750
+  message: '&aUkończono zadanie #7!'
+
+quest_8:
+  name: '&6Zadanie #8'
+  type: 'blocks'
+  amount: 400
+  reward: 2000
+  message: '&aUkończono zadanie #8!'
+
+quest_9:
+  name: '&6Zadanie #9'
+  type: 'blocks'
+  amount: 450
+  reward: 2250
+  message: '&aUkończono zadanie #9!'
+
+quest_10:
+  name: '&6Zadanie #10'
+  type: 'blocks'
+  amount: 500
+  reward: 2500
+  message: '&aUkończono zadanie #10!'
+
+quest_11:
+  name: '&6Zadanie #11'
+  type: 'blocks'
+  amount: 550
+  reward: 2750
+  message: '&aUkończono zadanie #11!'
+
+quest_12:
+  name: '&6Zadanie #12'
+  type: 'blocks'
+  amount: 600
+  reward: 3000
+  message: '&aUkończono zadanie #12!'
+
+quest_13:
+  name: '&6Zadanie #13'
+  type: 'blocks'
+  amount: 650
+  reward: 3250
+  message: '&aUkończono zadanie #13!'
+
+quest_14:
+  name: '&6Zadanie #14'
+  type: 'blocks'
+  amount: 700
+  reward: 3500
+  message: '&aUkończono zadanie #14!'
+
+quest_15:
+  name: '&6Zadanie #15'
+  type: 'blocks'
+  amount: 750
+  reward: 3750
+  message: '&aUkończono zadanie #15!'
+
+quest_16:
+  name: '&6Zadanie #16'
+  type: 'blocks'
+  amount: 800
+  reward: 4000
+  message: '&aUkończono zadanie #16!'
+
+quest_17:
+  name: '&6Zadanie #17'
+  type: 'blocks'
+  amount: 850
+  reward: 4250
+  message: '&aUkończono zadanie #17!'
+
+quest_18:
+  name: '&6Zadanie #18'
+  type: 'blocks'
+  amount: 900
+  reward: 4500
+  message: '&aUkończono zadanie #18!'
+
+quest_19:
+  name: '&6Zadanie #19'
+  type: 'blocks'
+  amount: 950
+  reward: 4750
+  message: '&aUkończono zadanie #19!'
+
+quest_20:
+  name: '&6Zadanie #20'
+  type: 'blocks'
+  amount: 1000
+  reward: 5000
+  message: '&aUkończono zadanie #20!'
+
+quest_21:
+  name: '&6Zadanie #21'
+  type: 'blocks'
+  amount: 1050
+  reward: 5250
+  message: '&aUkończono zadanie #21!'
+
+quest_22:
+  name: '&6Zadanie #22'
+  type: 'blocks'
+  amount: 1100
+  reward: 5500
+  message: '&aUkończono zadanie #22!'
+
+quest_23:
+  name: '&6Zadanie #23'
+  type: 'blocks'
+  amount: 1150
+  reward: 5750
+  message: '&aUkończono zadanie #23!'
+
+quest_24:
+  name: '&6Zadanie #24'
+  type: 'blocks'
+  amount: 1200
+  reward: 6000
+  message: '&aUkończono zadanie #24!'
+
+quest_25:
+  name: '&6Zadanie #25'
+  type: 'blocks'
+  amount: 1250
+  reward: 6250
+  message: '&aUkończono zadanie #25!'
+
+quest_26:
+  name: '&6Zadanie #26'
+  type: 'blocks'
+  amount: 1300
+  reward: 6500
+  message: '&aUkończono zadanie #26!'
+
+quest_27:
+  name: '&6Zadanie #27'
+  type: 'blocks'
+  amount: 1350
+  reward: 6750
+  message: '&aUkończono zadanie #27!'
+
+quest_28:
+  name: '&6Zadanie #28'
+  type: 'blocks'
+  amount: 1400
+  reward: 7000
+  message: '&aUkończono zadanie #28!'
+
+quest_29:
+  name: '&6Zadanie #29'
+  type: 'blocks'
+  amount: 1450
+  reward: 7250
+  message: '&aUkończono zadanie #29!'
+
+quest_30:
+  name: '&6Zadanie #30'
+  type: 'blocks'
+  amount: 1500
+  reward: 7500
+  message: '&aUkończono zadanie #30!'
+
+quest_31:
+  name: '&6Zadanie #31'
+  type: 'blocks'
+  amount: 1550
+  reward: 7750
+  message: '&aUkończono zadanie #31!'
+
+quest_32:
+  name: '&6Zadanie #32'
+  type: 'blocks'
+  amount: 1600
+  reward: 8000
+  message: '&aUkończono zadanie #32!'
+
+quest_33:
+  name: '&6Zadanie #33'
+  type: 'blocks'
+  amount: 1650
+  reward: 8250
+  message: '&aUkończono zadanie #33!'
+
+quest_34:
+  name: '&6Zadanie #34'
+  type: 'blocks'
+  amount: 1700
+  reward: 8500
+  message: '&aUkończono zadanie #34!'
+
+quest_35:
+  name: '&6Zadanie #35'
+  type: 'blocks'
+  amount: 1750
+  reward: 8750
+  message: '&aUkończono zadanie #35!'
+
+quest_36:
+  name: '&6Zadanie #36'
+  type: 'blocks'
+  amount: 1800
+  reward: 9000
+  message: '&aUkończono zadanie #36!'
+
+quest_37:
+  name: '&6Zadanie #37'
+  type: 'blocks'
+  amount: 1850
+  reward: 9250
+  message: '&aUkończono zadanie #37!'
+
+quest_38:
+  name: '&6Zadanie #38'
+  type: 'blocks'
+  amount: 1900
+  reward: 9500
+  message: '&aUkończono zadanie #38!'
+
+quest_39:
+  name: '&6Zadanie #39'
+  type: 'blocks'
+  amount: 1950
+  reward: 9750
+  message: '&aUkończono zadanie #39!'
+
+quest_40:
+  name: '&6Zadanie #40'
+  type: 'blocks'
+  amount: 2000
+  reward: 10000
+  message: '&aUkończono zadanie #40!'
+
+quest_41:
+  name: '&6Zadanie #41'
+  type: 'blocks'
+  amount: 2050
+  reward: 10250
+  message: '&aUkończono zadanie #41!'
+
+quest_42:
+  name: '&6Zadanie #42'
+  type: 'blocks'
+  amount: 2100
+  reward: 10500
+  message: '&aUkończono zadanie #42!'
+
+quest_43:
+  name: '&6Zadanie #43'
+  type: 'blocks'
+  amount: 2150
+  reward: 10750
+  message: '&aUkończono zadanie #43!'
+
+quest_44:
+  name: '&6Zadanie #44'
+  type: 'blocks'
+  amount: 2200
+  reward: 11000
+  message: '&aUkończono zadanie #44!'
+
+quest_45:
+  name: '&6Zadanie #45'
+  type: 'blocks'
+  amount: 2250
+  reward: 11250
+  message: '&aUkończono zadanie #45!'
+
+quest_46:
+  name: '&6Zadanie #46'
+  type: 'blocks'
+  amount: 2300
+  reward: 11500
+  message: '&aUkończono zadanie #46!'
+
+quest_47:
+  name: '&6Zadanie #47'
+  type: 'blocks'
+  amount: 2350
+  reward: 11750
+  message: '&aUkończono zadanie #47!'
+
+quest_48:
+  name: '&6Zadanie #48'
+  type: 'blocks'
+  amount: 2400
+  reward: 12000
+  message: '&aUkończono zadanie #48!'
+
+quest_49:
+  name: '&6Zadanie #49'
+  type: 'blocks'
+  amount: 2450
+  reward: 12250
+  message: '&aUkończono zadanie #49!'
+
+quest_50:
+  name: '&6Zadanie #50'
+  type: 'blocks'
+  amount: 2500
+  reward: 12500
+  message: '&aUkończono zadanie #50!'
+
+quest_51:
+  name: '&6Zadanie #51'
+  type: 'blocks'
+  amount: 2550
+  reward: 12750
+  message: '&aUkończono zadanie #51!'
+
+quest_52:
+  name: '&6Zadanie #52'
+  type: 'blocks'
+  amount: 2600
+  reward: 13000
+  message: '&aUkończono zadanie #52!'
+
+quest_53:
+  name: '&6Zadanie #53'
+  type: 'blocks'
+  amount: 2650
+  reward: 13250
+  message: '&aUkończono zadanie #53!'
+
+quest_54:
+  name: '&6Zadanie #54'
+  type: 'blocks'
+  amount: 2700
+  reward: 13500
+  message: '&aUkończono zadanie #54!'
+
+quest_55:
+  name: '&6Zadanie #55'
+  type: 'blocks'
+  amount: 2750
+  reward: 13750
+  message: '&aUkończono zadanie #55!'
+
+quest_56:
+  name: '&6Zadanie #56'
+  type: 'blocks'
+  amount: 2800
+  reward: 14000
+  message: '&aUkończono zadanie #56!'
+
+quest_57:
+  name: '&6Zadanie #57'
+  type: 'blocks'
+  amount: 2850
+  reward: 14250
+  message: '&aUkończono zadanie #57!'
+
+quest_58:
+  name: '&6Zadanie #58'
+  type: 'blocks'
+  amount: 2900
+  reward: 14500
+  message: '&aUkończono zadanie #58!'
+
+quest_59:
+  name: '&6Zadanie #59'
+  type: 'blocks'
+  amount: 2950
+  reward: 14750
+  message: '&aUkończono zadanie #59!'
+
+quest_60:
+  name: '&6Zadanie #60'
+  type: 'blocks'
+  amount: 3000
+  reward: 15000
+  message: '&aUkończono zadanie #60!'
+
+quest_61:
+  name: '&6Zadanie #61'
+  type: 'blocks'
+  amount: 3050
+  reward: 15250
+  message: '&aUkończono zadanie #61!'
+
+quest_62:
+  name: '&6Zadanie #62'
+  type: 'blocks'
+  amount: 3100
+  reward: 15500
+  message: '&aUkończono zadanie #62!'
+
+quest_63:
+  name: '&6Zadanie #63'
+  type: 'blocks'
+  amount: 3150
+  reward: 15750
+  message: '&aUkończono zadanie #63!'
+
+quest_64:
+  name: '&6Zadanie #64'
+  type: 'blocks'
+  amount: 3200
+  reward: 16000
+  message: '&aUkończono zadanie #64!'
+
+quest_65:
+  name: '&6Zadanie #65'
+  type: 'blocks'
+  amount: 3250
+  reward: 16250
+  message: '&aUkończono zadanie #65!'
+
+quest_66:
+  name: '&6Zadanie #66'
+  type: 'blocks'
+  amount: 3300
+  reward: 16500
+  message: '&aUkończono zadanie #66!'
+
+quest_67:
+  name: '&6Zadanie #67'
+  type: 'blocks'
+  amount: 3350
+  reward: 16750
+  message: '&aUkończono zadanie #67!'
+
+quest_68:
+  name: '&6Zadanie #68'
+  type: 'blocks'
+  amount: 3400
+  reward: 17000
+  message: '&aUkończono zadanie #68!'
+
+quest_69:
+  name: '&6Zadanie #69'
+  type: 'blocks'
+  amount: 3450
+  reward: 17250
+  message: '&aUkończono zadanie #69!'
+
+quest_70:
+  name: '&6Zadanie #70'
+  type: 'blocks'
+  amount: 3500
+  reward: 17500
+  message: '&aUkończono zadanie #70!'
+
+quest_71:
+  name: '&6Zadanie #71'
+  type: 'blocks'
+  amount: 3550
+  reward: 17750
+  message: '&aUkończono zadanie #71!'
+
+quest_72:
+  name: '&6Zadanie #72'
+  type: 'blocks'
+  amount: 3600
+  reward: 18000
+  message: '&aUkończono zadanie #72!'
+
+quest_73:
+  name: '&6Zadanie #73'
+  type: 'blocks'
+  amount: 3650
+  reward: 18250
+  message: '&aUkończono zadanie #73!'
+
+quest_74:
+  name: '&6Zadanie #74'
+  type: 'blocks'
+  amount: 3700
+  reward: 18500
+  message: '&aUkończono zadanie #74!'
+
+quest_75:
+  name: '&6Zadanie #75'
+  type: 'blocks'
+  amount: 3750
+  reward: 18750
+  message: '&aUkończono zadanie #75!'
+
+quest_76:
+  name: '&6Zadanie #76'
+  type: 'blocks'
+  amount: 3800
+  reward: 19000
+  message: '&aUkończono zadanie #76!'
+
+quest_77:
+  name: '&6Zadanie #77'
+  type: 'blocks'
+  amount: 3850
+  reward: 19250
+  message: '&aUkończono zadanie #77!'
+
+quest_78:
+  name: '&6Zadanie #78'
+  type: 'blocks'
+  amount: 3900
+  reward: 19500
+  message: '&aUkończono zadanie #78!'
+
+quest_79:
+  name: '&6Zadanie #79'
+  type: 'blocks'
+  amount: 3950
+  reward: 19750
+  message: '&aUkończono zadanie #79!'
+
+quest_80:
+  name: '&6Zadanie #80'
+  type: 'blocks'
+  amount: 4000
+  reward: 20000
+  message: '&aUkończono zadanie #80!'
+
+quest_81:
+  name: '&6Zadanie #81'
+  type: 'blocks'
+  amount: 4050
+  reward: 20250
+  message: '&aUkończono zadanie #81!'
+
+quest_82:
+  name: '&6Zadanie #82'
+  type: 'blocks'
+  amount: 4100
+  reward: 20500
+  message: '&aUkończono zadanie #82!'
+
+quest_83:
+  name: '&6Zadanie #83'
+  type: 'blocks'
+  amount: 4150
+  reward: 20750
+  message: '&aUkończono zadanie #83!'
+
+quest_84:
+  name: '&6Zadanie #84'
+  type: 'blocks'
+  amount: 4200
+  reward: 21000
+  message: '&aUkończono zadanie #84!'
+
+quest_85:
+  name: '&6Zadanie #85'
+  type: 'blocks'
+  amount: 4250
+  reward: 21250
+  message: '&aUkończono zadanie #85!'
+
+quest_86:
+  name: '&6Zadanie #86'
+  type: 'blocks'
+  amount: 4300
+  reward: 21500
+  message: '&aUkończono zadanie #86!'
+
+quest_87:
+  name: '&6Zadanie #87'
+  type: 'blocks'
+  amount: 4350
+  reward: 21750
+  message: '&aUkończono zadanie #87!'
+
+quest_88:
+  name: '&6Zadanie #88'
+  type: 'blocks'
+  amount: 4400
+  reward: 22000
+  message: '&aUkończono zadanie #88!'
+
+quest_89:
+  name: '&6Zadanie #89'
+  type: 'blocks'
+  amount: 4450
+  reward: 22250
+  message: '&aUkończono zadanie #89!'
+
+quest_90:
+  name: '&6Zadanie #90'
+  type: 'blocks'
+  amount: 4500
+  reward: 22500
+  message: '&aUkończono zadanie #90!'
+
+quest_91:
+  name: '&6Zadanie #91'
+  type: 'blocks'
+  amount: 4550
+  reward: 22750
+  message: '&aUkończono zadanie #91!'
+
+quest_92:
+  name: '&6Zadanie #92'
+  type: 'blocks'
+  amount: 4600
+  reward: 23000
+  message: '&aUkończono zadanie #92!'
+
+quest_93:
+  name: '&6Zadanie #93'
+  type: 'blocks'
+  amount: 4650
+  reward: 23250
+  message: '&aUkończono zadanie #93!'
+
+quest_94:
+  name: '&6Zadanie #94'
+  type: 'blocks'
+  amount: 4700
+  reward: 23500
+  message: '&aUkończono zadanie #94!'
+
+quest_95:
+  name: '&6Zadanie #95'
+  type: 'blocks'
+  amount: 4750
+  reward: 23750
+  message: '&aUkończono zadanie #95!'
+
+quest_96:
+  name: '&6Zadanie #96'
+  type: 'blocks'
+  amount: 4800
+  reward: 24000
+  message: '&aUkończono zadanie #96!'
+
+quest_97:
+  name: '&6Zadanie #97'
+  type: 'blocks'
+  amount: 4850
+  reward: 24250
+  message: '&aUkończono zadanie #97!'
+
+quest_98:
+  name: '&6Zadanie #98'
+  type: 'blocks'
+  amount: 4900
+  reward: 24500
+  message: '&aUkończono zadanie #98!'
+
+quest_99:
+  name: '&6Zadanie #99'
+  type: 'blocks'
+  amount: 4950
+  reward: 24750
+  message: '&aUkończono zadanie #99!'
+
+quest_100:
+  name: '&6Zadanie #100'
+  type: 'blocks'
+  amount: 5000
+  reward: 25000
+  message: '&aUkończono zadanie #100!'
+
+quest_101:
+  name: '&6Zadanie #101'
+  type: 'blocks'
+  amount: 5050
+  reward: 25250
+  message: '&aUkończono zadanie #101!'
+
+quest_102:
+  name: '&6Zadanie #102'
+  type: 'blocks'
+  amount: 5100
+  reward: 25500
+  message: '&aUkończono zadanie #102!'
+
+quest_103:
+  name: '&6Zadanie #103'
+  type: 'blocks'
+  amount: 5150
+  reward: 25750
+  message: '&aUkończono zadanie #103!'
+
+quest_104:
+  name: '&6Zadanie #104'
+  type: 'blocks'
+  amount: 5200
+  reward: 26000
+  message: '&aUkończono zadanie #104!'
+
+quest_105:
+  name: '&6Zadanie #105'
+  type: 'blocks'
+  amount: 5250
+  reward: 26250
+  message: '&aUkończono zadanie #105!'
+
+quest_106:
+  name: '&6Zadanie #106'
+  type: 'blocks'
+  amount: 5300
+  reward: 26500
+  message: '&aUkończono zadanie #106!'
+
+quest_107:
+  name: '&6Zadanie #107'
+  type: 'blocks'
+  amount: 5350
+  reward: 26750
+  message: '&aUkończono zadanie #107!'
+
+quest_108:
+  name: '&6Zadanie #108'
+  type: 'blocks'
+  amount: 5400
+  reward: 27000
+  message: '&aUkończono zadanie #108!'
+
+quest_109:
+  name: '&6Zadanie #109'
+  type: 'blocks'
+  amount: 5450
+  reward: 27250
+  message: '&aUkończono zadanie #109!'
+
+quest_110:
+  name: '&6Zadanie #110'
+  type: 'blocks'
+  amount: 5500
+  reward: 27500
+  message: '&aUkończono zadanie #110!'
+
+quest_111:
+  name: '&6Zadanie #111'
+  type: 'blocks'
+  amount: 5550
+  reward: 27750
+  message: '&aUkończono zadanie #111!'
+
+quest_112:
+  name: '&6Zadanie #112'
+  type: 'blocks'
+  amount: 5600
+  reward: 28000
+  message: '&aUkończono zadanie #112!'
+
+quest_113:
+  name: '&6Zadanie #113'
+  type: 'blocks'
+  amount: 5650
+  reward: 28250
+  message: '&aUkończono zadanie #113!'
+
+quest_114:
+  name: '&6Zadanie #114'
+  type: 'blocks'
+  amount: 5700
+  reward: 28500
+  message: '&aUkończono zadanie #114!'
+
+quest_115:
+  name: '&6Zadanie #115'
+  type: 'blocks'
+  amount: 5750
+  reward: 28750
+  message: '&aUkończono zadanie #115!'
+
+quest_116:
+  name: '&6Zadanie #116'
+  type: 'blocks'
+  amount: 5800
+  reward: 29000
+  message: '&aUkończono zadanie #116!'
+
+quest_117:
+  name: '&6Zadanie #117'
+  type: 'blocks'
+  amount: 5850
+  reward: 29250
+  message: '&aUkończono zadanie #117!'
+
+quest_118:
+  name: '&6Zadanie #118'
+  type: 'blocks'
+  amount: 5900
+  reward: 29500
+  message: '&aUkończono zadanie #118!'
+
+quest_119:
+  name: '&6Zadanie #119'
+  type: 'blocks'
+  amount: 5950
+  reward: 29750
+  message: '&aUkończono zadanie #119!'
+
+quest_120:
+  name: '&6Zadanie #120'
+  type: 'blocks'
+  amount: 6000
+  reward: 30000
+  message: '&aUkończono zadanie #120!'
+
+quest_121:
+  name: '&6Zadanie #121'
+  type: 'blocks'
+  amount: 6050
+  reward: 30250
+  message: '&aUkończono zadanie #121!'
+
+quest_122:
+  name: '&6Zadanie #122'
+  type: 'blocks'
+  amount: 6100
+  reward: 30500
+  message: '&aUkończono zadanie #122!'
+
+quest_123:
+  name: '&6Zadanie #123'
+  type: 'blocks'
+  amount: 6150
+  reward: 30750
+  message: '&aUkończono zadanie #123!'
+
+quest_124:
+  name: '&6Zadanie #124'
+  type: 'blocks'
+  amount: 6200
+  reward: 31000
+  message: '&aUkończono zadanie #124!'
+
+quest_125:
+  name: '&6Zadanie #125'
+  type: 'blocks'
+  amount: 6250
+  reward: 31250
+  message: '&aUkończono zadanie #125!'
+
+quest_126:
+  name: '&6Zadanie #126'
+  type: 'blocks'
+  amount: 6300
+  reward: 31500
+  message: '&aUkończono zadanie #126!'
+
+quest_127:
+  name: '&6Zadanie #127'
+  type: 'blocks'
+  amount: 6350
+  reward: 31750
+  message: '&aUkończono zadanie #127!'
+
+quest_128:
+  name: '&6Zadanie #128'
+  type: 'blocks'
+  amount: 6400
+  reward: 32000
+  message: '&aUkończono zadanie #128!'
+
+quest_129:
+  name: '&6Zadanie #129'
+  type: 'blocks'
+  amount: 6450
+  reward: 32250
+  message: '&aUkończono zadanie #129!'
+
+quest_130:
+  name: '&6Zadanie #130'
+  type: 'blocks'
+  amount: 6500
+  reward: 32500
+  message: '&aUkończono zadanie #130!'
+
+quest_131:
+  name: '&6Zadanie #131'
+  type: 'blocks'
+  amount: 6550
+  reward: 32750
+  message: '&aUkończono zadanie #131!'
+
+quest_132:
+  name: '&6Zadanie #132'
+  type: 'blocks'
+  amount: 6600
+  reward: 33000
+  message: '&aUkończono zadanie #132!'
+
+quest_133:
+  name: '&6Zadanie #133'
+  type: 'blocks'
+  amount: 6650
+  reward: 33250
+  message: '&aUkończono zadanie #133!'
+
+quest_134:
+  name: '&6Zadanie #134'
+  type: 'blocks'
+  amount: 6700
+  reward: 33500
+  message: '&aUkończono zadanie #134!'
+
+quest_135:
+  name: '&6Zadanie #135'
+  type: 'blocks'
+  amount: 6750
+  reward: 33750
+  message: '&aUkończono zadanie #135!'
+
+quest_136:
+  name: '&6Zadanie #136'
+  type: 'blocks'
+  amount: 6800
+  reward: 34000
+  message: '&aUkończono zadanie #136!'
+
+quest_137:
+  name: '&6Zadanie #137'
+  type: 'blocks'
+  amount: 6850
+  reward: 34250
+  message: '&aUkończono zadanie #137!'
+
+quest_138:
+  name: '&6Zadanie #138'
+  type: 'blocks'
+  amount: 6900
+  reward: 34500
+  message: '&aUkończono zadanie #138!'
+
+quest_139:
+  name: '&6Zadanie #139'
+  type: 'blocks'
+  amount: 6950
+  reward: 34750
+  message: '&aUkończono zadanie #139!'
+
+quest_140:
+  name: '&6Zadanie #140'
+  type: 'blocks'
+  amount: 7000
+  reward: 35000
+  message: '&aUkończono zadanie #140!'
+
+quest_141:
+  name: '&6Zadanie #141'
+  type: 'blocks'
+  amount: 7050
+  reward: 35250
+  message: '&aUkończono zadanie #141!'
+
+quest_142:
+  name: '&6Zadanie #142'
+  type: 'blocks'
+  amount: 7100
+  reward: 35500
+  message: '&aUkończono zadanie #142!'
+
+quest_143:
+  name: '&6Zadanie #143'
+  type: 'blocks'
+  amount: 7150
+  reward: 35750
+  message: '&aUkończono zadanie #143!'
+
+quest_144:
+  name: '&6Zadanie #144'
+  type: 'blocks'
+  amount: 7200
+  reward: 36000
+  message: '&aUkończono zadanie #144!'
+
+quest_145:
+  name: '&6Zadanie #145'
+  type: 'blocks'
+  amount: 7250
+  reward: 36250
+  message: '&aUkończono zadanie #145!'
+
+quest_146:
+  name: '&6Zadanie #146'
+  type: 'blocks'
+  amount: 7300
+  reward: 36500
+  message: '&aUkończono zadanie #146!'
+
+quest_147:
+  name: '&6Zadanie #147'
+  type: 'blocks'
+  amount: 7350
+  reward: 36750
+  message: '&aUkończono zadanie #147!'
+
+quest_148:
+  name: '&6Zadanie #148'
+  type: 'blocks'
+  amount: 7400
+  reward: 37000
+  message: '&aUkończono zadanie #148!'
+
+quest_149:
+  name: '&6Zadanie #149'
+  type: 'blocks'
+  amount: 7450
+  reward: 37250
+  message: '&aUkończono zadanie #149!'
+
+quest_150:
+  name: '&6Zadanie #150'
+  type: 'blocks'
+  amount: 7500
+  reward: 37500
+  message: '&aUkończono zadanie #150!'
+
+quest_151:
+  name: '&6Zadanie #151'
+  type: 'blocks'
+  amount: 7550
+  reward: 37750
+  message: '&aUkończono zadanie #151!'
+
+quest_152:
+  name: '&6Zadanie #152'
+  type: 'blocks'
+  amount: 7600
+  reward: 38000
+  message: '&aUkończono zadanie #152!'
+
+quest_153:
+  name: '&6Zadanie #153'
+  type: 'blocks'
+  amount: 7650
+  reward: 38250
+  message: '&aUkończono zadanie #153!'
+
+quest_154:
+  name: '&6Zadanie #154'
+  type: 'blocks'
+  amount: 7700
+  reward: 38500
+  message: '&aUkończono zadanie #154!'
+
+quest_155:
+  name: '&6Zadanie #155'
+  type: 'blocks'
+  amount: 7750
+  reward: 38750
+  message: '&aUkończono zadanie #155!'
+
+quest_156:
+  name: '&6Zadanie #156'
+  type: 'blocks'
+  amount: 7800
+  reward: 39000
+  message: '&aUkończono zadanie #156!'
+
+quest_157:
+  name: '&6Zadanie #157'
+  type: 'blocks'
+  amount: 7850
+  reward: 39250
+  message: '&aUkończono zadanie #157!'
+
+quest_158:
+  name: '&6Zadanie #158'
+  type: 'blocks'
+  amount: 7900
+  reward: 39500
+  message: '&aUkończono zadanie #158!'
+
+quest_159:
+  name: '&6Zadanie #159'
+  type: 'blocks'
+  amount: 7950
+  reward: 39750
+  message: '&aUkończono zadanie #159!'
+
+quest_160:
+  name: '&6Zadanie #160'
+  type: 'blocks'
+  amount: 8000
+  reward: 40000
+  message: '&aUkończono zadanie #160!'
+
+quest_161:
+  name: '&6Zadanie #161'
+  type: 'blocks'
+  amount: 8050
+  reward: 40250
+  message: '&aUkończono zadanie #161!'
+
+quest_162:
+  name: '&6Zadanie #162'
+  type: 'blocks'
+  amount: 8100
+  reward: 40500
+  message: '&aUkończono zadanie #162!'
+
+quest_163:
+  name: '&6Zadanie #163'
+  type: 'blocks'
+  amount: 8150
+  reward: 40750
+  message: '&aUkończono zadanie #163!'
+
+quest_164:
+  name: '&6Zadanie #164'
+  type: 'blocks'
+  amount: 8200
+  reward: 41000
+  message: '&aUkończono zadanie #164!'
+
+quest_165:
+  name: '&6Zadanie #165'
+  type: 'blocks'
+  amount: 8250
+  reward: 41250
+  message: '&aUkończono zadanie #165!'
+
+quest_166:
+  name: '&6Zadanie #166'
+  type: 'blocks'
+  amount: 8300
+  reward: 41500
+  message: '&aUkończono zadanie #166!'
+
+quest_167:
+  name: '&6Zadanie #167'
+  type: 'blocks'
+  amount: 8350
+  reward: 41750
+  message: '&aUkończono zadanie #167!'
+
+quest_168:
+  name: '&6Zadanie #168'
+  type: 'blocks'
+  amount: 8400
+  reward: 42000
+  message: '&aUkończono zadanie #168!'
+
+quest_169:
+  name: '&6Zadanie #169'
+  type: 'blocks'
+  amount: 8450
+  reward: 42250
+  message: '&aUkończono zadanie #169!'
+
+quest_170:
+  name: '&6Zadanie #170'
+  type: 'blocks'
+  amount: 8500
+  reward: 42500
+  message: '&aUkończono zadanie #170!'
+
+quest_171:
+  name: '&6Zadanie #171'
+  type: 'blocks'
+  amount: 8550
+  reward: 42750
+  message: '&aUkończono zadanie #171!'
+
+quest_172:
+  name: '&6Zadanie #172'
+  type: 'blocks'
+  amount: 8600
+  reward: 43000
+  message: '&aUkończono zadanie #172!'
+
+quest_173:
+  name: '&6Zadanie #173'
+  type: 'blocks'
+  amount: 8650
+  reward: 43250
+  message: '&aUkończono zadanie #173!'
+
+quest_174:
+  name: '&6Zadanie #174'
+  type: 'blocks'
+  amount: 8700
+  reward: 43500
+  message: '&aUkończono zadanie #174!'
+
+quest_175:
+  name: '&6Zadanie #175'
+  type: 'blocks'
+  amount: 8750
+  reward: 43750
+  message: '&aUkończono zadanie #175!'
+
+quest_176:
+  name: '&6Zadanie #176'
+  type: 'blocks'
+  amount: 8800
+  reward: 44000
+  message: '&aUkończono zadanie #176!'
+
+quest_177:
+  name: '&6Zadanie #177'
+  type: 'blocks'
+  amount: 8850
+  reward: 44250
+  message: '&aUkończono zadanie #177!'
+
+quest_178:
+  name: '&6Zadanie #178'
+  type: 'blocks'
+  amount: 8900
+  reward: 44500
+  message: '&aUkończono zadanie #178!'
+
+quest_179:
+  name: '&6Zadanie #179'
+  type: 'blocks'
+  amount: 8950
+  reward: 44750
+  message: '&aUkończono zadanie #179!'
+
+quest_180:
+  name: '&6Zadanie #180'
+  type: 'blocks'
+  amount: 9000
+  reward: 45000
+  message: '&aUkończono zadanie #180!'
+
+quest_181:
+  name: '&6Zadanie #181'
+  type: 'blocks'
+  amount: 9050
+  reward: 45250
+  message: '&aUkończono zadanie #181!'
+
+quest_182:
+  name: '&6Zadanie #182'
+  type: 'blocks'
+  amount: 9100
+  reward: 45500
+  message: '&aUkończono zadanie #182!'
+
+quest_183:
+  name: '&6Zadanie #183'
+  type: 'blocks'
+  amount: 9150
+  reward: 45750
+  message: '&aUkończono zadanie #183!'
+
+quest_184:
+  name: '&6Zadanie #184'
+  type: 'blocks'
+  amount: 9200
+  reward: 46000
+  message: '&aUkończono zadanie #184!'
+
+quest_185:
+  name: '&6Zadanie #185'
+  type: 'blocks'
+  amount: 9250
+  reward: 46250
+  message: '&aUkończono zadanie #185!'
+
+quest_186:
+  name: '&6Zadanie #186'
+  type: 'blocks'
+  amount: 9300
+  reward: 46500
+  message: '&aUkończono zadanie #186!'
+
+quest_187:
+  name: '&6Zadanie #187'
+  type: 'blocks'
+  amount: 9350
+  reward: 46750
+  message: '&aUkończono zadanie #187!'
+
+quest_188:
+  name: '&6Zadanie #188'
+  type: 'blocks'
+  amount: 9400
+  reward: 47000
+  message: '&aUkończono zadanie #188!'
+
+quest_189:
+  name: '&6Zadanie #189'
+  type: 'blocks'
+  amount: 9450
+  reward: 47250
+  message: '&aUkończono zadanie #189!'
+
+quest_190:
+  name: '&6Zadanie #190'
+  type: 'blocks'
+  amount: 9500
+  reward: 47500
+  message: '&aUkończono zadanie #190!'
+
+quest_191:
+  name: '&6Zadanie #191'
+  type: 'blocks'
+  amount: 9550
+  reward: 47750
+  message: '&aUkończono zadanie #191!'
+
+quest_192:
+  name: '&6Zadanie #192'
+  type: 'blocks'
+  amount: 9600
+  reward: 48000
+  message: '&aUkończono zadanie #192!'
+
+quest_193:
+  name: '&6Zadanie #193'
+  type: 'blocks'
+  amount: 9650
+  reward: 48250
+  message: '&aUkończono zadanie #193!'
+
+quest_194:
+  name: '&6Zadanie #194'
+  type: 'blocks'
+  amount: 9700
+  reward: 48500
+  message: '&aUkończono zadanie #194!'
+
+quest_195:
+  name: '&6Zadanie #195'
+  type: 'blocks'
+  amount: 9750
+  reward: 48750
+  message: '&aUkończono zadanie #195!'
+
+quest_196:
+  name: '&6Zadanie #196'
+  type: 'blocks'
+  amount: 9800
+  reward: 49000
+  message: '&aUkończono zadanie #196!'
+
+quest_197:
+  name: '&6Zadanie #197'
+  type: 'blocks'
+  amount: 9850
+  reward: 49250
+  message: '&aUkończono zadanie #197!'
+
+quest_198:
+  name: '&6Zadanie #198'
+  type: 'blocks'
+  amount: 9900
+  reward: 49500
+  message: '&aUkończono zadanie #198!'
+
+quest_199:
+  name: '&6Zadanie #199'
+  type: 'blocks'
+  amount: 9950
+  reward: 49750
+  message: '&aUkończono zadanie #199!'
+
+quest_200:
+  name: '&6Zadanie #200'
+  type: 'blocks'
+  amount: 10000
+  reward: 50000
+  message: '&aUkończono zadanie #200!'
+
+quest_201:
+  name: '&6Zadanie #201'
+  type: 'blocks'
+  amount: 10050
+  reward: 50250
+  message: '&aUkończono zadanie #201!'
+
+quest_202:
+  name: '&6Zadanie #202'
+  type: 'blocks'
+  amount: 10100
+  reward: 50500
+  message: '&aUkończono zadanie #202!'
+
+quest_203:
+  name: '&6Zadanie #203'
+  type: 'blocks'
+  amount: 10150
+  reward: 50750
+  message: '&aUkończono zadanie #203!'
+
+quest_204:
+  name: '&6Zadanie #204'
+  type: 'blocks'
+  amount: 10200
+  reward: 51000
+  message: '&aUkończono zadanie #204!'
+
+quest_205:
+  name: '&6Zadanie #205'
+  type: 'blocks'
+  amount: 10250
+  reward: 51250
+  message: '&aUkończono zadanie #205!'
+
+quest_206:
+  name: '&6Zadanie #206'
+  type: 'blocks'
+  amount: 10300
+  reward: 51500
+  message: '&aUkończono zadanie #206!'
+
+quest_207:
+  name: '&6Zadanie #207'
+  type: 'blocks'
+  amount: 10350
+  reward: 51750
+  message: '&aUkończono zadanie #207!'
+
+quest_208:
+  name: '&6Zadanie #208'
+  type: 'blocks'
+  amount: 10400
+  reward: 52000
+  message: '&aUkończono zadanie #208!'
+
+quest_209:
+  name: '&6Zadanie #209'
+  type: 'blocks'
+  amount: 10450
+  reward: 52250
+  message: '&aUkończono zadanie #209!'
+
+quest_210:
+  name: '&6Zadanie #210'
+  type: 'blocks'
+  amount: 10500
+  reward: 52500
+  message: '&aUkończono zadanie #210!'
+
+quest_211:
+  name: '&6Zadanie #211'
+  type: 'blocks'
+  amount: 10550
+  reward: 52750
+  message: '&aUkończono zadanie #211!'
+
+quest_212:
+  name: '&6Zadanie #212'
+  type: 'blocks'
+  amount: 10600
+  reward: 53000
+  message: '&aUkończono zadanie #212!'
+
+quest_213:
+  name: '&6Zadanie #213'
+  type: 'blocks'
+  amount: 10650
+  reward: 53250
+  message: '&aUkończono zadanie #213!'
+
+quest_214:
+  name: '&6Zadanie #214'
+  type: 'blocks'
+  amount: 10700
+  reward: 53500
+  message: '&aUkończono zadanie #214!'
+
+quest_215:
+  name: '&6Zadanie #215'
+  type: 'blocks'
+  amount: 10750
+  reward: 53750
+  message: '&aUkończono zadanie #215!'
+
+quest_216:
+  name: '&6Zadanie #216'
+  type: 'blocks'
+  amount: 10800
+  reward: 54000
+  message: '&aUkończono zadanie #216!'
+
+quest_217:
+  name: '&6Zadanie #217'
+  type: 'blocks'
+  amount: 10850
+  reward: 54250
+  message: '&aUkończono zadanie #217!'
+
+quest_218:
+  name: '&6Zadanie #218'
+  type: 'blocks'
+  amount: 10900
+  reward: 54500
+  message: '&aUkończono zadanie #218!'
+
+quest_219:
+  name: '&6Zadanie #219'
+  type: 'blocks'
+  amount: 10950
+  reward: 54750
+  message: '&aUkończono zadanie #219!'
+
+quest_220:
+  name: '&6Zadanie #220'
+  type: 'blocks'
+  amount: 11000
+  reward: 55000
+  message: '&aUkończono zadanie #220!'
+
+quest_221:
+  name: '&6Zadanie #221'
+  type: 'blocks'
+  amount: 11050
+  reward: 55250
+  message: '&aUkończono zadanie #221!'
+
+quest_222:
+  name: '&6Zadanie #222'
+  type: 'blocks'
+  amount: 11100
+  reward: 55500
+  message: '&aUkończono zadanie #222!'
+
+quest_223:
+  name: '&6Zadanie #223'
+  type: 'blocks'
+  amount: 11150
+  reward: 55750
+  message: '&aUkończono zadanie #223!'
+
+quest_224:
+  name: '&6Zadanie #224'
+  type: 'blocks'
+  amount: 11200
+  reward: 56000
+  message: '&aUkończono zadanie #224!'
+
+quest_225:
+  name: '&6Zadanie #225'
+  type: 'blocks'
+  amount: 11250
+  reward: 56250
+  message: '&aUkończono zadanie #225!'
+
+quest_226:
+  name: '&6Zadanie #226'
+  type: 'blocks'
+  amount: 11300
+  reward: 56500
+  message: '&aUkończono zadanie #226!'
+
+quest_227:
+  name: '&6Zadanie #227'
+  type: 'blocks'
+  amount: 11350
+  reward: 56750
+  message: '&aUkończono zadanie #227!'
+
+quest_228:
+  name: '&6Zadanie #228'
+  type: 'blocks'
+  amount: 11400
+  reward: 57000
+  message: '&aUkończono zadanie #228!'
+
+quest_229:
+  name: '&6Zadanie #229'
+  type: 'blocks'
+  amount: 11450
+  reward: 57250
+  message: '&aUkończono zadanie #229!'
+
+quest_230:
+  name: '&6Zadanie #230'
+  type: 'blocks'
+  amount: 11500
+  reward: 57500
+  message: '&aUkończono zadanie #230!'
+
+quest_231:
+  name: '&6Zadanie #231'
+  type: 'blocks'
+  amount: 11550
+  reward: 57750
+  message: '&aUkończono zadanie #231!'
+
+quest_232:
+  name: '&6Zadanie #232'
+  type: 'blocks'
+  amount: 11600
+  reward: 58000
+  message: '&aUkończono zadanie #232!'
+
+quest_233:
+  name: '&6Zadanie #233'
+  type: 'blocks'
+  amount: 11650
+  reward: 58250
+  message: '&aUkończono zadanie #233!'
+
+quest_234:
+  name: '&6Zadanie #234'
+  type: 'blocks'
+  amount: 11700
+  reward: 58500
+  message: '&aUkończono zadanie #234!'
+
+quest_235:
+  name: '&6Zadanie #235'
+  type: 'blocks'
+  amount: 11750
+  reward: 58750
+  message: '&aUkończono zadanie #235!'
+
+quest_236:
+  name: '&6Zadanie #236'
+  type: 'blocks'
+  amount: 11800
+  reward: 59000
+  message: '&aUkończono zadanie #236!'
+
+quest_237:
+  name: '&6Zadanie #237'
+  type: 'blocks'
+  amount: 11850
+  reward: 59250
+  message: '&aUkończono zadanie #237!'
+
+quest_238:
+  name: '&6Zadanie #238'
+  type: 'blocks'
+  amount: 11900
+  reward: 59500
+  message: '&aUkończono zadanie #238!'
+
+quest_239:
+  name: '&6Zadanie #239'
+  type: 'blocks'
+  amount: 11950
+  reward: 59750
+  message: '&aUkończono zadanie #239!'
+
+quest_240:
+  name: '&6Zadanie #240'
+  type: 'blocks'
+  amount: 12000
+  reward: 60000
+  message: '&aUkończono zadanie #240!'
+
+quest_241:
+  name: '&6Zadanie #241'
+  type: 'blocks'
+  amount: 12050
+  reward: 60250
+  message: '&aUkończono zadanie #241!'
+
+quest_242:
+  name: '&6Zadanie #242'
+  type: 'blocks'
+  amount: 12100
+  reward: 60500
+  message: '&aUkończono zadanie #242!'
+
+quest_243:
+  name: '&6Zadanie #243'
+  type: 'blocks'
+  amount: 12150
+  reward: 60750
+  message: '&aUkończono zadanie #243!'
+
+quest_244:
+  name: '&6Zadanie #244'
+  type: 'blocks'
+  amount: 12200
+  reward: 61000
+  message: '&aUkończono zadanie #244!'
+
+quest_245:
+  name: '&6Zadanie #245'
+  type: 'blocks'
+  amount: 12250
+  reward: 61250
+  message: '&aUkończono zadanie #245!'
+
+quest_246:
+  name: '&6Zadanie #246'
+  type: 'blocks'
+  amount: 12300
+  reward: 61500
+  message: '&aUkończono zadanie #246!'
+
+quest_247:
+  name: '&6Zadanie #247'
+  type: 'blocks'
+  amount: 12350
+  reward: 61750
+  message: '&aUkończono zadanie #247!'
+
+quest_248:
+  name: '&6Zadanie #248'
+  type: 'blocks'
+  amount: 12400
+  reward: 62000
+  message: '&aUkończono zadanie #248!'
+
+quest_249:
+  name: '&6Zadanie #249'
+  type: 'blocks'
+  amount: 12450
+  reward: 62250
+  message: '&aUkończono zadanie #249!'
+
+quest_250:
+  name: '&6Zadanie #250'
+  type: 'blocks'
+  amount: 12500
+  reward: 62500
+  message: '&aUkończono zadanie #250!'
+
+quest_251:
+  name: '&6Zadanie #251'
+  type: 'blocks'
+  amount: 12550
+  reward: 62750
+  message: '&aUkończono zadanie #251!'
+
+quest_252:
+  name: '&6Zadanie #252'
+  type: 'blocks'
+  amount: 12600
+  reward: 63000
+  message: '&aUkończono zadanie #252!'
+
+quest_253:
+  name: '&6Zadanie #253'
+  type: 'blocks'
+  amount: 12650
+  reward: 63250
+  message: '&aUkończono zadanie #253!'
+
+quest_254:
+  name: '&6Zadanie #254'
+  type: 'blocks'
+  amount: 12700
+  reward: 63500
+  message: '&aUkończono zadanie #254!'
+
+quest_255:
+  name: '&6Zadanie #255'
+  type: 'blocks'
+  amount: 12750
+  reward: 63750
+  message: '&aUkończono zadanie #255!'
+
+quest_256:
+  name: '&6Zadanie #256'
+  type: 'blocks'
+  amount: 12800
+  reward: 64000
+  message: '&aUkończono zadanie #256!'
+
+quest_257:
+  name: '&6Zadanie #257'
+  type: 'blocks'
+  amount: 12850
+  reward: 64250
+  message: '&aUkończono zadanie #257!'
+
+quest_258:
+  name: '&6Zadanie #258'
+  type: 'blocks'
+  amount: 12900
+  reward: 64500
+  message: '&aUkończono zadanie #258!'
+
+quest_259:
+  name: '&6Zadanie #259'
+  type: 'blocks'
+  amount: 12950
+  reward: 64750
+  message: '&aUkończono zadanie #259!'
+
+quest_260:
+  name: '&6Zadanie #260'
+  type: 'blocks'
+  amount: 13000
+  reward: 65000
+  message: '&aUkończono zadanie #260!'
+
+quest_261:
+  name: '&6Zadanie #261'
+  type: 'blocks'
+  amount: 13050
+  reward: 65250
+  message: '&aUkończono zadanie #261!'
+
+quest_262:
+  name: '&6Zadanie #262'
+  type: 'blocks'
+  amount: 13100
+  reward: 65500
+  message: '&aUkończono zadanie #262!'
+
+quest_263:
+  name: '&6Zadanie #263'
+  type: 'blocks'
+  amount: 13150
+  reward: 65750
+  message: '&aUkończono zadanie #263!'
+
+quest_264:
+  name: '&6Zadanie #264'
+  type: 'blocks'
+  amount: 13200
+  reward: 66000
+  message: '&aUkończono zadanie #264!'
+
+quest_265:
+  name: '&6Zadanie #265'
+  type: 'blocks'
+  amount: 13250
+  reward: 66250
+  message: '&aUkończono zadanie #265!'
+
+quest_266:
+  name: '&6Zadanie #266'
+  type: 'blocks'
+  amount: 13300
+  reward: 66500
+  message: '&aUkończono zadanie #266!'
+
+quest_267:
+  name: '&6Zadanie #267'
+  type: 'blocks'
+  amount: 13350
+  reward: 66750
+  message: '&aUkończono zadanie #267!'
+
+quest_268:
+  name: '&6Zadanie #268'
+  type: 'blocks'
+  amount: 13400
+  reward: 67000
+  message: '&aUkończono zadanie #268!'
+
+quest_269:
+  name: '&6Zadanie #269'
+  type: 'blocks'
+  amount: 13450
+  reward: 67250
+  message: '&aUkończono zadanie #269!'
+
+quest_270:
+  name: '&6Zadanie #270'
+  type: 'blocks'
+  amount: 13500
+  reward: 67500
+  message: '&aUkończono zadanie #270!'
+
+quest_271:
+  name: '&6Zadanie #271'
+  type: 'blocks'
+  amount: 13550
+  reward: 67750
+  message: '&aUkończono zadanie #271!'
+
+quest_272:
+  name: '&6Zadanie #272'
+  type: 'blocks'
+  amount: 13600
+  reward: 68000
+  message: '&aUkończono zadanie #272!'
+
+quest_273:
+  name: '&6Zadanie #273'
+  type: 'blocks'
+  amount: 13650
+  reward: 68250
+  message: '&aUkończono zadanie #273!'
+
+quest_274:
+  name: '&6Zadanie #274'
+  type: 'blocks'
+  amount: 13700
+  reward: 68500
+  message: '&aUkończono zadanie #274!'
+
+quest_275:
+  name: '&6Zadanie #275'
+  type: 'blocks'
+  amount: 13750
+  reward: 68750
+  message: '&aUkończono zadanie #275!'
+
+quest_276:
+  name: '&6Zadanie #276'
+  type: 'blocks'
+  amount: 13800
+  reward: 69000
+  message: '&aUkończono zadanie #276!'
+
+quest_277:
+  name: '&6Zadanie #277'
+  type: 'blocks'
+  amount: 13850
+  reward: 69250
+  message: '&aUkończono zadanie #277!'
+
+quest_278:
+  name: '&6Zadanie #278'
+  type: 'blocks'
+  amount: 13900
+  reward: 69500
+  message: '&aUkończono zadanie #278!'
+
+quest_279:
+  name: '&6Zadanie #279'
+  type: 'blocks'
+  amount: 13950
+  reward: 69750
+  message: '&aUkończono zadanie #279!'
+
+quest_280:
+  name: '&6Zadanie #280'
+  type: 'blocks'
+  amount: 14000
+  reward: 70000
+  message: '&aUkończono zadanie #280!'
+
+quest_281:
+  name: '&6Zadanie #281'
+  type: 'blocks'
+  amount: 14050
+  reward: 70250
+  message: '&aUkończono zadanie #281!'
+
+quest_282:
+  name: '&6Zadanie #282'
+  type: 'blocks'
+  amount: 14100
+  reward: 70500
+  message: '&aUkończono zadanie #282!'
+
+quest_283:
+  name: '&6Zadanie #283'
+  type: 'blocks'
+  amount: 14150
+  reward: 70750
+  message: '&aUkończono zadanie #283!'
+
+quest_284:
+  name: '&6Zadanie #284'
+  type: 'blocks'
+  amount: 14200
+  reward: 71000
+  message: '&aUkończono zadanie #284!'
+
+quest_285:
+  name: '&6Zadanie #285'
+  type: 'blocks'
+  amount: 14250
+  reward: 71250
+  message: '&aUkończono zadanie #285!'
+
+quest_286:
+  name: '&6Zadanie #286'
+  type: 'blocks'
+  amount: 14300
+  reward: 71500
+  message: '&aUkończono zadanie #286!'
+
+quest_287:
+  name: '&6Zadanie #287'
+  type: 'blocks'
+  amount: 14350
+  reward: 71750
+  message: '&aUkończono zadanie #287!'
+
+quest_288:
+  name: '&6Zadanie #288'
+  type: 'blocks'
+  amount: 14400
+  reward: 72000
+  message: '&aUkończono zadanie #288!'
+
+quest_289:
+  name: '&6Zadanie #289'
+  type: 'blocks'
+  amount: 14450
+  reward: 72250
+  message: '&aUkończono zadanie #289!'
+
+quest_290:
+  name: '&6Zadanie #290'
+  type: 'blocks'
+  amount: 14500
+  reward: 72500
+  message: '&aUkończono zadanie #290!'
+
+quest_291:
+  name: '&6Zadanie #291'
+  type: 'blocks'
+  amount: 14550
+  reward: 72750
+  message: '&aUkończono zadanie #291!'
+
+quest_292:
+  name: '&6Zadanie #292'
+  type: 'blocks'
+  amount: 14600
+  reward: 73000
+  message: '&aUkończono zadanie #292!'
+
+quest_293:
+  name: '&6Zadanie #293'
+  type: 'blocks'
+  amount: 14650
+  reward: 73250
+  message: '&aUkończono zadanie #293!'
+
+quest_294:
+  name: '&6Zadanie #294'
+  type: 'blocks'
+  amount: 14700
+  reward: 73500
+  message: '&aUkończono zadanie #294!'
+
+quest_295:
+  name: '&6Zadanie #295'
+  type: 'blocks'
+  amount: 14750
+  reward: 73750
+  message: '&aUkończono zadanie #295!'
+
+quest_296:
+  name: '&6Zadanie #296'
+  type: 'blocks'
+  amount: 14800
+  reward: 74000
+  message: '&aUkończono zadanie #296!'
+
+quest_297:
+  name: '&6Zadanie #297'
+  type: 'blocks'
+  amount: 14850
+  reward: 74250
+  message: '&aUkończono zadanie #297!'
+
+quest_298:
+  name: '&6Zadanie #298'
+  type: 'blocks'
+  amount: 14900
+  reward: 74500
+  message: '&aUkończono zadanie #298!'
+
+quest_299:
+  name: '&6Zadanie #299'
+  type: 'blocks'
+  amount: 14950
+  reward: 74750
+  message: '&aUkończono zadanie #299!'
+
+quest_300:
+  name: '&6Zadanie #300'
+  type: 'blocks'
+  amount: 15000
+  reward: 75000
+  message: '&aUkończono zadanie #300!'
+
+quest_301:
+  name: '&6Zadanie #301'
+  type: 'blocks'
+  amount: 15050
+  reward: 75250
+  message: '&aUkończono zadanie #301!'
+
+quest_302:
+  name: '&6Zadanie #302'
+  type: 'blocks'
+  amount: 15100
+  reward: 75500
+  message: '&aUkończono zadanie #302!'
+
+quest_303:
+  name: '&6Zadanie #303'
+  type: 'blocks'
+  amount: 15150
+  reward: 75750
+  message: '&aUkończono zadanie #303!'
+
+quest_304:
+  name: '&6Zadanie #304'
+  type: 'blocks'
+  amount: 15200
+  reward: 76000
+  message: '&aUkończono zadanie #304!'
+
+quest_305:
+  name: '&6Zadanie #305'
+  type: 'blocks'
+  amount: 15250
+  reward: 76250
+  message: '&aUkończono zadanie #305!'
+
+quest_306:
+  name: '&6Zadanie #306'
+  type: 'blocks'
+  amount: 15300
+  reward: 76500
+  message: '&aUkończono zadanie #306!'
+
+quest_307:
+  name: '&6Zadanie #307'
+  type: 'blocks'
+  amount: 15350
+  reward: 76750
+  message: '&aUkończono zadanie #307!'
+
+quest_308:
+  name: '&6Zadanie #308'
+  type: 'blocks'
+  amount: 15400
+  reward: 77000
+  message: '&aUkończono zadanie #308!'
+
+quest_309:
+  name: '&6Zadanie #309'
+  type: 'blocks'
+  amount: 15450
+  reward: 77250
+  message: '&aUkończono zadanie #309!'
+
+quest_310:
+  name: '&6Zadanie #310'
+  type: 'blocks'
+  amount: 15500
+  reward: 77500
+  message: '&aUkończono zadanie #310!'
+
+quest_311:
+  name: '&6Zadanie #311'
+  type: 'blocks'
+  amount: 15550
+  reward: 77750
+  message: '&aUkończono zadanie #311!'
+
+quest_312:
+  name: '&6Zadanie #312'
+  type: 'blocks'
+  amount: 15600
+  reward: 78000
+  message: '&aUkończono zadanie #312!'
+
+quest_313:
+  name: '&6Zadanie #313'
+  type: 'blocks'
+  amount: 15650
+  reward: 78250
+  message: '&aUkończono zadanie #313!'
+
+quest_314:
+  name: '&6Zadanie #314'
+  type: 'blocks'
+  amount: 15700
+  reward: 78500
+  message: '&aUkończono zadanie #314!'
+
+quest_315:
+  name: '&6Zadanie #315'
+  type: 'blocks'
+  amount: 15750
+  reward: 78750
+  message: '&aUkończono zadanie #315!'
+
+quest_316:
+  name: '&6Zadanie #316'
+  type: 'blocks'
+  amount: 15800
+  reward: 79000
+  message: '&aUkończono zadanie #316!'
+
+quest_317:
+  name: '&6Zadanie #317'
+  type: 'blocks'
+  amount: 15850
+  reward: 79250
+  message: '&aUkończono zadanie #317!'
+
+quest_318:
+  name: '&6Zadanie #318'
+  type: 'blocks'
+  amount: 15900
+  reward: 79500
+  message: '&aUkończono zadanie #318!'
+
+quest_319:
+  name: '&6Zadanie #319'
+  type: 'blocks'
+  amount: 15950
+  reward: 79750
+  message: '&aUkończono zadanie #319!'
+
+quest_320:
+  name: '&6Zadanie #320'
+  type: 'blocks'
+  amount: 16000
+  reward: 80000
+  message: '&aUkończono zadanie #320!'
+
+quest_321:
+  name: '&6Zadanie #321'
+  type: 'blocks'
+  amount: 16050
+  reward: 80250
+  message: '&aUkończono zadanie #321!'
+
+quest_322:
+  name: '&6Zadanie #322'
+  type: 'blocks'
+  amount: 16100
+  reward: 80500
+  message: '&aUkończono zadanie #322!'
+
+quest_323:
+  name: '&6Zadanie #323'
+  type: 'blocks'
+  amount: 16150
+  reward: 80750
+  message: '&aUkończono zadanie #323!'
+
+quest_324:
+  name: '&6Zadanie #324'
+  type: 'blocks'
+  amount: 16200
+  reward: 81000
+  message: '&aUkończono zadanie #324!'
+
+quest_325:
+  name: '&6Zadanie #325'
+  type: 'blocks'
+  amount: 16250
+  reward: 81250
+  message: '&aUkończono zadanie #325!'
+
+quest_326:
+  name: '&6Zadanie #326'
+  type: 'blocks'
+  amount: 16300
+  reward: 81500
+  message: '&aUkończono zadanie #326!'
+
+quest_327:
+  name: '&6Zadanie #327'
+  type: 'blocks'
+  amount: 16350
+  reward: 81750
+  message: '&aUkończono zadanie #327!'
+
+quest_328:
+  name: '&6Zadanie #328'
+  type: 'blocks'
+  amount: 16400
+  reward: 82000
+  message: '&aUkończono zadanie #328!'
+
+quest_329:
+  name: '&6Zadanie #329'
+  type: 'blocks'
+  amount: 16450
+  reward: 82250
+  message: '&aUkończono zadanie #329!'
+
+quest_330:
+  name: '&6Zadanie #330'
+  type: 'blocks'
+  amount: 16500
+  reward: 82500
+  message: '&aUkończono zadanie #330!'
+
+quest_331:
+  name: '&6Zadanie #331'
+  type: 'blocks'
+  amount: 16550
+  reward: 82750
+  message: '&aUkończono zadanie #331!'
+
+quest_332:
+  name: '&6Zadanie #332'
+  type: 'blocks'
+  amount: 16600
+  reward: 83000
+  message: '&aUkończono zadanie #332!'
+
+quest_333:
+  name: '&6Zadanie #333'
+  type: 'blocks'
+  amount: 16650
+  reward: 83250
+  message: '&aUkończono zadanie #333!'
+
+quest_334:
+  name: '&6Zadanie #334'
+  type: 'blocks'
+  amount: 16700
+  reward: 83500
+  message: '&aUkończono zadanie #334!'
+
+quest_335:
+  name: '&6Zadanie #335'
+  type: 'blocks'
+  amount: 16750
+  reward: 83750
+  message: '&aUkończono zadanie #335!'
+
+quest_336:
+  name: '&6Zadanie #336'
+  type: 'blocks'
+  amount: 16800
+  reward: 84000
+  message: '&aUkończono zadanie #336!'
+
+quest_337:
+  name: '&6Zadanie #337'
+  type: 'blocks'
+  amount: 16850
+  reward: 84250
+  message: '&aUkończono zadanie #337!'
+
+quest_338:
+  name: '&6Zadanie #338'
+  type: 'blocks'
+  amount: 16900
+  reward: 84500
+  message: '&aUkończono zadanie #338!'
+
+quest_339:
+  name: '&6Zadanie #339'
+  type: 'blocks'
+  amount: 16950
+  reward: 84750
+  message: '&aUkończono zadanie #339!'
+
+quest_340:
+  name: '&6Zadanie #340'
+  type: 'blocks'
+  amount: 17000
+  reward: 85000
+  message: '&aUkończono zadanie #340!'
+
+quest_341:
+  name: '&6Zadanie #341'
+  type: 'blocks'
+  amount: 17050
+  reward: 85250
+  message: '&aUkończono zadanie #341!'
+
+quest_342:
+  name: '&6Zadanie #342'
+  type: 'blocks'
+  amount: 17100
+  reward: 85500
+  message: '&aUkończono zadanie #342!'
+
+quest_343:
+  name: '&6Zadanie #343'
+  type: 'blocks'
+  amount: 17150
+  reward: 85750
+  message: '&aUkończono zadanie #343!'
+
+quest_344:
+  name: '&6Zadanie #344'
+  type: 'blocks'
+  amount: 17200
+  reward: 86000
+  message: '&aUkończono zadanie #344!'
+
+quest_345:
+  name: '&6Zadanie #345'
+  type: 'blocks'
+  amount: 17250
+  reward: 86250
+  message: '&aUkończono zadanie #345!'
+
+quest_346:
+  name: '&6Zadanie #346'
+  type: 'blocks'
+  amount: 17300
+  reward: 86500
+  message: '&aUkończono zadanie #346!'
+
+quest_347:
+  name: '&6Zadanie #347'
+  type: 'blocks'
+  amount: 17350
+  reward: 86750
+  message: '&aUkończono zadanie #347!'
+
+quest_348:
+  name: '&6Zadanie #348'
+  type: 'blocks'
+  amount: 17400
+  reward: 87000
+  message: '&aUkończono zadanie #348!'
+
+quest_349:
+  name: '&6Zadanie #349'
+  type: 'blocks'
+  amount: 17450
+  reward: 87250
+  message: '&aUkończono zadanie #349!'
+
+quest_350:
+  name: '&6Zadanie #350'
+  type: 'blocks'
+  amount: 17500
+  reward: 87500
+  message: '&aUkończono zadanie #350!'
+
+quest_351:
+  name: '&6Zadanie #351'
+  type: 'blocks'
+  amount: 17550
+  reward: 87750
+  message: '&aUkończono zadanie #351!'
+
+quest_352:
+  name: '&6Zadanie #352'
+  type: 'blocks'
+  amount: 17600
+  reward: 88000
+  message: '&aUkończono zadanie #352!'
+
+quest_353:
+  name: '&6Zadanie #353'
+  type: 'blocks'
+  amount: 17650
+  reward: 88250
+  message: '&aUkończono zadanie #353!'
+
+quest_354:
+  name: '&6Zadanie #354'
+  type: 'blocks'
+  amount: 17700
+  reward: 88500
+  message: '&aUkończono zadanie #354!'
+
+quest_355:
+  name: '&6Zadanie #355'
+  type: 'blocks'
+  amount: 17750
+  reward: 88750
+  message: '&aUkończono zadanie #355!'
+
+quest_356:
+  name: '&6Zadanie #356'
+  type: 'blocks'
+  amount: 17800
+  reward: 89000
+  message: '&aUkończono zadanie #356!'
+
+quest_357:
+  name: '&6Zadanie #357'
+  type: 'blocks'
+  amount: 17850
+  reward: 89250
+  message: '&aUkończono zadanie #357!'
+
+quest_358:
+  name: '&6Zadanie #358'
+  type: 'blocks'
+  amount: 17900
+  reward: 89500
+  message: '&aUkończono zadanie #358!'
+
+quest_359:
+  name: '&6Zadanie #359'
+  type: 'blocks'
+  amount: 17950
+  reward: 89750
+  message: '&aUkończono zadanie #359!'
+
+quest_360:
+  name: '&6Zadanie #360'
+  type: 'blocks'
+  amount: 18000
+  reward: 90000
+  message: '&aUkończono zadanie #360!'
+
+quest_361:
+  name: '&6Zadanie #361'
+  type: 'blocks'
+  amount: 18050
+  reward: 90250
+  message: '&aUkończono zadanie #361!'
+
+quest_362:
+  name: '&6Zadanie #362'
+  type: 'blocks'
+  amount: 18100
+  reward: 90500
+  message: '&aUkończono zadanie #362!'
+
+quest_363:
+  name: '&6Zadanie #363'
+  type: 'blocks'
+  amount: 18150
+  reward: 90750
+  message: '&aUkończono zadanie #363!'
+
+quest_364:
+  name: '&6Zadanie #364'
+  type: 'blocks'
+  amount: 18200
+  reward: 91000
+  message: '&aUkończono zadanie #364!'
+
+quest_365:
+  name: '&6Zadanie #365'
+  type: 'blocks'
+  amount: 18250
+  reward: 91250
+  message: '&aUkończono zadanie #365!'
+
+quest_366:
+  name: '&6Zadanie #366'
+  type: 'blocks'
+  amount: 18300
+  reward: 91500
+  message: '&aUkończono zadanie #366!'
+
+quest_367:
+  name: '&6Zadanie #367'
+  type: 'blocks'
+  amount: 18350
+  reward: 91750
+  message: '&aUkończono zadanie #367!'
+
+quest_368:
+  name: '&6Zadanie #368'
+  type: 'blocks'
+  amount: 18400
+  reward: 92000
+  message: '&aUkończono zadanie #368!'
+
+quest_369:
+  name: '&6Zadanie #369'
+  type: 'blocks'
+  amount: 18450
+  reward: 92250
+  message: '&aUkończono zadanie #369!'
+
+quest_370:
+  name: '&6Zadanie #370'
+  type: 'blocks'
+  amount: 18500
+  reward: 92500
+  message: '&aUkończono zadanie #370!'
+
+quest_371:
+  name: '&6Zadanie #371'
+  type: 'blocks'
+  amount: 18550
+  reward: 92750
+  message: '&aUkończono zadanie #371!'
+
+quest_372:
+  name: '&6Zadanie #372'
+  type: 'blocks'
+  amount: 18600
+  reward: 93000
+  message: '&aUkończono zadanie #372!'
+
+quest_373:
+  name: '&6Zadanie #373'
+  type: 'blocks'
+  amount: 18650
+  reward: 93250
+  message: '&aUkończono zadanie #373!'
+
+quest_374:
+  name: '&6Zadanie #374'
+  type: 'blocks'
+  amount: 18700
+  reward: 93500
+  message: '&aUkończono zadanie #374!'
+
+quest_375:
+  name: '&6Zadanie #375'
+  type: 'blocks'
+  amount: 18750
+  reward: 93750
+  message: '&aUkończono zadanie #375!'
+
+quest_376:
+  name: '&6Zadanie #376'
+  type: 'blocks'
+  amount: 18800
+  reward: 94000
+  message: '&aUkończono zadanie #376!'
+
+quest_377:
+  name: '&6Zadanie #377'
+  type: 'blocks'
+  amount: 18850
+  reward: 94250
+  message: '&aUkończono zadanie #377!'
+
+quest_378:
+  name: '&6Zadanie #378'
+  type: 'blocks'
+  amount: 18900
+  reward: 94500
+  message: '&aUkończono zadanie #378!'
+
+quest_379:
+  name: '&6Zadanie #379'
+  type: 'blocks'
+  amount: 18950
+  reward: 94750
+  message: '&aUkończono zadanie #379!'
+
+quest_380:
+  name: '&6Zadanie #380'
+  type: 'blocks'
+  amount: 19000
+  reward: 95000
+  message: '&aUkończono zadanie #380!'
+
+quest_381:
+  name: '&6Zadanie #381'
+  type: 'blocks'
+  amount: 19050
+  reward: 95250
+  message: '&aUkończono zadanie #381!'
+
+quest_382:
+  name: '&6Zadanie #382'
+  type: 'blocks'
+  amount: 19100
+  reward: 95500
+  message: '&aUkończono zadanie #382!'
+
+quest_383:
+  name: '&6Zadanie #383'
+  type: 'blocks'
+  amount: 19150
+  reward: 95750
+  message: '&aUkończono zadanie #383!'
+
+quest_384:
+  name: '&6Zadanie #384'
+  type: 'blocks'
+  amount: 19200
+  reward: 96000
+  message: '&aUkończono zadanie #384!'
+
+quest_385:
+  name: '&6Zadanie #385'
+  type: 'blocks'
+  amount: 19250
+  reward: 96250
+  message: '&aUkończono zadanie #385!'
+
+quest_386:
+  name: '&6Zadanie #386'
+  type: 'blocks'
+  amount: 19300
+  reward: 96500
+  message: '&aUkończono zadanie #386!'
+
+quest_387:
+  name: '&6Zadanie #387'
+  type: 'blocks'
+  amount: 19350
+  reward: 96750
+  message: '&aUkończono zadanie #387!'
+
+quest_388:
+  name: '&6Zadanie #388'
+  type: 'blocks'
+  amount: 19400
+  reward: 97000
+  message: '&aUkończono zadanie #388!'
+
+quest_389:
+  name: '&6Zadanie #389'
+  type: 'blocks'
+  amount: 19450
+  reward: 97250
+  message: '&aUkończono zadanie #389!'
+
+quest_390:
+  name: '&6Zadanie #390'
+  type: 'blocks'
+  amount: 19500
+  reward: 97500
+  message: '&aUkończono zadanie #390!'
+
+quest_391:
+  name: '&6Zadanie #391'
+  type: 'blocks'
+  amount: 19550
+  reward: 97750
+  message: '&aUkończono zadanie #391!'
+
+quest_392:
+  name: '&6Zadanie #392'
+  type: 'blocks'
+  amount: 19600
+  reward: 98000
+  message: '&aUkończono zadanie #392!'
+
+quest_393:
+  name: '&6Zadanie #393'
+  type: 'blocks'
+  amount: 19650
+  reward: 98250
+  message: '&aUkończono zadanie #393!'
+
+quest_394:
+  name: '&6Zadanie #394'
+  type: 'blocks'
+  amount: 19700
+  reward: 98500
+  message: '&aUkończono zadanie #394!'
+
+quest_395:
+  name: '&6Zadanie #395'
+  type: 'blocks'
+  amount: 19750
+  reward: 98750
+  message: '&aUkończono zadanie #395!'
+
+quest_396:
+  name: '&6Zadanie #396'
+  type: 'blocks'
+  amount: 19800
+  reward: 99000
+  message: '&aUkończono zadanie #396!'
+
+quest_397:
+  name: '&6Zadanie #397'
+  type: 'blocks'
+  amount: 19850
+  reward: 99250
+  message: '&aUkończono zadanie #397!'
+
+quest_398:
+  name: '&6Zadanie #398'
+  type: 'blocks'
+  amount: 19900
+  reward: 99500
+  message: '&aUkończono zadanie #398!'
+
+quest_399:
+  name: '&6Zadanie #399'
+  type: 'blocks'
+  amount: 19950
+  reward: 99750
+  message: '&aUkończono zadanie #399!'
+
+quest_400:
+  name: '&6Zadanie #400'
+  type: 'blocks'
+  amount: 20000
+  reward: 100000
+  message: '&aUkończono zadanie #400!'
+
+quest_401:
+  name: '&6Zadanie #401'
+  type: 'blocks'
+  amount: 20050
+  reward: 100250
+  message: '&aUkończono zadanie #401!'
+
+quest_402:
+  name: '&6Zadanie #402'
+  type: 'blocks'
+  amount: 20100
+  reward: 100500
+  message: '&aUkończono zadanie #402!'
+
+quest_403:
+  name: '&6Zadanie #403'
+  type: 'blocks'
+  amount: 20150
+  reward: 100750
+  message: '&aUkończono zadanie #403!'
+
+quest_404:
+  name: '&6Zadanie #404'
+  type: 'blocks'
+  amount: 20200
+  reward: 101000
+  message: '&aUkończono zadanie #404!'
+
+quest_405:
+  name: '&6Zadanie #405'
+  type: 'blocks'
+  amount: 20250
+  reward: 101250
+  message: '&aUkończono zadanie #405!'
+
+quest_406:
+  name: '&6Zadanie #406'
+  type: 'blocks'
+  amount: 20300
+  reward: 101500
+  message: '&aUkończono zadanie #406!'
+
+quest_407:
+  name: '&6Zadanie #407'
+  type: 'blocks'
+  amount: 20350
+  reward: 101750
+  message: '&aUkończono zadanie #407!'
+
+quest_408:
+  name: '&6Zadanie #408'
+  type: 'blocks'
+  amount: 20400
+  reward: 102000
+  message: '&aUkończono zadanie #408!'
+
+quest_409:
+  name: '&6Zadanie #409'
+  type: 'blocks'
+  amount: 20450
+  reward: 102250
+  message: '&aUkończono zadanie #409!'
+
+quest_410:
+  name: '&6Zadanie #410'
+  type: 'blocks'
+  amount: 20500
+  reward: 102500
+  message: '&aUkończono zadanie #410!'
+
+quest_411:
+  name: '&6Zadanie #411'
+  type: 'blocks'
+  amount: 20550
+  reward: 102750
+  message: '&aUkończono zadanie #411!'
+
+quest_412:
+  name: '&6Zadanie #412'
+  type: 'blocks'
+  amount: 20600
+  reward: 103000
+  message: '&aUkończono zadanie #412!'
+
+quest_413:
+  name: '&6Zadanie #413'
+  type: 'blocks'
+  amount: 20650
+  reward: 103250
+  message: '&aUkończono zadanie #413!'
+
+quest_414:
+  name: '&6Zadanie #414'
+  type: 'blocks'
+  amount: 20700
+  reward: 103500
+  message: '&aUkończono zadanie #414!'
+
+quest_415:
+  name: '&6Zadanie #415'
+  type: 'blocks'
+  amount: 20750
+  reward: 103750
+  message: '&aUkończono zadanie #415!'
+
+quest_416:
+  name: '&6Zadanie #416'
+  type: 'blocks'
+  amount: 20800
+  reward: 104000
+  message: '&aUkończono zadanie #416!'
+
+quest_417:
+  name: '&6Zadanie #417'
+  type: 'blocks'
+  amount: 20850
+  reward: 104250
+  message: '&aUkończono zadanie #417!'
+
+quest_418:
+  name: '&6Zadanie #418'
+  type: 'blocks'
+  amount: 20900
+  reward: 104500
+  message: '&aUkończono zadanie #418!'
+
+quest_419:
+  name: '&6Zadanie #419'
+  type: 'blocks'
+  amount: 20950
+  reward: 104750
+  message: '&aUkończono zadanie #419!'
+
+quest_420:
+  name: '&6Zadanie #420'
+  type: 'blocks'
+  amount: 21000
+  reward: 105000
+  message: '&aUkończono zadanie #420!'
+
+quest_421:
+  name: '&6Zadanie #421'
+  type: 'blocks'
+  amount: 21050
+  reward: 105250
+  message: '&aUkończono zadanie #421!'
+
+quest_422:
+  name: '&6Zadanie #422'
+  type: 'blocks'
+  amount: 21100
+  reward: 105500
+  message: '&aUkończono zadanie #422!'
+
+quest_423:
+  name: '&6Zadanie #423'
+  type: 'blocks'
+  amount: 21150
+  reward: 105750
+  message: '&aUkończono zadanie #423!'
+
+quest_424:
+  name: '&6Zadanie #424'
+  type: 'blocks'
+  amount: 21200
+  reward: 106000
+  message: '&aUkończono zadanie #424!'
+
+quest_425:
+  name: '&6Zadanie #425'
+  type: 'blocks'
+  amount: 21250
+  reward: 106250
+  message: '&aUkończono zadanie #425!'
+
+quest_426:
+  name: '&6Zadanie #426'
+  type: 'blocks'
+  amount: 21300
+  reward: 106500
+  message: '&aUkończono zadanie #426!'
+
+quest_427:
+  name: '&6Zadanie #427'
+  type: 'blocks'
+  amount: 21350
+  reward: 106750
+  message: '&aUkończono zadanie #427!'
+
+quest_428:
+  name: '&6Zadanie #428'
+  type: 'blocks'
+  amount: 21400
+  reward: 107000
+  message: '&aUkończono zadanie #428!'
+
+quest_429:
+  name: '&6Zadanie #429'
+  type: 'blocks'
+  amount: 21450
+  reward: 107250
+  message: '&aUkończono zadanie #429!'
+
+quest_430:
+  name: '&6Zadanie #430'
+  type: 'blocks'
+  amount: 21500
+  reward: 107500
+  message: '&aUkończono zadanie #430!'
+
+quest_431:
+  name: '&6Zadanie #431'
+  type: 'blocks'
+  amount: 21550
+  reward: 107750
+  message: '&aUkończono zadanie #431!'
+
+quest_432:
+  name: '&6Zadanie #432'
+  type: 'blocks'
+  amount: 21600
+  reward: 108000
+  message: '&aUkończono zadanie #432!'
+
+quest_433:
+  name: '&6Zadanie #433'
+  type: 'blocks'
+  amount: 21650
+  reward: 108250
+  message: '&aUkończono zadanie #433!'
+
+quest_434:
+  name: '&6Zadanie #434'
+  type: 'blocks'
+  amount: 21700
+  reward: 108500
+  message: '&aUkończono zadanie #434!'
+
+quest_435:
+  name: '&6Zadanie #435'
+  type: 'blocks'
+  amount: 21750
+  reward: 108750
+  message: '&aUkończono zadanie #435!'
+
+quest_436:
+  name: '&6Zadanie #436'
+  type: 'blocks'
+  amount: 21800
+  reward: 109000
+  message: '&aUkończono zadanie #436!'
+
+quest_437:
+  name: '&6Zadanie #437'
+  type: 'blocks'
+  amount: 21850
+  reward: 109250
+  message: '&aUkończono zadanie #437!'
+
+quest_438:
+  name: '&6Zadanie #438'
+  type: 'blocks'
+  amount: 21900
+  reward: 109500
+  message: '&aUkończono zadanie #438!'
+
+quest_439:
+  name: '&6Zadanie #439'
+  type: 'blocks'
+  amount: 21950
+  reward: 109750
+  message: '&aUkończono zadanie #439!'
+
+quest_440:
+  name: '&6Zadanie #440'
+  type: 'blocks'
+  amount: 22000
+  reward: 110000
+  message: '&aUkończono zadanie #440!'
+
+quest_441:
+  name: '&6Zadanie #441'
+  type: 'blocks'
+  amount: 22050
+  reward: 110250
+  message: '&aUkończono zadanie #441!'
+
+quest_442:
+  name: '&6Zadanie #442'
+  type: 'blocks'
+  amount: 22100
+  reward: 110500
+  message: '&aUkończono zadanie #442!'
+
+quest_443:
+  name: '&6Zadanie #443'
+  type: 'blocks'
+  amount: 22150
+  reward: 110750
+  message: '&aUkończono zadanie #443!'
+
+quest_444:
+  name: '&6Zadanie #444'
+  type: 'blocks'
+  amount: 22200
+  reward: 111000
+  message: '&aUkończono zadanie #444!'
+
+quest_445:
+  name: '&6Zadanie #445'
+  type: 'blocks'
+  amount: 22250
+  reward: 111250
+  message: '&aUkończono zadanie #445!'
+
+quest_446:
+  name: '&6Zadanie #446'
+  type: 'blocks'
+  amount: 22300
+  reward: 111500
+  message: '&aUkończono zadanie #446!'
+
+quest_447:
+  name: '&6Zadanie #447'
+  type: 'blocks'
+  amount: 22350
+  reward: 111750
+  message: '&aUkończono zadanie #447!'
+
+quest_448:
+  name: '&6Zadanie #448'
+  type: 'blocks'
+  amount: 22400
+  reward: 112000
+  message: '&aUkończono zadanie #448!'
+
+quest_449:
+  name: '&6Zadanie #449'
+  type: 'blocks'
+  amount: 22450
+  reward: 112250
+  message: '&aUkończono zadanie #449!'
+
+quest_450:
+  name: '&6Zadanie #450'
+  type: 'blocks'
+  amount: 22500
+  reward: 112500
+  message: '&aUkończono zadanie #450!'
+
+quest_451:
+  name: '&6Zadanie #451'
+  type: 'blocks'
+  amount: 22550
+  reward: 112750
+  message: '&aUkończono zadanie #451!'
+
+quest_452:
+  name: '&6Zadanie #452'
+  type: 'blocks'
+  amount: 22600
+  reward: 113000
+  message: '&aUkończono zadanie #452!'
+
+quest_453:
+  name: '&6Zadanie #453'
+  type: 'blocks'
+  amount: 22650
+  reward: 113250
+  message: '&aUkończono zadanie #453!'
+
+quest_454:
+  name: '&6Zadanie #454'
+  type: 'blocks'
+  amount: 22700
+  reward: 113500
+  message: '&aUkończono zadanie #454!'
+
+quest_455:
+  name: '&6Zadanie #455'
+  type: 'blocks'
+  amount: 22750
+  reward: 113750
+  message: '&aUkończono zadanie #455!'
+
+quest_456:
+  name: '&6Zadanie #456'
+  type: 'blocks'
+  amount: 22800
+  reward: 114000
+  message: '&aUkończono zadanie #456!'
+
+quest_457:
+  name: '&6Zadanie #457'
+  type: 'blocks'
+  amount: 22850
+  reward: 114250
+  message: '&aUkończono zadanie #457!'
+
+quest_458:
+  name: '&6Zadanie #458'
+  type: 'blocks'
+  amount: 22900
+  reward: 114500
+  message: '&aUkończono zadanie #458!'
+
+quest_459:
+  name: '&6Zadanie #459'
+  type: 'blocks'
+  amount: 22950
+  reward: 114750
+  message: '&aUkończono zadanie #459!'
+
+quest_460:
+  name: '&6Zadanie #460'
+  type: 'blocks'
+  amount: 23000
+  reward: 115000
+  message: '&aUkończono zadanie #460!'
+
+quest_461:
+  name: '&6Zadanie #461'
+  type: 'blocks'
+  amount: 23050
+  reward: 115250
+  message: '&aUkończono zadanie #461!'
+
+quest_462:
+  name: '&6Zadanie #462'
+  type: 'blocks'
+  amount: 23100
+  reward: 115500
+  message: '&aUkończono zadanie #462!'
+
+quest_463:
+  name: '&6Zadanie #463'
+  type: 'blocks'
+  amount: 23150
+  reward: 115750
+  message: '&aUkończono zadanie #463!'
+
+quest_464:
+  name: '&6Zadanie #464'
+  type: 'blocks'
+  amount: 23200
+  reward: 116000
+  message: '&aUkończono zadanie #464!'
+
+quest_465:
+  name: '&6Zadanie #465'
+  type: 'blocks'
+  amount: 23250
+  reward: 116250
+  message: '&aUkończono zadanie #465!'
+
+quest_466:
+  name: '&6Zadanie #466'
+  type: 'blocks'
+  amount: 23300
+  reward: 116500
+  message: '&aUkończono zadanie #466!'
+
+quest_467:
+  name: '&6Zadanie #467'
+  type: 'blocks'
+  amount: 23350
+  reward: 116750
+  message: '&aUkończono zadanie #467!'
+
+quest_468:
+  name: '&6Zadanie #468'
+  type: 'blocks'
+  amount: 23400
+  reward: 117000
+  message: '&aUkończono zadanie #468!'
+
+quest_469:
+  name: '&6Zadanie #469'
+  type: 'blocks'
+  amount: 23450
+  reward: 117250
+  message: '&aUkończono zadanie #469!'
+
+quest_470:
+  name: '&6Zadanie #470'
+  type: 'blocks'
+  amount: 23500
+  reward: 117500
+  message: '&aUkończono zadanie #470!'
+
+quest_471:
+  name: '&6Zadanie #471'
+  type: 'blocks'
+  amount: 23550
+  reward: 117750
+  message: '&aUkończono zadanie #471!'
+
+quest_472:
+  name: '&6Zadanie #472'
+  type: 'blocks'
+  amount: 23600
+  reward: 118000
+  message: '&aUkończono zadanie #472!'
+
+quest_473:
+  name: '&6Zadanie #473'
+  type: 'blocks'
+  amount: 23650
+  reward: 118250
+  message: '&aUkończono zadanie #473!'
+
+quest_474:
+  name: '&6Zadanie #474'
+  type: 'blocks'
+  amount: 23700
+  reward: 118500
+  message: '&aUkończono zadanie #474!'
+
+quest_475:
+  name: '&6Zadanie #475'
+  type: 'blocks'
+  amount: 23750
+  reward: 118750
+  message: '&aUkończono zadanie #475!'
+
+quest_476:
+  name: '&6Zadanie #476'
+  type: 'blocks'
+  amount: 23800
+  reward: 119000
+  message: '&aUkończono zadanie #476!'
+
+quest_477:
+  name: '&6Zadanie #477'
+  type: 'blocks'
+  amount: 23850
+  reward: 119250
+  message: '&aUkończono zadanie #477!'
+
+quest_478:
+  name: '&6Zadanie #478'
+  type: 'blocks'
+  amount: 23900
+  reward: 119500
+  message: '&aUkończono zadanie #478!'
+
+quest_479:
+  name: '&6Zadanie #479'
+  type: 'blocks'
+  amount: 23950
+  reward: 119750
+  message: '&aUkończono zadanie #479!'
+
+quest_480:
+  name: '&6Zadanie #480'
+  type: 'blocks'
+  amount: 24000
+  reward: 120000
+  message: '&aUkończono zadanie #480!'
+
+quest_481:
+  name: '&6Zadanie #481'
+  type: 'blocks'
+  amount: 24050
+  reward: 120250
+  message: '&aUkończono zadanie #481!'
+
+quest_482:
+  name: '&6Zadanie #482'
+  type: 'blocks'
+  amount: 24100
+  reward: 120500
+  message: '&aUkończono zadanie #482!'
+
+quest_483:
+  name: '&6Zadanie #483'
+  type: 'blocks'
+  amount: 24150
+  reward: 120750
+  message: '&aUkończono zadanie #483!'
+
+quest_484:
+  name: '&6Zadanie #484'
+  type: 'blocks'
+  amount: 24200
+  reward: 121000
+  message: '&aUkończono zadanie #484!'
+
+quest_485:
+  name: '&6Zadanie #485'
+  type: 'blocks'
+  amount: 24250
+  reward: 121250
+  message: '&aUkończono zadanie #485!'
+
+quest_486:
+  name: '&6Zadanie #486'
+  type: 'blocks'
+  amount: 24300
+  reward: 121500
+  message: '&aUkończono zadanie #486!'
+
+quest_487:
+  name: '&6Zadanie #487'
+  type: 'blocks'
+  amount: 24350
+  reward: 121750
+  message: '&aUkończono zadanie #487!'
+
+quest_488:
+  name: '&6Zadanie #488'
+  type: 'blocks'
+  amount: 24400
+  reward: 122000
+  message: '&aUkończono zadanie #488!'
+
+quest_489:
+  name: '&6Zadanie #489'
+  type: 'blocks'
+  amount: 24450
+  reward: 122250
+  message: '&aUkończono zadanie #489!'
+
+quest_490:
+  name: '&6Zadanie #490'
+  type: 'blocks'
+  amount: 24500
+  reward: 122500
+  message: '&aUkończono zadanie #490!'
+
+quest_491:
+  name: '&6Zadanie #491'
+  type: 'blocks'
+  amount: 24550
+  reward: 122750
+  message: '&aUkończono zadanie #491!'
+
+quest_492:
+  name: '&6Zadanie #492'
+  type: 'blocks'
+  amount: 24600
+  reward: 123000
+  message: '&aUkończono zadanie #492!'
+
+quest_493:
+  name: '&6Zadanie #493'
+  type: 'blocks'
+  amount: 24650
+  reward: 123250
+  message: '&aUkończono zadanie #493!'
+
+quest_494:
+  name: '&6Zadanie #494'
+  type: 'blocks'
+  amount: 24700
+  reward: 123500
+  message: '&aUkończono zadanie #494!'
+
+quest_495:
+  name: '&6Zadanie #495'
+  type: 'blocks'
+  amount: 24750
+  reward: 123750
+  message: '&aUkończono zadanie #495!'
+
+quest_496:
+  name: '&6Zadanie #496'
+  type: 'blocks'
+  amount: 24800
+  reward: 124000
+  message: '&aUkończono zadanie #496!'
+
+quest_497:
+  name: '&6Zadanie #497'
+  type: 'blocks'
+  amount: 24850
+  reward: 124250
+  message: '&aUkończono zadanie #497!'
+
+quest_498:
+  name: '&6Zadanie #498'
+  type: 'blocks'
+  amount: 24900
+  reward: 124500
+  message: '&aUkończono zadanie #498!'
+
+quest_499:
+  name: '&6Zadanie #499'
+  type: 'blocks'
+  amount: 24950
+  reward: 124750
+  message: '&aUkończono zadanie #499!'
+
+quest_500:
+  name: '&6Zadanie #500'
+  type: 'blocks'
+  amount: 25000
+  reward: 125000
+  message: '&aUkończono zadanie #500!'
+
+quest_501:
+  name: '&6Zadanie #501'
+  type: 'blocks'
+  amount: 25050
+  reward: 125250
+  message: '&aUkończono zadanie #501!'
+
+quest_502:
+  name: '&6Zadanie #502'
+  type: 'blocks'
+  amount: 25100
+  reward: 125500
+  message: '&aUkończono zadanie #502!'
+
+quest_503:
+  name: '&6Zadanie #503'
+  type: 'blocks'
+  amount: 25150
+  reward: 125750
+  message: '&aUkończono zadanie #503!'
+
+quest_504:
+  name: '&6Zadanie #504'
+  type: 'blocks'
+  amount: 25200
+  reward: 126000
+  message: '&aUkończono zadanie #504!'
+
+quest_505:
+  name: '&6Zadanie #505'
+  type: 'blocks'
+  amount: 25250
+  reward: 126250
+  message: '&aUkończono zadanie #505!'
+
+quest_506:
+  name: '&6Zadanie #506'
+  type: 'blocks'
+  amount: 25300
+  reward: 126500
+  message: '&aUkończono zadanie #506!'
+
+quest_507:
+  name: '&6Zadanie #507'
+  type: 'blocks'
+  amount: 25350
+  reward: 126750
+  message: '&aUkończono zadanie #507!'
+
+quest_508:
+  name: '&6Zadanie #508'
+  type: 'blocks'
+  amount: 25400
+  reward: 127000
+  message: '&aUkończono zadanie #508!'
+
+quest_509:
+  name: '&6Zadanie #509'
+  type: 'blocks'
+  amount: 25450
+  reward: 127250
+  message: '&aUkończono zadanie #509!'
+
+quest_510:
+  name: '&6Zadanie #510'
+  type: 'blocks'
+  amount: 25500
+  reward: 127500
+  message: '&aUkończono zadanie #510!'
+
+quest_511:
+  name: '&6Zadanie #511'
+  type: 'blocks'
+  amount: 25550
+  reward: 127750
+  message: '&aUkończono zadanie #511!'
+
+quest_512:
+  name: '&6Zadanie #512'
+  type: 'blocks'
+  amount: 25600
+  reward: 128000
+  message: '&aUkończono zadanie #512!'
+
+quest_513:
+  name: '&6Zadanie #513'
+  type: 'blocks'
+  amount: 25650
+  reward: 128250
+  message: '&aUkończono zadanie #513!'
+
+quest_514:
+  name: '&6Zadanie #514'
+  type: 'blocks'
+  amount: 25700
+  reward: 128500
+  message: '&aUkończono zadanie #514!'
+
+quest_515:
+  name: '&6Zadanie #515'
+  type: 'blocks'
+  amount: 25750
+  reward: 128750
+  message: '&aUkończono zadanie #515!'
+
+quest_516:
+  name: '&6Zadanie #516'
+  type: 'blocks'
+  amount: 25800
+  reward: 129000
+  message: '&aUkończono zadanie #516!'
+
+quest_517:
+  name: '&6Zadanie #517'
+  type: 'blocks'
+  amount: 25850
+  reward: 129250
+  message: '&aUkończono zadanie #517!'
+
+quest_518:
+  name: '&6Zadanie #518'
+  type: 'blocks'
+  amount: 25900
+  reward: 129500
+  message: '&aUkończono zadanie #518!'
+
+quest_519:
+  name: '&6Zadanie #519'
+  type: 'blocks'
+  amount: 25950
+  reward: 129750
+  message: '&aUkończono zadanie #519!'
+
+quest_520:
+  name: '&6Zadanie #520'
+  type: 'blocks'
+  amount: 26000
+  reward: 130000
+  message: '&aUkończono zadanie #520!'
+
+quest_521:
+  name: '&6Zadanie #521'
+  type: 'blocks'
+  amount: 26050
+  reward: 130250
+  message: '&aUkończono zadanie #521!'
+
+quest_522:
+  name: '&6Zadanie #522'
+  type: 'blocks'
+  amount: 26100
+  reward: 130500
+  message: '&aUkończono zadanie #522!'
+
+quest_523:
+  name: '&6Zadanie #523'
+  type: 'blocks'
+  amount: 26150
+  reward: 130750
+  message: '&aUkończono zadanie #523!'
+
+quest_524:
+  name: '&6Zadanie #524'
+  type: 'blocks'
+  amount: 26200
+  reward: 131000
+  message: '&aUkończono zadanie #524!'
+
+quest_525:
+  name: '&6Zadanie #525'
+  type: 'blocks'
+  amount: 26250
+  reward: 131250
+  message: '&aUkończono zadanie #525!'
+
+quest_526:
+  name: '&6Zadanie #526'
+  type: 'blocks'
+  amount: 26300
+  reward: 131500
+  message: '&aUkończono zadanie #526!'
+
+quest_527:
+  name: '&6Zadanie #527'
+  type: 'blocks'
+  amount: 26350
+  reward: 131750
+  message: '&aUkończono zadanie #527!'
+
+quest_528:
+  name: '&6Zadanie #528'
+  type: 'blocks'
+  amount: 26400
+  reward: 132000
+  message: '&aUkończono zadanie #528!'
+
+quest_529:
+  name: '&6Zadanie #529'
+  type: 'blocks'
+  amount: 26450
+  reward: 132250
+  message: '&aUkończono zadanie #529!'
+
+quest_530:
+  name: '&6Zadanie #530'
+  type: 'blocks'
+  amount: 26500
+  reward: 132500
+  message: '&aUkończono zadanie #530!'
+
+quest_531:
+  name: '&6Zadanie #531'
+  type: 'blocks'
+  amount: 26550
+  reward: 132750
+  message: '&aUkończono zadanie #531!'
+
+quest_532:
+  name: '&6Zadanie #532'
+  type: 'blocks'
+  amount: 26600
+  reward: 133000
+  message: '&aUkończono zadanie #532!'
+
+quest_533:
+  name: '&6Zadanie #533'
+  type: 'blocks'
+  amount: 26650
+  reward: 133250
+  message: '&aUkończono zadanie #533!'
+
+quest_534:
+  name: '&6Zadanie #534'
+  type: 'blocks'
+  amount: 26700
+  reward: 133500
+  message: '&aUkończono zadanie #534!'
+
+quest_535:
+  name: '&6Zadanie #535'
+  type: 'blocks'
+  amount: 26750
+  reward: 133750
+  message: '&aUkończono zadanie #535!'
+
+quest_536:
+  name: '&6Zadanie #536'
+  type: 'blocks'
+  amount: 26800
+  reward: 134000
+  message: '&aUkończono zadanie #536!'
+
+quest_537:
+  name: '&6Zadanie #537'
+  type: 'blocks'
+  amount: 26850
+  reward: 134250
+  message: '&aUkończono zadanie #537!'
+
+quest_538:
+  name: '&6Zadanie #538'
+  type: 'blocks'
+  amount: 26900
+  reward: 134500
+  message: '&aUkończono zadanie #538!'
+
+quest_539:
+  name: '&6Zadanie #539'
+  type: 'blocks'
+  amount: 26950
+  reward: 134750
+  message: '&aUkończono zadanie #539!'
+
+quest_540:
+  name: '&6Zadanie #540'
+  type: 'blocks'
+  amount: 27000
+  reward: 135000
+  message: '&aUkończono zadanie #540!'
+
+quest_541:
+  name: '&6Zadanie #541'
+  type: 'blocks'
+  amount: 27050
+  reward: 135250
+  message: '&aUkończono zadanie #541!'
+
+quest_542:
+  name: '&6Zadanie #542'
+  type: 'blocks'
+  amount: 27100
+  reward: 135500
+  message: '&aUkończono zadanie #542!'
+
+quest_543:
+  name: '&6Zadanie #543'
+  type: 'blocks'
+  amount: 27150
+  reward: 135750
+  message: '&aUkończono zadanie #543!'
+
+quest_544:
+  name: '&6Zadanie #544'
+  type: 'blocks'
+  amount: 27200
+  reward: 136000
+  message: '&aUkończono zadanie #544!'
+
+quest_545:
+  name: '&6Zadanie #545'
+  type: 'blocks'
+  amount: 27250
+  reward: 136250
+  message: '&aUkończono zadanie #545!'
+
+quest_546:
+  name: '&6Zadanie #546'
+  type: 'blocks'
+  amount: 27300
+  reward: 136500
+  message: '&aUkończono zadanie #546!'
+
+quest_547:
+  name: '&6Zadanie #547'
+  type: 'blocks'
+  amount: 27350
+  reward: 136750
+  message: '&aUkończono zadanie #547!'
+
+quest_548:
+  name: '&6Zadanie #548'
+  type: 'blocks'
+  amount: 27400
+  reward: 137000
+  message: '&aUkończono zadanie #548!'
+
+quest_549:
+  name: '&6Zadanie #549'
+  type: 'blocks'
+  amount: 27450
+  reward: 137250
+  message: '&aUkończono zadanie #549!'
+
+quest_550:
+  name: '&6Zadanie #550'
+  type: 'blocks'
+  amount: 27500
+  reward: 137500
+  message: '&aUkończono zadanie #550!'
+
+quest_551:
+  name: '&6Zadanie #551'
+  type: 'blocks'
+  amount: 27550
+  reward: 137750
+  message: '&aUkończono zadanie #551!'
+
+quest_552:
+  name: '&6Zadanie #552'
+  type: 'blocks'
+  amount: 27600
+  reward: 138000
+  message: '&aUkończono zadanie #552!'
+
+quest_553:
+  name: '&6Zadanie #553'
+  type: 'blocks'
+  amount: 27650
+  reward: 138250
+  message: '&aUkończono zadanie #553!'
+
+quest_554:
+  name: '&6Zadanie #554'
+  type: 'blocks'
+  amount: 27700
+  reward: 138500
+  message: '&aUkończono zadanie #554!'
+
+quest_555:
+  name: '&6Zadanie #555'
+  type: 'blocks'
+  amount: 27750
+  reward: 138750
+  message: '&aUkończono zadanie #555!'
+
+quest_556:
+  name: '&6Zadanie #556'
+  type: 'blocks'
+  amount: 27800
+  reward: 139000
+  message: '&aUkończono zadanie #556!'
+
+quest_557:
+  name: '&6Zadanie #557'
+  type: 'blocks'
+  amount: 27850
+  reward: 139250
+  message: '&aUkończono zadanie #557!'
+
+quest_558:
+  name: '&6Zadanie #558'
+  type: 'blocks'
+  amount: 27900
+  reward: 139500
+  message: '&aUkończono zadanie #558!'
+
+quest_559:
+  name: '&6Zadanie #559'
+  type: 'blocks'
+  amount: 27950
+  reward: 139750
+  message: '&aUkończono zadanie #559!'
+
+quest_560:
+  name: '&6Zadanie #560'
+  type: 'blocks'
+  amount: 28000
+  reward: 140000
+  message: '&aUkończono zadanie #560!'
+
+quest_561:
+  name: '&6Zadanie #561'
+  type: 'blocks'
+  amount: 28050
+  reward: 140250
+  message: '&aUkończono zadanie #561!'
+
+quest_562:
+  name: '&6Zadanie #562'
+  type: 'blocks'
+  amount: 28100
+  reward: 140500
+  message: '&aUkończono zadanie #562!'
+
+quest_563:
+  name: '&6Zadanie #563'
+  type: 'blocks'
+  amount: 28150
+  reward: 140750
+  message: '&aUkończono zadanie #563!'
+
+quest_564:
+  name: '&6Zadanie #564'
+  type: 'blocks'
+  amount: 28200
+  reward: 141000
+  message: '&aUkończono zadanie #564!'
+
+quest_565:
+  name: '&6Zadanie #565'
+  type: 'blocks'
+  amount: 28250
+  reward: 141250
+  message: '&aUkończono zadanie #565!'
+
+quest_566:
+  name: '&6Zadanie #566'
+  type: 'blocks'
+  amount: 28300
+  reward: 141500
+  message: '&aUkończono zadanie #566!'
+
+quest_567:
+  name: '&6Zadanie #567'
+  type: 'blocks'
+  amount: 28350
+  reward: 141750
+  message: '&aUkończono zadanie #567!'
+
+quest_568:
+  name: '&6Zadanie #568'
+  type: 'blocks'
+  amount: 28400
+  reward: 142000
+  message: '&aUkończono zadanie #568!'
+
+quest_569:
+  name: '&6Zadanie #569'
+  type: 'blocks'
+  amount: 28450
+  reward: 142250
+  message: '&aUkończono zadanie #569!'
+
+quest_570:
+  name: '&6Zadanie #570'
+  type: 'blocks'
+  amount: 28500
+  reward: 142500
+  message: '&aUkończono zadanie #570!'
+
+quest_571:
+  name: '&6Zadanie #571'
+  type: 'blocks'
+  amount: 28550
+  reward: 142750
+  message: '&aUkończono zadanie #571!'
+
+quest_572:
+  name: '&6Zadanie #572'
+  type: 'blocks'
+  amount: 28600
+  reward: 143000
+  message: '&aUkończono zadanie #572!'
+
+quest_573:
+  name: '&6Zadanie #573'
+  type: 'blocks'
+  amount: 28650
+  reward: 143250
+  message: '&aUkończono zadanie #573!'
+
+quest_574:
+  name: '&6Zadanie #574'
+  type: 'blocks'
+  amount: 28700
+  reward: 143500
+  message: '&aUkończono zadanie #574!'
+
+quest_575:
+  name: '&6Zadanie #575'
+  type: 'blocks'
+  amount: 28750
+  reward: 143750
+  message: '&aUkończono zadanie #575!'
+
+quest_576:
+  name: '&6Zadanie #576'
+  type: 'blocks'
+  amount: 28800
+  reward: 144000
+  message: '&aUkończono zadanie #576!'
+
+quest_577:
+  name: '&6Zadanie #577'
+  type: 'blocks'
+  amount: 28850
+  reward: 144250
+  message: '&aUkończono zadanie #577!'
+
+quest_578:
+  name: '&6Zadanie #578'
+  type: 'blocks'
+  amount: 28900
+  reward: 144500
+  message: '&aUkończono zadanie #578!'
+
+quest_579:
+  name: '&6Zadanie #579'
+  type: 'blocks'
+  amount: 28950
+  reward: 144750
+  message: '&aUkończono zadanie #579!'
+
+quest_580:
+  name: '&6Zadanie #580'
+  type: 'blocks'
+  amount: 29000
+  reward: 145000
+  message: '&aUkończono zadanie #580!'
+
+quest_581:
+  name: '&6Zadanie #581'
+  type: 'blocks'
+  amount: 29050
+  reward: 145250
+  message: '&aUkończono zadanie #581!'
+
+quest_582:
+  name: '&6Zadanie #582'
+  type: 'blocks'
+  amount: 29100
+  reward: 145500
+  message: '&aUkończono zadanie #582!'
+
+quest_583:
+  name: '&6Zadanie #583'
+  type: 'blocks'
+  amount: 29150
+  reward: 145750
+  message: '&aUkończono zadanie #583!'
+
+quest_584:
+  name: '&6Zadanie #584'
+  type: 'blocks'
+  amount: 29200
+  reward: 146000
+  message: '&aUkończono zadanie #584!'
+
+quest_585:
+  name: '&6Zadanie #585'
+  type: 'blocks'
+  amount: 29250
+  reward: 146250
+  message: '&aUkończono zadanie #585!'
+
+quest_586:
+  name: '&6Zadanie #586'
+  type: 'blocks'
+  amount: 29300
+  reward: 146500
+  message: '&aUkończono zadanie #586!'
+
+quest_587:
+  name: '&6Zadanie #587'
+  type: 'blocks'
+  amount: 29350
+  reward: 146750
+  message: '&aUkończono zadanie #587!'
+
+quest_588:
+  name: '&6Zadanie #588'
+  type: 'blocks'
+  amount: 29400
+  reward: 147000
+  message: '&aUkończono zadanie #588!'
+
+quest_589:
+  name: '&6Zadanie #589'
+  type: 'blocks'
+  amount: 29450
+  reward: 147250
+  message: '&aUkończono zadanie #589!'
+
+quest_590:
+  name: '&6Zadanie #590'
+  type: 'blocks'
+  amount: 29500
+  reward: 147500
+  message: '&aUkończono zadanie #590!'
+
+quest_591:
+  name: '&6Zadanie #591'
+  type: 'blocks'
+  amount: 29550
+  reward: 147750
+  message: '&aUkończono zadanie #591!'
+
+quest_592:
+  name: '&6Zadanie #592'
+  type: 'blocks'
+  amount: 29600
+  reward: 148000
+  message: '&aUkończono zadanie #592!'
+
+quest_593:
+  name: '&6Zadanie #593'
+  type: 'blocks'
+  amount: 29650
+  reward: 148250
+  message: '&aUkończono zadanie #593!'
+
+quest_594:
+  name: '&6Zadanie #594'
+  type: 'blocks'
+  amount: 29700
+  reward: 148500
+  message: '&aUkończono zadanie #594!'
+
+quest_595:
+  name: '&6Zadanie #595'
+  type: 'blocks'
+  amount: 29750
+  reward: 148750
+  message: '&aUkończono zadanie #595!'
+
+quest_596:
+  name: '&6Zadanie #596'
+  type: 'blocks'
+  amount: 29800
+  reward: 149000
+  message: '&aUkończono zadanie #596!'
+
+quest_597:
+  name: '&6Zadanie #597'
+  type: 'blocks'
+  amount: 29850
+  reward: 149250
+  message: '&aUkończono zadanie #597!'
+
+quest_598:
+  name: '&6Zadanie #598'
+  type: 'blocks'
+  amount: 29900
+  reward: 149500
+  message: '&aUkończono zadanie #598!'
+
+quest_599:
+  name: '&6Zadanie #599'
+  type: 'blocks'
+  amount: 29950
+  reward: 149750
+  message: '&aUkończono zadanie #599!'
+
+quest_600:
+  name: '&6Zadanie #600'
+  type: 'blocks'
+  amount: 30000
+  reward: 150000
+  message: '&aUkończono zadanie #600!'
+
+quest_601:
+  name: '&6Zadanie #601'
+  type: 'blocks'
+  amount: 30050
+  reward: 150250
+  message: '&aUkończono zadanie #601!'
+
+quest_602:
+  name: '&6Zadanie #602'
+  type: 'blocks'
+  amount: 30100
+  reward: 150500
+  message: '&aUkończono zadanie #602!'
+
+quest_603:
+  name: '&6Zadanie #603'
+  type: 'blocks'
+  amount: 30150
+  reward: 150750
+  message: '&aUkończono zadanie #603!'
+
+quest_604:
+  name: '&6Zadanie #604'
+  type: 'blocks'
+  amount: 30200
+  reward: 151000
+  message: '&aUkończono zadanie #604!'
+
+quest_605:
+  name: '&6Zadanie #605'
+  type: 'blocks'
+  amount: 30250
+  reward: 151250
+  message: '&aUkończono zadanie #605!'
+
+quest_606:
+  name: '&6Zadanie #606'
+  type: 'blocks'
+  amount: 30300
+  reward: 151500
+  message: '&aUkończono zadanie #606!'
+
+quest_607:
+  name: '&6Zadanie #607'
+  type: 'blocks'
+  amount: 30350
+  reward: 151750
+  message: '&aUkończono zadanie #607!'
+
+quest_608:
+  name: '&6Zadanie #608'
+  type: 'blocks'
+  amount: 30400
+  reward: 152000
+  message: '&aUkończono zadanie #608!'
+
+quest_609:
+  name: '&6Zadanie #609'
+  type: 'blocks'
+  amount: 30450
+  reward: 152250
+  message: '&aUkończono zadanie #609!'
+
+quest_610:
+  name: '&6Zadanie #610'
+  type: 'blocks'
+  amount: 30500
+  reward: 152500
+  message: '&aUkończono zadanie #610!'
+
+quest_611:
+  name: '&6Zadanie #611'
+  type: 'blocks'
+  amount: 30550
+  reward: 152750
+  message: '&aUkończono zadanie #611!'
+
+quest_612:
+  name: '&6Zadanie #612'
+  type: 'blocks'
+  amount: 30600
+  reward: 153000
+  message: '&aUkończono zadanie #612!'
+
+quest_613:
+  name: '&6Zadanie #613'
+  type: 'blocks'
+  amount: 30650
+  reward: 153250
+  message: '&aUkończono zadanie #613!'
+
+quest_614:
+  name: '&6Zadanie #614'
+  type: 'blocks'
+  amount: 30700
+  reward: 153500
+  message: '&aUkończono zadanie #614!'
+
+quest_615:
+  name: '&6Zadanie #615'
+  type: 'blocks'
+  amount: 30750
+  reward: 153750
+  message: '&aUkończono zadanie #615!'
+
+quest_616:
+  name: '&6Zadanie #616'
+  type: 'blocks'
+  amount: 30800
+  reward: 154000
+  message: '&aUkończono zadanie #616!'
+
+quest_617:
+  name: '&6Zadanie #617'
+  type: 'blocks'
+  amount: 30850
+  reward: 154250
+  message: '&aUkończono zadanie #617!'
+
+quest_618:
+  name: '&6Zadanie #618'
+  type: 'blocks'
+  amount: 30900
+  reward: 154500
+  message: '&aUkończono zadanie #618!'
+
+quest_619:
+  name: '&6Zadanie #619'
+  type: 'blocks'
+  amount: 30950
+  reward: 154750
+  message: '&aUkończono zadanie #619!'
+
+quest_620:
+  name: '&6Zadanie #620'
+  type: 'blocks'
+  amount: 31000
+  reward: 155000
+  message: '&aUkończono zadanie #620!'
+
+quest_621:
+  name: '&6Zadanie #621'
+  type: 'blocks'
+  amount: 31050
+  reward: 155250
+  message: '&aUkończono zadanie #621!'
+
+quest_622:
+  name: '&6Zadanie #622'
+  type: 'blocks'
+  amount: 31100
+  reward: 155500
+  message: '&aUkończono zadanie #622!'
+
+quest_623:
+  name: '&6Zadanie #623'
+  type: 'blocks'
+  amount: 31150
+  reward: 155750
+  message: '&aUkończono zadanie #623!'
+
+quest_624:
+  name: '&6Zadanie #624'
+  type: 'blocks'
+  amount: 31200
+  reward: 156000
+  message: '&aUkończono zadanie #624!'
+
+quest_625:
+  name: '&6Zadanie #625'
+  type: 'blocks'
+  amount: 31250
+  reward: 156250
+  message: '&aUkończono zadanie #625!'
+
+quest_626:
+  name: '&6Zadanie #626'
+  type: 'blocks'
+  amount: 31300
+  reward: 156500
+  message: '&aUkończono zadanie #626!'
+
+quest_627:
+  name: '&6Zadanie #627'
+  type: 'blocks'
+  amount: 31350
+  reward: 156750
+  message: '&aUkończono zadanie #627!'
+
+quest_628:
+  name: '&6Zadanie #628'
+  type: 'blocks'
+  amount: 31400
+  reward: 157000
+  message: '&aUkończono zadanie #628!'
+
+quest_629:
+  name: '&6Zadanie #629'
+  type: 'blocks'
+  amount: 31450
+  reward: 157250
+  message: '&aUkończono zadanie #629!'
+
+quest_630:
+  name: '&6Zadanie #630'
+  type: 'blocks'
+  amount: 31500
+  reward: 157500
+  message: '&aUkończono zadanie #630!'
+
+quest_631:
+  name: '&6Zadanie #631'
+  type: 'blocks'
+  amount: 31550
+  reward: 157750
+  message: '&aUkończono zadanie #631!'
+
+quest_632:
+  name: '&6Zadanie #632'
+  type: 'blocks'
+  amount: 31600
+  reward: 158000
+  message: '&aUkończono zadanie #632!'
+
+quest_633:
+  name: '&6Zadanie #633'
+  type: 'blocks'
+  amount: 31650
+  reward: 158250
+  message: '&aUkończono zadanie #633!'
+
+quest_634:
+  name: '&6Zadanie #634'
+  type: 'blocks'
+  amount: 31700
+  reward: 158500
+  message: '&aUkończono zadanie #634!'
+
+quest_635:
+  name: '&6Zadanie #635'
+  type: 'blocks'
+  amount: 31750
+  reward: 158750
+  message: '&aUkończono zadanie #635!'
+
+quest_636:
+  name: '&6Zadanie #636'
+  type: 'blocks'
+  amount: 31800
+  reward: 159000
+  message: '&aUkończono zadanie #636!'
+
+quest_637:
+  name: '&6Zadanie #637'
+  type: 'blocks'
+  amount: 31850
+  reward: 159250
+  message: '&aUkończono zadanie #637!'
+
+quest_638:
+  name: '&6Zadanie #638'
+  type: 'blocks'
+  amount: 31900
+  reward: 159500
+  message: '&aUkończono zadanie #638!'
+
+quest_639:
+  name: '&6Zadanie #639'
+  type: 'blocks'
+  amount: 31950
+  reward: 159750
+  message: '&aUkończono zadanie #639!'
+
+quest_640:
+  name: '&6Zadanie #640'
+  type: 'blocks'
+  amount: 32000
+  reward: 160000
+  message: '&aUkończono zadanie #640!'
+
+quest_641:
+  name: '&6Zadanie #641'
+  type: 'blocks'
+  amount: 32050
+  reward: 160250
+  message: '&aUkończono zadanie #641!'
+
+quest_642:
+  name: '&6Zadanie #642'
+  type: 'blocks'
+  amount: 32100
+  reward: 160500
+  message: '&aUkończono zadanie #642!'
+
+quest_643:
+  name: '&6Zadanie #643'
+  type: 'blocks'
+  amount: 32150
+  reward: 160750
+  message: '&aUkończono zadanie #643!'
+
+quest_644:
+  name: '&6Zadanie #644'
+  type: 'blocks'
+  amount: 32200
+  reward: 161000
+  message: '&aUkończono zadanie #644!'
+
+quest_645:
+  name: '&6Zadanie #645'
+  type: 'blocks'
+  amount: 32250
+  reward: 161250
+  message: '&aUkończono zadanie #645!'
+
+quest_646:
+  name: '&6Zadanie #646'
+  type: 'blocks'
+  amount: 32300
+  reward: 161500
+  message: '&aUkończono zadanie #646!'
+
+quest_647:
+  name: '&6Zadanie #647'
+  type: 'blocks'
+  amount: 32350
+  reward: 161750
+  message: '&aUkończono zadanie #647!'
+
+quest_648:
+  name: '&6Zadanie #648'
+  type: 'blocks'
+  amount: 32400
+  reward: 162000
+  message: '&aUkończono zadanie #648!'
+
+quest_649:
+  name: '&6Zadanie #649'
+  type: 'blocks'
+  amount: 32450
+  reward: 162250
+  message: '&aUkończono zadanie #649!'
+
+quest_650:
+  name: '&6Zadanie #650'
+  type: 'blocks'
+  amount: 32500
+  reward: 162500
+  message: '&aUkończono zadanie #650!'
+
+quest_651:
+  name: '&6Zadanie #651'
+  type: 'blocks'
+  amount: 32550
+  reward: 162750
+  message: '&aUkończono zadanie #651!'
+
+quest_652:
+  name: '&6Zadanie #652'
+  type: 'blocks'
+  amount: 32600
+  reward: 163000
+  message: '&aUkończono zadanie #652!'
+
+quest_653:
+  name: '&6Zadanie #653'
+  type: 'blocks'
+  amount: 32650
+  reward: 163250
+  message: '&aUkończono zadanie #653!'
+
+quest_654:
+  name: '&6Zadanie #654'
+  type: 'blocks'
+  amount: 32700
+  reward: 163500
+  message: '&aUkończono zadanie #654!'
+
+quest_655:
+  name: '&6Zadanie #655'
+  type: 'blocks'
+  amount: 32750
+  reward: 163750
+  message: '&aUkończono zadanie #655!'
+
+quest_656:
+  name: '&6Zadanie #656'
+  type: 'blocks'
+  amount: 32800
+  reward: 164000
+  message: '&aUkończono zadanie #656!'
+
+quest_657:
+  name: '&6Zadanie #657'
+  type: 'blocks'
+  amount: 32850
+  reward: 164250
+  message: '&aUkończono zadanie #657!'
+
+quest_658:
+  name: '&6Zadanie #658'
+  type: 'blocks'
+  amount: 32900
+  reward: 164500
+  message: '&aUkończono zadanie #658!'
+
+quest_659:
+  name: '&6Zadanie #659'
+  type: 'blocks'
+  amount: 32950
+  reward: 164750
+  message: '&aUkończono zadanie #659!'
+
+quest_660:
+  name: '&6Zadanie #660'
+  type: 'blocks'
+  amount: 33000
+  reward: 165000
+  message: '&aUkończono zadanie #660!'
+
+quest_661:
+  name: '&6Zadanie #661'
+  type: 'blocks'
+  amount: 33050
+  reward: 165250
+  message: '&aUkończono zadanie #661!'
+
+quest_662:
+  name: '&6Zadanie #662'
+  type: 'blocks'
+  amount: 33100
+  reward: 165500
+  message: '&aUkończono zadanie #662!'
+
+quest_663:
+  name: '&6Zadanie #663'
+  type: 'blocks'
+  amount: 33150
+  reward: 165750
+  message: '&aUkończono zadanie #663!'
+
+quest_664:
+  name: '&6Zadanie #664'
+  type: 'blocks'
+  amount: 33200
+  reward: 166000
+  message: '&aUkończono zadanie #664!'
+
+quest_665:
+  name: '&6Zadanie #665'
+  type: 'blocks'
+  amount: 33250
+  reward: 166250
+  message: '&aUkończono zadanie #665!'
+
+quest_666:
+  name: '&6Zadanie #666'
+  type: 'blocks'
+  amount: 33300
+  reward: 166500
+  message: '&aUkończono zadanie #666!'
+
+quest_667:
+  name: '&6Zadanie #667'
+  type: 'blocks'
+  amount: 33350
+  reward: 166750
+  message: '&aUkończono zadanie #667!'
+
+quest_668:
+  name: '&6Zadanie #668'
+  type: 'blocks'
+  amount: 33400
+  reward: 167000
+  message: '&aUkończono zadanie #668!'
+
+quest_669:
+  name: '&6Zadanie #669'
+  type: 'blocks'
+  amount: 33450
+  reward: 167250
+  message: '&aUkończono zadanie #669!'
+
+quest_670:
+  name: '&6Zadanie #670'
+  type: 'blocks'
+  amount: 33500
+  reward: 167500
+  message: '&aUkończono zadanie #670!'
+
+quest_671:
+  name: '&6Zadanie #671'
+  type: 'blocks'
+  amount: 33550
+  reward: 167750
+  message: '&aUkończono zadanie #671!'
+
+quest_672:
+  name: '&6Zadanie #672'
+  type: 'blocks'
+  amount: 33600
+  reward: 168000
+  message: '&aUkończono zadanie #672!'
+
+quest_673:
+  name: '&6Zadanie #673'
+  type: 'blocks'
+  amount: 33650
+  reward: 168250
+  message: '&aUkończono zadanie #673!'
+
+quest_674:
+  name: '&6Zadanie #674'
+  type: 'blocks'
+  amount: 33700
+  reward: 168500
+  message: '&aUkończono zadanie #674!'
+
+quest_675:
+  name: '&6Zadanie #675'
+  type: 'blocks'
+  amount: 33750
+  reward: 168750
+  message: '&aUkończono zadanie #675!'
+
+quest_676:
+  name: '&6Zadanie #676'
+  type: 'blocks'
+  amount: 33800
+  reward: 169000
+  message: '&aUkończono zadanie #676!'
+
+quest_677:
+  name: '&6Zadanie #677'
+  type: 'blocks'
+  amount: 33850
+  reward: 169250
+  message: '&aUkończono zadanie #677!'
+
+quest_678:
+  name: '&6Zadanie #678'
+  type: 'blocks'
+  amount: 33900
+  reward: 169500
+  message: '&aUkończono zadanie #678!'
+
+quest_679:
+  name: '&6Zadanie #679'
+  type: 'blocks'
+  amount: 33950
+  reward: 169750
+  message: '&aUkończono zadanie #679!'
+
+quest_680:
+  name: '&6Zadanie #680'
+  type: 'blocks'
+  amount: 34000
+  reward: 170000
+  message: '&aUkończono zadanie #680!'
+
+quest_681:
+  name: '&6Zadanie #681'
+  type: 'blocks'
+  amount: 34050
+  reward: 170250
+  message: '&aUkończono zadanie #681!'
+
+quest_682:
+  name: '&6Zadanie #682'
+  type: 'blocks'
+  amount: 34100
+  reward: 170500
+  message: '&aUkończono zadanie #682!'
+
+quest_683:
+  name: '&6Zadanie #683'
+  type: 'blocks'
+  amount: 34150
+  reward: 170750
+  message: '&aUkończono zadanie #683!'
+
+quest_684:
+  name: '&6Zadanie #684'
+  type: 'blocks'
+  amount: 34200
+  reward: 171000
+  message: '&aUkończono zadanie #684!'
+
+quest_685:
+  name: '&6Zadanie #685'
+  type: 'blocks'
+  amount: 34250
+  reward: 171250
+  message: '&aUkończono zadanie #685!'
+
+quest_686:
+  name: '&6Zadanie #686'
+  type: 'blocks'
+  amount: 34300
+  reward: 171500
+  message: '&aUkończono zadanie #686!'
+
+quest_687:
+  name: '&6Zadanie #687'
+  type: 'blocks'
+  amount: 34350
+  reward: 171750
+  message: '&aUkończono zadanie #687!'
+
+quest_688:
+  name: '&6Zadanie #688'
+  type: 'blocks'
+  amount: 34400
+  reward: 172000
+  message: '&aUkończono zadanie #688!'
+
+quest_689:
+  name: '&6Zadanie #689'
+  type: 'blocks'
+  amount: 34450
+  reward: 172250
+  message: '&aUkończono zadanie #689!'
+
+quest_690:
+  name: '&6Zadanie #690'
+  type: 'blocks'
+  amount: 34500
+  reward: 172500
+  message: '&aUkończono zadanie #690!'
+
+quest_691:
+  name: '&6Zadanie #691'
+  type: 'blocks'
+  amount: 34550
+  reward: 172750
+  message: '&aUkończono zadanie #691!'
+
+quest_692:
+  name: '&6Zadanie #692'
+  type: 'blocks'
+  amount: 34600
+  reward: 173000
+  message: '&aUkończono zadanie #692!'
+
+quest_693:
+  name: '&6Zadanie #693'
+  type: 'blocks'
+  amount: 34650
+  reward: 173250
+  message: '&aUkończono zadanie #693!'
+
+quest_694:
+  name: '&6Zadanie #694'
+  type: 'blocks'
+  amount: 34700
+  reward: 173500
+  message: '&aUkończono zadanie #694!'
+
+quest_695:
+  name: '&6Zadanie #695'
+  type: 'blocks'
+  amount: 34750
+  reward: 173750
+  message: '&aUkończono zadanie #695!'
+
+quest_696:
+  name: '&6Zadanie #696'
+  type: 'blocks'
+  amount: 34800
+  reward: 174000
+  message: '&aUkończono zadanie #696!'
+
+quest_697:
+  name: '&6Zadanie #697'
+  type: 'blocks'
+  amount: 34850
+  reward: 174250
+  message: '&aUkończono zadanie #697!'
+
+quest_698:
+  name: '&6Zadanie #698'
+  type: 'blocks'
+  amount: 34900
+  reward: 174500
+  message: '&aUkończono zadanie #698!'
+
+quest_699:
+  name: '&6Zadanie #699'
+  type: 'blocks'
+  amount: 34950
+  reward: 174750
+  message: '&aUkończono zadanie #699!'
+
+quest_700:
+  name: '&6Zadanie #700'
+  type: 'blocks'
+  amount: 35000
+  reward: 175000
+  message: '&aUkończono zadanie #700!'
+
+quest_701:
+  name: '&6Zadanie #701'
+  type: 'blocks'
+  amount: 35050
+  reward: 175250
+  message: '&aUkończono zadanie #701!'
+
+quest_702:
+  name: '&6Zadanie #702'
+  type: 'blocks'
+  amount: 35100
+  reward: 175500
+  message: '&aUkończono zadanie #702!'
+
+quest_703:
+  name: '&6Zadanie #703'
+  type: 'blocks'
+  amount: 35150
+  reward: 175750
+  message: '&aUkończono zadanie #703!'
+
+quest_704:
+  name: '&6Zadanie #704'
+  type: 'blocks'
+  amount: 35200
+  reward: 176000
+  message: '&aUkończono zadanie #704!'
+
+quest_705:
+  name: '&6Zadanie #705'
+  type: 'blocks'
+  amount: 35250
+  reward: 176250
+  message: '&aUkończono zadanie #705!'
+
+quest_706:
+  name: '&6Zadanie #706'
+  type: 'blocks'
+  amount: 35300
+  reward: 176500
+  message: '&aUkończono zadanie #706!'
+
+quest_707:
+  name: '&6Zadanie #707'
+  type: 'blocks'
+  amount: 35350
+  reward: 176750
+  message: '&aUkończono zadanie #707!'
+
+quest_708:
+  name: '&6Zadanie #708'
+  type: 'blocks'
+  amount: 35400
+  reward: 177000
+  message: '&aUkończono zadanie #708!'
+
+quest_709:
+  name: '&6Zadanie #709'
+  type: 'blocks'
+  amount: 35450
+  reward: 177250
+  message: '&aUkończono zadanie #709!'
+
+quest_710:
+  name: '&6Zadanie #710'
+  type: 'blocks'
+  amount: 35500
+  reward: 177500
+  message: '&aUkończono zadanie #710!'
+
+quest_711:
+  name: '&6Zadanie #711'
+  type: 'blocks'
+  amount: 35550
+  reward: 177750
+  message: '&aUkończono zadanie #711!'
+
+quest_712:
+  name: '&6Zadanie #712'
+  type: 'blocks'
+  amount: 35600
+  reward: 178000
+  message: '&aUkończono zadanie #712!'
+
+quest_713:
+  name: '&6Zadanie #713'
+  type: 'blocks'
+  amount: 35650
+  reward: 178250
+  message: '&aUkończono zadanie #713!'
+
+quest_714:
+  name: '&6Zadanie #714'
+  type: 'blocks'
+  amount: 35700
+  reward: 178500
+  message: '&aUkończono zadanie #714!'
+
+quest_715:
+  name: '&6Zadanie #715'
+  type: 'blocks'
+  amount: 35750
+  reward: 178750
+  message: '&aUkończono zadanie #715!'
+
+quest_716:
+  name: '&6Zadanie #716'
+  type: 'blocks'
+  amount: 35800
+  reward: 179000
+  message: '&aUkończono zadanie #716!'
+
+quest_717:
+  name: '&6Zadanie #717'
+  type: 'blocks'
+  amount: 35850
+  reward: 179250
+  message: '&aUkończono zadanie #717!'
+
+quest_718:
+  name: '&6Zadanie #718'
+  type: 'blocks'
+  amount: 35900
+  reward: 179500
+  message: '&aUkończono zadanie #718!'
+
+quest_719:
+  name: '&6Zadanie #719'
+  type: 'blocks'
+  amount: 35950
+  reward: 179750
+  message: '&aUkończono zadanie #719!'
+
+quest_720:
+  name: '&6Zadanie #720'
+  type: 'blocks'
+  amount: 36000
+  reward: 180000
+  message: '&aUkończono zadanie #720!'
+
+quest_721:
+  name: '&6Zadanie #721'
+  type: 'blocks'
+  amount: 36050
+  reward: 180250
+  message: '&aUkończono zadanie #721!'
+
+quest_722:
+  name: '&6Zadanie #722'
+  type: 'blocks'
+  amount: 36100
+  reward: 180500
+  message: '&aUkończono zadanie #722!'
+
+quest_723:
+  name: '&6Zadanie #723'
+  type: 'blocks'
+  amount: 36150
+  reward: 180750
+  message: '&aUkończono zadanie #723!'
+
+quest_724:
+  name: '&6Zadanie #724'
+  type: 'blocks'
+  amount: 36200
+  reward: 181000
+  message: '&aUkończono zadanie #724!'
+
+quest_725:
+  name: '&6Zadanie #725'
+  type: 'blocks'
+  amount: 36250
+  reward: 181250
+  message: '&aUkończono zadanie #725!'
+
+quest_726:
+  name: '&6Zadanie #726'
+  type: 'blocks'
+  amount: 36300
+  reward: 181500
+  message: '&aUkończono zadanie #726!'
+
+quest_727:
+  name: '&6Zadanie #727'
+  type: 'blocks'
+  amount: 36350
+  reward: 181750
+  message: '&aUkończono zadanie #727!'
+
+quest_728:
+  name: '&6Zadanie #728'
+  type: 'blocks'
+  amount: 36400
+  reward: 182000
+  message: '&aUkończono zadanie #728!'
+
+quest_729:
+  name: '&6Zadanie #729'
+  type: 'blocks'
+  amount: 36450
+  reward: 182250
+  message: '&aUkończono zadanie #729!'
+
+quest_730:
+  name: '&6Zadanie #730'
+  type: 'blocks'
+  amount: 36500
+  reward: 182500
+  message: '&aUkończono zadanie #730!'
+
+quest_731:
+  name: '&6Zadanie #731'
+  type: 'blocks'
+  amount: 36550
+  reward: 182750
+  message: '&aUkończono zadanie #731!'
+
+quest_732:
+  name: '&6Zadanie #732'
+  type: 'blocks'
+  amount: 36600
+  reward: 183000
+  message: '&aUkończono zadanie #732!'
+
+quest_733:
+  name: '&6Zadanie #733'
+  type: 'blocks'
+  amount: 36650
+  reward: 183250
+  message: '&aUkończono zadanie #733!'
+
+quest_734:
+  name: '&6Zadanie #734'
+  type: 'blocks'
+  amount: 36700
+  reward: 183500
+  message: '&aUkończono zadanie #734!'
+
+quest_735:
+  name: '&6Zadanie #735'
+  type: 'blocks'
+  amount: 36750
+  reward: 183750
+  message: '&aUkończono zadanie #735!'
+
+quest_736:
+  name: '&6Zadanie #736'
+  type: 'blocks'
+  amount: 36800
+  reward: 184000
+  message: '&aUkończono zadanie #736!'
+
+quest_737:
+  name: '&6Zadanie #737'
+  type: 'blocks'
+  amount: 36850
+  reward: 184250
+  message: '&aUkończono zadanie #737!'
+
+quest_738:
+  name: '&6Zadanie #738'
+  type: 'blocks'
+  amount: 36900
+  reward: 184500
+  message: '&aUkończono zadanie #738!'
+
+quest_739:
+  name: '&6Zadanie #739'
+  type: 'blocks'
+  amount: 36950
+  reward: 184750
+  message: '&aUkończono zadanie #739!'
+
+quest_740:
+  name: '&6Zadanie #740'
+  type: 'blocks'
+  amount: 37000
+  reward: 185000
+  message: '&aUkończono zadanie #740!'
+
+quest_741:
+  name: '&6Zadanie #741'
+  type: 'blocks'
+  amount: 37050
+  reward: 185250
+  message: '&aUkończono zadanie #741!'
+
+quest_742:
+  name: '&6Zadanie #742'
+  type: 'blocks'
+  amount: 37100
+  reward: 185500
+  message: '&aUkończono zadanie #742!'
+
+quest_743:
+  name: '&6Zadanie #743'
+  type: 'blocks'
+  amount: 37150
+  reward: 185750
+  message: '&aUkończono zadanie #743!'
+
+quest_744:
+  name: '&6Zadanie #744'
+  type: 'blocks'
+  amount: 37200
+  reward: 186000
+  message: '&aUkończono zadanie #744!'
+
+quest_745:
+  name: '&6Zadanie #745'
+  type: 'blocks'
+  amount: 37250
+  reward: 186250
+  message: '&aUkończono zadanie #745!'
+
+quest_746:
+  name: '&6Zadanie #746'
+  type: 'blocks'
+  amount: 37300
+  reward: 186500
+  message: '&aUkończono zadanie #746!'
+
+quest_747:
+  name: '&6Zadanie #747'
+  type: 'blocks'
+  amount: 37350
+  reward: 186750
+  message: '&aUkończono zadanie #747!'
+
+quest_748:
+  name: '&6Zadanie #748'
+  type: 'blocks'
+  amount: 37400
+  reward: 187000
+  message: '&aUkończono zadanie #748!'
+
+quest_749:
+  name: '&6Zadanie #749'
+  type: 'blocks'
+  amount: 37450
+  reward: 187250
+  message: '&aUkończono zadanie #749!'
+
+quest_750:
+  name: '&6Zadanie #750'
+  type: 'blocks'
+  amount: 37500
+  reward: 187500
+  message: '&aUkończono zadanie #750!'
+
+quest_751:
+  name: '&6Zadanie #751'
+  type: 'blocks'
+  amount: 37550
+  reward: 187750
+  message: '&aUkończono zadanie #751!'
+
+quest_752:
+  name: '&6Zadanie #752'
+  type: 'blocks'
+  amount: 37600
+  reward: 188000
+  message: '&aUkończono zadanie #752!'
+
+quest_753:
+  name: '&6Zadanie #753'
+  type: 'blocks'
+  amount: 37650
+  reward: 188250
+  message: '&aUkończono zadanie #753!'
+
+quest_754:
+  name: '&6Zadanie #754'
+  type: 'blocks'
+  amount: 37700
+  reward: 188500
+  message: '&aUkończono zadanie #754!'
+
+quest_755:
+  name: '&6Zadanie #755'
+  type: 'blocks'
+  amount: 37750
+  reward: 188750
+  message: '&aUkończono zadanie #755!'
+
+quest_756:
+  name: '&6Zadanie #756'
+  type: 'blocks'
+  amount: 37800
+  reward: 189000
+  message: '&aUkończono zadanie #756!'
+
+quest_757:
+  name: '&6Zadanie #757'
+  type: 'blocks'
+  amount: 37850
+  reward: 189250
+  message: '&aUkończono zadanie #757!'
+
+quest_758:
+  name: '&6Zadanie #758'
+  type: 'blocks'
+  amount: 37900
+  reward: 189500
+  message: '&aUkończono zadanie #758!'
+
+quest_759:
+  name: '&6Zadanie #759'
+  type: 'blocks'
+  amount: 37950
+  reward: 189750
+  message: '&aUkończono zadanie #759!'
+
+quest_760:
+  name: '&6Zadanie #760'
+  type: 'blocks'
+  amount: 38000
+  reward: 190000
+  message: '&aUkończono zadanie #760!'
+
+quest_761:
+  name: '&6Zadanie #761'
+  type: 'blocks'
+  amount: 38050
+  reward: 190250
+  message: '&aUkończono zadanie #761!'
+
+quest_762:
+  name: '&6Zadanie #762'
+  type: 'blocks'
+  amount: 38100
+  reward: 190500
+  message: '&aUkończono zadanie #762!'
+
+quest_763:
+  name: '&6Zadanie #763'
+  type: 'blocks'
+  amount: 38150
+  reward: 190750
+  message: '&aUkończono zadanie #763!'
+
+quest_764:
+  name: '&6Zadanie #764'
+  type: 'blocks'
+  amount: 38200
+  reward: 191000
+  message: '&aUkończono zadanie #764!'
+
+quest_765:
+  name: '&6Zadanie #765'
+  type: 'blocks'
+  amount: 38250
+  reward: 191250
+  message: '&aUkończono zadanie #765!'
+
+quest_766:
+  name: '&6Zadanie #766'
+  type: 'blocks'
+  amount: 38300
+  reward: 191500
+  message: '&aUkończono zadanie #766!'
+
+quest_767:
+  name: '&6Zadanie #767'
+  type: 'blocks'
+  amount: 38350
+  reward: 191750
+  message: '&aUkończono zadanie #767!'
+
+quest_768:
+  name: '&6Zadanie #768'
+  type: 'blocks'
+  amount: 38400
+  reward: 192000
+  message: '&aUkończono zadanie #768!'
+
+quest_769:
+  name: '&6Zadanie #769'
+  type: 'blocks'
+  amount: 38450
+  reward: 192250
+  message: '&aUkończono zadanie #769!'
+
+quest_770:
+  name: '&6Zadanie #770'
+  type: 'blocks'
+  amount: 38500
+  reward: 192500
+  message: '&aUkończono zadanie #770!'
+
+quest_771:
+  name: '&6Zadanie #771'
+  type: 'blocks'
+  amount: 38550
+  reward: 192750
+  message: '&aUkończono zadanie #771!'
+
+quest_772:
+  name: '&6Zadanie #772'
+  type: 'blocks'
+  amount: 38600
+  reward: 193000
+  message: '&aUkończono zadanie #772!'
+
+quest_773:
+  name: '&6Zadanie #773'
+  type: 'blocks'
+  amount: 38650
+  reward: 193250
+  message: '&aUkończono zadanie #773!'
+
+quest_774:
+  name: '&6Zadanie #774'
+  type: 'blocks'
+  amount: 38700
+  reward: 193500
+  message: '&aUkończono zadanie #774!'
+
+quest_775:
+  name: '&6Zadanie #775'
+  type: 'blocks'
+  amount: 38750
+  reward: 193750
+  message: '&aUkończono zadanie #775!'
+
+quest_776:
+  name: '&6Zadanie #776'
+  type: 'blocks'
+  amount: 38800
+  reward: 194000
+  message: '&aUkończono zadanie #776!'
+
+quest_777:
+  name: '&6Zadanie #777'
+  type: 'blocks'
+  amount: 38850
+  reward: 194250
+  message: '&aUkończono zadanie #777!'
+
+quest_778:
+  name: '&6Zadanie #778'
+  type: 'blocks'
+  amount: 38900
+  reward: 194500
+  message: '&aUkończono zadanie #778!'
+
+quest_779:
+  name: '&6Zadanie #779'
+  type: 'blocks'
+  amount: 38950
+  reward: 194750
+  message: '&aUkończono zadanie #779!'
+
+quest_780:
+  name: '&6Zadanie #780'
+  type: 'blocks'
+  amount: 39000
+  reward: 195000
+  message: '&aUkończono zadanie #780!'
+
+quest_781:
+  name: '&6Zadanie #781'
+  type: 'blocks'
+  amount: 39050
+  reward: 195250
+  message: '&aUkończono zadanie #781!'
+
+quest_782:
+  name: '&6Zadanie #782'
+  type: 'blocks'
+  amount: 39100
+  reward: 195500
+  message: '&aUkończono zadanie #782!'
+
+quest_783:
+  name: '&6Zadanie #783'
+  type: 'blocks'
+  amount: 39150
+  reward: 195750
+  message: '&aUkończono zadanie #783!'
+
+quest_784:
+  name: '&6Zadanie #784'
+  type: 'blocks'
+  amount: 39200
+  reward: 196000
+  message: '&aUkończono zadanie #784!'
+
+quest_785:
+  name: '&6Zadanie #785'
+  type: 'blocks'
+  amount: 39250
+  reward: 196250
+  message: '&aUkończono zadanie #785!'
+
+quest_786:
+  name: '&6Zadanie #786'
+  type: 'blocks'
+  amount: 39300
+  reward: 196500
+  message: '&aUkończono zadanie #786!'
+
+quest_787:
+  name: '&6Zadanie #787'
+  type: 'blocks'
+  amount: 39350
+  reward: 196750
+  message: '&aUkończono zadanie #787!'
+
+quest_788:
+  name: '&6Zadanie #788'
+  type: 'blocks'
+  amount: 39400
+  reward: 197000
+  message: '&aUkończono zadanie #788!'
+
+quest_789:
+  name: '&6Zadanie #789'
+  type: 'blocks'
+  amount: 39450
+  reward: 197250
+  message: '&aUkończono zadanie #789!'
+
+quest_790:
+  name: '&6Zadanie #790'
+  type: 'blocks'
+  amount: 39500
+  reward: 197500
+  message: '&aUkończono zadanie #790!'
+
+quest_791:
+  name: '&6Zadanie #791'
+  type: 'blocks'
+  amount: 39550
+  reward: 197750
+  message: '&aUkończono zadanie #791!'
+
+quest_792:
+  name: '&6Zadanie #792'
+  type: 'blocks'
+  amount: 39600
+  reward: 198000
+  message: '&aUkończono zadanie #792!'
+
+quest_793:
+  name: '&6Zadanie #793'
+  type: 'blocks'
+  amount: 39650
+  reward: 198250
+  message: '&aUkończono zadanie #793!'
+
+quest_794:
+  name: '&6Zadanie #794'
+  type: 'blocks'
+  amount: 39700
+  reward: 198500
+  message: '&aUkończono zadanie #794!'
+
+quest_795:
+  name: '&6Zadanie #795'
+  type: 'blocks'
+  amount: 39750
+  reward: 198750
+  message: '&aUkończono zadanie #795!'
+
+quest_796:
+  name: '&6Zadanie #796'
+  type: 'blocks'
+  amount: 39800
+  reward: 199000
+  message: '&aUkończono zadanie #796!'
+
+quest_797:
+  name: '&6Zadanie #797'
+  type: 'blocks'
+  amount: 39850
+  reward: 199250
+  message: '&aUkończono zadanie #797!'
+
+quest_798:
+  name: '&6Zadanie #798'
+  type: 'blocks'
+  amount: 39900
+  reward: 199500
+  message: '&aUkończono zadanie #798!'
+
+quest_799:
+  name: '&6Zadanie #799'
+  type: 'blocks'
+  amount: 39950
+  reward: 199750
+  message: '&aUkończono zadanie #799!'
+
+quest_800:
+  name: '&6Zadanie #800'
+  type: 'blocks'
+  amount: 40000
+  reward: 200000
+  message: '&aUkończono zadanie #800!'
+
+quest_801:
+  name: '&6Zadanie #801'
+  type: 'blocks'
+  amount: 40050
+  reward: 200250
+  message: '&aUkończono zadanie #801!'
+
+quest_802:
+  name: '&6Zadanie #802'
+  type: 'blocks'
+  amount: 40100
+  reward: 200500
+  message: '&aUkończono zadanie #802!'
+
+quest_803:
+  name: '&6Zadanie #803'
+  type: 'blocks'
+  amount: 40150
+  reward: 200750
+  message: '&aUkończono zadanie #803!'
+
+quest_804:
+  name: '&6Zadanie #804'
+  type: 'blocks'
+  amount: 40200
+  reward: 201000
+  message: '&aUkończono zadanie #804!'
+
+quest_805:
+  name: '&6Zadanie #805'
+  type: 'blocks'
+  amount: 40250
+  reward: 201250
+  message: '&aUkończono zadanie #805!'
+
+quest_806:
+  name: '&6Zadanie #806'
+  type: 'blocks'
+  amount: 40300
+  reward: 201500
+  message: '&aUkończono zadanie #806!'
+
+quest_807:
+  name: '&6Zadanie #807'
+  type: 'blocks'
+  amount: 40350
+  reward: 201750
+  message: '&aUkończono zadanie #807!'
+
+quest_808:
+  name: '&6Zadanie #808'
+  type: 'blocks'
+  amount: 40400
+  reward: 202000
+  message: '&aUkończono zadanie #808!'
+
+quest_809:
+  name: '&6Zadanie #809'
+  type: 'blocks'
+  amount: 40450
+  reward: 202250
+  message: '&aUkończono zadanie #809!'
+
+quest_810:
+  name: '&6Zadanie #810'
+  type: 'blocks'
+  amount: 40500
+  reward: 202500
+  message: '&aUkończono zadanie #810!'
+
+quest_811:
+  name: '&6Zadanie #811'
+  type: 'blocks'
+  amount: 40550
+  reward: 202750
+  message: '&aUkończono zadanie #811!'
+
+quest_812:
+  name: '&6Zadanie #812'
+  type: 'blocks'
+  amount: 40600
+  reward: 203000
+  message: '&aUkończono zadanie #812!'
+
+quest_813:
+  name: '&6Zadanie #813'
+  type: 'blocks'
+  amount: 40650
+  reward: 203250
+  message: '&aUkończono zadanie #813!'
+
+quest_814:
+  name: '&6Zadanie #814'
+  type: 'blocks'
+  amount: 40700
+  reward: 203500
+  message: '&aUkończono zadanie #814!'
+
+quest_815:
+  name: '&6Zadanie #815'
+  type: 'blocks'
+  amount: 40750
+  reward: 203750
+  message: '&aUkończono zadanie #815!'
+
+quest_816:
+  name: '&6Zadanie #816'
+  type: 'blocks'
+  amount: 40800
+  reward: 204000
+  message: '&aUkończono zadanie #816!'
+
+quest_817:
+  name: '&6Zadanie #817'
+  type: 'blocks'
+  amount: 40850
+  reward: 204250
+  message: '&aUkończono zadanie #817!'
+
+quest_818:
+  name: '&6Zadanie #818'
+  type: 'blocks'
+  amount: 40900
+  reward: 204500
+  message: '&aUkończono zadanie #818!'
+
+quest_819:
+  name: '&6Zadanie #819'
+  type: 'blocks'
+  amount: 40950
+  reward: 204750
+  message: '&aUkończono zadanie #819!'
+
+quest_820:
+  name: '&6Zadanie #820'
+  type: 'blocks'
+  amount: 41000
+  reward: 205000
+  message: '&aUkończono zadanie #820!'
+
+quest_821:
+  name: '&6Zadanie #821'
+  type: 'blocks'
+  amount: 41050
+  reward: 205250
+  message: '&aUkończono zadanie #821!'
+
+quest_822:
+  name: '&6Zadanie #822'
+  type: 'blocks'
+  amount: 41100
+  reward: 205500
+  message: '&aUkończono zadanie #822!'
+
+quest_823:
+  name: '&6Zadanie #823'
+  type: 'blocks'
+  amount: 41150
+  reward: 205750
+  message: '&aUkończono zadanie #823!'
+
+quest_824:
+  name: '&6Zadanie #824'
+  type: 'blocks'
+  amount: 41200
+  reward: 206000
+  message: '&aUkończono zadanie #824!'
+
+quest_825:
+  name: '&6Zadanie #825'
+  type: 'blocks'
+  amount: 41250
+  reward: 206250
+  message: '&aUkończono zadanie #825!'
+
+quest_826:
+  name: '&6Zadanie #826'
+  type: 'blocks'
+  amount: 41300
+  reward: 206500
+  message: '&aUkończono zadanie #826!'
+
+quest_827:
+  name: '&6Zadanie #827'
+  type: 'blocks'
+  amount: 41350
+  reward: 206750
+  message: '&aUkończono zadanie #827!'
+
+quest_828:
+  name: '&6Zadanie #828'
+  type: 'blocks'
+  amount: 41400
+  reward: 207000
+  message: '&aUkończono zadanie #828!'
+
+quest_829:
+  name: '&6Zadanie #829'
+  type: 'blocks'
+  amount: 41450
+  reward: 207250
+  message: '&aUkończono zadanie #829!'
+
+quest_830:
+  name: '&6Zadanie #830'
+  type: 'blocks'
+  amount: 41500
+  reward: 207500
+  message: '&aUkończono zadanie #830!'
+
+quest_831:
+  name: '&6Zadanie #831'
+  type: 'blocks'
+  amount: 41550
+  reward: 207750
+  message: '&aUkończono zadanie #831!'
+
+quest_832:
+  name: '&6Zadanie #832'
+  type: 'blocks'
+  amount: 41600
+  reward: 208000
+  message: '&aUkończono zadanie #832!'
+
+quest_833:
+  name: '&6Zadanie #833'
+  type: 'blocks'
+  amount: 41650
+  reward: 208250
+  message: '&aUkończono zadanie #833!'
+
+quest_834:
+  name: '&6Zadanie #834'
+  type: 'blocks'
+  amount: 41700
+  reward: 208500
+  message: '&aUkończono zadanie #834!'
+
+quest_835:
+  name: '&6Zadanie #835'
+  type: 'blocks'
+  amount: 41750
+  reward: 208750
+  message: '&aUkończono zadanie #835!'
+
+quest_836:
+  name: '&6Zadanie #836'
+  type: 'blocks'
+  amount: 41800
+  reward: 209000
+  message: '&aUkończono zadanie #836!'
+
+quest_837:
+  name: '&6Zadanie #837'
+  type: 'blocks'
+  amount: 41850
+  reward: 209250
+  message: '&aUkończono zadanie #837!'
+
+quest_838:
+  name: '&6Zadanie #838'
+  type: 'blocks'
+  amount: 41900
+  reward: 209500
+  message: '&aUkończono zadanie #838!'
+
+quest_839:
+  name: '&6Zadanie #839'
+  type: 'blocks'
+  amount: 41950
+  reward: 209750
+  message: '&aUkończono zadanie #839!'
+
+quest_840:
+  name: '&6Zadanie #840'
+  type: 'blocks'
+  amount: 42000
+  reward: 210000
+  message: '&aUkończono zadanie #840!'
+
+quest_841:
+  name: '&6Zadanie #841'
+  type: 'blocks'
+  amount: 42050
+  reward: 210250
+  message: '&aUkończono zadanie #841!'
+
+quest_842:
+  name: '&6Zadanie #842'
+  type: 'blocks'
+  amount: 42100
+  reward: 210500
+  message: '&aUkończono zadanie #842!'
+
+quest_843:
+  name: '&6Zadanie #843'
+  type: 'blocks'
+  amount: 42150
+  reward: 210750
+  message: '&aUkończono zadanie #843!'
+
+quest_844:
+  name: '&6Zadanie #844'
+  type: 'blocks'
+  amount: 42200
+  reward: 211000
+  message: '&aUkończono zadanie #844!'
+
+quest_845:
+  name: '&6Zadanie #845'
+  type: 'blocks'
+  amount: 42250
+  reward: 211250
+  message: '&aUkończono zadanie #845!'
+
+quest_846:
+  name: '&6Zadanie #846'
+  type: 'blocks'
+  amount: 42300
+  reward: 211500
+  message: '&aUkończono zadanie #846!'
+
+quest_847:
+  name: '&6Zadanie #847'
+  type: 'blocks'
+  amount: 42350
+  reward: 211750
+  message: '&aUkończono zadanie #847!'
+
+quest_848:
+  name: '&6Zadanie #848'
+  type: 'blocks'
+  amount: 42400
+  reward: 212000
+  message: '&aUkończono zadanie #848!'
+
+quest_849:
+  name: '&6Zadanie #849'
+  type: 'blocks'
+  amount: 42450
+  reward: 212250
+  message: '&aUkończono zadanie #849!'
+
+quest_850:
+  name: '&6Zadanie #850'
+  type: 'blocks'
+  amount: 42500
+  reward: 212500
+  message: '&aUkończono zadanie #850!'
+
+quest_851:
+  name: '&6Zadanie #851'
+  type: 'blocks'
+  amount: 42550
+  reward: 212750
+  message: '&aUkończono zadanie #851!'
+
+quest_852:
+  name: '&6Zadanie #852'
+  type: 'blocks'
+  amount: 42600
+  reward: 213000
+  message: '&aUkończono zadanie #852!'
+
+quest_853:
+  name: '&6Zadanie #853'
+  type: 'blocks'
+  amount: 42650
+  reward: 213250
+  message: '&aUkończono zadanie #853!'
+
+quest_854:
+  name: '&6Zadanie #854'
+  type: 'blocks'
+  amount: 42700
+  reward: 213500
+  message: '&aUkończono zadanie #854!'
+
+quest_855:
+  name: '&6Zadanie #855'
+  type: 'blocks'
+  amount: 42750
+  reward: 213750
+  message: '&aUkończono zadanie #855!'
+
+quest_856:
+  name: '&6Zadanie #856'
+  type: 'blocks'
+  amount: 42800
+  reward: 214000
+  message: '&aUkończono zadanie #856!'
+
+quest_857:
+  name: '&6Zadanie #857'
+  type: 'blocks'
+  amount: 42850
+  reward: 214250
+  message: '&aUkończono zadanie #857!'
+
+quest_858:
+  name: '&6Zadanie #858'
+  type: 'blocks'
+  amount: 42900
+  reward: 214500
+  message: '&aUkończono zadanie #858!'
+
+quest_859:
+  name: '&6Zadanie #859'
+  type: 'blocks'
+  amount: 42950
+  reward: 214750
+  message: '&aUkończono zadanie #859!'
+
+quest_860:
+  name: '&6Zadanie #860'
+  type: 'blocks'
+  amount: 43000
+  reward: 215000
+  message: '&aUkończono zadanie #860!'
+
+quest_861:
+  name: '&6Zadanie #861'
+  type: 'blocks'
+  amount: 43050
+  reward: 215250
+  message: '&aUkończono zadanie #861!'
+
+quest_862:
+  name: '&6Zadanie #862'
+  type: 'blocks'
+  amount: 43100
+  reward: 215500
+  message: '&aUkończono zadanie #862!'
+
+quest_863:
+  name: '&6Zadanie #863'
+  type: 'blocks'
+  amount: 43150
+  reward: 215750
+  message: '&aUkończono zadanie #863!'
+
+quest_864:
+  name: '&6Zadanie #864'
+  type: 'blocks'
+  amount: 43200
+  reward: 216000
+  message: '&aUkończono zadanie #864!'
+
+quest_865:
+  name: '&6Zadanie #865'
+  type: 'blocks'
+  amount: 43250
+  reward: 216250
+  message: '&aUkończono zadanie #865!'
+
+quest_866:
+  name: '&6Zadanie #866'
+  type: 'blocks'
+  amount: 43300
+  reward: 216500
+  message: '&aUkończono zadanie #866!'
+
+quest_867:
+  name: '&6Zadanie #867'
+  type: 'blocks'
+  amount: 43350
+  reward: 216750
+  message: '&aUkończono zadanie #867!'
+
+quest_868:
+  name: '&6Zadanie #868'
+  type: 'blocks'
+  amount: 43400
+  reward: 217000
+  message: '&aUkończono zadanie #868!'
+
+quest_869:
+  name: '&6Zadanie #869'
+  type: 'blocks'
+  amount: 43450
+  reward: 217250
+  message: '&aUkończono zadanie #869!'
+
+quest_870:
+  name: '&6Zadanie #870'
+  type: 'blocks'
+  amount: 43500
+  reward: 217500
+  message: '&aUkończono zadanie #870!'
+
+quest_871:
+  name: '&6Zadanie #871'
+  type: 'blocks'
+  amount: 43550
+  reward: 217750
+  message: '&aUkończono zadanie #871!'
+
+quest_872:
+  name: '&6Zadanie #872'
+  type: 'blocks'
+  amount: 43600
+  reward: 218000
+  message: '&aUkończono zadanie #872!'
+
+quest_873:
+  name: '&6Zadanie #873'
+  type: 'blocks'
+  amount: 43650
+  reward: 218250
+  message: '&aUkończono zadanie #873!'
+
+quest_874:
+  name: '&6Zadanie #874'
+  type: 'blocks'
+  amount: 43700
+  reward: 218500
+  message: '&aUkończono zadanie #874!'
+
+quest_875:
+  name: '&6Zadanie #875'
+  type: 'blocks'
+  amount: 43750
+  reward: 218750
+  message: '&aUkończono zadanie #875!'
+
+quest_876:
+  name: '&6Zadanie #876'
+  type: 'blocks'
+  amount: 43800
+  reward: 219000
+  message: '&aUkończono zadanie #876!'
+
+quest_877:
+  name: '&6Zadanie #877'
+  type: 'blocks'
+  amount: 43850
+  reward: 219250
+  message: '&aUkończono zadanie #877!'
+
+quest_878:
+  name: '&6Zadanie #878'
+  type: 'blocks'
+  amount: 43900
+  reward: 219500
+  message: '&aUkończono zadanie #878!'
+
+quest_879:
+  name: '&6Zadanie #879'
+  type: 'blocks'
+  amount: 43950
+  reward: 219750
+  message: '&aUkończono zadanie #879!'
+
+quest_880:
+  name: '&6Zadanie #880'
+  type: 'blocks'
+  amount: 44000
+  reward: 220000
+  message: '&aUkończono zadanie #880!'
+
+quest_881:
+  name: '&6Zadanie #881'
+  type: 'blocks'
+  amount: 44050
+  reward: 220250
+  message: '&aUkończono zadanie #881!'
+
+quest_882:
+  name: '&6Zadanie #882'
+  type: 'blocks'
+  amount: 44100
+  reward: 220500
+  message: '&aUkończono zadanie #882!'
+
+quest_883:
+  name: '&6Zadanie #883'
+  type: 'blocks'
+  amount: 44150
+  reward: 220750
+  message: '&aUkończono zadanie #883!'
+
+quest_884:
+  name: '&6Zadanie #884'
+  type: 'blocks'
+  amount: 44200
+  reward: 221000
+  message: '&aUkończono zadanie #884!'
+
+quest_885:
+  name: '&6Zadanie #885'
+  type: 'blocks'
+  amount: 44250
+  reward: 221250
+  message: '&aUkończono zadanie #885!'
+
+quest_886:
+  name: '&6Zadanie #886'
+  type: 'blocks'
+  amount: 44300
+  reward: 221500
+  message: '&aUkończono zadanie #886!'
+
+quest_887:
+  name: '&6Zadanie #887'
+  type: 'blocks'
+  amount: 44350
+  reward: 221750
+  message: '&aUkończono zadanie #887!'
+
+quest_888:
+  name: '&6Zadanie #888'
+  type: 'blocks'
+  amount: 44400
+  reward: 222000
+  message: '&aUkończono zadanie #888!'
+
+quest_889:
+  name: '&6Zadanie #889'
+  type: 'blocks'
+  amount: 44450
+  reward: 222250
+  message: '&aUkończono zadanie #889!'
+
+quest_890:
+  name: '&6Zadanie #890'
+  type: 'blocks'
+  amount: 44500
+  reward: 222500
+  message: '&aUkończono zadanie #890!'
+
+quest_891:
+  name: '&6Zadanie #891'
+  type: 'blocks'
+  amount: 44550
+  reward: 222750
+  message: '&aUkończono zadanie #891!'
+
+quest_892:
+  name: '&6Zadanie #892'
+  type: 'blocks'
+  amount: 44600
+  reward: 223000
+  message: '&aUkończono zadanie #892!'
+
+quest_893:
+  name: '&6Zadanie #893'
+  type: 'blocks'
+  amount: 44650
+  reward: 223250
+  message: '&aUkończono zadanie #893!'
+
+quest_894:
+  name: '&6Zadanie #894'
+  type: 'blocks'
+  amount: 44700
+  reward: 223500
+  message: '&aUkończono zadanie #894!'
+
+quest_895:
+  name: '&6Zadanie #895'
+  type: 'blocks'
+  amount: 44750
+  reward: 223750
+  message: '&aUkończono zadanie #895!'
+
+quest_896:
+  name: '&6Zadanie #896'
+  type: 'blocks'
+  amount: 44800
+  reward: 224000
+  message: '&aUkończono zadanie #896!'
+
+quest_897:
+  name: '&6Zadanie #897'
+  type: 'blocks'
+  amount: 44850
+  reward: 224250
+  message: '&aUkończono zadanie #897!'
+
+quest_898:
+  name: '&6Zadanie #898'
+  type: 'blocks'
+  amount: 44900
+  reward: 224500
+  message: '&aUkończono zadanie #898!'
+
+quest_899:
+  name: '&6Zadanie #899'
+  type: 'blocks'
+  amount: 44950
+  reward: 224750
+  message: '&aUkończono zadanie #899!'
+
+quest_900:
+  name: '&6Zadanie #900'
+  type: 'blocks'
+  amount: 45000
+  reward: 225000
+  message: '&aUkończono zadanie #900!'
+
+quest_901:
+  name: '&6Zadanie #901'
+  type: 'blocks'
+  amount: 45050
+  reward: 225250
+  message: '&aUkończono zadanie #901!'
+
+quest_902:
+  name: '&6Zadanie #902'
+  type: 'blocks'
+  amount: 45100
+  reward: 225500
+  message: '&aUkończono zadanie #902!'
+
+quest_903:
+  name: '&6Zadanie #903'
+  type: 'blocks'
+  amount: 45150
+  reward: 225750
+  message: '&aUkończono zadanie #903!'
+
+quest_904:
+  name: '&6Zadanie #904'
+  type: 'blocks'
+  amount: 45200
+  reward: 226000
+  message: '&aUkończono zadanie #904!'
+
+quest_905:
+  name: '&6Zadanie #905'
+  type: 'blocks'
+  amount: 45250
+  reward: 226250
+  message: '&aUkończono zadanie #905!'
+
+quest_906:
+  name: '&6Zadanie #906'
+  type: 'blocks'
+  amount: 45300
+  reward: 226500
+  message: '&aUkończono zadanie #906!'
+
+quest_907:
+  name: '&6Zadanie #907'
+  type: 'blocks'
+  amount: 45350
+  reward: 226750
+  message: '&aUkończono zadanie #907!'
+
+quest_908:
+  name: '&6Zadanie #908'
+  type: 'blocks'
+  amount: 45400
+  reward: 227000
+  message: '&aUkończono zadanie #908!'
+
+quest_909:
+  name: '&6Zadanie #909'
+  type: 'blocks'
+  amount: 45450
+  reward: 227250
+  message: '&aUkończono zadanie #909!'
+
+quest_910:
+  name: '&6Zadanie #910'
+  type: 'blocks'
+  amount: 45500
+  reward: 227500
+  message: '&aUkończono zadanie #910!'
+
+quest_911:
+  name: '&6Zadanie #911'
+  type: 'blocks'
+  amount: 45550
+  reward: 227750
+  message: '&aUkończono zadanie #911!'
+
+quest_912:
+  name: '&6Zadanie #912'
+  type: 'blocks'
+  amount: 45600
+  reward: 228000
+  message: '&aUkończono zadanie #912!'
+
+quest_913:
+  name: '&6Zadanie #913'
+  type: 'blocks'
+  amount: 45650
+  reward: 228250
+  message: '&aUkończono zadanie #913!'
+
+quest_914:
+  name: '&6Zadanie #914'
+  type: 'blocks'
+  amount: 45700
+  reward: 228500
+  message: '&aUkończono zadanie #914!'
+
+quest_915:
+  name: '&6Zadanie #915'
+  type: 'blocks'
+  amount: 45750
+  reward: 228750
+  message: '&aUkończono zadanie #915!'
+
+quest_916:
+  name: '&6Zadanie #916'
+  type: 'blocks'
+  amount: 45800
+  reward: 229000
+  message: '&aUkończono zadanie #916!'
+
+quest_917:
+  name: '&6Zadanie #917'
+  type: 'blocks'
+  amount: 45850
+  reward: 229250
+  message: '&aUkończono zadanie #917!'
+
+quest_918:
+  name: '&6Zadanie #918'
+  type: 'blocks'
+  amount: 45900
+  reward: 229500
+  message: '&aUkończono zadanie #918!'
+
+quest_919:
+  name: '&6Zadanie #919'
+  type: 'blocks'
+  amount: 45950
+  reward: 229750
+  message: '&aUkończono zadanie #919!'
+
+quest_920:
+  name: '&6Zadanie #920'
+  type: 'blocks'
+  amount: 46000
+  reward: 230000
+  message: '&aUkończono zadanie #920!'
+
+quest_921:
+  name: '&6Zadanie #921'
+  type: 'blocks'
+  amount: 46050
+  reward: 230250
+  message: '&aUkończono zadanie #921!'
+
+quest_922:
+  name: '&6Zadanie #922'
+  type: 'blocks'
+  amount: 46100
+  reward: 230500
+  message: '&aUkończono zadanie #922!'
+
+quest_923:
+  name: '&6Zadanie #923'
+  type: 'blocks'
+  amount: 46150
+  reward: 230750
+  message: '&aUkończono zadanie #923!'
+
+quest_924:
+  name: '&6Zadanie #924'
+  type: 'blocks'
+  amount: 46200
+  reward: 231000
+  message: '&aUkończono zadanie #924!'
+
+quest_925:
+  name: '&6Zadanie #925'
+  type: 'blocks'
+  amount: 46250
+  reward: 231250
+  message: '&aUkończono zadanie #925!'
+
+quest_926:
+  name: '&6Zadanie #926'
+  type: 'blocks'
+  amount: 46300
+  reward: 231500
+  message: '&aUkończono zadanie #926!'
+
+quest_927:
+  name: '&6Zadanie #927'
+  type: 'blocks'
+  amount: 46350
+  reward: 231750
+  message: '&aUkończono zadanie #927!'
+
+quest_928:
+  name: '&6Zadanie #928'
+  type: 'blocks'
+  amount: 46400
+  reward: 232000
+  message: '&aUkończono zadanie #928!'
+
+quest_929:
+  name: '&6Zadanie #929'
+  type: 'blocks'
+  amount: 46450
+  reward: 232250
+  message: '&aUkończono zadanie #929!'
+
+quest_930:
+  name: '&6Zadanie #930'
+  type: 'blocks'
+  amount: 46500
+  reward: 232500
+  message: '&aUkończono zadanie #930!'
+
+quest_931:
+  name: '&6Zadanie #931'
+  type: 'blocks'
+  amount: 46550
+  reward: 232750
+  message: '&aUkończono zadanie #931!'
+
+quest_932:
+  name: '&6Zadanie #932'
+  type: 'blocks'
+  amount: 46600
+  reward: 233000
+  message: '&aUkończono zadanie #932!'
+
+quest_933:
+  name: '&6Zadanie #933'
+  type: 'blocks'
+  amount: 46650
+  reward: 233250
+  message: '&aUkończono zadanie #933!'
+
+quest_934:
+  name: '&6Zadanie #934'
+  type: 'blocks'
+  amount: 46700
+  reward: 233500
+  message: '&aUkończono zadanie #934!'
+
+quest_935:
+  name: '&6Zadanie #935'
+  type: 'blocks'
+  amount: 46750
+  reward: 233750
+  message: '&aUkończono zadanie #935!'
+
+quest_936:
+  name: '&6Zadanie #936'
+  type: 'blocks'
+  amount: 46800
+  reward: 234000
+  message: '&aUkończono zadanie #936!'
+
+quest_937:
+  name: '&6Zadanie #937'
+  type: 'blocks'
+  amount: 46850
+  reward: 234250
+  message: '&aUkończono zadanie #937!'
+
+quest_938:
+  name: '&6Zadanie #938'
+  type: 'blocks'
+  amount: 46900
+  reward: 234500
+  message: '&aUkończono zadanie #938!'
+
+quest_939:
+  name: '&6Zadanie #939'
+  type: 'blocks'
+  amount: 46950
+  reward: 234750
+  message: '&aUkończono zadanie #939!'
+
+quest_940:
+  name: '&6Zadanie #940'
+  type: 'blocks'
+  amount: 47000
+  reward: 235000
+  message: '&aUkończono zadanie #940!'
+
+quest_941:
+  name: '&6Zadanie #941'
+  type: 'blocks'
+  amount: 47050
+  reward: 235250
+  message: '&aUkończono zadanie #941!'
+
+quest_942:
+  name: '&6Zadanie #942'
+  type: 'blocks'
+  amount: 47100
+  reward: 235500
+  message: '&aUkończono zadanie #942!'
+
+quest_943:
+  name: '&6Zadanie #943'
+  type: 'blocks'
+  amount: 47150
+  reward: 235750
+  message: '&aUkończono zadanie #943!'
+
+quest_944:
+  name: '&6Zadanie #944'
+  type: 'blocks'
+  amount: 47200
+  reward: 236000
+  message: '&aUkończono zadanie #944!'
+
+quest_945:
+  name: '&6Zadanie #945'
+  type: 'blocks'
+  amount: 47250
+  reward: 236250
+  message: '&aUkończono zadanie #945!'
+
+quest_946:
+  name: '&6Zadanie #946'
+  type: 'blocks'
+  amount: 47300
+  reward: 236500
+  message: '&aUkończono zadanie #946!'
+
+quest_947:
+  name: '&6Zadanie #947'
+  type: 'blocks'
+  amount: 47350
+  reward: 236750
+  message: '&aUkończono zadanie #947!'
+
+quest_948:
+  name: '&6Zadanie #948'
+  type: 'blocks'
+  amount: 47400
+  reward: 237000
+  message: '&aUkończono zadanie #948!'
+
+quest_949:
+  name: '&6Zadanie #949'
+  type: 'blocks'
+  amount: 47450
+  reward: 237250
+  message: '&aUkończono zadanie #949!'
+
+quest_950:
+  name: '&6Zadanie #950'
+  type: 'blocks'
+  amount: 47500
+  reward: 237500
+  message: '&aUkończono zadanie #950!'
+
+quest_951:
+  name: '&6Zadanie #951'
+  type: 'blocks'
+  amount: 47550
+  reward: 237750
+  message: '&aUkończono zadanie #951!'
+
+quest_952:
+  name: '&6Zadanie #952'
+  type: 'blocks'
+  amount: 47600
+  reward: 238000
+  message: '&aUkończono zadanie #952!'
+
+quest_953:
+  name: '&6Zadanie #953'
+  type: 'blocks'
+  amount: 47650
+  reward: 238250
+  message: '&aUkończono zadanie #953!'
+
+quest_954:
+  name: '&6Zadanie #954'
+  type: 'blocks'
+  amount: 47700
+  reward: 238500
+  message: '&aUkończono zadanie #954!'
+
+quest_955:
+  name: '&6Zadanie #955'
+  type: 'blocks'
+  amount: 47750
+  reward: 238750
+  message: '&aUkończono zadanie #955!'
+
+quest_956:
+  name: '&6Zadanie #956'
+  type: 'blocks'
+  amount: 47800
+  reward: 239000
+  message: '&aUkończono zadanie #956!'
+
+quest_957:
+  name: '&6Zadanie #957'
+  type: 'blocks'
+  amount: 47850
+  reward: 239250
+  message: '&aUkończono zadanie #957!'
+
+quest_958:
+  name: '&6Zadanie #958'
+  type: 'blocks'
+  amount: 47900
+  reward: 239500
+  message: '&aUkończono zadanie #958!'
+
+quest_959:
+  name: '&6Zadanie #959'
+  type: 'blocks'
+  amount: 47950
+  reward: 239750
+  message: '&aUkończono zadanie #959!'
+
+quest_960:
+  name: '&6Zadanie #960'
+  type: 'blocks'
+  amount: 48000
+  reward: 240000
+  message: '&aUkończono zadanie #960!'
+
+quest_961:
+  name: '&6Zadanie #961'
+  type: 'blocks'
+  amount: 48050
+  reward: 240250
+  message: '&aUkończono zadanie #961!'
+
+quest_962:
+  name: '&6Zadanie #962'
+  type: 'blocks'
+  amount: 48100
+  reward: 240500
+  message: '&aUkończono zadanie #962!'
+
+quest_963:
+  name: '&6Zadanie #963'
+  type: 'blocks'
+  amount: 48150
+  reward: 240750
+  message: '&aUkończono zadanie #963!'
+
+quest_964:
+  name: '&6Zadanie #964'
+  type: 'blocks'
+  amount: 48200
+  reward: 241000
+  message: '&aUkończono zadanie #964!'
+
+quest_965:
+  name: '&6Zadanie #965'
+  type: 'blocks'
+  amount: 48250
+  reward: 241250
+  message: '&aUkończono zadanie #965!'
+
+quest_966:
+  name: '&6Zadanie #966'
+  type: 'blocks'
+  amount: 48300
+  reward: 241500
+  message: '&aUkończono zadanie #966!'
+
+quest_967:
+  name: '&6Zadanie #967'
+  type: 'blocks'
+  amount: 48350
+  reward: 241750
+  message: '&aUkończono zadanie #967!'
+
+quest_968:
+  name: '&6Zadanie #968'
+  type: 'blocks'
+  amount: 48400
+  reward: 242000
+  message: '&aUkończono zadanie #968!'
+
+quest_969:
+  name: '&6Zadanie #969'
+  type: 'blocks'
+  amount: 48450
+  reward: 242250
+  message: '&aUkończono zadanie #969!'
+
+quest_970:
+  name: '&6Zadanie #970'
+  type: 'blocks'
+  amount: 48500
+  reward: 242500
+  message: '&aUkończono zadanie #970!'
+
+quest_971:
+  name: '&6Zadanie #971'
+  type: 'blocks'
+  amount: 48550
+  reward: 242750
+  message: '&aUkończono zadanie #971!'
+
+quest_972:
+  name: '&6Zadanie #972'
+  type: 'blocks'
+  amount: 48600
+  reward: 243000
+  message: '&aUkończono zadanie #972!'
+
+quest_973:
+  name: '&6Zadanie #973'
+  type: 'blocks'
+  amount: 48650
+  reward: 243250
+  message: '&aUkończono zadanie #973!'
+
+quest_974:
+  name: '&6Zadanie #974'
+  type: 'blocks'
+  amount: 48700
+  reward: 243500
+  message: '&aUkończono zadanie #974!'
+
+quest_975:
+  name: '&6Zadanie #975'
+  type: 'blocks'
+  amount: 48750
+  reward: 243750
+  message: '&aUkończono zadanie #975!'
+
+quest_976:
+  name: '&6Zadanie #976'
+  type: 'blocks'
+  amount: 48800
+  reward: 244000
+  message: '&aUkończono zadanie #976!'
+
+quest_977:
+  name: '&6Zadanie #977'
+  type: 'blocks'
+  amount: 48850
+  reward: 244250
+  message: '&aUkończono zadanie #977!'
+
+quest_978:
+  name: '&6Zadanie #978'
+  type: 'blocks'
+  amount: 48900
+  reward: 244500
+  message: '&aUkończono zadanie #978!'
+
+quest_979:
+  name: '&6Zadanie #979'
+  type: 'blocks'
+  amount: 48950
+  reward: 244750
+  message: '&aUkończono zadanie #979!'
+
+quest_980:
+  name: '&6Zadanie #980'
+  type: 'blocks'
+  amount: 49000
+  reward: 245000
+  message: '&aUkończono zadanie #980!'
+
+quest_981:
+  name: '&6Zadanie #981'
+  type: 'blocks'
+  amount: 49050
+  reward: 245250
+  message: '&aUkończono zadanie #981!'
+
+quest_982:
+  name: '&6Zadanie #982'
+  type: 'blocks'
+  amount: 49100
+  reward: 245500
+  message: '&aUkończono zadanie #982!'
+
+quest_983:
+  name: '&6Zadanie #983'
+  type: 'blocks'
+  amount: 49150
+  reward: 245750
+  message: '&aUkończono zadanie #983!'
+
+quest_984:
+  name: '&6Zadanie #984'
+  type: 'blocks'
+  amount: 49200
+  reward: 246000
+  message: '&aUkończono zadanie #984!'
+
+quest_985:
+  name: '&6Zadanie #985'
+  type: 'blocks'
+  amount: 49250
+  reward: 246250
+  message: '&aUkończono zadanie #985!'
+
+quest_986:
+  name: '&6Zadanie #986'
+  type: 'blocks'
+  amount: 49300
+  reward: 246500
+  message: '&aUkończono zadanie #986!'
+
+quest_987:
+  name: '&6Zadanie #987'
+  type: 'blocks'
+  amount: 49350
+  reward: 246750
+  message: '&aUkończono zadanie #987!'
+
+quest_988:
+  name: '&6Zadanie #988'
+  type: 'blocks'
+  amount: 49400
+  reward: 247000
+  message: '&aUkończono zadanie #988!'
+
+quest_989:
+  name: '&6Zadanie #989'
+  type: 'blocks'
+  amount: 49450
+  reward: 247250
+  message: '&aUkończono zadanie #989!'
+
+quest_990:
+  name: '&6Zadanie #990'
+  type: 'blocks'
+  amount: 49500
+  reward: 247500
+  message: '&aUkończono zadanie #990!'
+
+quest_991:
+  name: '&6Zadanie #991'
+  type: 'blocks'
+  amount: 49550
+  reward: 247750
+  message: '&aUkończono zadanie #991!'
+
+quest_992:
+  name: '&6Zadanie #992'
+  type: 'blocks'
+  amount: 49600
+  reward: 248000
+  message: '&aUkończono zadanie #992!'
+
+quest_993:
+  name: '&6Zadanie #993'
+  type: 'blocks'
+  amount: 49650
+  reward: 248250
+  message: '&aUkończono zadanie #993!'
+
+quest_994:
+  name: '&6Zadanie #994'
+  type: 'blocks'
+  amount: 49700
+  reward: 248500
+  message: '&aUkończono zadanie #994!'
+
+quest_995:
+  name: '&6Zadanie #995'
+  type: 'blocks'
+  amount: 49750
+  reward: 248750
+  message: '&aUkończono zadanie #995!'
+
+quest_996:
+  name: '&6Zadanie #996'
+  type: 'blocks'
+  amount: 49800
+  reward: 249000
+  message: '&aUkończono zadanie #996!'
+
+quest_997:
+  name: '&6Zadanie #997'
+  type: 'blocks'
+  amount: 49850
+  reward: 249250
+  message: '&aUkończono zadanie #997!'
+
+quest_998:
+  name: '&6Zadanie #998'
+  type: 'blocks'
+  amount: 49900
+  reward: 249500
+  message: '&aUkończono zadanie #998!'
+
+quest_999:
+  name: '&6Zadanie #999'
+  type: 'blocks'
+  amount: 49950
+  reward: 249750
+  message: '&aUkończono zadanie #999!'
+
+quest_1000:
+  name: '&6Zadanie #1000'
+  type: 'blocks'
+  amount: 50000
+  reward: 250000
+  message: '&aUkończono zadanie #1000!'

@@ -2,9 +2,15 @@ worlds:
   lobby: 'Lobby'
   survival: 'world'
 
-spawns: {}
+teleport:
+  # true = po /lobby lub /survival teleportuje jeszcze raz po kilku tickach,
+  # żeby Multiverse-Inventories nie cofnął gracza w stare miejsce.
+  double-teleport-fix: true
+  second-teleport-delay-ticks: 8
+  safe-center-block: true
 
 compass:
+  enabled: true
   slot: 4
   material: COMPASS
   name: '&6&l✦ &e&lMSURVIVAL MENU &6&l✦'
@@ -31,4 +37,5 @@ messages:
   reload: '&aPrzeładowano konfigurację.'
   bypass-on: '&aBypass kompasu włączony. Kompas nie będzie Ci nadawany.'
   bypass-off: '&cBypass kompasu wyłączony. Kompas znowu będzie nadawany w Lobby.'
-  spawn-set: '&aUstawiono spawn &e%type%&a.'
+  spawn-set: '&aUstawiono spawn &e%type% &ana świecie &e%world%&a.'
+  spawn-missing: '&cNie masz ustawionego spawna &e%type%&c. Ustaw: &e/setmsspawn %type%'

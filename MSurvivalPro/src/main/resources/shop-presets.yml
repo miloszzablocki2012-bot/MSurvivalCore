@@ -1,0 +1,8999 @@
+item_1:
+  material: 'COBBLESTONE'
+  buy: 37
+  sell: 17
+  category: 'auto_preset'
+
+item_2:
+  material: 'OAK_LOG'
+  buy: 74
+  sell: 34
+  category: 'auto_preset'
+
+item_3:
+  material: 'SPRUCE_LOG'
+  buy: 111
+  sell: 51
+  category: 'auto_preset'
+
+item_4:
+  material: 'BAMBOO'
+  buy: 148
+  sell: 68
+  category: 'auto_preset'
+
+item_5:
+  material: 'SUGAR_CANE'
+  buy: 185
+  sell: 85
+  category: 'auto_preset'
+
+item_6:
+  material: 'DIAMOND'
+  buy: 222
+  sell: 102
+  category: 'auto_preset'
+
+item_7:
+  material: 'EMERALD'
+  buy: 259
+  sell: 119
+  category: 'auto_preset'
+
+item_8:
+  material: 'IRON_INGOT'
+  buy: 296
+  sell: 136
+  category: 'auto_preset'
+
+item_9:
+  material: 'GOLD_INGOT'
+  buy: 333
+  sell: 153
+  category: 'auto_preset'
+
+item_10:
+  material: 'ENDER_PEARL'
+  buy: 370
+  sell: 170
+  category: 'auto_preset'
+
+item_11:
+  material: 'GOLDEN_APPLE'
+  buy: 407
+  sell: 187
+  category: 'auto_preset'
+
+item_12:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 444
+  sell: 204
+  category: 'auto_preset'
+
+item_13:
+  material: 'SHULKER_BOX'
+  buy: 481
+  sell: 221
+  category: 'auto_preset'
+
+item_14:
+  material: 'STONE'
+  buy: 518
+  sell: 238
+  category: 'auto_preset'
+
+item_15:
+  material: 'COBBLESTONE'
+  buy: 555
+  sell: 255
+  category: 'auto_preset'
+
+item_16:
+  material: 'OAK_LOG'
+  buy: 592
+  sell: 272
+  category: 'auto_preset'
+
+item_17:
+  material: 'SPRUCE_LOG'
+  buy: 629
+  sell: 289
+  category: 'auto_preset'
+
+item_18:
+  material: 'BAMBOO'
+  buy: 666
+  sell: 306
+  category: 'auto_preset'
+
+item_19:
+  material: 'SUGAR_CANE'
+  buy: 703
+  sell: 323
+  category: 'auto_preset'
+
+item_20:
+  material: 'DIAMOND'
+  buy: 740
+  sell: 340
+  category: 'auto_preset'
+
+item_21:
+  material: 'EMERALD'
+  buy: 777
+  sell: 357
+  category: 'auto_preset'
+
+item_22:
+  material: 'IRON_INGOT'
+  buy: 814
+  sell: 374
+  category: 'auto_preset'
+
+item_23:
+  material: 'GOLD_INGOT'
+  buy: 851
+  sell: 391
+  category: 'auto_preset'
+
+item_24:
+  material: 'ENDER_PEARL'
+  buy: 888
+  sell: 408
+  category: 'auto_preset'
+
+item_25:
+  material: 'GOLDEN_APPLE'
+  buy: 925
+  sell: 425
+  category: 'auto_preset'
+
+item_26:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 962
+  sell: 442
+  category: 'auto_preset'
+
+item_27:
+  material: 'SHULKER_BOX'
+  buy: 999
+  sell: 459
+  category: 'auto_preset'
+
+item_28:
+  material: 'STONE'
+  buy: 1036
+  sell: 476
+  category: 'auto_preset'
+
+item_29:
+  material: 'COBBLESTONE'
+  buy: 1073
+  sell: 493
+  category: 'auto_preset'
+
+item_30:
+  material: 'OAK_LOG'
+  buy: 1110
+  sell: 510
+  category: 'auto_preset'
+
+item_31:
+  material: 'SPRUCE_LOG'
+  buy: 1147
+  sell: 527
+  category: 'auto_preset'
+
+item_32:
+  material: 'BAMBOO'
+  buy: 1184
+  sell: 544
+  category: 'auto_preset'
+
+item_33:
+  material: 'SUGAR_CANE'
+  buy: 1221
+  sell: 561
+  category: 'auto_preset'
+
+item_34:
+  material: 'DIAMOND'
+  buy: 1258
+  sell: 578
+  category: 'auto_preset'
+
+item_35:
+  material: 'EMERALD'
+  buy: 1295
+  sell: 595
+  category: 'auto_preset'
+
+item_36:
+  material: 'IRON_INGOT'
+  buy: 1332
+  sell: 612
+  category: 'auto_preset'
+
+item_37:
+  material: 'GOLD_INGOT'
+  buy: 1369
+  sell: 629
+  category: 'auto_preset'
+
+item_38:
+  material: 'ENDER_PEARL'
+  buy: 1406
+  sell: 646
+  category: 'auto_preset'
+
+item_39:
+  material: 'GOLDEN_APPLE'
+  buy: 1443
+  sell: 663
+  category: 'auto_preset'
+
+item_40:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 1480
+  sell: 680
+  category: 'auto_preset'
+
+item_41:
+  material: 'SHULKER_BOX'
+  buy: 1517
+  sell: 697
+  category: 'auto_preset'
+
+item_42:
+  material: 'STONE'
+  buy: 1554
+  sell: 714
+  category: 'auto_preset'
+
+item_43:
+  material: 'COBBLESTONE'
+  buy: 1591
+  sell: 731
+  category: 'auto_preset'
+
+item_44:
+  material: 'OAK_LOG'
+  buy: 1628
+  sell: 748
+  category: 'auto_preset'
+
+item_45:
+  material: 'SPRUCE_LOG'
+  buy: 1665
+  sell: 765
+  category: 'auto_preset'
+
+item_46:
+  material: 'BAMBOO'
+  buy: 1702
+  sell: 782
+  category: 'auto_preset'
+
+item_47:
+  material: 'SUGAR_CANE'
+  buy: 1739
+  sell: 799
+  category: 'auto_preset'
+
+item_48:
+  material: 'DIAMOND'
+  buy: 1776
+  sell: 816
+  category: 'auto_preset'
+
+item_49:
+  material: 'EMERALD'
+  buy: 1813
+  sell: 833
+  category: 'auto_preset'
+
+item_50:
+  material: 'IRON_INGOT'
+  buy: 1850
+  sell: 850
+  category: 'auto_preset'
+
+item_51:
+  material: 'GOLD_INGOT'
+  buy: 1887
+  sell: 867
+  category: 'auto_preset'
+
+item_52:
+  material: 'ENDER_PEARL'
+  buy: 1924
+  sell: 884
+  category: 'auto_preset'
+
+item_53:
+  material: 'GOLDEN_APPLE'
+  buy: 1961
+  sell: 901
+  category: 'auto_preset'
+
+item_54:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 1998
+  sell: 918
+  category: 'auto_preset'
+
+item_55:
+  material: 'SHULKER_BOX'
+  buy: 2035
+  sell: 935
+  category: 'auto_preset'
+
+item_56:
+  material: 'STONE'
+  buy: 2072
+  sell: 952
+  category: 'auto_preset'
+
+item_57:
+  material: 'COBBLESTONE'
+  buy: 2109
+  sell: 969
+  category: 'auto_preset'
+
+item_58:
+  material: 'OAK_LOG'
+  buy: 2146
+  sell: 986
+  category: 'auto_preset'
+
+item_59:
+  material: 'SPRUCE_LOG'
+  buy: 2183
+  sell: 1003
+  category: 'auto_preset'
+
+item_60:
+  material: 'BAMBOO'
+  buy: 2220
+  sell: 1020
+  category: 'auto_preset'
+
+item_61:
+  material: 'SUGAR_CANE'
+  buy: 2257
+  sell: 1037
+  category: 'auto_preset'
+
+item_62:
+  material: 'DIAMOND'
+  buy: 2294
+  sell: 1054
+  category: 'auto_preset'
+
+item_63:
+  material: 'EMERALD'
+  buy: 2331
+  sell: 1071
+  category: 'auto_preset'
+
+item_64:
+  material: 'IRON_INGOT'
+  buy: 2368
+  sell: 1088
+  category: 'auto_preset'
+
+item_65:
+  material: 'GOLD_INGOT'
+  buy: 2405
+  sell: 1105
+  category: 'auto_preset'
+
+item_66:
+  material: 'ENDER_PEARL'
+  buy: 2442
+  sell: 1122
+  category: 'auto_preset'
+
+item_67:
+  material: 'GOLDEN_APPLE'
+  buy: 2479
+  sell: 1139
+  category: 'auto_preset'
+
+item_68:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 2516
+  sell: 1156
+  category: 'auto_preset'
+
+item_69:
+  material: 'SHULKER_BOX'
+  buy: 2553
+  sell: 1173
+  category: 'auto_preset'
+
+item_70:
+  material: 'STONE'
+  buy: 2590
+  sell: 1190
+  category: 'auto_preset'
+
+item_71:
+  material: 'COBBLESTONE'
+  buy: 2627
+  sell: 1207
+  category: 'auto_preset'
+
+item_72:
+  material: 'OAK_LOG'
+  buy: 2664
+  sell: 1224
+  category: 'auto_preset'
+
+item_73:
+  material: 'SPRUCE_LOG'
+  buy: 2701
+  sell: 1241
+  category: 'auto_preset'
+
+item_74:
+  material: 'BAMBOO'
+  buy: 2738
+  sell: 1258
+  category: 'auto_preset'
+
+item_75:
+  material: 'SUGAR_CANE'
+  buy: 2775
+  sell: 1275
+  category: 'auto_preset'
+
+item_76:
+  material: 'DIAMOND'
+  buy: 2812
+  sell: 1292
+  category: 'auto_preset'
+
+item_77:
+  material: 'EMERALD'
+  buy: 2849
+  sell: 1309
+  category: 'auto_preset'
+
+item_78:
+  material: 'IRON_INGOT'
+  buy: 2886
+  sell: 1326
+  category: 'auto_preset'
+
+item_79:
+  material: 'GOLD_INGOT'
+  buy: 2923
+  sell: 1343
+  category: 'auto_preset'
+
+item_80:
+  material: 'ENDER_PEARL'
+  buy: 2960
+  sell: 1360
+  category: 'auto_preset'
+
+item_81:
+  material: 'GOLDEN_APPLE'
+  buy: 2997
+  sell: 1377
+  category: 'auto_preset'
+
+item_82:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 3034
+  sell: 1394
+  category: 'auto_preset'
+
+item_83:
+  material: 'SHULKER_BOX'
+  buy: 3071
+  sell: 1411
+  category: 'auto_preset'
+
+item_84:
+  material: 'STONE'
+  buy: 3108
+  sell: 1428
+  category: 'auto_preset'
+
+item_85:
+  material: 'COBBLESTONE'
+  buy: 3145
+  sell: 1445
+  category: 'auto_preset'
+
+item_86:
+  material: 'OAK_LOG'
+  buy: 3182
+  sell: 1462
+  category: 'auto_preset'
+
+item_87:
+  material: 'SPRUCE_LOG'
+  buy: 3219
+  sell: 1479
+  category: 'auto_preset'
+
+item_88:
+  material: 'BAMBOO'
+  buy: 3256
+  sell: 1496
+  category: 'auto_preset'
+
+item_89:
+  material: 'SUGAR_CANE'
+  buy: 3293
+  sell: 1513
+  category: 'auto_preset'
+
+item_90:
+  material: 'DIAMOND'
+  buy: 3330
+  sell: 1530
+  category: 'auto_preset'
+
+item_91:
+  material: 'EMERALD'
+  buy: 3367
+  sell: 1547
+  category: 'auto_preset'
+
+item_92:
+  material: 'IRON_INGOT'
+  buy: 3404
+  sell: 1564
+  category: 'auto_preset'
+
+item_93:
+  material: 'GOLD_INGOT'
+  buy: 3441
+  sell: 1581
+  category: 'auto_preset'
+
+item_94:
+  material: 'ENDER_PEARL'
+  buy: 3478
+  sell: 1598
+  category: 'auto_preset'
+
+item_95:
+  material: 'GOLDEN_APPLE'
+  buy: 3515
+  sell: 1615
+  category: 'auto_preset'
+
+item_96:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 3552
+  sell: 1632
+  category: 'auto_preset'
+
+item_97:
+  material: 'SHULKER_BOX'
+  buy: 3589
+  sell: 1649
+  category: 'auto_preset'
+
+item_98:
+  material: 'STONE'
+  buy: 3626
+  sell: 1666
+  category: 'auto_preset'
+
+item_99:
+  material: 'COBBLESTONE'
+  buy: 3663
+  sell: 1683
+  category: 'auto_preset'
+
+item_100:
+  material: 'OAK_LOG'
+  buy: 3700
+  sell: 1700
+  category: 'auto_preset'
+
+item_101:
+  material: 'SPRUCE_LOG'
+  buy: 3737
+  sell: 1717
+  category: 'auto_preset'
+
+item_102:
+  material: 'BAMBOO'
+  buy: 3774
+  sell: 1734
+  category: 'auto_preset'
+
+item_103:
+  material: 'SUGAR_CANE'
+  buy: 3811
+  sell: 1751
+  category: 'auto_preset'
+
+item_104:
+  material: 'DIAMOND'
+  buy: 3848
+  sell: 1768
+  category: 'auto_preset'
+
+item_105:
+  material: 'EMERALD'
+  buy: 3885
+  sell: 1785
+  category: 'auto_preset'
+
+item_106:
+  material: 'IRON_INGOT'
+  buy: 3922
+  sell: 1802
+  category: 'auto_preset'
+
+item_107:
+  material: 'GOLD_INGOT'
+  buy: 3959
+  sell: 1819
+  category: 'auto_preset'
+
+item_108:
+  material: 'ENDER_PEARL'
+  buy: 3996
+  sell: 1836
+  category: 'auto_preset'
+
+item_109:
+  material: 'GOLDEN_APPLE'
+  buy: 4033
+  sell: 1853
+  category: 'auto_preset'
+
+item_110:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 4070
+  sell: 1870
+  category: 'auto_preset'
+
+item_111:
+  material: 'SHULKER_BOX'
+  buy: 4107
+  sell: 1887
+  category: 'auto_preset'
+
+item_112:
+  material: 'STONE'
+  buy: 4144
+  sell: 1904
+  category: 'auto_preset'
+
+item_113:
+  material: 'COBBLESTONE'
+  buy: 4181
+  sell: 1921
+  category: 'auto_preset'
+
+item_114:
+  material: 'OAK_LOG'
+  buy: 4218
+  sell: 1938
+  category: 'auto_preset'
+
+item_115:
+  material: 'SPRUCE_LOG'
+  buy: 4255
+  sell: 1955
+  category: 'auto_preset'
+
+item_116:
+  material: 'BAMBOO'
+  buy: 4292
+  sell: 1972
+  category: 'auto_preset'
+
+item_117:
+  material: 'SUGAR_CANE'
+  buy: 4329
+  sell: 1989
+  category: 'auto_preset'
+
+item_118:
+  material: 'DIAMOND'
+  buy: 4366
+  sell: 2006
+  category: 'auto_preset'
+
+item_119:
+  material: 'EMERALD'
+  buy: 4403
+  sell: 2023
+  category: 'auto_preset'
+
+item_120:
+  material: 'IRON_INGOT'
+  buy: 4440
+  sell: 2040
+  category: 'auto_preset'
+
+item_121:
+  material: 'GOLD_INGOT'
+  buy: 4477
+  sell: 2057
+  category: 'auto_preset'
+
+item_122:
+  material: 'ENDER_PEARL'
+  buy: 4514
+  sell: 2074
+  category: 'auto_preset'
+
+item_123:
+  material: 'GOLDEN_APPLE'
+  buy: 4551
+  sell: 2091
+  category: 'auto_preset'
+
+item_124:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 4588
+  sell: 2108
+  category: 'auto_preset'
+
+item_125:
+  material: 'SHULKER_BOX'
+  buy: 4625
+  sell: 2125
+  category: 'auto_preset'
+
+item_126:
+  material: 'STONE'
+  buy: 4662
+  sell: 2142
+  category: 'auto_preset'
+
+item_127:
+  material: 'COBBLESTONE'
+  buy: 4699
+  sell: 2159
+  category: 'auto_preset'
+
+item_128:
+  material: 'OAK_LOG'
+  buy: 4736
+  sell: 2176
+  category: 'auto_preset'
+
+item_129:
+  material: 'SPRUCE_LOG'
+  buy: 4773
+  sell: 2193
+  category: 'auto_preset'
+
+item_130:
+  material: 'BAMBOO'
+  buy: 4810
+  sell: 2210
+  category: 'auto_preset'
+
+item_131:
+  material: 'SUGAR_CANE'
+  buy: 4847
+  sell: 2227
+  category: 'auto_preset'
+
+item_132:
+  material: 'DIAMOND'
+  buy: 4884
+  sell: 2244
+  category: 'auto_preset'
+
+item_133:
+  material: 'EMERALD'
+  buy: 4921
+  sell: 2261
+  category: 'auto_preset'
+
+item_134:
+  material: 'IRON_INGOT'
+  buy: 4958
+  sell: 2278
+  category: 'auto_preset'
+
+item_135:
+  material: 'GOLD_INGOT'
+  buy: 4995
+  sell: 2295
+  category: 'auto_preset'
+
+item_136:
+  material: 'ENDER_PEARL'
+  buy: 5032
+  sell: 2312
+  category: 'auto_preset'
+
+item_137:
+  material: 'GOLDEN_APPLE'
+  buy: 5069
+  sell: 2329
+  category: 'auto_preset'
+
+item_138:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 5106
+  sell: 2346
+  category: 'auto_preset'
+
+item_139:
+  material: 'SHULKER_BOX'
+  buy: 5143
+  sell: 2363
+  category: 'auto_preset'
+
+item_140:
+  material: 'STONE'
+  buy: 5180
+  sell: 2380
+  category: 'auto_preset'
+
+item_141:
+  material: 'COBBLESTONE'
+  buy: 5217
+  sell: 2397
+  category: 'auto_preset'
+
+item_142:
+  material: 'OAK_LOG'
+  buy: 5254
+  sell: 2414
+  category: 'auto_preset'
+
+item_143:
+  material: 'SPRUCE_LOG'
+  buy: 5291
+  sell: 2431
+  category: 'auto_preset'
+
+item_144:
+  material: 'BAMBOO'
+  buy: 5328
+  sell: 2448
+  category: 'auto_preset'
+
+item_145:
+  material: 'SUGAR_CANE'
+  buy: 5365
+  sell: 2465
+  category: 'auto_preset'
+
+item_146:
+  material: 'DIAMOND'
+  buy: 5402
+  sell: 2482
+  category: 'auto_preset'
+
+item_147:
+  material: 'EMERALD'
+  buy: 5439
+  sell: 2499
+  category: 'auto_preset'
+
+item_148:
+  material: 'IRON_INGOT'
+  buy: 5476
+  sell: 2516
+  category: 'auto_preset'
+
+item_149:
+  material: 'GOLD_INGOT'
+  buy: 5513
+  sell: 2533
+  category: 'auto_preset'
+
+item_150:
+  material: 'ENDER_PEARL'
+  buy: 5550
+  sell: 2550
+  category: 'auto_preset'
+
+item_151:
+  material: 'GOLDEN_APPLE'
+  buy: 5587
+  sell: 2567
+  category: 'auto_preset'
+
+item_152:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 5624
+  sell: 2584
+  category: 'auto_preset'
+
+item_153:
+  material: 'SHULKER_BOX'
+  buy: 5661
+  sell: 2601
+  category: 'auto_preset'
+
+item_154:
+  material: 'STONE'
+  buy: 5698
+  sell: 2618
+  category: 'auto_preset'
+
+item_155:
+  material: 'COBBLESTONE'
+  buy: 5735
+  sell: 2635
+  category: 'auto_preset'
+
+item_156:
+  material: 'OAK_LOG'
+  buy: 5772
+  sell: 2652
+  category: 'auto_preset'
+
+item_157:
+  material: 'SPRUCE_LOG'
+  buy: 5809
+  sell: 2669
+  category: 'auto_preset'
+
+item_158:
+  material: 'BAMBOO'
+  buy: 5846
+  sell: 2686
+  category: 'auto_preset'
+
+item_159:
+  material: 'SUGAR_CANE'
+  buy: 5883
+  sell: 2703
+  category: 'auto_preset'
+
+item_160:
+  material: 'DIAMOND'
+  buy: 5920
+  sell: 2720
+  category: 'auto_preset'
+
+item_161:
+  material: 'EMERALD'
+  buy: 5957
+  sell: 2737
+  category: 'auto_preset'
+
+item_162:
+  material: 'IRON_INGOT'
+  buy: 5994
+  sell: 2754
+  category: 'auto_preset'
+
+item_163:
+  material: 'GOLD_INGOT'
+  buy: 6031
+  sell: 2771
+  category: 'auto_preset'
+
+item_164:
+  material: 'ENDER_PEARL'
+  buy: 6068
+  sell: 2788
+  category: 'auto_preset'
+
+item_165:
+  material: 'GOLDEN_APPLE'
+  buy: 6105
+  sell: 2805
+  category: 'auto_preset'
+
+item_166:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 6142
+  sell: 2822
+  category: 'auto_preset'
+
+item_167:
+  material: 'SHULKER_BOX'
+  buy: 6179
+  sell: 2839
+  category: 'auto_preset'
+
+item_168:
+  material: 'STONE'
+  buy: 6216
+  sell: 2856
+  category: 'auto_preset'
+
+item_169:
+  material: 'COBBLESTONE'
+  buy: 6253
+  sell: 2873
+  category: 'auto_preset'
+
+item_170:
+  material: 'OAK_LOG'
+  buy: 6290
+  sell: 2890
+  category: 'auto_preset'
+
+item_171:
+  material: 'SPRUCE_LOG'
+  buy: 6327
+  sell: 2907
+  category: 'auto_preset'
+
+item_172:
+  material: 'BAMBOO'
+  buy: 6364
+  sell: 2924
+  category: 'auto_preset'
+
+item_173:
+  material: 'SUGAR_CANE'
+  buy: 6401
+  sell: 2941
+  category: 'auto_preset'
+
+item_174:
+  material: 'DIAMOND'
+  buy: 6438
+  sell: 2958
+  category: 'auto_preset'
+
+item_175:
+  material: 'EMERALD'
+  buy: 6475
+  sell: 2975
+  category: 'auto_preset'
+
+item_176:
+  material: 'IRON_INGOT'
+  buy: 6512
+  sell: 2992
+  category: 'auto_preset'
+
+item_177:
+  material: 'GOLD_INGOT'
+  buy: 6549
+  sell: 3009
+  category: 'auto_preset'
+
+item_178:
+  material: 'ENDER_PEARL'
+  buy: 6586
+  sell: 3026
+  category: 'auto_preset'
+
+item_179:
+  material: 'GOLDEN_APPLE'
+  buy: 6623
+  sell: 3043
+  category: 'auto_preset'
+
+item_180:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 6660
+  sell: 3060
+  category: 'auto_preset'
+
+item_181:
+  material: 'SHULKER_BOX'
+  buy: 6697
+  sell: 3077
+  category: 'auto_preset'
+
+item_182:
+  material: 'STONE'
+  buy: 6734
+  sell: 3094
+  category: 'auto_preset'
+
+item_183:
+  material: 'COBBLESTONE'
+  buy: 6771
+  sell: 3111
+  category: 'auto_preset'
+
+item_184:
+  material: 'OAK_LOG'
+  buy: 6808
+  sell: 3128
+  category: 'auto_preset'
+
+item_185:
+  material: 'SPRUCE_LOG'
+  buy: 6845
+  sell: 3145
+  category: 'auto_preset'
+
+item_186:
+  material: 'BAMBOO'
+  buy: 6882
+  sell: 3162
+  category: 'auto_preset'
+
+item_187:
+  material: 'SUGAR_CANE'
+  buy: 6919
+  sell: 3179
+  category: 'auto_preset'
+
+item_188:
+  material: 'DIAMOND'
+  buy: 6956
+  sell: 3196
+  category: 'auto_preset'
+
+item_189:
+  material: 'EMERALD'
+  buy: 6993
+  sell: 3213
+  category: 'auto_preset'
+
+item_190:
+  material: 'IRON_INGOT'
+  buy: 7030
+  sell: 3230
+  category: 'auto_preset'
+
+item_191:
+  material: 'GOLD_INGOT'
+  buy: 7067
+  sell: 3247
+  category: 'auto_preset'
+
+item_192:
+  material: 'ENDER_PEARL'
+  buy: 7104
+  sell: 3264
+  category: 'auto_preset'
+
+item_193:
+  material: 'GOLDEN_APPLE'
+  buy: 7141
+  sell: 3281
+  category: 'auto_preset'
+
+item_194:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 7178
+  sell: 3298
+  category: 'auto_preset'
+
+item_195:
+  material: 'SHULKER_BOX'
+  buy: 7215
+  sell: 3315
+  category: 'auto_preset'
+
+item_196:
+  material: 'STONE'
+  buy: 7252
+  sell: 3332
+  category: 'auto_preset'
+
+item_197:
+  material: 'COBBLESTONE'
+  buy: 7289
+  sell: 3349
+  category: 'auto_preset'
+
+item_198:
+  material: 'OAK_LOG'
+  buy: 7326
+  sell: 3366
+  category: 'auto_preset'
+
+item_199:
+  material: 'SPRUCE_LOG'
+  buy: 7363
+  sell: 3383
+  category: 'auto_preset'
+
+item_200:
+  material: 'BAMBOO'
+  buy: 7400
+  sell: 3400
+  category: 'auto_preset'
+
+item_201:
+  material: 'SUGAR_CANE'
+  buy: 7437
+  sell: 3417
+  category: 'auto_preset'
+
+item_202:
+  material: 'DIAMOND'
+  buy: 7474
+  sell: 3434
+  category: 'auto_preset'
+
+item_203:
+  material: 'EMERALD'
+  buy: 7511
+  sell: 3451
+  category: 'auto_preset'
+
+item_204:
+  material: 'IRON_INGOT'
+  buy: 7548
+  sell: 3468
+  category: 'auto_preset'
+
+item_205:
+  material: 'GOLD_INGOT'
+  buy: 7585
+  sell: 3485
+  category: 'auto_preset'
+
+item_206:
+  material: 'ENDER_PEARL'
+  buy: 7622
+  sell: 3502
+  category: 'auto_preset'
+
+item_207:
+  material: 'GOLDEN_APPLE'
+  buy: 7659
+  sell: 3519
+  category: 'auto_preset'
+
+item_208:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 7696
+  sell: 3536
+  category: 'auto_preset'
+
+item_209:
+  material: 'SHULKER_BOX'
+  buy: 7733
+  sell: 3553
+  category: 'auto_preset'
+
+item_210:
+  material: 'STONE'
+  buy: 7770
+  sell: 3570
+  category: 'auto_preset'
+
+item_211:
+  material: 'COBBLESTONE'
+  buy: 7807
+  sell: 3587
+  category: 'auto_preset'
+
+item_212:
+  material: 'OAK_LOG'
+  buy: 7844
+  sell: 3604
+  category: 'auto_preset'
+
+item_213:
+  material: 'SPRUCE_LOG'
+  buy: 7881
+  sell: 3621
+  category: 'auto_preset'
+
+item_214:
+  material: 'BAMBOO'
+  buy: 7918
+  sell: 3638
+  category: 'auto_preset'
+
+item_215:
+  material: 'SUGAR_CANE'
+  buy: 7955
+  sell: 3655
+  category: 'auto_preset'
+
+item_216:
+  material: 'DIAMOND'
+  buy: 7992
+  sell: 3672
+  category: 'auto_preset'
+
+item_217:
+  material: 'EMERALD'
+  buy: 8029
+  sell: 3689
+  category: 'auto_preset'
+
+item_218:
+  material: 'IRON_INGOT'
+  buy: 8066
+  sell: 3706
+  category: 'auto_preset'
+
+item_219:
+  material: 'GOLD_INGOT'
+  buy: 8103
+  sell: 3723
+  category: 'auto_preset'
+
+item_220:
+  material: 'ENDER_PEARL'
+  buy: 8140
+  sell: 3740
+  category: 'auto_preset'
+
+item_221:
+  material: 'GOLDEN_APPLE'
+  buy: 8177
+  sell: 3757
+  category: 'auto_preset'
+
+item_222:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 8214
+  sell: 3774
+  category: 'auto_preset'
+
+item_223:
+  material: 'SHULKER_BOX'
+  buy: 8251
+  sell: 3791
+  category: 'auto_preset'
+
+item_224:
+  material: 'STONE'
+  buy: 8288
+  sell: 3808
+  category: 'auto_preset'
+
+item_225:
+  material: 'COBBLESTONE'
+  buy: 8325
+  sell: 3825
+  category: 'auto_preset'
+
+item_226:
+  material: 'OAK_LOG'
+  buy: 8362
+  sell: 3842
+  category: 'auto_preset'
+
+item_227:
+  material: 'SPRUCE_LOG'
+  buy: 8399
+  sell: 3859
+  category: 'auto_preset'
+
+item_228:
+  material: 'BAMBOO'
+  buy: 8436
+  sell: 3876
+  category: 'auto_preset'
+
+item_229:
+  material: 'SUGAR_CANE'
+  buy: 8473
+  sell: 3893
+  category: 'auto_preset'
+
+item_230:
+  material: 'DIAMOND'
+  buy: 8510
+  sell: 3910
+  category: 'auto_preset'
+
+item_231:
+  material: 'EMERALD'
+  buy: 8547
+  sell: 3927
+  category: 'auto_preset'
+
+item_232:
+  material: 'IRON_INGOT'
+  buy: 8584
+  sell: 3944
+  category: 'auto_preset'
+
+item_233:
+  material: 'GOLD_INGOT'
+  buy: 8621
+  sell: 3961
+  category: 'auto_preset'
+
+item_234:
+  material: 'ENDER_PEARL'
+  buy: 8658
+  sell: 3978
+  category: 'auto_preset'
+
+item_235:
+  material: 'GOLDEN_APPLE'
+  buy: 8695
+  sell: 3995
+  category: 'auto_preset'
+
+item_236:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 8732
+  sell: 4012
+  category: 'auto_preset'
+
+item_237:
+  material: 'SHULKER_BOX'
+  buy: 8769
+  sell: 4029
+  category: 'auto_preset'
+
+item_238:
+  material: 'STONE'
+  buy: 8806
+  sell: 4046
+  category: 'auto_preset'
+
+item_239:
+  material: 'COBBLESTONE'
+  buy: 8843
+  sell: 4063
+  category: 'auto_preset'
+
+item_240:
+  material: 'OAK_LOG'
+  buy: 8880
+  sell: 4080
+  category: 'auto_preset'
+
+item_241:
+  material: 'SPRUCE_LOG'
+  buy: 8917
+  sell: 4097
+  category: 'auto_preset'
+
+item_242:
+  material: 'BAMBOO'
+  buy: 8954
+  sell: 4114
+  category: 'auto_preset'
+
+item_243:
+  material: 'SUGAR_CANE'
+  buy: 8991
+  sell: 4131
+  category: 'auto_preset'
+
+item_244:
+  material: 'DIAMOND'
+  buy: 9028
+  sell: 4148
+  category: 'auto_preset'
+
+item_245:
+  material: 'EMERALD'
+  buy: 9065
+  sell: 4165
+  category: 'auto_preset'
+
+item_246:
+  material: 'IRON_INGOT'
+  buy: 9102
+  sell: 4182
+  category: 'auto_preset'
+
+item_247:
+  material: 'GOLD_INGOT'
+  buy: 9139
+  sell: 4199
+  category: 'auto_preset'
+
+item_248:
+  material: 'ENDER_PEARL'
+  buy: 9176
+  sell: 4216
+  category: 'auto_preset'
+
+item_249:
+  material: 'GOLDEN_APPLE'
+  buy: 9213
+  sell: 4233
+  category: 'auto_preset'
+
+item_250:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 9250
+  sell: 4250
+  category: 'auto_preset'
+
+item_251:
+  material: 'SHULKER_BOX'
+  buy: 9287
+  sell: 4267
+  category: 'auto_preset'
+
+item_252:
+  material: 'STONE'
+  buy: 9324
+  sell: 4284
+  category: 'auto_preset'
+
+item_253:
+  material: 'COBBLESTONE'
+  buy: 9361
+  sell: 4301
+  category: 'auto_preset'
+
+item_254:
+  material: 'OAK_LOG'
+  buy: 9398
+  sell: 4318
+  category: 'auto_preset'
+
+item_255:
+  material: 'SPRUCE_LOG'
+  buy: 9435
+  sell: 4335
+  category: 'auto_preset'
+
+item_256:
+  material: 'BAMBOO'
+  buy: 9472
+  sell: 4352
+  category: 'auto_preset'
+
+item_257:
+  material: 'SUGAR_CANE'
+  buy: 9509
+  sell: 4369
+  category: 'auto_preset'
+
+item_258:
+  material: 'DIAMOND'
+  buy: 9546
+  sell: 4386
+  category: 'auto_preset'
+
+item_259:
+  material: 'EMERALD'
+  buy: 9583
+  sell: 4403
+  category: 'auto_preset'
+
+item_260:
+  material: 'IRON_INGOT'
+  buy: 9620
+  sell: 4420
+  category: 'auto_preset'
+
+item_261:
+  material: 'GOLD_INGOT'
+  buy: 9657
+  sell: 4437
+  category: 'auto_preset'
+
+item_262:
+  material: 'ENDER_PEARL'
+  buy: 9694
+  sell: 4454
+  category: 'auto_preset'
+
+item_263:
+  material: 'GOLDEN_APPLE'
+  buy: 9731
+  sell: 4471
+  category: 'auto_preset'
+
+item_264:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 9768
+  sell: 4488
+  category: 'auto_preset'
+
+item_265:
+  material: 'SHULKER_BOX'
+  buy: 9805
+  sell: 4505
+  category: 'auto_preset'
+
+item_266:
+  material: 'STONE'
+  buy: 9842
+  sell: 4522
+  category: 'auto_preset'
+
+item_267:
+  material: 'COBBLESTONE'
+  buy: 9879
+  sell: 4539
+  category: 'auto_preset'
+
+item_268:
+  material: 'OAK_LOG'
+  buy: 9916
+  sell: 4556
+  category: 'auto_preset'
+
+item_269:
+  material: 'SPRUCE_LOG'
+  buy: 9953
+  sell: 4573
+  category: 'auto_preset'
+
+item_270:
+  material: 'BAMBOO'
+  buy: 9990
+  sell: 4590
+  category: 'auto_preset'
+
+item_271:
+  material: 'SUGAR_CANE'
+  buy: 10027
+  sell: 4607
+  category: 'auto_preset'
+
+item_272:
+  material: 'DIAMOND'
+  buy: 10064
+  sell: 4624
+  category: 'auto_preset'
+
+item_273:
+  material: 'EMERALD'
+  buy: 10101
+  sell: 4641
+  category: 'auto_preset'
+
+item_274:
+  material: 'IRON_INGOT'
+  buy: 10138
+  sell: 4658
+  category: 'auto_preset'
+
+item_275:
+  material: 'GOLD_INGOT'
+  buy: 10175
+  sell: 4675
+  category: 'auto_preset'
+
+item_276:
+  material: 'ENDER_PEARL'
+  buy: 10212
+  sell: 4692
+  category: 'auto_preset'
+
+item_277:
+  material: 'GOLDEN_APPLE'
+  buy: 10249
+  sell: 4709
+  category: 'auto_preset'
+
+item_278:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 10286
+  sell: 4726
+  category: 'auto_preset'
+
+item_279:
+  material: 'SHULKER_BOX'
+  buy: 10323
+  sell: 4743
+  category: 'auto_preset'
+
+item_280:
+  material: 'STONE'
+  buy: 10360
+  sell: 4760
+  category: 'auto_preset'
+
+item_281:
+  material: 'COBBLESTONE'
+  buy: 10397
+  sell: 4777
+  category: 'auto_preset'
+
+item_282:
+  material: 'OAK_LOG'
+  buy: 10434
+  sell: 4794
+  category: 'auto_preset'
+
+item_283:
+  material: 'SPRUCE_LOG'
+  buy: 10471
+  sell: 4811
+  category: 'auto_preset'
+
+item_284:
+  material: 'BAMBOO'
+  buy: 10508
+  sell: 4828
+  category: 'auto_preset'
+
+item_285:
+  material: 'SUGAR_CANE'
+  buy: 10545
+  sell: 4845
+  category: 'auto_preset'
+
+item_286:
+  material: 'DIAMOND'
+  buy: 10582
+  sell: 4862
+  category: 'auto_preset'
+
+item_287:
+  material: 'EMERALD'
+  buy: 10619
+  sell: 4879
+  category: 'auto_preset'
+
+item_288:
+  material: 'IRON_INGOT'
+  buy: 10656
+  sell: 4896
+  category: 'auto_preset'
+
+item_289:
+  material: 'GOLD_INGOT'
+  buy: 10693
+  sell: 4913
+  category: 'auto_preset'
+
+item_290:
+  material: 'ENDER_PEARL'
+  buy: 10730
+  sell: 4930
+  category: 'auto_preset'
+
+item_291:
+  material: 'GOLDEN_APPLE'
+  buy: 10767
+  sell: 4947
+  category: 'auto_preset'
+
+item_292:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 10804
+  sell: 4964
+  category: 'auto_preset'
+
+item_293:
+  material: 'SHULKER_BOX'
+  buy: 10841
+  sell: 4981
+  category: 'auto_preset'
+
+item_294:
+  material: 'STONE'
+  buy: 10878
+  sell: 4998
+  category: 'auto_preset'
+
+item_295:
+  material: 'COBBLESTONE'
+  buy: 10915
+  sell: 5015
+  category: 'auto_preset'
+
+item_296:
+  material: 'OAK_LOG'
+  buy: 10952
+  sell: 5032
+  category: 'auto_preset'
+
+item_297:
+  material: 'SPRUCE_LOG'
+  buy: 10989
+  sell: 5049
+  category: 'auto_preset'
+
+item_298:
+  material: 'BAMBOO'
+  buy: 11026
+  sell: 5066
+  category: 'auto_preset'
+
+item_299:
+  material: 'SUGAR_CANE'
+  buy: 11063
+  sell: 5083
+  category: 'auto_preset'
+
+item_300:
+  material: 'DIAMOND'
+  buy: 11100
+  sell: 5100
+  category: 'auto_preset'
+
+item_301:
+  material: 'EMERALD'
+  buy: 11137
+  sell: 5117
+  category: 'auto_preset'
+
+item_302:
+  material: 'IRON_INGOT'
+  buy: 11174
+  sell: 5134
+  category: 'auto_preset'
+
+item_303:
+  material: 'GOLD_INGOT'
+  buy: 11211
+  sell: 5151
+  category: 'auto_preset'
+
+item_304:
+  material: 'ENDER_PEARL'
+  buy: 11248
+  sell: 5168
+  category: 'auto_preset'
+
+item_305:
+  material: 'GOLDEN_APPLE'
+  buy: 11285
+  sell: 5185
+  category: 'auto_preset'
+
+item_306:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 11322
+  sell: 5202
+  category: 'auto_preset'
+
+item_307:
+  material: 'SHULKER_BOX'
+  buy: 11359
+  sell: 5219
+  category: 'auto_preset'
+
+item_308:
+  material: 'STONE'
+  buy: 11396
+  sell: 5236
+  category: 'auto_preset'
+
+item_309:
+  material: 'COBBLESTONE'
+  buy: 11433
+  sell: 5253
+  category: 'auto_preset'
+
+item_310:
+  material: 'OAK_LOG'
+  buy: 11470
+  sell: 5270
+  category: 'auto_preset'
+
+item_311:
+  material: 'SPRUCE_LOG'
+  buy: 11507
+  sell: 5287
+  category: 'auto_preset'
+
+item_312:
+  material: 'BAMBOO'
+  buy: 11544
+  sell: 5304
+  category: 'auto_preset'
+
+item_313:
+  material: 'SUGAR_CANE'
+  buy: 11581
+  sell: 5321
+  category: 'auto_preset'
+
+item_314:
+  material: 'DIAMOND'
+  buy: 11618
+  sell: 5338
+  category: 'auto_preset'
+
+item_315:
+  material: 'EMERALD'
+  buy: 11655
+  sell: 5355
+  category: 'auto_preset'
+
+item_316:
+  material: 'IRON_INGOT'
+  buy: 11692
+  sell: 5372
+  category: 'auto_preset'
+
+item_317:
+  material: 'GOLD_INGOT'
+  buy: 11729
+  sell: 5389
+  category: 'auto_preset'
+
+item_318:
+  material: 'ENDER_PEARL'
+  buy: 11766
+  sell: 5406
+  category: 'auto_preset'
+
+item_319:
+  material: 'GOLDEN_APPLE'
+  buy: 11803
+  sell: 5423
+  category: 'auto_preset'
+
+item_320:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 11840
+  sell: 5440
+  category: 'auto_preset'
+
+item_321:
+  material: 'SHULKER_BOX'
+  buy: 11877
+  sell: 5457
+  category: 'auto_preset'
+
+item_322:
+  material: 'STONE'
+  buy: 11914
+  sell: 5474
+  category: 'auto_preset'
+
+item_323:
+  material: 'COBBLESTONE'
+  buy: 11951
+  sell: 5491
+  category: 'auto_preset'
+
+item_324:
+  material: 'OAK_LOG'
+  buy: 11988
+  sell: 5508
+  category: 'auto_preset'
+
+item_325:
+  material: 'SPRUCE_LOG'
+  buy: 12025
+  sell: 5525
+  category: 'auto_preset'
+
+item_326:
+  material: 'BAMBOO'
+  buy: 12062
+  sell: 5542
+  category: 'auto_preset'
+
+item_327:
+  material: 'SUGAR_CANE'
+  buy: 12099
+  sell: 5559
+  category: 'auto_preset'
+
+item_328:
+  material: 'DIAMOND'
+  buy: 12136
+  sell: 5576
+  category: 'auto_preset'
+
+item_329:
+  material: 'EMERALD'
+  buy: 12173
+  sell: 5593
+  category: 'auto_preset'
+
+item_330:
+  material: 'IRON_INGOT'
+  buy: 12210
+  sell: 5610
+  category: 'auto_preset'
+
+item_331:
+  material: 'GOLD_INGOT'
+  buy: 12247
+  sell: 5627
+  category: 'auto_preset'
+
+item_332:
+  material: 'ENDER_PEARL'
+  buy: 12284
+  sell: 5644
+  category: 'auto_preset'
+
+item_333:
+  material: 'GOLDEN_APPLE'
+  buy: 12321
+  sell: 5661
+  category: 'auto_preset'
+
+item_334:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 12358
+  sell: 5678
+  category: 'auto_preset'
+
+item_335:
+  material: 'SHULKER_BOX'
+  buy: 12395
+  sell: 5695
+  category: 'auto_preset'
+
+item_336:
+  material: 'STONE'
+  buy: 12432
+  sell: 5712
+  category: 'auto_preset'
+
+item_337:
+  material: 'COBBLESTONE'
+  buy: 12469
+  sell: 5729
+  category: 'auto_preset'
+
+item_338:
+  material: 'OAK_LOG'
+  buy: 12506
+  sell: 5746
+  category: 'auto_preset'
+
+item_339:
+  material: 'SPRUCE_LOG'
+  buy: 12543
+  sell: 5763
+  category: 'auto_preset'
+
+item_340:
+  material: 'BAMBOO'
+  buy: 12580
+  sell: 5780
+  category: 'auto_preset'
+
+item_341:
+  material: 'SUGAR_CANE'
+  buy: 12617
+  sell: 5797
+  category: 'auto_preset'
+
+item_342:
+  material: 'DIAMOND'
+  buy: 12654
+  sell: 5814
+  category: 'auto_preset'
+
+item_343:
+  material: 'EMERALD'
+  buy: 12691
+  sell: 5831
+  category: 'auto_preset'
+
+item_344:
+  material: 'IRON_INGOT'
+  buy: 12728
+  sell: 5848
+  category: 'auto_preset'
+
+item_345:
+  material: 'GOLD_INGOT'
+  buy: 12765
+  sell: 5865
+  category: 'auto_preset'
+
+item_346:
+  material: 'ENDER_PEARL'
+  buy: 12802
+  sell: 5882
+  category: 'auto_preset'
+
+item_347:
+  material: 'GOLDEN_APPLE'
+  buy: 12839
+  sell: 5899
+  category: 'auto_preset'
+
+item_348:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 12876
+  sell: 5916
+  category: 'auto_preset'
+
+item_349:
+  material: 'SHULKER_BOX'
+  buy: 12913
+  sell: 5933
+  category: 'auto_preset'
+
+item_350:
+  material: 'STONE'
+  buy: 12950
+  sell: 5950
+  category: 'auto_preset'
+
+item_351:
+  material: 'COBBLESTONE'
+  buy: 12987
+  sell: 5967
+  category: 'auto_preset'
+
+item_352:
+  material: 'OAK_LOG'
+  buy: 13024
+  sell: 5984
+  category: 'auto_preset'
+
+item_353:
+  material: 'SPRUCE_LOG'
+  buy: 13061
+  sell: 6001
+  category: 'auto_preset'
+
+item_354:
+  material: 'BAMBOO'
+  buy: 13098
+  sell: 6018
+  category: 'auto_preset'
+
+item_355:
+  material: 'SUGAR_CANE'
+  buy: 13135
+  sell: 6035
+  category: 'auto_preset'
+
+item_356:
+  material: 'DIAMOND'
+  buy: 13172
+  sell: 6052
+  category: 'auto_preset'
+
+item_357:
+  material: 'EMERALD'
+  buy: 13209
+  sell: 6069
+  category: 'auto_preset'
+
+item_358:
+  material: 'IRON_INGOT'
+  buy: 13246
+  sell: 6086
+  category: 'auto_preset'
+
+item_359:
+  material: 'GOLD_INGOT'
+  buy: 13283
+  sell: 6103
+  category: 'auto_preset'
+
+item_360:
+  material: 'ENDER_PEARL'
+  buy: 13320
+  sell: 6120
+  category: 'auto_preset'
+
+item_361:
+  material: 'GOLDEN_APPLE'
+  buy: 13357
+  sell: 6137
+  category: 'auto_preset'
+
+item_362:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 13394
+  sell: 6154
+  category: 'auto_preset'
+
+item_363:
+  material: 'SHULKER_BOX'
+  buy: 13431
+  sell: 6171
+  category: 'auto_preset'
+
+item_364:
+  material: 'STONE'
+  buy: 13468
+  sell: 6188
+  category: 'auto_preset'
+
+item_365:
+  material: 'COBBLESTONE'
+  buy: 13505
+  sell: 6205
+  category: 'auto_preset'
+
+item_366:
+  material: 'OAK_LOG'
+  buy: 13542
+  sell: 6222
+  category: 'auto_preset'
+
+item_367:
+  material: 'SPRUCE_LOG'
+  buy: 13579
+  sell: 6239
+  category: 'auto_preset'
+
+item_368:
+  material: 'BAMBOO'
+  buy: 13616
+  sell: 6256
+  category: 'auto_preset'
+
+item_369:
+  material: 'SUGAR_CANE'
+  buy: 13653
+  sell: 6273
+  category: 'auto_preset'
+
+item_370:
+  material: 'DIAMOND'
+  buy: 13690
+  sell: 6290
+  category: 'auto_preset'
+
+item_371:
+  material: 'EMERALD'
+  buy: 13727
+  sell: 6307
+  category: 'auto_preset'
+
+item_372:
+  material: 'IRON_INGOT'
+  buy: 13764
+  sell: 6324
+  category: 'auto_preset'
+
+item_373:
+  material: 'GOLD_INGOT'
+  buy: 13801
+  sell: 6341
+  category: 'auto_preset'
+
+item_374:
+  material: 'ENDER_PEARL'
+  buy: 13838
+  sell: 6358
+  category: 'auto_preset'
+
+item_375:
+  material: 'GOLDEN_APPLE'
+  buy: 13875
+  sell: 6375
+  category: 'auto_preset'
+
+item_376:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 13912
+  sell: 6392
+  category: 'auto_preset'
+
+item_377:
+  material: 'SHULKER_BOX'
+  buy: 13949
+  sell: 6409
+  category: 'auto_preset'
+
+item_378:
+  material: 'STONE'
+  buy: 13986
+  sell: 6426
+  category: 'auto_preset'
+
+item_379:
+  material: 'COBBLESTONE'
+  buy: 14023
+  sell: 6443
+  category: 'auto_preset'
+
+item_380:
+  material: 'OAK_LOG'
+  buy: 14060
+  sell: 6460
+  category: 'auto_preset'
+
+item_381:
+  material: 'SPRUCE_LOG'
+  buy: 14097
+  sell: 6477
+  category: 'auto_preset'
+
+item_382:
+  material: 'BAMBOO'
+  buy: 14134
+  sell: 6494
+  category: 'auto_preset'
+
+item_383:
+  material: 'SUGAR_CANE'
+  buy: 14171
+  sell: 6511
+  category: 'auto_preset'
+
+item_384:
+  material: 'DIAMOND'
+  buy: 14208
+  sell: 6528
+  category: 'auto_preset'
+
+item_385:
+  material: 'EMERALD'
+  buy: 14245
+  sell: 6545
+  category: 'auto_preset'
+
+item_386:
+  material: 'IRON_INGOT'
+  buy: 14282
+  sell: 6562
+  category: 'auto_preset'
+
+item_387:
+  material: 'GOLD_INGOT'
+  buy: 14319
+  sell: 6579
+  category: 'auto_preset'
+
+item_388:
+  material: 'ENDER_PEARL'
+  buy: 14356
+  sell: 6596
+  category: 'auto_preset'
+
+item_389:
+  material: 'GOLDEN_APPLE'
+  buy: 14393
+  sell: 6613
+  category: 'auto_preset'
+
+item_390:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 14430
+  sell: 6630
+  category: 'auto_preset'
+
+item_391:
+  material: 'SHULKER_BOX'
+  buy: 14467
+  sell: 6647
+  category: 'auto_preset'
+
+item_392:
+  material: 'STONE'
+  buy: 14504
+  sell: 6664
+  category: 'auto_preset'
+
+item_393:
+  material: 'COBBLESTONE'
+  buy: 14541
+  sell: 6681
+  category: 'auto_preset'
+
+item_394:
+  material: 'OAK_LOG'
+  buy: 14578
+  sell: 6698
+  category: 'auto_preset'
+
+item_395:
+  material: 'SPRUCE_LOG'
+  buy: 14615
+  sell: 6715
+  category: 'auto_preset'
+
+item_396:
+  material: 'BAMBOO'
+  buy: 14652
+  sell: 6732
+  category: 'auto_preset'
+
+item_397:
+  material: 'SUGAR_CANE'
+  buy: 14689
+  sell: 6749
+  category: 'auto_preset'
+
+item_398:
+  material: 'DIAMOND'
+  buy: 14726
+  sell: 6766
+  category: 'auto_preset'
+
+item_399:
+  material: 'EMERALD'
+  buy: 14763
+  sell: 6783
+  category: 'auto_preset'
+
+item_400:
+  material: 'IRON_INGOT'
+  buy: 14800
+  sell: 6800
+  category: 'auto_preset'
+
+item_401:
+  material: 'GOLD_INGOT'
+  buy: 14837
+  sell: 6817
+  category: 'auto_preset'
+
+item_402:
+  material: 'ENDER_PEARL'
+  buy: 14874
+  sell: 6834
+  category: 'auto_preset'
+
+item_403:
+  material: 'GOLDEN_APPLE'
+  buy: 14911
+  sell: 6851
+  category: 'auto_preset'
+
+item_404:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 14948
+  sell: 6868
+  category: 'auto_preset'
+
+item_405:
+  material: 'SHULKER_BOX'
+  buy: 14985
+  sell: 6885
+  category: 'auto_preset'
+
+item_406:
+  material: 'STONE'
+  buy: 15022
+  sell: 6902
+  category: 'auto_preset'
+
+item_407:
+  material: 'COBBLESTONE'
+  buy: 15059
+  sell: 6919
+  category: 'auto_preset'
+
+item_408:
+  material: 'OAK_LOG'
+  buy: 15096
+  sell: 6936
+  category: 'auto_preset'
+
+item_409:
+  material: 'SPRUCE_LOG'
+  buy: 15133
+  sell: 6953
+  category: 'auto_preset'
+
+item_410:
+  material: 'BAMBOO'
+  buy: 15170
+  sell: 6970
+  category: 'auto_preset'
+
+item_411:
+  material: 'SUGAR_CANE'
+  buy: 15207
+  sell: 6987
+  category: 'auto_preset'
+
+item_412:
+  material: 'DIAMOND'
+  buy: 15244
+  sell: 7004
+  category: 'auto_preset'
+
+item_413:
+  material: 'EMERALD'
+  buy: 15281
+  sell: 7021
+  category: 'auto_preset'
+
+item_414:
+  material: 'IRON_INGOT'
+  buy: 15318
+  sell: 7038
+  category: 'auto_preset'
+
+item_415:
+  material: 'GOLD_INGOT'
+  buy: 15355
+  sell: 7055
+  category: 'auto_preset'
+
+item_416:
+  material: 'ENDER_PEARL'
+  buy: 15392
+  sell: 7072
+  category: 'auto_preset'
+
+item_417:
+  material: 'GOLDEN_APPLE'
+  buy: 15429
+  sell: 7089
+  category: 'auto_preset'
+
+item_418:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 15466
+  sell: 7106
+  category: 'auto_preset'
+
+item_419:
+  material: 'SHULKER_BOX'
+  buy: 15503
+  sell: 7123
+  category: 'auto_preset'
+
+item_420:
+  material: 'STONE'
+  buy: 15540
+  sell: 7140
+  category: 'auto_preset'
+
+item_421:
+  material: 'COBBLESTONE'
+  buy: 15577
+  sell: 7157
+  category: 'auto_preset'
+
+item_422:
+  material: 'OAK_LOG'
+  buy: 15614
+  sell: 7174
+  category: 'auto_preset'
+
+item_423:
+  material: 'SPRUCE_LOG'
+  buy: 15651
+  sell: 7191
+  category: 'auto_preset'
+
+item_424:
+  material: 'BAMBOO'
+  buy: 15688
+  sell: 7208
+  category: 'auto_preset'
+
+item_425:
+  material: 'SUGAR_CANE'
+  buy: 15725
+  sell: 7225
+  category: 'auto_preset'
+
+item_426:
+  material: 'DIAMOND'
+  buy: 15762
+  sell: 7242
+  category: 'auto_preset'
+
+item_427:
+  material: 'EMERALD'
+  buy: 15799
+  sell: 7259
+  category: 'auto_preset'
+
+item_428:
+  material: 'IRON_INGOT'
+  buy: 15836
+  sell: 7276
+  category: 'auto_preset'
+
+item_429:
+  material: 'GOLD_INGOT'
+  buy: 15873
+  sell: 7293
+  category: 'auto_preset'
+
+item_430:
+  material: 'ENDER_PEARL'
+  buy: 15910
+  sell: 7310
+  category: 'auto_preset'
+
+item_431:
+  material: 'GOLDEN_APPLE'
+  buy: 15947
+  sell: 7327
+  category: 'auto_preset'
+
+item_432:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 15984
+  sell: 7344
+  category: 'auto_preset'
+
+item_433:
+  material: 'SHULKER_BOX'
+  buy: 16021
+  sell: 7361
+  category: 'auto_preset'
+
+item_434:
+  material: 'STONE'
+  buy: 16058
+  sell: 7378
+  category: 'auto_preset'
+
+item_435:
+  material: 'COBBLESTONE'
+  buy: 16095
+  sell: 7395
+  category: 'auto_preset'
+
+item_436:
+  material: 'OAK_LOG'
+  buy: 16132
+  sell: 7412
+  category: 'auto_preset'
+
+item_437:
+  material: 'SPRUCE_LOG'
+  buy: 16169
+  sell: 7429
+  category: 'auto_preset'
+
+item_438:
+  material: 'BAMBOO'
+  buy: 16206
+  sell: 7446
+  category: 'auto_preset'
+
+item_439:
+  material: 'SUGAR_CANE'
+  buy: 16243
+  sell: 7463
+  category: 'auto_preset'
+
+item_440:
+  material: 'DIAMOND'
+  buy: 16280
+  sell: 7480
+  category: 'auto_preset'
+
+item_441:
+  material: 'EMERALD'
+  buy: 16317
+  sell: 7497
+  category: 'auto_preset'
+
+item_442:
+  material: 'IRON_INGOT'
+  buy: 16354
+  sell: 7514
+  category: 'auto_preset'
+
+item_443:
+  material: 'GOLD_INGOT'
+  buy: 16391
+  sell: 7531
+  category: 'auto_preset'
+
+item_444:
+  material: 'ENDER_PEARL'
+  buy: 16428
+  sell: 7548
+  category: 'auto_preset'
+
+item_445:
+  material: 'GOLDEN_APPLE'
+  buy: 16465
+  sell: 7565
+  category: 'auto_preset'
+
+item_446:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 16502
+  sell: 7582
+  category: 'auto_preset'
+
+item_447:
+  material: 'SHULKER_BOX'
+  buy: 16539
+  sell: 7599
+  category: 'auto_preset'
+
+item_448:
+  material: 'STONE'
+  buy: 16576
+  sell: 7616
+  category: 'auto_preset'
+
+item_449:
+  material: 'COBBLESTONE'
+  buy: 16613
+  sell: 7633
+  category: 'auto_preset'
+
+item_450:
+  material: 'OAK_LOG'
+  buy: 16650
+  sell: 7650
+  category: 'auto_preset'
+
+item_451:
+  material: 'SPRUCE_LOG'
+  buy: 16687
+  sell: 7667
+  category: 'auto_preset'
+
+item_452:
+  material: 'BAMBOO'
+  buy: 16724
+  sell: 7684
+  category: 'auto_preset'
+
+item_453:
+  material: 'SUGAR_CANE'
+  buy: 16761
+  sell: 7701
+  category: 'auto_preset'
+
+item_454:
+  material: 'DIAMOND'
+  buy: 16798
+  sell: 7718
+  category: 'auto_preset'
+
+item_455:
+  material: 'EMERALD'
+  buy: 16835
+  sell: 7735
+  category: 'auto_preset'
+
+item_456:
+  material: 'IRON_INGOT'
+  buy: 16872
+  sell: 7752
+  category: 'auto_preset'
+
+item_457:
+  material: 'GOLD_INGOT'
+  buy: 16909
+  sell: 7769
+  category: 'auto_preset'
+
+item_458:
+  material: 'ENDER_PEARL'
+  buy: 16946
+  sell: 7786
+  category: 'auto_preset'
+
+item_459:
+  material: 'GOLDEN_APPLE'
+  buy: 16983
+  sell: 7803
+  category: 'auto_preset'
+
+item_460:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 17020
+  sell: 7820
+  category: 'auto_preset'
+
+item_461:
+  material: 'SHULKER_BOX'
+  buy: 17057
+  sell: 7837
+  category: 'auto_preset'
+
+item_462:
+  material: 'STONE'
+  buy: 17094
+  sell: 7854
+  category: 'auto_preset'
+
+item_463:
+  material: 'COBBLESTONE'
+  buy: 17131
+  sell: 7871
+  category: 'auto_preset'
+
+item_464:
+  material: 'OAK_LOG'
+  buy: 17168
+  sell: 7888
+  category: 'auto_preset'
+
+item_465:
+  material: 'SPRUCE_LOG'
+  buy: 17205
+  sell: 7905
+  category: 'auto_preset'
+
+item_466:
+  material: 'BAMBOO'
+  buy: 17242
+  sell: 7922
+  category: 'auto_preset'
+
+item_467:
+  material: 'SUGAR_CANE'
+  buy: 17279
+  sell: 7939
+  category: 'auto_preset'
+
+item_468:
+  material: 'DIAMOND'
+  buy: 17316
+  sell: 7956
+  category: 'auto_preset'
+
+item_469:
+  material: 'EMERALD'
+  buy: 17353
+  sell: 7973
+  category: 'auto_preset'
+
+item_470:
+  material: 'IRON_INGOT'
+  buy: 17390
+  sell: 7990
+  category: 'auto_preset'
+
+item_471:
+  material: 'GOLD_INGOT'
+  buy: 17427
+  sell: 8007
+  category: 'auto_preset'
+
+item_472:
+  material: 'ENDER_PEARL'
+  buy: 17464
+  sell: 8024
+  category: 'auto_preset'
+
+item_473:
+  material: 'GOLDEN_APPLE'
+  buy: 17501
+  sell: 8041
+  category: 'auto_preset'
+
+item_474:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 17538
+  sell: 8058
+  category: 'auto_preset'
+
+item_475:
+  material: 'SHULKER_BOX'
+  buy: 17575
+  sell: 8075
+  category: 'auto_preset'
+
+item_476:
+  material: 'STONE'
+  buy: 17612
+  sell: 8092
+  category: 'auto_preset'
+
+item_477:
+  material: 'COBBLESTONE'
+  buy: 17649
+  sell: 8109
+  category: 'auto_preset'
+
+item_478:
+  material: 'OAK_LOG'
+  buy: 17686
+  sell: 8126
+  category: 'auto_preset'
+
+item_479:
+  material: 'SPRUCE_LOG'
+  buy: 17723
+  sell: 8143
+  category: 'auto_preset'
+
+item_480:
+  material: 'BAMBOO'
+  buy: 17760
+  sell: 8160
+  category: 'auto_preset'
+
+item_481:
+  material: 'SUGAR_CANE'
+  buy: 17797
+  sell: 8177
+  category: 'auto_preset'
+
+item_482:
+  material: 'DIAMOND'
+  buy: 17834
+  sell: 8194
+  category: 'auto_preset'
+
+item_483:
+  material: 'EMERALD'
+  buy: 17871
+  sell: 8211
+  category: 'auto_preset'
+
+item_484:
+  material: 'IRON_INGOT'
+  buy: 17908
+  sell: 8228
+  category: 'auto_preset'
+
+item_485:
+  material: 'GOLD_INGOT'
+  buy: 17945
+  sell: 8245
+  category: 'auto_preset'
+
+item_486:
+  material: 'ENDER_PEARL'
+  buy: 17982
+  sell: 8262
+  category: 'auto_preset'
+
+item_487:
+  material: 'GOLDEN_APPLE'
+  buy: 18019
+  sell: 8279
+  category: 'auto_preset'
+
+item_488:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 18056
+  sell: 8296
+  category: 'auto_preset'
+
+item_489:
+  material: 'SHULKER_BOX'
+  buy: 18093
+  sell: 8313
+  category: 'auto_preset'
+
+item_490:
+  material: 'STONE'
+  buy: 18130
+  sell: 8330
+  category: 'auto_preset'
+
+item_491:
+  material: 'COBBLESTONE'
+  buy: 18167
+  sell: 8347
+  category: 'auto_preset'
+
+item_492:
+  material: 'OAK_LOG'
+  buy: 18204
+  sell: 8364
+  category: 'auto_preset'
+
+item_493:
+  material: 'SPRUCE_LOG'
+  buy: 18241
+  sell: 8381
+  category: 'auto_preset'
+
+item_494:
+  material: 'BAMBOO'
+  buy: 18278
+  sell: 8398
+  category: 'auto_preset'
+
+item_495:
+  material: 'SUGAR_CANE'
+  buy: 18315
+  sell: 8415
+  category: 'auto_preset'
+
+item_496:
+  material: 'DIAMOND'
+  buy: 18352
+  sell: 8432
+  category: 'auto_preset'
+
+item_497:
+  material: 'EMERALD'
+  buy: 18389
+  sell: 8449
+  category: 'auto_preset'
+
+item_498:
+  material: 'IRON_INGOT'
+  buy: 18426
+  sell: 8466
+  category: 'auto_preset'
+
+item_499:
+  material: 'GOLD_INGOT'
+  buy: 18463
+  sell: 8483
+  category: 'auto_preset'
+
+item_500:
+  material: 'ENDER_PEARL'
+  buy: 18500
+  sell: 8500
+  category: 'auto_preset'
+
+item_501:
+  material: 'GOLDEN_APPLE'
+  buy: 18537
+  sell: 8517
+  category: 'auto_preset'
+
+item_502:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 18574
+  sell: 8534
+  category: 'auto_preset'
+
+item_503:
+  material: 'SHULKER_BOX'
+  buy: 18611
+  sell: 8551
+  category: 'auto_preset'
+
+item_504:
+  material: 'STONE'
+  buy: 18648
+  sell: 8568
+  category: 'auto_preset'
+
+item_505:
+  material: 'COBBLESTONE'
+  buy: 18685
+  sell: 8585
+  category: 'auto_preset'
+
+item_506:
+  material: 'OAK_LOG'
+  buy: 18722
+  sell: 8602
+  category: 'auto_preset'
+
+item_507:
+  material: 'SPRUCE_LOG'
+  buy: 18759
+  sell: 8619
+  category: 'auto_preset'
+
+item_508:
+  material: 'BAMBOO'
+  buy: 18796
+  sell: 8636
+  category: 'auto_preset'
+
+item_509:
+  material: 'SUGAR_CANE'
+  buy: 18833
+  sell: 8653
+  category: 'auto_preset'
+
+item_510:
+  material: 'DIAMOND'
+  buy: 18870
+  sell: 8670
+  category: 'auto_preset'
+
+item_511:
+  material: 'EMERALD'
+  buy: 18907
+  sell: 8687
+  category: 'auto_preset'
+
+item_512:
+  material: 'IRON_INGOT'
+  buy: 18944
+  sell: 8704
+  category: 'auto_preset'
+
+item_513:
+  material: 'GOLD_INGOT'
+  buy: 18981
+  sell: 8721
+  category: 'auto_preset'
+
+item_514:
+  material: 'ENDER_PEARL'
+  buy: 19018
+  sell: 8738
+  category: 'auto_preset'
+
+item_515:
+  material: 'GOLDEN_APPLE'
+  buy: 19055
+  sell: 8755
+  category: 'auto_preset'
+
+item_516:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 19092
+  sell: 8772
+  category: 'auto_preset'
+
+item_517:
+  material: 'SHULKER_BOX'
+  buy: 19129
+  sell: 8789
+  category: 'auto_preset'
+
+item_518:
+  material: 'STONE'
+  buy: 19166
+  sell: 8806
+  category: 'auto_preset'
+
+item_519:
+  material: 'COBBLESTONE'
+  buy: 19203
+  sell: 8823
+  category: 'auto_preset'
+
+item_520:
+  material: 'OAK_LOG'
+  buy: 19240
+  sell: 8840
+  category: 'auto_preset'
+
+item_521:
+  material: 'SPRUCE_LOG'
+  buy: 19277
+  sell: 8857
+  category: 'auto_preset'
+
+item_522:
+  material: 'BAMBOO'
+  buy: 19314
+  sell: 8874
+  category: 'auto_preset'
+
+item_523:
+  material: 'SUGAR_CANE'
+  buy: 19351
+  sell: 8891
+  category: 'auto_preset'
+
+item_524:
+  material: 'DIAMOND'
+  buy: 19388
+  sell: 8908
+  category: 'auto_preset'
+
+item_525:
+  material: 'EMERALD'
+  buy: 19425
+  sell: 8925
+  category: 'auto_preset'
+
+item_526:
+  material: 'IRON_INGOT'
+  buy: 19462
+  sell: 8942
+  category: 'auto_preset'
+
+item_527:
+  material: 'GOLD_INGOT'
+  buy: 19499
+  sell: 8959
+  category: 'auto_preset'
+
+item_528:
+  material: 'ENDER_PEARL'
+  buy: 19536
+  sell: 8976
+  category: 'auto_preset'
+
+item_529:
+  material: 'GOLDEN_APPLE'
+  buy: 19573
+  sell: 8993
+  category: 'auto_preset'
+
+item_530:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 19610
+  sell: 9010
+  category: 'auto_preset'
+
+item_531:
+  material: 'SHULKER_BOX'
+  buy: 19647
+  sell: 9027
+  category: 'auto_preset'
+
+item_532:
+  material: 'STONE'
+  buy: 19684
+  sell: 9044
+  category: 'auto_preset'
+
+item_533:
+  material: 'COBBLESTONE'
+  buy: 19721
+  sell: 9061
+  category: 'auto_preset'
+
+item_534:
+  material: 'OAK_LOG'
+  buy: 19758
+  sell: 9078
+  category: 'auto_preset'
+
+item_535:
+  material: 'SPRUCE_LOG'
+  buy: 19795
+  sell: 9095
+  category: 'auto_preset'
+
+item_536:
+  material: 'BAMBOO'
+  buy: 19832
+  sell: 9112
+  category: 'auto_preset'
+
+item_537:
+  material: 'SUGAR_CANE'
+  buy: 19869
+  sell: 9129
+  category: 'auto_preset'
+
+item_538:
+  material: 'DIAMOND'
+  buy: 19906
+  sell: 9146
+  category: 'auto_preset'
+
+item_539:
+  material: 'EMERALD'
+  buy: 19943
+  sell: 9163
+  category: 'auto_preset'
+
+item_540:
+  material: 'IRON_INGOT'
+  buy: 19980
+  sell: 9180
+  category: 'auto_preset'
+
+item_541:
+  material: 'GOLD_INGOT'
+  buy: 20017
+  sell: 9197
+  category: 'auto_preset'
+
+item_542:
+  material: 'ENDER_PEARL'
+  buy: 20054
+  sell: 9214
+  category: 'auto_preset'
+
+item_543:
+  material: 'GOLDEN_APPLE'
+  buy: 20091
+  sell: 9231
+  category: 'auto_preset'
+
+item_544:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 20128
+  sell: 9248
+  category: 'auto_preset'
+
+item_545:
+  material: 'SHULKER_BOX'
+  buy: 20165
+  sell: 9265
+  category: 'auto_preset'
+
+item_546:
+  material: 'STONE'
+  buy: 20202
+  sell: 9282
+  category: 'auto_preset'
+
+item_547:
+  material: 'COBBLESTONE'
+  buy: 20239
+  sell: 9299
+  category: 'auto_preset'
+
+item_548:
+  material: 'OAK_LOG'
+  buy: 20276
+  sell: 9316
+  category: 'auto_preset'
+
+item_549:
+  material: 'SPRUCE_LOG'
+  buy: 20313
+  sell: 9333
+  category: 'auto_preset'
+
+item_550:
+  material: 'BAMBOO'
+  buy: 20350
+  sell: 9350
+  category: 'auto_preset'
+
+item_551:
+  material: 'SUGAR_CANE'
+  buy: 20387
+  sell: 9367
+  category: 'auto_preset'
+
+item_552:
+  material: 'DIAMOND'
+  buy: 20424
+  sell: 9384
+  category: 'auto_preset'
+
+item_553:
+  material: 'EMERALD'
+  buy: 20461
+  sell: 9401
+  category: 'auto_preset'
+
+item_554:
+  material: 'IRON_INGOT'
+  buy: 20498
+  sell: 9418
+  category: 'auto_preset'
+
+item_555:
+  material: 'GOLD_INGOT'
+  buy: 20535
+  sell: 9435
+  category: 'auto_preset'
+
+item_556:
+  material: 'ENDER_PEARL'
+  buy: 20572
+  sell: 9452
+  category: 'auto_preset'
+
+item_557:
+  material: 'GOLDEN_APPLE'
+  buy: 20609
+  sell: 9469
+  category: 'auto_preset'
+
+item_558:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 20646
+  sell: 9486
+  category: 'auto_preset'
+
+item_559:
+  material: 'SHULKER_BOX'
+  buy: 20683
+  sell: 9503
+  category: 'auto_preset'
+
+item_560:
+  material: 'STONE'
+  buy: 20720
+  sell: 9520
+  category: 'auto_preset'
+
+item_561:
+  material: 'COBBLESTONE'
+  buy: 20757
+  sell: 9537
+  category: 'auto_preset'
+
+item_562:
+  material: 'OAK_LOG'
+  buy: 20794
+  sell: 9554
+  category: 'auto_preset'
+
+item_563:
+  material: 'SPRUCE_LOG'
+  buy: 20831
+  sell: 9571
+  category: 'auto_preset'
+
+item_564:
+  material: 'BAMBOO'
+  buy: 20868
+  sell: 9588
+  category: 'auto_preset'
+
+item_565:
+  material: 'SUGAR_CANE'
+  buy: 20905
+  sell: 9605
+  category: 'auto_preset'
+
+item_566:
+  material: 'DIAMOND'
+  buy: 20942
+  sell: 9622
+  category: 'auto_preset'
+
+item_567:
+  material: 'EMERALD'
+  buy: 20979
+  sell: 9639
+  category: 'auto_preset'
+
+item_568:
+  material: 'IRON_INGOT'
+  buy: 21016
+  sell: 9656
+  category: 'auto_preset'
+
+item_569:
+  material: 'GOLD_INGOT'
+  buy: 21053
+  sell: 9673
+  category: 'auto_preset'
+
+item_570:
+  material: 'ENDER_PEARL'
+  buy: 21090
+  sell: 9690
+  category: 'auto_preset'
+
+item_571:
+  material: 'GOLDEN_APPLE'
+  buy: 21127
+  sell: 9707
+  category: 'auto_preset'
+
+item_572:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 21164
+  sell: 9724
+  category: 'auto_preset'
+
+item_573:
+  material: 'SHULKER_BOX'
+  buy: 21201
+  sell: 9741
+  category: 'auto_preset'
+
+item_574:
+  material: 'STONE'
+  buy: 21238
+  sell: 9758
+  category: 'auto_preset'
+
+item_575:
+  material: 'COBBLESTONE'
+  buy: 21275
+  sell: 9775
+  category: 'auto_preset'
+
+item_576:
+  material: 'OAK_LOG'
+  buy: 21312
+  sell: 9792
+  category: 'auto_preset'
+
+item_577:
+  material: 'SPRUCE_LOG'
+  buy: 21349
+  sell: 9809
+  category: 'auto_preset'
+
+item_578:
+  material: 'BAMBOO'
+  buy: 21386
+  sell: 9826
+  category: 'auto_preset'
+
+item_579:
+  material: 'SUGAR_CANE'
+  buy: 21423
+  sell: 9843
+  category: 'auto_preset'
+
+item_580:
+  material: 'DIAMOND'
+  buy: 21460
+  sell: 9860
+  category: 'auto_preset'
+
+item_581:
+  material: 'EMERALD'
+  buy: 21497
+  sell: 9877
+  category: 'auto_preset'
+
+item_582:
+  material: 'IRON_INGOT'
+  buy: 21534
+  sell: 9894
+  category: 'auto_preset'
+
+item_583:
+  material: 'GOLD_INGOT'
+  buy: 21571
+  sell: 9911
+  category: 'auto_preset'
+
+item_584:
+  material: 'ENDER_PEARL'
+  buy: 21608
+  sell: 9928
+  category: 'auto_preset'
+
+item_585:
+  material: 'GOLDEN_APPLE'
+  buy: 21645
+  sell: 9945
+  category: 'auto_preset'
+
+item_586:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 21682
+  sell: 9962
+  category: 'auto_preset'
+
+item_587:
+  material: 'SHULKER_BOX'
+  buy: 21719
+  sell: 9979
+  category: 'auto_preset'
+
+item_588:
+  material: 'STONE'
+  buy: 21756
+  sell: 9996
+  category: 'auto_preset'
+
+item_589:
+  material: 'COBBLESTONE'
+  buy: 21793
+  sell: 10013
+  category: 'auto_preset'
+
+item_590:
+  material: 'OAK_LOG'
+  buy: 21830
+  sell: 10030
+  category: 'auto_preset'
+
+item_591:
+  material: 'SPRUCE_LOG'
+  buy: 21867
+  sell: 10047
+  category: 'auto_preset'
+
+item_592:
+  material: 'BAMBOO'
+  buy: 21904
+  sell: 10064
+  category: 'auto_preset'
+
+item_593:
+  material: 'SUGAR_CANE'
+  buy: 21941
+  sell: 10081
+  category: 'auto_preset'
+
+item_594:
+  material: 'DIAMOND'
+  buy: 21978
+  sell: 10098
+  category: 'auto_preset'
+
+item_595:
+  material: 'EMERALD'
+  buy: 22015
+  sell: 10115
+  category: 'auto_preset'
+
+item_596:
+  material: 'IRON_INGOT'
+  buy: 22052
+  sell: 10132
+  category: 'auto_preset'
+
+item_597:
+  material: 'GOLD_INGOT'
+  buy: 22089
+  sell: 10149
+  category: 'auto_preset'
+
+item_598:
+  material: 'ENDER_PEARL'
+  buy: 22126
+  sell: 10166
+  category: 'auto_preset'
+
+item_599:
+  material: 'GOLDEN_APPLE'
+  buy: 22163
+  sell: 10183
+  category: 'auto_preset'
+
+item_600:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 22200
+  sell: 10200
+  category: 'auto_preset'
+
+item_601:
+  material: 'SHULKER_BOX'
+  buy: 22237
+  sell: 10217
+  category: 'auto_preset'
+
+item_602:
+  material: 'STONE'
+  buy: 22274
+  sell: 10234
+  category: 'auto_preset'
+
+item_603:
+  material: 'COBBLESTONE'
+  buy: 22311
+  sell: 10251
+  category: 'auto_preset'
+
+item_604:
+  material: 'OAK_LOG'
+  buy: 22348
+  sell: 10268
+  category: 'auto_preset'
+
+item_605:
+  material: 'SPRUCE_LOG'
+  buy: 22385
+  sell: 10285
+  category: 'auto_preset'
+
+item_606:
+  material: 'BAMBOO'
+  buy: 22422
+  sell: 10302
+  category: 'auto_preset'
+
+item_607:
+  material: 'SUGAR_CANE'
+  buy: 22459
+  sell: 10319
+  category: 'auto_preset'
+
+item_608:
+  material: 'DIAMOND'
+  buy: 22496
+  sell: 10336
+  category: 'auto_preset'
+
+item_609:
+  material: 'EMERALD'
+  buy: 22533
+  sell: 10353
+  category: 'auto_preset'
+
+item_610:
+  material: 'IRON_INGOT'
+  buy: 22570
+  sell: 10370
+  category: 'auto_preset'
+
+item_611:
+  material: 'GOLD_INGOT'
+  buy: 22607
+  sell: 10387
+  category: 'auto_preset'
+
+item_612:
+  material: 'ENDER_PEARL'
+  buy: 22644
+  sell: 10404
+  category: 'auto_preset'
+
+item_613:
+  material: 'GOLDEN_APPLE'
+  buy: 22681
+  sell: 10421
+  category: 'auto_preset'
+
+item_614:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 22718
+  sell: 10438
+  category: 'auto_preset'
+
+item_615:
+  material: 'SHULKER_BOX'
+  buy: 22755
+  sell: 10455
+  category: 'auto_preset'
+
+item_616:
+  material: 'STONE'
+  buy: 22792
+  sell: 10472
+  category: 'auto_preset'
+
+item_617:
+  material: 'COBBLESTONE'
+  buy: 22829
+  sell: 10489
+  category: 'auto_preset'
+
+item_618:
+  material: 'OAK_LOG'
+  buy: 22866
+  sell: 10506
+  category: 'auto_preset'
+
+item_619:
+  material: 'SPRUCE_LOG'
+  buy: 22903
+  sell: 10523
+  category: 'auto_preset'
+
+item_620:
+  material: 'BAMBOO'
+  buy: 22940
+  sell: 10540
+  category: 'auto_preset'
+
+item_621:
+  material: 'SUGAR_CANE'
+  buy: 22977
+  sell: 10557
+  category: 'auto_preset'
+
+item_622:
+  material: 'DIAMOND'
+  buy: 23014
+  sell: 10574
+  category: 'auto_preset'
+
+item_623:
+  material: 'EMERALD'
+  buy: 23051
+  sell: 10591
+  category: 'auto_preset'
+
+item_624:
+  material: 'IRON_INGOT'
+  buy: 23088
+  sell: 10608
+  category: 'auto_preset'
+
+item_625:
+  material: 'GOLD_INGOT'
+  buy: 23125
+  sell: 10625
+  category: 'auto_preset'
+
+item_626:
+  material: 'ENDER_PEARL'
+  buy: 23162
+  sell: 10642
+  category: 'auto_preset'
+
+item_627:
+  material: 'GOLDEN_APPLE'
+  buy: 23199
+  sell: 10659
+  category: 'auto_preset'
+
+item_628:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 23236
+  sell: 10676
+  category: 'auto_preset'
+
+item_629:
+  material: 'SHULKER_BOX'
+  buy: 23273
+  sell: 10693
+  category: 'auto_preset'
+
+item_630:
+  material: 'STONE'
+  buy: 23310
+  sell: 10710
+  category: 'auto_preset'
+
+item_631:
+  material: 'COBBLESTONE'
+  buy: 23347
+  sell: 10727
+  category: 'auto_preset'
+
+item_632:
+  material: 'OAK_LOG'
+  buy: 23384
+  sell: 10744
+  category: 'auto_preset'
+
+item_633:
+  material: 'SPRUCE_LOG'
+  buy: 23421
+  sell: 10761
+  category: 'auto_preset'
+
+item_634:
+  material: 'BAMBOO'
+  buy: 23458
+  sell: 10778
+  category: 'auto_preset'
+
+item_635:
+  material: 'SUGAR_CANE'
+  buy: 23495
+  sell: 10795
+  category: 'auto_preset'
+
+item_636:
+  material: 'DIAMOND'
+  buy: 23532
+  sell: 10812
+  category: 'auto_preset'
+
+item_637:
+  material: 'EMERALD'
+  buy: 23569
+  sell: 10829
+  category: 'auto_preset'
+
+item_638:
+  material: 'IRON_INGOT'
+  buy: 23606
+  sell: 10846
+  category: 'auto_preset'
+
+item_639:
+  material: 'GOLD_INGOT'
+  buy: 23643
+  sell: 10863
+  category: 'auto_preset'
+
+item_640:
+  material: 'ENDER_PEARL'
+  buy: 23680
+  sell: 10880
+  category: 'auto_preset'
+
+item_641:
+  material: 'GOLDEN_APPLE'
+  buy: 23717
+  sell: 10897
+  category: 'auto_preset'
+
+item_642:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 23754
+  sell: 10914
+  category: 'auto_preset'
+
+item_643:
+  material: 'SHULKER_BOX'
+  buy: 23791
+  sell: 10931
+  category: 'auto_preset'
+
+item_644:
+  material: 'STONE'
+  buy: 23828
+  sell: 10948
+  category: 'auto_preset'
+
+item_645:
+  material: 'COBBLESTONE'
+  buy: 23865
+  sell: 10965
+  category: 'auto_preset'
+
+item_646:
+  material: 'OAK_LOG'
+  buy: 23902
+  sell: 10982
+  category: 'auto_preset'
+
+item_647:
+  material: 'SPRUCE_LOG'
+  buy: 23939
+  sell: 10999
+  category: 'auto_preset'
+
+item_648:
+  material: 'BAMBOO'
+  buy: 23976
+  sell: 11016
+  category: 'auto_preset'
+
+item_649:
+  material: 'SUGAR_CANE'
+  buy: 24013
+  sell: 11033
+  category: 'auto_preset'
+
+item_650:
+  material: 'DIAMOND'
+  buy: 24050
+  sell: 11050
+  category: 'auto_preset'
+
+item_651:
+  material: 'EMERALD'
+  buy: 24087
+  sell: 11067
+  category: 'auto_preset'
+
+item_652:
+  material: 'IRON_INGOT'
+  buy: 24124
+  sell: 11084
+  category: 'auto_preset'
+
+item_653:
+  material: 'GOLD_INGOT'
+  buy: 24161
+  sell: 11101
+  category: 'auto_preset'
+
+item_654:
+  material: 'ENDER_PEARL'
+  buy: 24198
+  sell: 11118
+  category: 'auto_preset'
+
+item_655:
+  material: 'GOLDEN_APPLE'
+  buy: 24235
+  sell: 11135
+  category: 'auto_preset'
+
+item_656:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 24272
+  sell: 11152
+  category: 'auto_preset'
+
+item_657:
+  material: 'SHULKER_BOX'
+  buy: 24309
+  sell: 11169
+  category: 'auto_preset'
+
+item_658:
+  material: 'STONE'
+  buy: 24346
+  sell: 11186
+  category: 'auto_preset'
+
+item_659:
+  material: 'COBBLESTONE'
+  buy: 24383
+  sell: 11203
+  category: 'auto_preset'
+
+item_660:
+  material: 'OAK_LOG'
+  buy: 24420
+  sell: 11220
+  category: 'auto_preset'
+
+item_661:
+  material: 'SPRUCE_LOG'
+  buy: 24457
+  sell: 11237
+  category: 'auto_preset'
+
+item_662:
+  material: 'BAMBOO'
+  buy: 24494
+  sell: 11254
+  category: 'auto_preset'
+
+item_663:
+  material: 'SUGAR_CANE'
+  buy: 24531
+  sell: 11271
+  category: 'auto_preset'
+
+item_664:
+  material: 'DIAMOND'
+  buy: 24568
+  sell: 11288
+  category: 'auto_preset'
+
+item_665:
+  material: 'EMERALD'
+  buy: 24605
+  sell: 11305
+  category: 'auto_preset'
+
+item_666:
+  material: 'IRON_INGOT'
+  buy: 24642
+  sell: 11322
+  category: 'auto_preset'
+
+item_667:
+  material: 'GOLD_INGOT'
+  buy: 24679
+  sell: 11339
+  category: 'auto_preset'
+
+item_668:
+  material: 'ENDER_PEARL'
+  buy: 24716
+  sell: 11356
+  category: 'auto_preset'
+
+item_669:
+  material: 'GOLDEN_APPLE'
+  buy: 24753
+  sell: 11373
+  category: 'auto_preset'
+
+item_670:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 24790
+  sell: 11390
+  category: 'auto_preset'
+
+item_671:
+  material: 'SHULKER_BOX'
+  buy: 24827
+  sell: 11407
+  category: 'auto_preset'
+
+item_672:
+  material: 'STONE'
+  buy: 24864
+  sell: 11424
+  category: 'auto_preset'
+
+item_673:
+  material: 'COBBLESTONE'
+  buy: 24901
+  sell: 11441
+  category: 'auto_preset'
+
+item_674:
+  material: 'OAK_LOG'
+  buy: 24938
+  sell: 11458
+  category: 'auto_preset'
+
+item_675:
+  material: 'SPRUCE_LOG'
+  buy: 24975
+  sell: 11475
+  category: 'auto_preset'
+
+item_676:
+  material: 'BAMBOO'
+  buy: 25012
+  sell: 11492
+  category: 'auto_preset'
+
+item_677:
+  material: 'SUGAR_CANE'
+  buy: 25049
+  sell: 11509
+  category: 'auto_preset'
+
+item_678:
+  material: 'DIAMOND'
+  buy: 25086
+  sell: 11526
+  category: 'auto_preset'
+
+item_679:
+  material: 'EMERALD'
+  buy: 25123
+  sell: 11543
+  category: 'auto_preset'
+
+item_680:
+  material: 'IRON_INGOT'
+  buy: 25160
+  sell: 11560
+  category: 'auto_preset'
+
+item_681:
+  material: 'GOLD_INGOT'
+  buy: 25197
+  sell: 11577
+  category: 'auto_preset'
+
+item_682:
+  material: 'ENDER_PEARL'
+  buy: 25234
+  sell: 11594
+  category: 'auto_preset'
+
+item_683:
+  material: 'GOLDEN_APPLE'
+  buy: 25271
+  sell: 11611
+  category: 'auto_preset'
+
+item_684:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 25308
+  sell: 11628
+  category: 'auto_preset'
+
+item_685:
+  material: 'SHULKER_BOX'
+  buy: 25345
+  sell: 11645
+  category: 'auto_preset'
+
+item_686:
+  material: 'STONE'
+  buy: 25382
+  sell: 11662
+  category: 'auto_preset'
+
+item_687:
+  material: 'COBBLESTONE'
+  buy: 25419
+  sell: 11679
+  category: 'auto_preset'
+
+item_688:
+  material: 'OAK_LOG'
+  buy: 25456
+  sell: 11696
+  category: 'auto_preset'
+
+item_689:
+  material: 'SPRUCE_LOG'
+  buy: 25493
+  sell: 11713
+  category: 'auto_preset'
+
+item_690:
+  material: 'BAMBOO'
+  buy: 25530
+  sell: 11730
+  category: 'auto_preset'
+
+item_691:
+  material: 'SUGAR_CANE'
+  buy: 25567
+  sell: 11747
+  category: 'auto_preset'
+
+item_692:
+  material: 'DIAMOND'
+  buy: 25604
+  sell: 11764
+  category: 'auto_preset'
+
+item_693:
+  material: 'EMERALD'
+  buy: 25641
+  sell: 11781
+  category: 'auto_preset'
+
+item_694:
+  material: 'IRON_INGOT'
+  buy: 25678
+  sell: 11798
+  category: 'auto_preset'
+
+item_695:
+  material: 'GOLD_INGOT'
+  buy: 25715
+  sell: 11815
+  category: 'auto_preset'
+
+item_696:
+  material: 'ENDER_PEARL'
+  buy: 25752
+  sell: 11832
+  category: 'auto_preset'
+
+item_697:
+  material: 'GOLDEN_APPLE'
+  buy: 25789
+  sell: 11849
+  category: 'auto_preset'
+
+item_698:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 25826
+  sell: 11866
+  category: 'auto_preset'
+
+item_699:
+  material: 'SHULKER_BOX'
+  buy: 25863
+  sell: 11883
+  category: 'auto_preset'
+
+item_700:
+  material: 'STONE'
+  buy: 25900
+  sell: 11900
+  category: 'auto_preset'
+
+item_701:
+  material: 'COBBLESTONE'
+  buy: 25937
+  sell: 11917
+  category: 'auto_preset'
+
+item_702:
+  material: 'OAK_LOG'
+  buy: 25974
+  sell: 11934
+  category: 'auto_preset'
+
+item_703:
+  material: 'SPRUCE_LOG'
+  buy: 26011
+  sell: 11951
+  category: 'auto_preset'
+
+item_704:
+  material: 'BAMBOO'
+  buy: 26048
+  sell: 11968
+  category: 'auto_preset'
+
+item_705:
+  material: 'SUGAR_CANE'
+  buy: 26085
+  sell: 11985
+  category: 'auto_preset'
+
+item_706:
+  material: 'DIAMOND'
+  buy: 26122
+  sell: 12002
+  category: 'auto_preset'
+
+item_707:
+  material: 'EMERALD'
+  buy: 26159
+  sell: 12019
+  category: 'auto_preset'
+
+item_708:
+  material: 'IRON_INGOT'
+  buy: 26196
+  sell: 12036
+  category: 'auto_preset'
+
+item_709:
+  material: 'GOLD_INGOT'
+  buy: 26233
+  sell: 12053
+  category: 'auto_preset'
+
+item_710:
+  material: 'ENDER_PEARL'
+  buy: 26270
+  sell: 12070
+  category: 'auto_preset'
+
+item_711:
+  material: 'GOLDEN_APPLE'
+  buy: 26307
+  sell: 12087
+  category: 'auto_preset'
+
+item_712:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 26344
+  sell: 12104
+  category: 'auto_preset'
+
+item_713:
+  material: 'SHULKER_BOX'
+  buy: 26381
+  sell: 12121
+  category: 'auto_preset'
+
+item_714:
+  material: 'STONE'
+  buy: 26418
+  sell: 12138
+  category: 'auto_preset'
+
+item_715:
+  material: 'COBBLESTONE'
+  buy: 26455
+  sell: 12155
+  category: 'auto_preset'
+
+item_716:
+  material: 'OAK_LOG'
+  buy: 26492
+  sell: 12172
+  category: 'auto_preset'
+
+item_717:
+  material: 'SPRUCE_LOG'
+  buy: 26529
+  sell: 12189
+  category: 'auto_preset'
+
+item_718:
+  material: 'BAMBOO'
+  buy: 26566
+  sell: 12206
+  category: 'auto_preset'
+
+item_719:
+  material: 'SUGAR_CANE'
+  buy: 26603
+  sell: 12223
+  category: 'auto_preset'
+
+item_720:
+  material: 'DIAMOND'
+  buy: 26640
+  sell: 12240
+  category: 'auto_preset'
+
+item_721:
+  material: 'EMERALD'
+  buy: 26677
+  sell: 12257
+  category: 'auto_preset'
+
+item_722:
+  material: 'IRON_INGOT'
+  buy: 26714
+  sell: 12274
+  category: 'auto_preset'
+
+item_723:
+  material: 'GOLD_INGOT'
+  buy: 26751
+  sell: 12291
+  category: 'auto_preset'
+
+item_724:
+  material: 'ENDER_PEARL'
+  buy: 26788
+  sell: 12308
+  category: 'auto_preset'
+
+item_725:
+  material: 'GOLDEN_APPLE'
+  buy: 26825
+  sell: 12325
+  category: 'auto_preset'
+
+item_726:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 26862
+  sell: 12342
+  category: 'auto_preset'
+
+item_727:
+  material: 'SHULKER_BOX'
+  buy: 26899
+  sell: 12359
+  category: 'auto_preset'
+
+item_728:
+  material: 'STONE'
+  buy: 26936
+  sell: 12376
+  category: 'auto_preset'
+
+item_729:
+  material: 'COBBLESTONE'
+  buy: 26973
+  sell: 12393
+  category: 'auto_preset'
+
+item_730:
+  material: 'OAK_LOG'
+  buy: 27010
+  sell: 12410
+  category: 'auto_preset'
+
+item_731:
+  material: 'SPRUCE_LOG'
+  buy: 27047
+  sell: 12427
+  category: 'auto_preset'
+
+item_732:
+  material: 'BAMBOO'
+  buy: 27084
+  sell: 12444
+  category: 'auto_preset'
+
+item_733:
+  material: 'SUGAR_CANE'
+  buy: 27121
+  sell: 12461
+  category: 'auto_preset'
+
+item_734:
+  material: 'DIAMOND'
+  buy: 27158
+  sell: 12478
+  category: 'auto_preset'
+
+item_735:
+  material: 'EMERALD'
+  buy: 27195
+  sell: 12495
+  category: 'auto_preset'
+
+item_736:
+  material: 'IRON_INGOT'
+  buy: 27232
+  sell: 12512
+  category: 'auto_preset'
+
+item_737:
+  material: 'GOLD_INGOT'
+  buy: 27269
+  sell: 12529
+  category: 'auto_preset'
+
+item_738:
+  material: 'ENDER_PEARL'
+  buy: 27306
+  sell: 12546
+  category: 'auto_preset'
+
+item_739:
+  material: 'GOLDEN_APPLE'
+  buy: 27343
+  sell: 12563
+  category: 'auto_preset'
+
+item_740:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 27380
+  sell: 12580
+  category: 'auto_preset'
+
+item_741:
+  material: 'SHULKER_BOX'
+  buy: 27417
+  sell: 12597
+  category: 'auto_preset'
+
+item_742:
+  material: 'STONE'
+  buy: 27454
+  sell: 12614
+  category: 'auto_preset'
+
+item_743:
+  material: 'COBBLESTONE'
+  buy: 27491
+  sell: 12631
+  category: 'auto_preset'
+
+item_744:
+  material: 'OAK_LOG'
+  buy: 27528
+  sell: 12648
+  category: 'auto_preset'
+
+item_745:
+  material: 'SPRUCE_LOG'
+  buy: 27565
+  sell: 12665
+  category: 'auto_preset'
+
+item_746:
+  material: 'BAMBOO'
+  buy: 27602
+  sell: 12682
+  category: 'auto_preset'
+
+item_747:
+  material: 'SUGAR_CANE'
+  buy: 27639
+  sell: 12699
+  category: 'auto_preset'
+
+item_748:
+  material: 'DIAMOND'
+  buy: 27676
+  sell: 12716
+  category: 'auto_preset'
+
+item_749:
+  material: 'EMERALD'
+  buy: 27713
+  sell: 12733
+  category: 'auto_preset'
+
+item_750:
+  material: 'IRON_INGOT'
+  buy: 27750
+  sell: 12750
+  category: 'auto_preset'
+
+item_751:
+  material: 'GOLD_INGOT'
+  buy: 27787
+  sell: 12767
+  category: 'auto_preset'
+
+item_752:
+  material: 'ENDER_PEARL'
+  buy: 27824
+  sell: 12784
+  category: 'auto_preset'
+
+item_753:
+  material: 'GOLDEN_APPLE'
+  buy: 27861
+  sell: 12801
+  category: 'auto_preset'
+
+item_754:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 27898
+  sell: 12818
+  category: 'auto_preset'
+
+item_755:
+  material: 'SHULKER_BOX'
+  buy: 27935
+  sell: 12835
+  category: 'auto_preset'
+
+item_756:
+  material: 'STONE'
+  buy: 27972
+  sell: 12852
+  category: 'auto_preset'
+
+item_757:
+  material: 'COBBLESTONE'
+  buy: 28009
+  sell: 12869
+  category: 'auto_preset'
+
+item_758:
+  material: 'OAK_LOG'
+  buy: 28046
+  sell: 12886
+  category: 'auto_preset'
+
+item_759:
+  material: 'SPRUCE_LOG'
+  buy: 28083
+  sell: 12903
+  category: 'auto_preset'
+
+item_760:
+  material: 'BAMBOO'
+  buy: 28120
+  sell: 12920
+  category: 'auto_preset'
+
+item_761:
+  material: 'SUGAR_CANE'
+  buy: 28157
+  sell: 12937
+  category: 'auto_preset'
+
+item_762:
+  material: 'DIAMOND'
+  buy: 28194
+  sell: 12954
+  category: 'auto_preset'
+
+item_763:
+  material: 'EMERALD'
+  buy: 28231
+  sell: 12971
+  category: 'auto_preset'
+
+item_764:
+  material: 'IRON_INGOT'
+  buy: 28268
+  sell: 12988
+  category: 'auto_preset'
+
+item_765:
+  material: 'GOLD_INGOT'
+  buy: 28305
+  sell: 13005
+  category: 'auto_preset'
+
+item_766:
+  material: 'ENDER_PEARL'
+  buy: 28342
+  sell: 13022
+  category: 'auto_preset'
+
+item_767:
+  material: 'GOLDEN_APPLE'
+  buy: 28379
+  sell: 13039
+  category: 'auto_preset'
+
+item_768:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 28416
+  sell: 13056
+  category: 'auto_preset'
+
+item_769:
+  material: 'SHULKER_BOX'
+  buy: 28453
+  sell: 13073
+  category: 'auto_preset'
+
+item_770:
+  material: 'STONE'
+  buy: 28490
+  sell: 13090
+  category: 'auto_preset'
+
+item_771:
+  material: 'COBBLESTONE'
+  buy: 28527
+  sell: 13107
+  category: 'auto_preset'
+
+item_772:
+  material: 'OAK_LOG'
+  buy: 28564
+  sell: 13124
+  category: 'auto_preset'
+
+item_773:
+  material: 'SPRUCE_LOG'
+  buy: 28601
+  sell: 13141
+  category: 'auto_preset'
+
+item_774:
+  material: 'BAMBOO'
+  buy: 28638
+  sell: 13158
+  category: 'auto_preset'
+
+item_775:
+  material: 'SUGAR_CANE'
+  buy: 28675
+  sell: 13175
+  category: 'auto_preset'
+
+item_776:
+  material: 'DIAMOND'
+  buy: 28712
+  sell: 13192
+  category: 'auto_preset'
+
+item_777:
+  material: 'EMERALD'
+  buy: 28749
+  sell: 13209
+  category: 'auto_preset'
+
+item_778:
+  material: 'IRON_INGOT'
+  buy: 28786
+  sell: 13226
+  category: 'auto_preset'
+
+item_779:
+  material: 'GOLD_INGOT'
+  buy: 28823
+  sell: 13243
+  category: 'auto_preset'
+
+item_780:
+  material: 'ENDER_PEARL'
+  buy: 28860
+  sell: 13260
+  category: 'auto_preset'
+
+item_781:
+  material: 'GOLDEN_APPLE'
+  buy: 28897
+  sell: 13277
+  category: 'auto_preset'
+
+item_782:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 28934
+  sell: 13294
+  category: 'auto_preset'
+
+item_783:
+  material: 'SHULKER_BOX'
+  buy: 28971
+  sell: 13311
+  category: 'auto_preset'
+
+item_784:
+  material: 'STONE'
+  buy: 29008
+  sell: 13328
+  category: 'auto_preset'
+
+item_785:
+  material: 'COBBLESTONE'
+  buy: 29045
+  sell: 13345
+  category: 'auto_preset'
+
+item_786:
+  material: 'OAK_LOG'
+  buy: 29082
+  sell: 13362
+  category: 'auto_preset'
+
+item_787:
+  material: 'SPRUCE_LOG'
+  buy: 29119
+  sell: 13379
+  category: 'auto_preset'
+
+item_788:
+  material: 'BAMBOO'
+  buy: 29156
+  sell: 13396
+  category: 'auto_preset'
+
+item_789:
+  material: 'SUGAR_CANE'
+  buy: 29193
+  sell: 13413
+  category: 'auto_preset'
+
+item_790:
+  material: 'DIAMOND'
+  buy: 29230
+  sell: 13430
+  category: 'auto_preset'
+
+item_791:
+  material: 'EMERALD'
+  buy: 29267
+  sell: 13447
+  category: 'auto_preset'
+
+item_792:
+  material: 'IRON_INGOT'
+  buy: 29304
+  sell: 13464
+  category: 'auto_preset'
+
+item_793:
+  material: 'GOLD_INGOT'
+  buy: 29341
+  sell: 13481
+  category: 'auto_preset'
+
+item_794:
+  material: 'ENDER_PEARL'
+  buy: 29378
+  sell: 13498
+  category: 'auto_preset'
+
+item_795:
+  material: 'GOLDEN_APPLE'
+  buy: 29415
+  sell: 13515
+  category: 'auto_preset'
+
+item_796:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 29452
+  sell: 13532
+  category: 'auto_preset'
+
+item_797:
+  material: 'SHULKER_BOX'
+  buy: 29489
+  sell: 13549
+  category: 'auto_preset'
+
+item_798:
+  material: 'STONE'
+  buy: 29526
+  sell: 13566
+  category: 'auto_preset'
+
+item_799:
+  material: 'COBBLESTONE'
+  buy: 29563
+  sell: 13583
+  category: 'auto_preset'
+
+item_800:
+  material: 'OAK_LOG'
+  buy: 29600
+  sell: 13600
+  category: 'auto_preset'
+
+item_801:
+  material: 'SPRUCE_LOG'
+  buy: 29637
+  sell: 13617
+  category: 'auto_preset'
+
+item_802:
+  material: 'BAMBOO'
+  buy: 29674
+  sell: 13634
+  category: 'auto_preset'
+
+item_803:
+  material: 'SUGAR_CANE'
+  buy: 29711
+  sell: 13651
+  category: 'auto_preset'
+
+item_804:
+  material: 'DIAMOND'
+  buy: 29748
+  sell: 13668
+  category: 'auto_preset'
+
+item_805:
+  material: 'EMERALD'
+  buy: 29785
+  sell: 13685
+  category: 'auto_preset'
+
+item_806:
+  material: 'IRON_INGOT'
+  buy: 29822
+  sell: 13702
+  category: 'auto_preset'
+
+item_807:
+  material: 'GOLD_INGOT'
+  buy: 29859
+  sell: 13719
+  category: 'auto_preset'
+
+item_808:
+  material: 'ENDER_PEARL'
+  buy: 29896
+  sell: 13736
+  category: 'auto_preset'
+
+item_809:
+  material: 'GOLDEN_APPLE'
+  buy: 29933
+  sell: 13753
+  category: 'auto_preset'
+
+item_810:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 29970
+  sell: 13770
+  category: 'auto_preset'
+
+item_811:
+  material: 'SHULKER_BOX'
+  buy: 30007
+  sell: 13787
+  category: 'auto_preset'
+
+item_812:
+  material: 'STONE'
+  buy: 30044
+  sell: 13804
+  category: 'auto_preset'
+
+item_813:
+  material: 'COBBLESTONE'
+  buy: 30081
+  sell: 13821
+  category: 'auto_preset'
+
+item_814:
+  material: 'OAK_LOG'
+  buy: 30118
+  sell: 13838
+  category: 'auto_preset'
+
+item_815:
+  material: 'SPRUCE_LOG'
+  buy: 30155
+  sell: 13855
+  category: 'auto_preset'
+
+item_816:
+  material: 'BAMBOO'
+  buy: 30192
+  sell: 13872
+  category: 'auto_preset'
+
+item_817:
+  material: 'SUGAR_CANE'
+  buy: 30229
+  sell: 13889
+  category: 'auto_preset'
+
+item_818:
+  material: 'DIAMOND'
+  buy: 30266
+  sell: 13906
+  category: 'auto_preset'
+
+item_819:
+  material: 'EMERALD'
+  buy: 30303
+  sell: 13923
+  category: 'auto_preset'
+
+item_820:
+  material: 'IRON_INGOT'
+  buy: 30340
+  sell: 13940
+  category: 'auto_preset'
+
+item_821:
+  material: 'GOLD_INGOT'
+  buy: 30377
+  sell: 13957
+  category: 'auto_preset'
+
+item_822:
+  material: 'ENDER_PEARL'
+  buy: 30414
+  sell: 13974
+  category: 'auto_preset'
+
+item_823:
+  material: 'GOLDEN_APPLE'
+  buy: 30451
+  sell: 13991
+  category: 'auto_preset'
+
+item_824:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 30488
+  sell: 14008
+  category: 'auto_preset'
+
+item_825:
+  material: 'SHULKER_BOX'
+  buy: 30525
+  sell: 14025
+  category: 'auto_preset'
+
+item_826:
+  material: 'STONE'
+  buy: 30562
+  sell: 14042
+  category: 'auto_preset'
+
+item_827:
+  material: 'COBBLESTONE'
+  buy: 30599
+  sell: 14059
+  category: 'auto_preset'
+
+item_828:
+  material: 'OAK_LOG'
+  buy: 30636
+  sell: 14076
+  category: 'auto_preset'
+
+item_829:
+  material: 'SPRUCE_LOG'
+  buy: 30673
+  sell: 14093
+  category: 'auto_preset'
+
+item_830:
+  material: 'BAMBOO'
+  buy: 30710
+  sell: 14110
+  category: 'auto_preset'
+
+item_831:
+  material: 'SUGAR_CANE'
+  buy: 30747
+  sell: 14127
+  category: 'auto_preset'
+
+item_832:
+  material: 'DIAMOND'
+  buy: 30784
+  sell: 14144
+  category: 'auto_preset'
+
+item_833:
+  material: 'EMERALD'
+  buy: 30821
+  sell: 14161
+  category: 'auto_preset'
+
+item_834:
+  material: 'IRON_INGOT'
+  buy: 30858
+  sell: 14178
+  category: 'auto_preset'
+
+item_835:
+  material: 'GOLD_INGOT'
+  buy: 30895
+  sell: 14195
+  category: 'auto_preset'
+
+item_836:
+  material: 'ENDER_PEARL'
+  buy: 30932
+  sell: 14212
+  category: 'auto_preset'
+
+item_837:
+  material: 'GOLDEN_APPLE'
+  buy: 30969
+  sell: 14229
+  category: 'auto_preset'
+
+item_838:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 31006
+  sell: 14246
+  category: 'auto_preset'
+
+item_839:
+  material: 'SHULKER_BOX'
+  buy: 31043
+  sell: 14263
+  category: 'auto_preset'
+
+item_840:
+  material: 'STONE'
+  buy: 31080
+  sell: 14280
+  category: 'auto_preset'
+
+item_841:
+  material: 'COBBLESTONE'
+  buy: 31117
+  sell: 14297
+  category: 'auto_preset'
+
+item_842:
+  material: 'OAK_LOG'
+  buy: 31154
+  sell: 14314
+  category: 'auto_preset'
+
+item_843:
+  material: 'SPRUCE_LOG'
+  buy: 31191
+  sell: 14331
+  category: 'auto_preset'
+
+item_844:
+  material: 'BAMBOO'
+  buy: 31228
+  sell: 14348
+  category: 'auto_preset'
+
+item_845:
+  material: 'SUGAR_CANE'
+  buy: 31265
+  sell: 14365
+  category: 'auto_preset'
+
+item_846:
+  material: 'DIAMOND'
+  buy: 31302
+  sell: 14382
+  category: 'auto_preset'
+
+item_847:
+  material: 'EMERALD'
+  buy: 31339
+  sell: 14399
+  category: 'auto_preset'
+
+item_848:
+  material: 'IRON_INGOT'
+  buy: 31376
+  sell: 14416
+  category: 'auto_preset'
+
+item_849:
+  material: 'GOLD_INGOT'
+  buy: 31413
+  sell: 14433
+  category: 'auto_preset'
+
+item_850:
+  material: 'ENDER_PEARL'
+  buy: 31450
+  sell: 14450
+  category: 'auto_preset'
+
+item_851:
+  material: 'GOLDEN_APPLE'
+  buy: 31487
+  sell: 14467
+  category: 'auto_preset'
+
+item_852:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 31524
+  sell: 14484
+  category: 'auto_preset'
+
+item_853:
+  material: 'SHULKER_BOX'
+  buy: 31561
+  sell: 14501
+  category: 'auto_preset'
+
+item_854:
+  material: 'STONE'
+  buy: 31598
+  sell: 14518
+  category: 'auto_preset'
+
+item_855:
+  material: 'COBBLESTONE'
+  buy: 31635
+  sell: 14535
+  category: 'auto_preset'
+
+item_856:
+  material: 'OAK_LOG'
+  buy: 31672
+  sell: 14552
+  category: 'auto_preset'
+
+item_857:
+  material: 'SPRUCE_LOG'
+  buy: 31709
+  sell: 14569
+  category: 'auto_preset'
+
+item_858:
+  material: 'BAMBOO'
+  buy: 31746
+  sell: 14586
+  category: 'auto_preset'
+
+item_859:
+  material: 'SUGAR_CANE'
+  buy: 31783
+  sell: 14603
+  category: 'auto_preset'
+
+item_860:
+  material: 'DIAMOND'
+  buy: 31820
+  sell: 14620
+  category: 'auto_preset'
+
+item_861:
+  material: 'EMERALD'
+  buy: 31857
+  sell: 14637
+  category: 'auto_preset'
+
+item_862:
+  material: 'IRON_INGOT'
+  buy: 31894
+  sell: 14654
+  category: 'auto_preset'
+
+item_863:
+  material: 'GOLD_INGOT'
+  buy: 31931
+  sell: 14671
+  category: 'auto_preset'
+
+item_864:
+  material: 'ENDER_PEARL'
+  buy: 31968
+  sell: 14688
+  category: 'auto_preset'
+
+item_865:
+  material: 'GOLDEN_APPLE'
+  buy: 32005
+  sell: 14705
+  category: 'auto_preset'
+
+item_866:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 32042
+  sell: 14722
+  category: 'auto_preset'
+
+item_867:
+  material: 'SHULKER_BOX'
+  buy: 32079
+  sell: 14739
+  category: 'auto_preset'
+
+item_868:
+  material: 'STONE'
+  buy: 32116
+  sell: 14756
+  category: 'auto_preset'
+
+item_869:
+  material: 'COBBLESTONE'
+  buy: 32153
+  sell: 14773
+  category: 'auto_preset'
+
+item_870:
+  material: 'OAK_LOG'
+  buy: 32190
+  sell: 14790
+  category: 'auto_preset'
+
+item_871:
+  material: 'SPRUCE_LOG'
+  buy: 32227
+  sell: 14807
+  category: 'auto_preset'
+
+item_872:
+  material: 'BAMBOO'
+  buy: 32264
+  sell: 14824
+  category: 'auto_preset'
+
+item_873:
+  material: 'SUGAR_CANE'
+  buy: 32301
+  sell: 14841
+  category: 'auto_preset'
+
+item_874:
+  material: 'DIAMOND'
+  buy: 32338
+  sell: 14858
+  category: 'auto_preset'
+
+item_875:
+  material: 'EMERALD'
+  buy: 32375
+  sell: 14875
+  category: 'auto_preset'
+
+item_876:
+  material: 'IRON_INGOT'
+  buy: 32412
+  sell: 14892
+  category: 'auto_preset'
+
+item_877:
+  material: 'GOLD_INGOT'
+  buy: 32449
+  sell: 14909
+  category: 'auto_preset'
+
+item_878:
+  material: 'ENDER_PEARL'
+  buy: 32486
+  sell: 14926
+  category: 'auto_preset'
+
+item_879:
+  material: 'GOLDEN_APPLE'
+  buy: 32523
+  sell: 14943
+  category: 'auto_preset'
+
+item_880:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 32560
+  sell: 14960
+  category: 'auto_preset'
+
+item_881:
+  material: 'SHULKER_BOX'
+  buy: 32597
+  sell: 14977
+  category: 'auto_preset'
+
+item_882:
+  material: 'STONE'
+  buy: 32634
+  sell: 14994
+  category: 'auto_preset'
+
+item_883:
+  material: 'COBBLESTONE'
+  buy: 32671
+  sell: 15011
+  category: 'auto_preset'
+
+item_884:
+  material: 'OAK_LOG'
+  buy: 32708
+  sell: 15028
+  category: 'auto_preset'
+
+item_885:
+  material: 'SPRUCE_LOG'
+  buy: 32745
+  sell: 15045
+  category: 'auto_preset'
+
+item_886:
+  material: 'BAMBOO'
+  buy: 32782
+  sell: 15062
+  category: 'auto_preset'
+
+item_887:
+  material: 'SUGAR_CANE'
+  buy: 32819
+  sell: 15079
+  category: 'auto_preset'
+
+item_888:
+  material: 'DIAMOND'
+  buy: 32856
+  sell: 15096
+  category: 'auto_preset'
+
+item_889:
+  material: 'EMERALD'
+  buy: 32893
+  sell: 15113
+  category: 'auto_preset'
+
+item_890:
+  material: 'IRON_INGOT'
+  buy: 32930
+  sell: 15130
+  category: 'auto_preset'
+
+item_891:
+  material: 'GOLD_INGOT'
+  buy: 32967
+  sell: 15147
+  category: 'auto_preset'
+
+item_892:
+  material: 'ENDER_PEARL'
+  buy: 33004
+  sell: 15164
+  category: 'auto_preset'
+
+item_893:
+  material: 'GOLDEN_APPLE'
+  buy: 33041
+  sell: 15181
+  category: 'auto_preset'
+
+item_894:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 33078
+  sell: 15198
+  category: 'auto_preset'
+
+item_895:
+  material: 'SHULKER_BOX'
+  buy: 33115
+  sell: 15215
+  category: 'auto_preset'
+
+item_896:
+  material: 'STONE'
+  buy: 33152
+  sell: 15232
+  category: 'auto_preset'
+
+item_897:
+  material: 'COBBLESTONE'
+  buy: 33189
+  sell: 15249
+  category: 'auto_preset'
+
+item_898:
+  material: 'OAK_LOG'
+  buy: 33226
+  sell: 15266
+  category: 'auto_preset'
+
+item_899:
+  material: 'SPRUCE_LOG'
+  buy: 33263
+  sell: 15283
+  category: 'auto_preset'
+
+item_900:
+  material: 'BAMBOO'
+  buy: 33300
+  sell: 15300
+  category: 'auto_preset'
+
+item_901:
+  material: 'SUGAR_CANE'
+  buy: 33337
+  sell: 15317
+  category: 'auto_preset'
+
+item_902:
+  material: 'DIAMOND'
+  buy: 33374
+  sell: 15334
+  category: 'auto_preset'
+
+item_903:
+  material: 'EMERALD'
+  buy: 33411
+  sell: 15351
+  category: 'auto_preset'
+
+item_904:
+  material: 'IRON_INGOT'
+  buy: 33448
+  sell: 15368
+  category: 'auto_preset'
+
+item_905:
+  material: 'GOLD_INGOT'
+  buy: 33485
+  sell: 15385
+  category: 'auto_preset'
+
+item_906:
+  material: 'ENDER_PEARL'
+  buy: 33522
+  sell: 15402
+  category: 'auto_preset'
+
+item_907:
+  material: 'GOLDEN_APPLE'
+  buy: 33559
+  sell: 15419
+  category: 'auto_preset'
+
+item_908:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 33596
+  sell: 15436
+  category: 'auto_preset'
+
+item_909:
+  material: 'SHULKER_BOX'
+  buy: 33633
+  sell: 15453
+  category: 'auto_preset'
+
+item_910:
+  material: 'STONE'
+  buy: 33670
+  sell: 15470
+  category: 'auto_preset'
+
+item_911:
+  material: 'COBBLESTONE'
+  buy: 33707
+  sell: 15487
+  category: 'auto_preset'
+
+item_912:
+  material: 'OAK_LOG'
+  buy: 33744
+  sell: 15504
+  category: 'auto_preset'
+
+item_913:
+  material: 'SPRUCE_LOG'
+  buy: 33781
+  sell: 15521
+  category: 'auto_preset'
+
+item_914:
+  material: 'BAMBOO'
+  buy: 33818
+  sell: 15538
+  category: 'auto_preset'
+
+item_915:
+  material: 'SUGAR_CANE'
+  buy: 33855
+  sell: 15555
+  category: 'auto_preset'
+
+item_916:
+  material: 'DIAMOND'
+  buy: 33892
+  sell: 15572
+  category: 'auto_preset'
+
+item_917:
+  material: 'EMERALD'
+  buy: 33929
+  sell: 15589
+  category: 'auto_preset'
+
+item_918:
+  material: 'IRON_INGOT'
+  buy: 33966
+  sell: 15606
+  category: 'auto_preset'
+
+item_919:
+  material: 'GOLD_INGOT'
+  buy: 34003
+  sell: 15623
+  category: 'auto_preset'
+
+item_920:
+  material: 'ENDER_PEARL'
+  buy: 34040
+  sell: 15640
+  category: 'auto_preset'
+
+item_921:
+  material: 'GOLDEN_APPLE'
+  buy: 34077
+  sell: 15657
+  category: 'auto_preset'
+
+item_922:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 34114
+  sell: 15674
+  category: 'auto_preset'
+
+item_923:
+  material: 'SHULKER_BOX'
+  buy: 34151
+  sell: 15691
+  category: 'auto_preset'
+
+item_924:
+  material: 'STONE'
+  buy: 34188
+  sell: 15708
+  category: 'auto_preset'
+
+item_925:
+  material: 'COBBLESTONE'
+  buy: 34225
+  sell: 15725
+  category: 'auto_preset'
+
+item_926:
+  material: 'OAK_LOG'
+  buy: 34262
+  sell: 15742
+  category: 'auto_preset'
+
+item_927:
+  material: 'SPRUCE_LOG'
+  buy: 34299
+  sell: 15759
+  category: 'auto_preset'
+
+item_928:
+  material: 'BAMBOO'
+  buy: 34336
+  sell: 15776
+  category: 'auto_preset'
+
+item_929:
+  material: 'SUGAR_CANE'
+  buy: 34373
+  sell: 15793
+  category: 'auto_preset'
+
+item_930:
+  material: 'DIAMOND'
+  buy: 34410
+  sell: 15810
+  category: 'auto_preset'
+
+item_931:
+  material: 'EMERALD'
+  buy: 34447
+  sell: 15827
+  category: 'auto_preset'
+
+item_932:
+  material: 'IRON_INGOT'
+  buy: 34484
+  sell: 15844
+  category: 'auto_preset'
+
+item_933:
+  material: 'GOLD_INGOT'
+  buy: 34521
+  sell: 15861
+  category: 'auto_preset'
+
+item_934:
+  material: 'ENDER_PEARL'
+  buy: 34558
+  sell: 15878
+  category: 'auto_preset'
+
+item_935:
+  material: 'GOLDEN_APPLE'
+  buy: 34595
+  sell: 15895
+  category: 'auto_preset'
+
+item_936:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 34632
+  sell: 15912
+  category: 'auto_preset'
+
+item_937:
+  material: 'SHULKER_BOX'
+  buy: 34669
+  sell: 15929
+  category: 'auto_preset'
+
+item_938:
+  material: 'STONE'
+  buy: 34706
+  sell: 15946
+  category: 'auto_preset'
+
+item_939:
+  material: 'COBBLESTONE'
+  buy: 34743
+  sell: 15963
+  category: 'auto_preset'
+
+item_940:
+  material: 'OAK_LOG'
+  buy: 34780
+  sell: 15980
+  category: 'auto_preset'
+
+item_941:
+  material: 'SPRUCE_LOG'
+  buy: 34817
+  sell: 15997
+  category: 'auto_preset'
+
+item_942:
+  material: 'BAMBOO'
+  buy: 34854
+  sell: 16014
+  category: 'auto_preset'
+
+item_943:
+  material: 'SUGAR_CANE'
+  buy: 34891
+  sell: 16031
+  category: 'auto_preset'
+
+item_944:
+  material: 'DIAMOND'
+  buy: 34928
+  sell: 16048
+  category: 'auto_preset'
+
+item_945:
+  material: 'EMERALD'
+  buy: 34965
+  sell: 16065
+  category: 'auto_preset'
+
+item_946:
+  material: 'IRON_INGOT'
+  buy: 35002
+  sell: 16082
+  category: 'auto_preset'
+
+item_947:
+  material: 'GOLD_INGOT'
+  buy: 35039
+  sell: 16099
+  category: 'auto_preset'
+
+item_948:
+  material: 'ENDER_PEARL'
+  buy: 35076
+  sell: 16116
+  category: 'auto_preset'
+
+item_949:
+  material: 'GOLDEN_APPLE'
+  buy: 35113
+  sell: 16133
+  category: 'auto_preset'
+
+item_950:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 35150
+  sell: 16150
+  category: 'auto_preset'
+
+item_951:
+  material: 'SHULKER_BOX'
+  buy: 35187
+  sell: 16167
+  category: 'auto_preset'
+
+item_952:
+  material: 'STONE'
+  buy: 35224
+  sell: 16184
+  category: 'auto_preset'
+
+item_953:
+  material: 'COBBLESTONE'
+  buy: 35261
+  sell: 16201
+  category: 'auto_preset'
+
+item_954:
+  material: 'OAK_LOG'
+  buy: 35298
+  sell: 16218
+  category: 'auto_preset'
+
+item_955:
+  material: 'SPRUCE_LOG'
+  buy: 35335
+  sell: 16235
+  category: 'auto_preset'
+
+item_956:
+  material: 'BAMBOO'
+  buy: 35372
+  sell: 16252
+  category: 'auto_preset'
+
+item_957:
+  material: 'SUGAR_CANE'
+  buy: 35409
+  sell: 16269
+  category: 'auto_preset'
+
+item_958:
+  material: 'DIAMOND'
+  buy: 35446
+  sell: 16286
+  category: 'auto_preset'
+
+item_959:
+  material: 'EMERALD'
+  buy: 35483
+  sell: 16303
+  category: 'auto_preset'
+
+item_960:
+  material: 'IRON_INGOT'
+  buy: 35520
+  sell: 16320
+  category: 'auto_preset'
+
+item_961:
+  material: 'GOLD_INGOT'
+  buy: 35557
+  sell: 16337
+  category: 'auto_preset'
+
+item_962:
+  material: 'ENDER_PEARL'
+  buy: 35594
+  sell: 16354
+  category: 'auto_preset'
+
+item_963:
+  material: 'GOLDEN_APPLE'
+  buy: 35631
+  sell: 16371
+  category: 'auto_preset'
+
+item_964:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 35668
+  sell: 16388
+  category: 'auto_preset'
+
+item_965:
+  material: 'SHULKER_BOX'
+  buy: 35705
+  sell: 16405
+  category: 'auto_preset'
+
+item_966:
+  material: 'STONE'
+  buy: 35742
+  sell: 16422
+  category: 'auto_preset'
+
+item_967:
+  material: 'COBBLESTONE'
+  buy: 35779
+  sell: 16439
+  category: 'auto_preset'
+
+item_968:
+  material: 'OAK_LOG'
+  buy: 35816
+  sell: 16456
+  category: 'auto_preset'
+
+item_969:
+  material: 'SPRUCE_LOG'
+  buy: 35853
+  sell: 16473
+  category: 'auto_preset'
+
+item_970:
+  material: 'BAMBOO'
+  buy: 35890
+  sell: 16490
+  category: 'auto_preset'
+
+item_971:
+  material: 'SUGAR_CANE'
+  buy: 35927
+  sell: 16507
+  category: 'auto_preset'
+
+item_972:
+  material: 'DIAMOND'
+  buy: 35964
+  sell: 16524
+  category: 'auto_preset'
+
+item_973:
+  material: 'EMERALD'
+  buy: 36001
+  sell: 16541
+  category: 'auto_preset'
+
+item_974:
+  material: 'IRON_INGOT'
+  buy: 36038
+  sell: 16558
+  category: 'auto_preset'
+
+item_975:
+  material: 'GOLD_INGOT'
+  buy: 36075
+  sell: 16575
+  category: 'auto_preset'
+
+item_976:
+  material: 'ENDER_PEARL'
+  buy: 36112
+  sell: 16592
+  category: 'auto_preset'
+
+item_977:
+  material: 'GOLDEN_APPLE'
+  buy: 36149
+  sell: 16609
+  category: 'auto_preset'
+
+item_978:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 36186
+  sell: 16626
+  category: 'auto_preset'
+
+item_979:
+  material: 'SHULKER_BOX'
+  buy: 36223
+  sell: 16643
+  category: 'auto_preset'
+
+item_980:
+  material: 'STONE'
+  buy: 36260
+  sell: 16660
+  category: 'auto_preset'
+
+item_981:
+  material: 'COBBLESTONE'
+  buy: 36297
+  sell: 16677
+  category: 'auto_preset'
+
+item_982:
+  material: 'OAK_LOG'
+  buy: 36334
+  sell: 16694
+  category: 'auto_preset'
+
+item_983:
+  material: 'SPRUCE_LOG'
+  buy: 36371
+  sell: 16711
+  category: 'auto_preset'
+
+item_984:
+  material: 'BAMBOO'
+  buy: 36408
+  sell: 16728
+  category: 'auto_preset'
+
+item_985:
+  material: 'SUGAR_CANE'
+  buy: 36445
+  sell: 16745
+  category: 'auto_preset'
+
+item_986:
+  material: 'DIAMOND'
+  buy: 36482
+  sell: 16762
+  category: 'auto_preset'
+
+item_987:
+  material: 'EMERALD'
+  buy: 36519
+  sell: 16779
+  category: 'auto_preset'
+
+item_988:
+  material: 'IRON_INGOT'
+  buy: 36556
+  sell: 16796
+  category: 'auto_preset'
+
+item_989:
+  material: 'GOLD_INGOT'
+  buy: 36593
+  sell: 16813
+  category: 'auto_preset'
+
+item_990:
+  material: 'ENDER_PEARL'
+  buy: 36630
+  sell: 16830
+  category: 'auto_preset'
+
+item_991:
+  material: 'GOLDEN_APPLE'
+  buy: 36667
+  sell: 16847
+  category: 'auto_preset'
+
+item_992:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 36704
+  sell: 16864
+  category: 'auto_preset'
+
+item_993:
+  material: 'SHULKER_BOX'
+  buy: 36741
+  sell: 16881
+  category: 'auto_preset'
+
+item_994:
+  material: 'STONE'
+  buy: 36778
+  sell: 16898
+  category: 'auto_preset'
+
+item_995:
+  material: 'COBBLESTONE'
+  buy: 36815
+  sell: 16915
+  category: 'auto_preset'
+
+item_996:
+  material: 'OAK_LOG'
+  buy: 36852
+  sell: 16932
+  category: 'auto_preset'
+
+item_997:
+  material: 'SPRUCE_LOG'
+  buy: 36889
+  sell: 16949
+  category: 'auto_preset'
+
+item_998:
+  material: 'BAMBOO'
+  buy: 36926
+  sell: 16966
+  category: 'auto_preset'
+
+item_999:
+  material: 'SUGAR_CANE'
+  buy: 36963
+  sell: 16983
+  category: 'auto_preset'
+
+item_1000:
+  material: 'DIAMOND'
+  buy: 37000
+  sell: 17000
+  category: 'auto_preset'
+
+item_1001:
+  material: 'EMERALD'
+  buy: 37037
+  sell: 17017
+  category: 'auto_preset'
+
+item_1002:
+  material: 'IRON_INGOT'
+  buy: 37074
+  sell: 17034
+  category: 'auto_preset'
+
+item_1003:
+  material: 'GOLD_INGOT'
+  buy: 37111
+  sell: 17051
+  category: 'auto_preset'
+
+item_1004:
+  material: 'ENDER_PEARL'
+  buy: 37148
+  sell: 17068
+  category: 'auto_preset'
+
+item_1005:
+  material: 'GOLDEN_APPLE'
+  buy: 37185
+  sell: 17085
+  category: 'auto_preset'
+
+item_1006:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 37222
+  sell: 17102
+  category: 'auto_preset'
+
+item_1007:
+  material: 'SHULKER_BOX'
+  buy: 37259
+  sell: 17119
+  category: 'auto_preset'
+
+item_1008:
+  material: 'STONE'
+  buy: 37296
+  sell: 17136
+  category: 'auto_preset'
+
+item_1009:
+  material: 'COBBLESTONE'
+  buy: 37333
+  sell: 17153
+  category: 'auto_preset'
+
+item_1010:
+  material: 'OAK_LOG'
+  buy: 37370
+  sell: 17170
+  category: 'auto_preset'
+
+item_1011:
+  material: 'SPRUCE_LOG'
+  buy: 37407
+  sell: 17187
+  category: 'auto_preset'
+
+item_1012:
+  material: 'BAMBOO'
+  buy: 37444
+  sell: 17204
+  category: 'auto_preset'
+
+item_1013:
+  material: 'SUGAR_CANE'
+  buy: 37481
+  sell: 17221
+  category: 'auto_preset'
+
+item_1014:
+  material: 'DIAMOND'
+  buy: 37518
+  sell: 17238
+  category: 'auto_preset'
+
+item_1015:
+  material: 'EMERALD'
+  buy: 37555
+  sell: 17255
+  category: 'auto_preset'
+
+item_1016:
+  material: 'IRON_INGOT'
+  buy: 37592
+  sell: 17272
+  category: 'auto_preset'
+
+item_1017:
+  material: 'GOLD_INGOT'
+  buy: 37629
+  sell: 17289
+  category: 'auto_preset'
+
+item_1018:
+  material: 'ENDER_PEARL'
+  buy: 37666
+  sell: 17306
+  category: 'auto_preset'
+
+item_1019:
+  material: 'GOLDEN_APPLE'
+  buy: 37703
+  sell: 17323
+  category: 'auto_preset'
+
+item_1020:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 37740
+  sell: 17340
+  category: 'auto_preset'
+
+item_1021:
+  material: 'SHULKER_BOX'
+  buy: 37777
+  sell: 17357
+  category: 'auto_preset'
+
+item_1022:
+  material: 'STONE'
+  buy: 37814
+  sell: 17374
+  category: 'auto_preset'
+
+item_1023:
+  material: 'COBBLESTONE'
+  buy: 37851
+  sell: 17391
+  category: 'auto_preset'
+
+item_1024:
+  material: 'OAK_LOG'
+  buy: 37888
+  sell: 17408
+  category: 'auto_preset'
+
+item_1025:
+  material: 'SPRUCE_LOG'
+  buy: 37925
+  sell: 17425
+  category: 'auto_preset'
+
+item_1026:
+  material: 'BAMBOO'
+  buy: 37962
+  sell: 17442
+  category: 'auto_preset'
+
+item_1027:
+  material: 'SUGAR_CANE'
+  buy: 37999
+  sell: 17459
+  category: 'auto_preset'
+
+item_1028:
+  material: 'DIAMOND'
+  buy: 38036
+  sell: 17476
+  category: 'auto_preset'
+
+item_1029:
+  material: 'EMERALD'
+  buy: 38073
+  sell: 17493
+  category: 'auto_preset'
+
+item_1030:
+  material: 'IRON_INGOT'
+  buy: 38110
+  sell: 17510
+  category: 'auto_preset'
+
+item_1031:
+  material: 'GOLD_INGOT'
+  buy: 38147
+  sell: 17527
+  category: 'auto_preset'
+
+item_1032:
+  material: 'ENDER_PEARL'
+  buy: 38184
+  sell: 17544
+  category: 'auto_preset'
+
+item_1033:
+  material: 'GOLDEN_APPLE'
+  buy: 38221
+  sell: 17561
+  category: 'auto_preset'
+
+item_1034:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 38258
+  sell: 17578
+  category: 'auto_preset'
+
+item_1035:
+  material: 'SHULKER_BOX'
+  buy: 38295
+  sell: 17595
+  category: 'auto_preset'
+
+item_1036:
+  material: 'STONE'
+  buy: 38332
+  sell: 17612
+  category: 'auto_preset'
+
+item_1037:
+  material: 'COBBLESTONE'
+  buy: 38369
+  sell: 17629
+  category: 'auto_preset'
+
+item_1038:
+  material: 'OAK_LOG'
+  buy: 38406
+  sell: 17646
+  category: 'auto_preset'
+
+item_1039:
+  material: 'SPRUCE_LOG'
+  buy: 38443
+  sell: 17663
+  category: 'auto_preset'
+
+item_1040:
+  material: 'BAMBOO'
+  buy: 38480
+  sell: 17680
+  category: 'auto_preset'
+
+item_1041:
+  material: 'SUGAR_CANE'
+  buy: 38517
+  sell: 17697
+  category: 'auto_preset'
+
+item_1042:
+  material: 'DIAMOND'
+  buy: 38554
+  sell: 17714
+  category: 'auto_preset'
+
+item_1043:
+  material: 'EMERALD'
+  buy: 38591
+  sell: 17731
+  category: 'auto_preset'
+
+item_1044:
+  material: 'IRON_INGOT'
+  buy: 38628
+  sell: 17748
+  category: 'auto_preset'
+
+item_1045:
+  material: 'GOLD_INGOT'
+  buy: 38665
+  sell: 17765
+  category: 'auto_preset'
+
+item_1046:
+  material: 'ENDER_PEARL'
+  buy: 38702
+  sell: 17782
+  category: 'auto_preset'
+
+item_1047:
+  material: 'GOLDEN_APPLE'
+  buy: 38739
+  sell: 17799
+  category: 'auto_preset'
+
+item_1048:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 38776
+  sell: 17816
+  category: 'auto_preset'
+
+item_1049:
+  material: 'SHULKER_BOX'
+  buy: 38813
+  sell: 17833
+  category: 'auto_preset'
+
+item_1050:
+  material: 'STONE'
+  buy: 38850
+  sell: 17850
+  category: 'auto_preset'
+
+item_1051:
+  material: 'COBBLESTONE'
+  buy: 38887
+  sell: 17867
+  category: 'auto_preset'
+
+item_1052:
+  material: 'OAK_LOG'
+  buy: 38924
+  sell: 17884
+  category: 'auto_preset'
+
+item_1053:
+  material: 'SPRUCE_LOG'
+  buy: 38961
+  sell: 17901
+  category: 'auto_preset'
+
+item_1054:
+  material: 'BAMBOO'
+  buy: 38998
+  sell: 17918
+  category: 'auto_preset'
+
+item_1055:
+  material: 'SUGAR_CANE'
+  buy: 39035
+  sell: 17935
+  category: 'auto_preset'
+
+item_1056:
+  material: 'DIAMOND'
+  buy: 39072
+  sell: 17952
+  category: 'auto_preset'
+
+item_1057:
+  material: 'EMERALD'
+  buy: 39109
+  sell: 17969
+  category: 'auto_preset'
+
+item_1058:
+  material: 'IRON_INGOT'
+  buy: 39146
+  sell: 17986
+  category: 'auto_preset'
+
+item_1059:
+  material: 'GOLD_INGOT'
+  buy: 39183
+  sell: 18003
+  category: 'auto_preset'
+
+item_1060:
+  material: 'ENDER_PEARL'
+  buy: 39220
+  sell: 18020
+  category: 'auto_preset'
+
+item_1061:
+  material: 'GOLDEN_APPLE'
+  buy: 39257
+  sell: 18037
+  category: 'auto_preset'
+
+item_1062:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 39294
+  sell: 18054
+  category: 'auto_preset'
+
+item_1063:
+  material: 'SHULKER_BOX'
+  buy: 39331
+  sell: 18071
+  category: 'auto_preset'
+
+item_1064:
+  material: 'STONE'
+  buy: 39368
+  sell: 18088
+  category: 'auto_preset'
+
+item_1065:
+  material: 'COBBLESTONE'
+  buy: 39405
+  sell: 18105
+  category: 'auto_preset'
+
+item_1066:
+  material: 'OAK_LOG'
+  buy: 39442
+  sell: 18122
+  category: 'auto_preset'
+
+item_1067:
+  material: 'SPRUCE_LOG'
+  buy: 39479
+  sell: 18139
+  category: 'auto_preset'
+
+item_1068:
+  material: 'BAMBOO'
+  buy: 39516
+  sell: 18156
+  category: 'auto_preset'
+
+item_1069:
+  material: 'SUGAR_CANE'
+  buy: 39553
+  sell: 18173
+  category: 'auto_preset'
+
+item_1070:
+  material: 'DIAMOND'
+  buy: 39590
+  sell: 18190
+  category: 'auto_preset'
+
+item_1071:
+  material: 'EMERALD'
+  buy: 39627
+  sell: 18207
+  category: 'auto_preset'
+
+item_1072:
+  material: 'IRON_INGOT'
+  buy: 39664
+  sell: 18224
+  category: 'auto_preset'
+
+item_1073:
+  material: 'GOLD_INGOT'
+  buy: 39701
+  sell: 18241
+  category: 'auto_preset'
+
+item_1074:
+  material: 'ENDER_PEARL'
+  buy: 39738
+  sell: 18258
+  category: 'auto_preset'
+
+item_1075:
+  material: 'GOLDEN_APPLE'
+  buy: 39775
+  sell: 18275
+  category: 'auto_preset'
+
+item_1076:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 39812
+  sell: 18292
+  category: 'auto_preset'
+
+item_1077:
+  material: 'SHULKER_BOX'
+  buy: 39849
+  sell: 18309
+  category: 'auto_preset'
+
+item_1078:
+  material: 'STONE'
+  buy: 39886
+  sell: 18326
+  category: 'auto_preset'
+
+item_1079:
+  material: 'COBBLESTONE'
+  buy: 39923
+  sell: 18343
+  category: 'auto_preset'
+
+item_1080:
+  material: 'OAK_LOG'
+  buy: 39960
+  sell: 18360
+  category: 'auto_preset'
+
+item_1081:
+  material: 'SPRUCE_LOG'
+  buy: 39997
+  sell: 18377
+  category: 'auto_preset'
+
+item_1082:
+  material: 'BAMBOO'
+  buy: 40034
+  sell: 18394
+  category: 'auto_preset'
+
+item_1083:
+  material: 'SUGAR_CANE'
+  buy: 40071
+  sell: 18411
+  category: 'auto_preset'
+
+item_1084:
+  material: 'DIAMOND'
+  buy: 40108
+  sell: 18428
+  category: 'auto_preset'
+
+item_1085:
+  material: 'EMERALD'
+  buy: 40145
+  sell: 18445
+  category: 'auto_preset'
+
+item_1086:
+  material: 'IRON_INGOT'
+  buy: 40182
+  sell: 18462
+  category: 'auto_preset'
+
+item_1087:
+  material: 'GOLD_INGOT'
+  buy: 40219
+  sell: 18479
+  category: 'auto_preset'
+
+item_1088:
+  material: 'ENDER_PEARL'
+  buy: 40256
+  sell: 18496
+  category: 'auto_preset'
+
+item_1089:
+  material: 'GOLDEN_APPLE'
+  buy: 40293
+  sell: 18513
+  category: 'auto_preset'
+
+item_1090:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 40330
+  sell: 18530
+  category: 'auto_preset'
+
+item_1091:
+  material: 'SHULKER_BOX'
+  buy: 40367
+  sell: 18547
+  category: 'auto_preset'
+
+item_1092:
+  material: 'STONE'
+  buy: 40404
+  sell: 18564
+  category: 'auto_preset'
+
+item_1093:
+  material: 'COBBLESTONE'
+  buy: 40441
+  sell: 18581
+  category: 'auto_preset'
+
+item_1094:
+  material: 'OAK_LOG'
+  buy: 40478
+  sell: 18598
+  category: 'auto_preset'
+
+item_1095:
+  material: 'SPRUCE_LOG'
+  buy: 40515
+  sell: 18615
+  category: 'auto_preset'
+
+item_1096:
+  material: 'BAMBOO'
+  buy: 40552
+  sell: 18632
+  category: 'auto_preset'
+
+item_1097:
+  material: 'SUGAR_CANE'
+  buy: 40589
+  sell: 18649
+  category: 'auto_preset'
+
+item_1098:
+  material: 'DIAMOND'
+  buy: 40626
+  sell: 18666
+  category: 'auto_preset'
+
+item_1099:
+  material: 'EMERALD'
+  buy: 40663
+  sell: 18683
+  category: 'auto_preset'
+
+item_1100:
+  material: 'IRON_INGOT'
+  buy: 40700
+  sell: 18700
+  category: 'auto_preset'
+
+item_1101:
+  material: 'GOLD_INGOT'
+  buy: 40737
+  sell: 18717
+  category: 'auto_preset'
+
+item_1102:
+  material: 'ENDER_PEARL'
+  buy: 40774
+  sell: 18734
+  category: 'auto_preset'
+
+item_1103:
+  material: 'GOLDEN_APPLE'
+  buy: 40811
+  sell: 18751
+  category: 'auto_preset'
+
+item_1104:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 40848
+  sell: 18768
+  category: 'auto_preset'
+
+item_1105:
+  material: 'SHULKER_BOX'
+  buy: 40885
+  sell: 18785
+  category: 'auto_preset'
+
+item_1106:
+  material: 'STONE'
+  buy: 40922
+  sell: 18802
+  category: 'auto_preset'
+
+item_1107:
+  material: 'COBBLESTONE'
+  buy: 40959
+  sell: 18819
+  category: 'auto_preset'
+
+item_1108:
+  material: 'OAK_LOG'
+  buy: 40996
+  sell: 18836
+  category: 'auto_preset'
+
+item_1109:
+  material: 'SPRUCE_LOG'
+  buy: 41033
+  sell: 18853
+  category: 'auto_preset'
+
+item_1110:
+  material: 'BAMBOO'
+  buy: 41070
+  sell: 18870
+  category: 'auto_preset'
+
+item_1111:
+  material: 'SUGAR_CANE'
+  buy: 41107
+  sell: 18887
+  category: 'auto_preset'
+
+item_1112:
+  material: 'DIAMOND'
+  buy: 41144
+  sell: 18904
+  category: 'auto_preset'
+
+item_1113:
+  material: 'EMERALD'
+  buy: 41181
+  sell: 18921
+  category: 'auto_preset'
+
+item_1114:
+  material: 'IRON_INGOT'
+  buy: 41218
+  sell: 18938
+  category: 'auto_preset'
+
+item_1115:
+  material: 'GOLD_INGOT'
+  buy: 41255
+  sell: 18955
+  category: 'auto_preset'
+
+item_1116:
+  material: 'ENDER_PEARL'
+  buy: 41292
+  sell: 18972
+  category: 'auto_preset'
+
+item_1117:
+  material: 'GOLDEN_APPLE'
+  buy: 41329
+  sell: 18989
+  category: 'auto_preset'
+
+item_1118:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 41366
+  sell: 19006
+  category: 'auto_preset'
+
+item_1119:
+  material: 'SHULKER_BOX'
+  buy: 41403
+  sell: 19023
+  category: 'auto_preset'
+
+item_1120:
+  material: 'STONE'
+  buy: 41440
+  sell: 19040
+  category: 'auto_preset'
+
+item_1121:
+  material: 'COBBLESTONE'
+  buy: 41477
+  sell: 19057
+  category: 'auto_preset'
+
+item_1122:
+  material: 'OAK_LOG'
+  buy: 41514
+  sell: 19074
+  category: 'auto_preset'
+
+item_1123:
+  material: 'SPRUCE_LOG'
+  buy: 41551
+  sell: 19091
+  category: 'auto_preset'
+
+item_1124:
+  material: 'BAMBOO'
+  buy: 41588
+  sell: 19108
+  category: 'auto_preset'
+
+item_1125:
+  material: 'SUGAR_CANE'
+  buy: 41625
+  sell: 19125
+  category: 'auto_preset'
+
+item_1126:
+  material: 'DIAMOND'
+  buy: 41662
+  sell: 19142
+  category: 'auto_preset'
+
+item_1127:
+  material: 'EMERALD'
+  buy: 41699
+  sell: 19159
+  category: 'auto_preset'
+
+item_1128:
+  material: 'IRON_INGOT'
+  buy: 41736
+  sell: 19176
+  category: 'auto_preset'
+
+item_1129:
+  material: 'GOLD_INGOT'
+  buy: 41773
+  sell: 19193
+  category: 'auto_preset'
+
+item_1130:
+  material: 'ENDER_PEARL'
+  buy: 41810
+  sell: 19210
+  category: 'auto_preset'
+
+item_1131:
+  material: 'GOLDEN_APPLE'
+  buy: 41847
+  sell: 19227
+  category: 'auto_preset'
+
+item_1132:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 41884
+  sell: 19244
+  category: 'auto_preset'
+
+item_1133:
+  material: 'SHULKER_BOX'
+  buy: 41921
+  sell: 19261
+  category: 'auto_preset'
+
+item_1134:
+  material: 'STONE'
+  buy: 41958
+  sell: 19278
+  category: 'auto_preset'
+
+item_1135:
+  material: 'COBBLESTONE'
+  buy: 41995
+  sell: 19295
+  category: 'auto_preset'
+
+item_1136:
+  material: 'OAK_LOG'
+  buy: 42032
+  sell: 19312
+  category: 'auto_preset'
+
+item_1137:
+  material: 'SPRUCE_LOG'
+  buy: 42069
+  sell: 19329
+  category: 'auto_preset'
+
+item_1138:
+  material: 'BAMBOO'
+  buy: 42106
+  sell: 19346
+  category: 'auto_preset'
+
+item_1139:
+  material: 'SUGAR_CANE'
+  buy: 42143
+  sell: 19363
+  category: 'auto_preset'
+
+item_1140:
+  material: 'DIAMOND'
+  buy: 42180
+  sell: 19380
+  category: 'auto_preset'
+
+item_1141:
+  material: 'EMERALD'
+  buy: 42217
+  sell: 19397
+  category: 'auto_preset'
+
+item_1142:
+  material: 'IRON_INGOT'
+  buy: 42254
+  sell: 19414
+  category: 'auto_preset'
+
+item_1143:
+  material: 'GOLD_INGOT'
+  buy: 42291
+  sell: 19431
+  category: 'auto_preset'
+
+item_1144:
+  material: 'ENDER_PEARL'
+  buy: 42328
+  sell: 19448
+  category: 'auto_preset'
+
+item_1145:
+  material: 'GOLDEN_APPLE'
+  buy: 42365
+  sell: 19465
+  category: 'auto_preset'
+
+item_1146:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 42402
+  sell: 19482
+  category: 'auto_preset'
+
+item_1147:
+  material: 'SHULKER_BOX'
+  buy: 42439
+  sell: 19499
+  category: 'auto_preset'
+
+item_1148:
+  material: 'STONE'
+  buy: 42476
+  sell: 19516
+  category: 'auto_preset'
+
+item_1149:
+  material: 'COBBLESTONE'
+  buy: 42513
+  sell: 19533
+  category: 'auto_preset'
+
+item_1150:
+  material: 'OAK_LOG'
+  buy: 42550
+  sell: 19550
+  category: 'auto_preset'
+
+item_1151:
+  material: 'SPRUCE_LOG'
+  buy: 42587
+  sell: 19567
+  category: 'auto_preset'
+
+item_1152:
+  material: 'BAMBOO'
+  buy: 42624
+  sell: 19584
+  category: 'auto_preset'
+
+item_1153:
+  material: 'SUGAR_CANE'
+  buy: 42661
+  sell: 19601
+  category: 'auto_preset'
+
+item_1154:
+  material: 'DIAMOND'
+  buy: 42698
+  sell: 19618
+  category: 'auto_preset'
+
+item_1155:
+  material: 'EMERALD'
+  buy: 42735
+  sell: 19635
+  category: 'auto_preset'
+
+item_1156:
+  material: 'IRON_INGOT'
+  buy: 42772
+  sell: 19652
+  category: 'auto_preset'
+
+item_1157:
+  material: 'GOLD_INGOT'
+  buy: 42809
+  sell: 19669
+  category: 'auto_preset'
+
+item_1158:
+  material: 'ENDER_PEARL'
+  buy: 42846
+  sell: 19686
+  category: 'auto_preset'
+
+item_1159:
+  material: 'GOLDEN_APPLE'
+  buy: 42883
+  sell: 19703
+  category: 'auto_preset'
+
+item_1160:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 42920
+  sell: 19720
+  category: 'auto_preset'
+
+item_1161:
+  material: 'SHULKER_BOX'
+  buy: 42957
+  sell: 19737
+  category: 'auto_preset'
+
+item_1162:
+  material: 'STONE'
+  buy: 42994
+  sell: 19754
+  category: 'auto_preset'
+
+item_1163:
+  material: 'COBBLESTONE'
+  buy: 43031
+  sell: 19771
+  category: 'auto_preset'
+
+item_1164:
+  material: 'OAK_LOG'
+  buy: 43068
+  sell: 19788
+  category: 'auto_preset'
+
+item_1165:
+  material: 'SPRUCE_LOG'
+  buy: 43105
+  sell: 19805
+  category: 'auto_preset'
+
+item_1166:
+  material: 'BAMBOO'
+  buy: 43142
+  sell: 19822
+  category: 'auto_preset'
+
+item_1167:
+  material: 'SUGAR_CANE'
+  buy: 43179
+  sell: 19839
+  category: 'auto_preset'
+
+item_1168:
+  material: 'DIAMOND'
+  buy: 43216
+  sell: 19856
+  category: 'auto_preset'
+
+item_1169:
+  material: 'EMERALD'
+  buy: 43253
+  sell: 19873
+  category: 'auto_preset'
+
+item_1170:
+  material: 'IRON_INGOT'
+  buy: 43290
+  sell: 19890
+  category: 'auto_preset'
+
+item_1171:
+  material: 'GOLD_INGOT'
+  buy: 43327
+  sell: 19907
+  category: 'auto_preset'
+
+item_1172:
+  material: 'ENDER_PEARL'
+  buy: 43364
+  sell: 19924
+  category: 'auto_preset'
+
+item_1173:
+  material: 'GOLDEN_APPLE'
+  buy: 43401
+  sell: 19941
+  category: 'auto_preset'
+
+item_1174:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 43438
+  sell: 19958
+  category: 'auto_preset'
+
+item_1175:
+  material: 'SHULKER_BOX'
+  buy: 43475
+  sell: 19975
+  category: 'auto_preset'
+
+item_1176:
+  material: 'STONE'
+  buy: 43512
+  sell: 19992
+  category: 'auto_preset'
+
+item_1177:
+  material: 'COBBLESTONE'
+  buy: 43549
+  sell: 20009
+  category: 'auto_preset'
+
+item_1178:
+  material: 'OAK_LOG'
+  buy: 43586
+  sell: 20026
+  category: 'auto_preset'
+
+item_1179:
+  material: 'SPRUCE_LOG'
+  buy: 43623
+  sell: 20043
+  category: 'auto_preset'
+
+item_1180:
+  material: 'BAMBOO'
+  buy: 43660
+  sell: 20060
+  category: 'auto_preset'
+
+item_1181:
+  material: 'SUGAR_CANE'
+  buy: 43697
+  sell: 20077
+  category: 'auto_preset'
+
+item_1182:
+  material: 'DIAMOND'
+  buy: 43734
+  sell: 20094
+  category: 'auto_preset'
+
+item_1183:
+  material: 'EMERALD'
+  buy: 43771
+  sell: 20111
+  category: 'auto_preset'
+
+item_1184:
+  material: 'IRON_INGOT'
+  buy: 43808
+  sell: 20128
+  category: 'auto_preset'
+
+item_1185:
+  material: 'GOLD_INGOT'
+  buy: 43845
+  sell: 20145
+  category: 'auto_preset'
+
+item_1186:
+  material: 'ENDER_PEARL'
+  buy: 43882
+  sell: 20162
+  category: 'auto_preset'
+
+item_1187:
+  material: 'GOLDEN_APPLE'
+  buy: 43919
+  sell: 20179
+  category: 'auto_preset'
+
+item_1188:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 43956
+  sell: 20196
+  category: 'auto_preset'
+
+item_1189:
+  material: 'SHULKER_BOX'
+  buy: 43993
+  sell: 20213
+  category: 'auto_preset'
+
+item_1190:
+  material: 'STONE'
+  buy: 44030
+  sell: 20230
+  category: 'auto_preset'
+
+item_1191:
+  material: 'COBBLESTONE'
+  buy: 44067
+  sell: 20247
+  category: 'auto_preset'
+
+item_1192:
+  material: 'OAK_LOG'
+  buy: 44104
+  sell: 20264
+  category: 'auto_preset'
+
+item_1193:
+  material: 'SPRUCE_LOG'
+  buy: 44141
+  sell: 20281
+  category: 'auto_preset'
+
+item_1194:
+  material: 'BAMBOO'
+  buy: 44178
+  sell: 20298
+  category: 'auto_preset'
+
+item_1195:
+  material: 'SUGAR_CANE'
+  buy: 44215
+  sell: 20315
+  category: 'auto_preset'
+
+item_1196:
+  material: 'DIAMOND'
+  buy: 44252
+  sell: 20332
+  category: 'auto_preset'
+
+item_1197:
+  material: 'EMERALD'
+  buy: 44289
+  sell: 20349
+  category: 'auto_preset'
+
+item_1198:
+  material: 'IRON_INGOT'
+  buy: 44326
+  sell: 20366
+  category: 'auto_preset'
+
+item_1199:
+  material: 'GOLD_INGOT'
+  buy: 44363
+  sell: 20383
+  category: 'auto_preset'
+
+item_1200:
+  material: 'ENDER_PEARL'
+  buy: 44400
+  sell: 20400
+  category: 'auto_preset'
+
+item_1201:
+  material: 'GOLDEN_APPLE'
+  buy: 44437
+  sell: 20417
+  category: 'auto_preset'
+
+item_1202:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 44474
+  sell: 20434
+  category: 'auto_preset'
+
+item_1203:
+  material: 'SHULKER_BOX'
+  buy: 44511
+  sell: 20451
+  category: 'auto_preset'
+
+item_1204:
+  material: 'STONE'
+  buy: 44548
+  sell: 20468
+  category: 'auto_preset'
+
+item_1205:
+  material: 'COBBLESTONE'
+  buy: 44585
+  sell: 20485
+  category: 'auto_preset'
+
+item_1206:
+  material: 'OAK_LOG'
+  buy: 44622
+  sell: 20502
+  category: 'auto_preset'
+
+item_1207:
+  material: 'SPRUCE_LOG'
+  buy: 44659
+  sell: 20519
+  category: 'auto_preset'
+
+item_1208:
+  material: 'BAMBOO'
+  buy: 44696
+  sell: 20536
+  category: 'auto_preset'
+
+item_1209:
+  material: 'SUGAR_CANE'
+  buy: 44733
+  sell: 20553
+  category: 'auto_preset'
+
+item_1210:
+  material: 'DIAMOND'
+  buy: 44770
+  sell: 20570
+  category: 'auto_preset'
+
+item_1211:
+  material: 'EMERALD'
+  buy: 44807
+  sell: 20587
+  category: 'auto_preset'
+
+item_1212:
+  material: 'IRON_INGOT'
+  buy: 44844
+  sell: 20604
+  category: 'auto_preset'
+
+item_1213:
+  material: 'GOLD_INGOT'
+  buy: 44881
+  sell: 20621
+  category: 'auto_preset'
+
+item_1214:
+  material: 'ENDER_PEARL'
+  buy: 44918
+  sell: 20638
+  category: 'auto_preset'
+
+item_1215:
+  material: 'GOLDEN_APPLE'
+  buy: 44955
+  sell: 20655
+  category: 'auto_preset'
+
+item_1216:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 44992
+  sell: 20672
+  category: 'auto_preset'
+
+item_1217:
+  material: 'SHULKER_BOX'
+  buy: 45029
+  sell: 20689
+  category: 'auto_preset'
+
+item_1218:
+  material: 'STONE'
+  buy: 45066
+  sell: 20706
+  category: 'auto_preset'
+
+item_1219:
+  material: 'COBBLESTONE'
+  buy: 45103
+  sell: 20723
+  category: 'auto_preset'
+
+item_1220:
+  material: 'OAK_LOG'
+  buy: 45140
+  sell: 20740
+  category: 'auto_preset'
+
+item_1221:
+  material: 'SPRUCE_LOG'
+  buy: 45177
+  sell: 20757
+  category: 'auto_preset'
+
+item_1222:
+  material: 'BAMBOO'
+  buy: 45214
+  sell: 20774
+  category: 'auto_preset'
+
+item_1223:
+  material: 'SUGAR_CANE'
+  buy: 45251
+  sell: 20791
+  category: 'auto_preset'
+
+item_1224:
+  material: 'DIAMOND'
+  buy: 45288
+  sell: 20808
+  category: 'auto_preset'
+
+item_1225:
+  material: 'EMERALD'
+  buy: 45325
+  sell: 20825
+  category: 'auto_preset'
+
+item_1226:
+  material: 'IRON_INGOT'
+  buy: 45362
+  sell: 20842
+  category: 'auto_preset'
+
+item_1227:
+  material: 'GOLD_INGOT'
+  buy: 45399
+  sell: 20859
+  category: 'auto_preset'
+
+item_1228:
+  material: 'ENDER_PEARL'
+  buy: 45436
+  sell: 20876
+  category: 'auto_preset'
+
+item_1229:
+  material: 'GOLDEN_APPLE'
+  buy: 45473
+  sell: 20893
+  category: 'auto_preset'
+
+item_1230:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 45510
+  sell: 20910
+  category: 'auto_preset'
+
+item_1231:
+  material: 'SHULKER_BOX'
+  buy: 45547
+  sell: 20927
+  category: 'auto_preset'
+
+item_1232:
+  material: 'STONE'
+  buy: 45584
+  sell: 20944
+  category: 'auto_preset'
+
+item_1233:
+  material: 'COBBLESTONE'
+  buy: 45621
+  sell: 20961
+  category: 'auto_preset'
+
+item_1234:
+  material: 'OAK_LOG'
+  buy: 45658
+  sell: 20978
+  category: 'auto_preset'
+
+item_1235:
+  material: 'SPRUCE_LOG'
+  buy: 45695
+  sell: 20995
+  category: 'auto_preset'
+
+item_1236:
+  material: 'BAMBOO'
+  buy: 45732
+  sell: 21012
+  category: 'auto_preset'
+
+item_1237:
+  material: 'SUGAR_CANE'
+  buy: 45769
+  sell: 21029
+  category: 'auto_preset'
+
+item_1238:
+  material: 'DIAMOND'
+  buy: 45806
+  sell: 21046
+  category: 'auto_preset'
+
+item_1239:
+  material: 'EMERALD'
+  buy: 45843
+  sell: 21063
+  category: 'auto_preset'
+
+item_1240:
+  material: 'IRON_INGOT'
+  buy: 45880
+  sell: 21080
+  category: 'auto_preset'
+
+item_1241:
+  material: 'GOLD_INGOT'
+  buy: 45917
+  sell: 21097
+  category: 'auto_preset'
+
+item_1242:
+  material: 'ENDER_PEARL'
+  buy: 45954
+  sell: 21114
+  category: 'auto_preset'
+
+item_1243:
+  material: 'GOLDEN_APPLE'
+  buy: 45991
+  sell: 21131
+  category: 'auto_preset'
+
+item_1244:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 46028
+  sell: 21148
+  category: 'auto_preset'
+
+item_1245:
+  material: 'SHULKER_BOX'
+  buy: 46065
+  sell: 21165
+  category: 'auto_preset'
+
+item_1246:
+  material: 'STONE'
+  buy: 46102
+  sell: 21182
+  category: 'auto_preset'
+
+item_1247:
+  material: 'COBBLESTONE'
+  buy: 46139
+  sell: 21199
+  category: 'auto_preset'
+
+item_1248:
+  material: 'OAK_LOG'
+  buy: 46176
+  sell: 21216
+  category: 'auto_preset'
+
+item_1249:
+  material: 'SPRUCE_LOG'
+  buy: 46213
+  sell: 21233
+  category: 'auto_preset'
+
+item_1250:
+  material: 'BAMBOO'
+  buy: 46250
+  sell: 21250
+  category: 'auto_preset'
+
+item_1251:
+  material: 'SUGAR_CANE'
+  buy: 46287
+  sell: 21267
+  category: 'auto_preset'
+
+item_1252:
+  material: 'DIAMOND'
+  buy: 46324
+  sell: 21284
+  category: 'auto_preset'
+
+item_1253:
+  material: 'EMERALD'
+  buy: 46361
+  sell: 21301
+  category: 'auto_preset'
+
+item_1254:
+  material: 'IRON_INGOT'
+  buy: 46398
+  sell: 21318
+  category: 'auto_preset'
+
+item_1255:
+  material: 'GOLD_INGOT'
+  buy: 46435
+  sell: 21335
+  category: 'auto_preset'
+
+item_1256:
+  material: 'ENDER_PEARL'
+  buy: 46472
+  sell: 21352
+  category: 'auto_preset'
+
+item_1257:
+  material: 'GOLDEN_APPLE'
+  buy: 46509
+  sell: 21369
+  category: 'auto_preset'
+
+item_1258:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 46546
+  sell: 21386
+  category: 'auto_preset'
+
+item_1259:
+  material: 'SHULKER_BOX'
+  buy: 46583
+  sell: 21403
+  category: 'auto_preset'
+
+item_1260:
+  material: 'STONE'
+  buy: 46620
+  sell: 21420
+  category: 'auto_preset'
+
+item_1261:
+  material: 'COBBLESTONE'
+  buy: 46657
+  sell: 21437
+  category: 'auto_preset'
+
+item_1262:
+  material: 'OAK_LOG'
+  buy: 46694
+  sell: 21454
+  category: 'auto_preset'
+
+item_1263:
+  material: 'SPRUCE_LOG'
+  buy: 46731
+  sell: 21471
+  category: 'auto_preset'
+
+item_1264:
+  material: 'BAMBOO'
+  buy: 46768
+  sell: 21488
+  category: 'auto_preset'
+
+item_1265:
+  material: 'SUGAR_CANE'
+  buy: 46805
+  sell: 21505
+  category: 'auto_preset'
+
+item_1266:
+  material: 'DIAMOND'
+  buy: 46842
+  sell: 21522
+  category: 'auto_preset'
+
+item_1267:
+  material: 'EMERALD'
+  buy: 46879
+  sell: 21539
+  category: 'auto_preset'
+
+item_1268:
+  material: 'IRON_INGOT'
+  buy: 46916
+  sell: 21556
+  category: 'auto_preset'
+
+item_1269:
+  material: 'GOLD_INGOT'
+  buy: 46953
+  sell: 21573
+  category: 'auto_preset'
+
+item_1270:
+  material: 'ENDER_PEARL'
+  buy: 46990
+  sell: 21590
+  category: 'auto_preset'
+
+item_1271:
+  material: 'GOLDEN_APPLE'
+  buy: 47027
+  sell: 21607
+  category: 'auto_preset'
+
+item_1272:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 47064
+  sell: 21624
+  category: 'auto_preset'
+
+item_1273:
+  material: 'SHULKER_BOX'
+  buy: 47101
+  sell: 21641
+  category: 'auto_preset'
+
+item_1274:
+  material: 'STONE'
+  buy: 47138
+  sell: 21658
+  category: 'auto_preset'
+
+item_1275:
+  material: 'COBBLESTONE'
+  buy: 47175
+  sell: 21675
+  category: 'auto_preset'
+
+item_1276:
+  material: 'OAK_LOG'
+  buy: 47212
+  sell: 21692
+  category: 'auto_preset'
+
+item_1277:
+  material: 'SPRUCE_LOG'
+  buy: 47249
+  sell: 21709
+  category: 'auto_preset'
+
+item_1278:
+  material: 'BAMBOO'
+  buy: 47286
+  sell: 21726
+  category: 'auto_preset'
+
+item_1279:
+  material: 'SUGAR_CANE'
+  buy: 47323
+  sell: 21743
+  category: 'auto_preset'
+
+item_1280:
+  material: 'DIAMOND'
+  buy: 47360
+  sell: 21760
+  category: 'auto_preset'
+
+item_1281:
+  material: 'EMERALD'
+  buy: 47397
+  sell: 21777
+  category: 'auto_preset'
+
+item_1282:
+  material: 'IRON_INGOT'
+  buy: 47434
+  sell: 21794
+  category: 'auto_preset'
+
+item_1283:
+  material: 'GOLD_INGOT'
+  buy: 47471
+  sell: 21811
+  category: 'auto_preset'
+
+item_1284:
+  material: 'ENDER_PEARL'
+  buy: 47508
+  sell: 21828
+  category: 'auto_preset'
+
+item_1285:
+  material: 'GOLDEN_APPLE'
+  buy: 47545
+  sell: 21845
+  category: 'auto_preset'
+
+item_1286:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 47582
+  sell: 21862
+  category: 'auto_preset'
+
+item_1287:
+  material: 'SHULKER_BOX'
+  buy: 47619
+  sell: 21879
+  category: 'auto_preset'
+
+item_1288:
+  material: 'STONE'
+  buy: 47656
+  sell: 21896
+  category: 'auto_preset'
+
+item_1289:
+  material: 'COBBLESTONE'
+  buy: 47693
+  sell: 21913
+  category: 'auto_preset'
+
+item_1290:
+  material: 'OAK_LOG'
+  buy: 47730
+  sell: 21930
+  category: 'auto_preset'
+
+item_1291:
+  material: 'SPRUCE_LOG'
+  buy: 47767
+  sell: 21947
+  category: 'auto_preset'
+
+item_1292:
+  material: 'BAMBOO'
+  buy: 47804
+  sell: 21964
+  category: 'auto_preset'
+
+item_1293:
+  material: 'SUGAR_CANE'
+  buy: 47841
+  sell: 21981
+  category: 'auto_preset'
+
+item_1294:
+  material: 'DIAMOND'
+  buy: 47878
+  sell: 21998
+  category: 'auto_preset'
+
+item_1295:
+  material: 'EMERALD'
+  buy: 47915
+  sell: 22015
+  category: 'auto_preset'
+
+item_1296:
+  material: 'IRON_INGOT'
+  buy: 47952
+  sell: 22032
+  category: 'auto_preset'
+
+item_1297:
+  material: 'GOLD_INGOT'
+  buy: 47989
+  sell: 22049
+  category: 'auto_preset'
+
+item_1298:
+  material: 'ENDER_PEARL'
+  buy: 48026
+  sell: 22066
+  category: 'auto_preset'
+
+item_1299:
+  material: 'GOLDEN_APPLE'
+  buy: 48063
+  sell: 22083
+  category: 'auto_preset'
+
+item_1300:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 48100
+  sell: 22100
+  category: 'auto_preset'
+
+item_1301:
+  material: 'SHULKER_BOX'
+  buy: 48137
+  sell: 22117
+  category: 'auto_preset'
+
+item_1302:
+  material: 'STONE'
+  buy: 48174
+  sell: 22134
+  category: 'auto_preset'
+
+item_1303:
+  material: 'COBBLESTONE'
+  buy: 48211
+  sell: 22151
+  category: 'auto_preset'
+
+item_1304:
+  material: 'OAK_LOG'
+  buy: 48248
+  sell: 22168
+  category: 'auto_preset'
+
+item_1305:
+  material: 'SPRUCE_LOG'
+  buy: 48285
+  sell: 22185
+  category: 'auto_preset'
+
+item_1306:
+  material: 'BAMBOO'
+  buy: 48322
+  sell: 22202
+  category: 'auto_preset'
+
+item_1307:
+  material: 'SUGAR_CANE'
+  buy: 48359
+  sell: 22219
+  category: 'auto_preset'
+
+item_1308:
+  material: 'DIAMOND'
+  buy: 48396
+  sell: 22236
+  category: 'auto_preset'
+
+item_1309:
+  material: 'EMERALD'
+  buy: 48433
+  sell: 22253
+  category: 'auto_preset'
+
+item_1310:
+  material: 'IRON_INGOT'
+  buy: 48470
+  sell: 22270
+  category: 'auto_preset'
+
+item_1311:
+  material: 'GOLD_INGOT'
+  buy: 48507
+  sell: 22287
+  category: 'auto_preset'
+
+item_1312:
+  material: 'ENDER_PEARL'
+  buy: 48544
+  sell: 22304
+  category: 'auto_preset'
+
+item_1313:
+  material: 'GOLDEN_APPLE'
+  buy: 48581
+  sell: 22321
+  category: 'auto_preset'
+
+item_1314:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 48618
+  sell: 22338
+  category: 'auto_preset'
+
+item_1315:
+  material: 'SHULKER_BOX'
+  buy: 48655
+  sell: 22355
+  category: 'auto_preset'
+
+item_1316:
+  material: 'STONE'
+  buy: 48692
+  sell: 22372
+  category: 'auto_preset'
+
+item_1317:
+  material: 'COBBLESTONE'
+  buy: 48729
+  sell: 22389
+  category: 'auto_preset'
+
+item_1318:
+  material: 'OAK_LOG'
+  buy: 48766
+  sell: 22406
+  category: 'auto_preset'
+
+item_1319:
+  material: 'SPRUCE_LOG'
+  buy: 48803
+  sell: 22423
+  category: 'auto_preset'
+
+item_1320:
+  material: 'BAMBOO'
+  buy: 48840
+  sell: 22440
+  category: 'auto_preset'
+
+item_1321:
+  material: 'SUGAR_CANE'
+  buy: 48877
+  sell: 22457
+  category: 'auto_preset'
+
+item_1322:
+  material: 'DIAMOND'
+  buy: 48914
+  sell: 22474
+  category: 'auto_preset'
+
+item_1323:
+  material: 'EMERALD'
+  buy: 48951
+  sell: 22491
+  category: 'auto_preset'
+
+item_1324:
+  material: 'IRON_INGOT'
+  buy: 48988
+  sell: 22508
+  category: 'auto_preset'
+
+item_1325:
+  material: 'GOLD_INGOT'
+  buy: 49025
+  sell: 22525
+  category: 'auto_preset'
+
+item_1326:
+  material: 'ENDER_PEARL'
+  buy: 49062
+  sell: 22542
+  category: 'auto_preset'
+
+item_1327:
+  material: 'GOLDEN_APPLE'
+  buy: 49099
+  sell: 22559
+  category: 'auto_preset'
+
+item_1328:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 49136
+  sell: 22576
+  category: 'auto_preset'
+
+item_1329:
+  material: 'SHULKER_BOX'
+  buy: 49173
+  sell: 22593
+  category: 'auto_preset'
+
+item_1330:
+  material: 'STONE'
+  buy: 49210
+  sell: 22610
+  category: 'auto_preset'
+
+item_1331:
+  material: 'COBBLESTONE'
+  buy: 49247
+  sell: 22627
+  category: 'auto_preset'
+
+item_1332:
+  material: 'OAK_LOG'
+  buy: 49284
+  sell: 22644
+  category: 'auto_preset'
+
+item_1333:
+  material: 'SPRUCE_LOG'
+  buy: 49321
+  sell: 22661
+  category: 'auto_preset'
+
+item_1334:
+  material: 'BAMBOO'
+  buy: 49358
+  sell: 22678
+  category: 'auto_preset'
+
+item_1335:
+  material: 'SUGAR_CANE'
+  buy: 49395
+  sell: 22695
+  category: 'auto_preset'
+
+item_1336:
+  material: 'DIAMOND'
+  buy: 49432
+  sell: 22712
+  category: 'auto_preset'
+
+item_1337:
+  material: 'EMERALD'
+  buy: 49469
+  sell: 22729
+  category: 'auto_preset'
+
+item_1338:
+  material: 'IRON_INGOT'
+  buy: 49506
+  sell: 22746
+  category: 'auto_preset'
+
+item_1339:
+  material: 'GOLD_INGOT'
+  buy: 49543
+  sell: 22763
+  category: 'auto_preset'
+
+item_1340:
+  material: 'ENDER_PEARL'
+  buy: 49580
+  sell: 22780
+  category: 'auto_preset'
+
+item_1341:
+  material: 'GOLDEN_APPLE'
+  buy: 49617
+  sell: 22797
+  category: 'auto_preset'
+
+item_1342:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 49654
+  sell: 22814
+  category: 'auto_preset'
+
+item_1343:
+  material: 'SHULKER_BOX'
+  buy: 49691
+  sell: 22831
+  category: 'auto_preset'
+
+item_1344:
+  material: 'STONE'
+  buy: 49728
+  sell: 22848
+  category: 'auto_preset'
+
+item_1345:
+  material: 'COBBLESTONE'
+  buy: 49765
+  sell: 22865
+  category: 'auto_preset'
+
+item_1346:
+  material: 'OAK_LOG'
+  buy: 49802
+  sell: 22882
+  category: 'auto_preset'
+
+item_1347:
+  material: 'SPRUCE_LOG'
+  buy: 49839
+  sell: 22899
+  category: 'auto_preset'
+
+item_1348:
+  material: 'BAMBOO'
+  buy: 49876
+  sell: 22916
+  category: 'auto_preset'
+
+item_1349:
+  material: 'SUGAR_CANE'
+  buy: 49913
+  sell: 22933
+  category: 'auto_preset'
+
+item_1350:
+  material: 'DIAMOND'
+  buy: 49950
+  sell: 22950
+  category: 'auto_preset'
+
+item_1351:
+  material: 'EMERALD'
+  buy: 49987
+  sell: 22967
+  category: 'auto_preset'
+
+item_1352:
+  material: 'IRON_INGOT'
+  buy: 50024
+  sell: 22984
+  category: 'auto_preset'
+
+item_1353:
+  material: 'GOLD_INGOT'
+  buy: 50061
+  sell: 23001
+  category: 'auto_preset'
+
+item_1354:
+  material: 'ENDER_PEARL'
+  buy: 50098
+  sell: 23018
+  category: 'auto_preset'
+
+item_1355:
+  material: 'GOLDEN_APPLE'
+  buy: 50135
+  sell: 23035
+  category: 'auto_preset'
+
+item_1356:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 50172
+  sell: 23052
+  category: 'auto_preset'
+
+item_1357:
+  material: 'SHULKER_BOX'
+  buy: 50209
+  sell: 23069
+  category: 'auto_preset'
+
+item_1358:
+  material: 'STONE'
+  buy: 50246
+  sell: 23086
+  category: 'auto_preset'
+
+item_1359:
+  material: 'COBBLESTONE'
+  buy: 50283
+  sell: 23103
+  category: 'auto_preset'
+
+item_1360:
+  material: 'OAK_LOG'
+  buy: 50320
+  sell: 23120
+  category: 'auto_preset'
+
+item_1361:
+  material: 'SPRUCE_LOG'
+  buy: 50357
+  sell: 23137
+  category: 'auto_preset'
+
+item_1362:
+  material: 'BAMBOO'
+  buy: 50394
+  sell: 23154
+  category: 'auto_preset'
+
+item_1363:
+  material: 'SUGAR_CANE'
+  buy: 50431
+  sell: 23171
+  category: 'auto_preset'
+
+item_1364:
+  material: 'DIAMOND'
+  buy: 50468
+  sell: 23188
+  category: 'auto_preset'
+
+item_1365:
+  material: 'EMERALD'
+  buy: 50505
+  sell: 23205
+  category: 'auto_preset'
+
+item_1366:
+  material: 'IRON_INGOT'
+  buy: 50542
+  sell: 23222
+  category: 'auto_preset'
+
+item_1367:
+  material: 'GOLD_INGOT'
+  buy: 50579
+  sell: 23239
+  category: 'auto_preset'
+
+item_1368:
+  material: 'ENDER_PEARL'
+  buy: 50616
+  sell: 23256
+  category: 'auto_preset'
+
+item_1369:
+  material: 'GOLDEN_APPLE'
+  buy: 50653
+  sell: 23273
+  category: 'auto_preset'
+
+item_1370:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 50690
+  sell: 23290
+  category: 'auto_preset'
+
+item_1371:
+  material: 'SHULKER_BOX'
+  buy: 50727
+  sell: 23307
+  category: 'auto_preset'
+
+item_1372:
+  material: 'STONE'
+  buy: 50764
+  sell: 23324
+  category: 'auto_preset'
+
+item_1373:
+  material: 'COBBLESTONE'
+  buy: 50801
+  sell: 23341
+  category: 'auto_preset'
+
+item_1374:
+  material: 'OAK_LOG'
+  buy: 50838
+  sell: 23358
+  category: 'auto_preset'
+
+item_1375:
+  material: 'SPRUCE_LOG'
+  buy: 50875
+  sell: 23375
+  category: 'auto_preset'
+
+item_1376:
+  material: 'BAMBOO'
+  buy: 50912
+  sell: 23392
+  category: 'auto_preset'
+
+item_1377:
+  material: 'SUGAR_CANE'
+  buy: 50949
+  sell: 23409
+  category: 'auto_preset'
+
+item_1378:
+  material: 'DIAMOND'
+  buy: 50986
+  sell: 23426
+  category: 'auto_preset'
+
+item_1379:
+  material: 'EMERALD'
+  buy: 51023
+  sell: 23443
+  category: 'auto_preset'
+
+item_1380:
+  material: 'IRON_INGOT'
+  buy: 51060
+  sell: 23460
+  category: 'auto_preset'
+
+item_1381:
+  material: 'GOLD_INGOT'
+  buy: 51097
+  sell: 23477
+  category: 'auto_preset'
+
+item_1382:
+  material: 'ENDER_PEARL'
+  buy: 51134
+  sell: 23494
+  category: 'auto_preset'
+
+item_1383:
+  material: 'GOLDEN_APPLE'
+  buy: 51171
+  sell: 23511
+  category: 'auto_preset'
+
+item_1384:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 51208
+  sell: 23528
+  category: 'auto_preset'
+
+item_1385:
+  material: 'SHULKER_BOX'
+  buy: 51245
+  sell: 23545
+  category: 'auto_preset'
+
+item_1386:
+  material: 'STONE'
+  buy: 51282
+  sell: 23562
+  category: 'auto_preset'
+
+item_1387:
+  material: 'COBBLESTONE'
+  buy: 51319
+  sell: 23579
+  category: 'auto_preset'
+
+item_1388:
+  material: 'OAK_LOG'
+  buy: 51356
+  sell: 23596
+  category: 'auto_preset'
+
+item_1389:
+  material: 'SPRUCE_LOG'
+  buy: 51393
+  sell: 23613
+  category: 'auto_preset'
+
+item_1390:
+  material: 'BAMBOO'
+  buy: 51430
+  sell: 23630
+  category: 'auto_preset'
+
+item_1391:
+  material: 'SUGAR_CANE'
+  buy: 51467
+  sell: 23647
+  category: 'auto_preset'
+
+item_1392:
+  material: 'DIAMOND'
+  buy: 51504
+  sell: 23664
+  category: 'auto_preset'
+
+item_1393:
+  material: 'EMERALD'
+  buy: 51541
+  sell: 23681
+  category: 'auto_preset'
+
+item_1394:
+  material: 'IRON_INGOT'
+  buy: 51578
+  sell: 23698
+  category: 'auto_preset'
+
+item_1395:
+  material: 'GOLD_INGOT'
+  buy: 51615
+  sell: 23715
+  category: 'auto_preset'
+
+item_1396:
+  material: 'ENDER_PEARL'
+  buy: 51652
+  sell: 23732
+  category: 'auto_preset'
+
+item_1397:
+  material: 'GOLDEN_APPLE'
+  buy: 51689
+  sell: 23749
+  category: 'auto_preset'
+
+item_1398:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 51726
+  sell: 23766
+  category: 'auto_preset'
+
+item_1399:
+  material: 'SHULKER_BOX'
+  buy: 51763
+  sell: 23783
+  category: 'auto_preset'
+
+item_1400:
+  material: 'STONE'
+  buy: 51800
+  sell: 23800
+  category: 'auto_preset'
+
+item_1401:
+  material: 'COBBLESTONE'
+  buy: 51837
+  sell: 23817
+  category: 'auto_preset'
+
+item_1402:
+  material: 'OAK_LOG'
+  buy: 51874
+  sell: 23834
+  category: 'auto_preset'
+
+item_1403:
+  material: 'SPRUCE_LOG'
+  buy: 51911
+  sell: 23851
+  category: 'auto_preset'
+
+item_1404:
+  material: 'BAMBOO'
+  buy: 51948
+  sell: 23868
+  category: 'auto_preset'
+
+item_1405:
+  material: 'SUGAR_CANE'
+  buy: 51985
+  sell: 23885
+  category: 'auto_preset'
+
+item_1406:
+  material: 'DIAMOND'
+  buy: 52022
+  sell: 23902
+  category: 'auto_preset'
+
+item_1407:
+  material: 'EMERALD'
+  buy: 52059
+  sell: 23919
+  category: 'auto_preset'
+
+item_1408:
+  material: 'IRON_INGOT'
+  buy: 52096
+  sell: 23936
+  category: 'auto_preset'
+
+item_1409:
+  material: 'GOLD_INGOT'
+  buy: 52133
+  sell: 23953
+  category: 'auto_preset'
+
+item_1410:
+  material: 'ENDER_PEARL'
+  buy: 52170
+  sell: 23970
+  category: 'auto_preset'
+
+item_1411:
+  material: 'GOLDEN_APPLE'
+  buy: 52207
+  sell: 23987
+  category: 'auto_preset'
+
+item_1412:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 52244
+  sell: 24004
+  category: 'auto_preset'
+
+item_1413:
+  material: 'SHULKER_BOX'
+  buy: 52281
+  sell: 24021
+  category: 'auto_preset'
+
+item_1414:
+  material: 'STONE'
+  buy: 52318
+  sell: 24038
+  category: 'auto_preset'
+
+item_1415:
+  material: 'COBBLESTONE'
+  buy: 52355
+  sell: 24055
+  category: 'auto_preset'
+
+item_1416:
+  material: 'OAK_LOG'
+  buy: 52392
+  sell: 24072
+  category: 'auto_preset'
+
+item_1417:
+  material: 'SPRUCE_LOG'
+  buy: 52429
+  sell: 24089
+  category: 'auto_preset'
+
+item_1418:
+  material: 'BAMBOO'
+  buy: 52466
+  sell: 24106
+  category: 'auto_preset'
+
+item_1419:
+  material: 'SUGAR_CANE'
+  buy: 52503
+  sell: 24123
+  category: 'auto_preset'
+
+item_1420:
+  material: 'DIAMOND'
+  buy: 52540
+  sell: 24140
+  category: 'auto_preset'
+
+item_1421:
+  material: 'EMERALD'
+  buy: 52577
+  sell: 24157
+  category: 'auto_preset'
+
+item_1422:
+  material: 'IRON_INGOT'
+  buy: 52614
+  sell: 24174
+  category: 'auto_preset'
+
+item_1423:
+  material: 'GOLD_INGOT'
+  buy: 52651
+  sell: 24191
+  category: 'auto_preset'
+
+item_1424:
+  material: 'ENDER_PEARL'
+  buy: 52688
+  sell: 24208
+  category: 'auto_preset'
+
+item_1425:
+  material: 'GOLDEN_APPLE'
+  buy: 52725
+  sell: 24225
+  category: 'auto_preset'
+
+item_1426:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 52762
+  sell: 24242
+  category: 'auto_preset'
+
+item_1427:
+  material: 'SHULKER_BOX'
+  buy: 52799
+  sell: 24259
+  category: 'auto_preset'
+
+item_1428:
+  material: 'STONE'
+  buy: 52836
+  sell: 24276
+  category: 'auto_preset'
+
+item_1429:
+  material: 'COBBLESTONE'
+  buy: 52873
+  sell: 24293
+  category: 'auto_preset'
+
+item_1430:
+  material: 'OAK_LOG'
+  buy: 52910
+  sell: 24310
+  category: 'auto_preset'
+
+item_1431:
+  material: 'SPRUCE_LOG'
+  buy: 52947
+  sell: 24327
+  category: 'auto_preset'
+
+item_1432:
+  material: 'BAMBOO'
+  buy: 52984
+  sell: 24344
+  category: 'auto_preset'
+
+item_1433:
+  material: 'SUGAR_CANE'
+  buy: 53021
+  sell: 24361
+  category: 'auto_preset'
+
+item_1434:
+  material: 'DIAMOND'
+  buy: 53058
+  sell: 24378
+  category: 'auto_preset'
+
+item_1435:
+  material: 'EMERALD'
+  buy: 53095
+  sell: 24395
+  category: 'auto_preset'
+
+item_1436:
+  material: 'IRON_INGOT'
+  buy: 53132
+  sell: 24412
+  category: 'auto_preset'
+
+item_1437:
+  material: 'GOLD_INGOT'
+  buy: 53169
+  sell: 24429
+  category: 'auto_preset'
+
+item_1438:
+  material: 'ENDER_PEARL'
+  buy: 53206
+  sell: 24446
+  category: 'auto_preset'
+
+item_1439:
+  material: 'GOLDEN_APPLE'
+  buy: 53243
+  sell: 24463
+  category: 'auto_preset'
+
+item_1440:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 53280
+  sell: 24480
+  category: 'auto_preset'
+
+item_1441:
+  material: 'SHULKER_BOX'
+  buy: 53317
+  sell: 24497
+  category: 'auto_preset'
+
+item_1442:
+  material: 'STONE'
+  buy: 53354
+  sell: 24514
+  category: 'auto_preset'
+
+item_1443:
+  material: 'COBBLESTONE'
+  buy: 53391
+  sell: 24531
+  category: 'auto_preset'
+
+item_1444:
+  material: 'OAK_LOG'
+  buy: 53428
+  sell: 24548
+  category: 'auto_preset'
+
+item_1445:
+  material: 'SPRUCE_LOG'
+  buy: 53465
+  sell: 24565
+  category: 'auto_preset'
+
+item_1446:
+  material: 'BAMBOO'
+  buy: 53502
+  sell: 24582
+  category: 'auto_preset'
+
+item_1447:
+  material: 'SUGAR_CANE'
+  buy: 53539
+  sell: 24599
+  category: 'auto_preset'
+
+item_1448:
+  material: 'DIAMOND'
+  buy: 53576
+  sell: 24616
+  category: 'auto_preset'
+
+item_1449:
+  material: 'EMERALD'
+  buy: 53613
+  sell: 24633
+  category: 'auto_preset'
+
+item_1450:
+  material: 'IRON_INGOT'
+  buy: 53650
+  sell: 24650
+  category: 'auto_preset'
+
+item_1451:
+  material: 'GOLD_INGOT'
+  buy: 53687
+  sell: 24667
+  category: 'auto_preset'
+
+item_1452:
+  material: 'ENDER_PEARL'
+  buy: 53724
+  sell: 24684
+  category: 'auto_preset'
+
+item_1453:
+  material: 'GOLDEN_APPLE'
+  buy: 53761
+  sell: 24701
+  category: 'auto_preset'
+
+item_1454:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 53798
+  sell: 24718
+  category: 'auto_preset'
+
+item_1455:
+  material: 'SHULKER_BOX'
+  buy: 53835
+  sell: 24735
+  category: 'auto_preset'
+
+item_1456:
+  material: 'STONE'
+  buy: 53872
+  sell: 24752
+  category: 'auto_preset'
+
+item_1457:
+  material: 'COBBLESTONE'
+  buy: 53909
+  sell: 24769
+  category: 'auto_preset'
+
+item_1458:
+  material: 'OAK_LOG'
+  buy: 53946
+  sell: 24786
+  category: 'auto_preset'
+
+item_1459:
+  material: 'SPRUCE_LOG'
+  buy: 53983
+  sell: 24803
+  category: 'auto_preset'
+
+item_1460:
+  material: 'BAMBOO'
+  buy: 54020
+  sell: 24820
+  category: 'auto_preset'
+
+item_1461:
+  material: 'SUGAR_CANE'
+  buy: 54057
+  sell: 24837
+  category: 'auto_preset'
+
+item_1462:
+  material: 'DIAMOND'
+  buy: 54094
+  sell: 24854
+  category: 'auto_preset'
+
+item_1463:
+  material: 'EMERALD'
+  buy: 54131
+  sell: 24871
+  category: 'auto_preset'
+
+item_1464:
+  material: 'IRON_INGOT'
+  buy: 54168
+  sell: 24888
+  category: 'auto_preset'
+
+item_1465:
+  material: 'GOLD_INGOT'
+  buy: 54205
+  sell: 24905
+  category: 'auto_preset'
+
+item_1466:
+  material: 'ENDER_PEARL'
+  buy: 54242
+  sell: 24922
+  category: 'auto_preset'
+
+item_1467:
+  material: 'GOLDEN_APPLE'
+  buy: 54279
+  sell: 24939
+  category: 'auto_preset'
+
+item_1468:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 54316
+  sell: 24956
+  category: 'auto_preset'
+
+item_1469:
+  material: 'SHULKER_BOX'
+  buy: 54353
+  sell: 24973
+  category: 'auto_preset'
+
+item_1470:
+  material: 'STONE'
+  buy: 54390
+  sell: 24990
+  category: 'auto_preset'
+
+item_1471:
+  material: 'COBBLESTONE'
+  buy: 54427
+  sell: 25007
+  category: 'auto_preset'
+
+item_1472:
+  material: 'OAK_LOG'
+  buy: 54464
+  sell: 25024
+  category: 'auto_preset'
+
+item_1473:
+  material: 'SPRUCE_LOG'
+  buy: 54501
+  sell: 25041
+  category: 'auto_preset'
+
+item_1474:
+  material: 'BAMBOO'
+  buy: 54538
+  sell: 25058
+  category: 'auto_preset'
+
+item_1475:
+  material: 'SUGAR_CANE'
+  buy: 54575
+  sell: 25075
+  category: 'auto_preset'
+
+item_1476:
+  material: 'DIAMOND'
+  buy: 54612
+  sell: 25092
+  category: 'auto_preset'
+
+item_1477:
+  material: 'EMERALD'
+  buy: 54649
+  sell: 25109
+  category: 'auto_preset'
+
+item_1478:
+  material: 'IRON_INGOT'
+  buy: 54686
+  sell: 25126
+  category: 'auto_preset'
+
+item_1479:
+  material: 'GOLD_INGOT'
+  buy: 54723
+  sell: 25143
+  category: 'auto_preset'
+
+item_1480:
+  material: 'ENDER_PEARL'
+  buy: 54760
+  sell: 25160
+  category: 'auto_preset'
+
+item_1481:
+  material: 'GOLDEN_APPLE'
+  buy: 54797
+  sell: 25177
+  category: 'auto_preset'
+
+item_1482:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 54834
+  sell: 25194
+  category: 'auto_preset'
+
+item_1483:
+  material: 'SHULKER_BOX'
+  buy: 54871
+  sell: 25211
+  category: 'auto_preset'
+
+item_1484:
+  material: 'STONE'
+  buy: 54908
+  sell: 25228
+  category: 'auto_preset'
+
+item_1485:
+  material: 'COBBLESTONE'
+  buy: 54945
+  sell: 25245
+  category: 'auto_preset'
+
+item_1486:
+  material: 'OAK_LOG'
+  buy: 54982
+  sell: 25262
+  category: 'auto_preset'
+
+item_1487:
+  material: 'SPRUCE_LOG'
+  buy: 55019
+  sell: 25279
+  category: 'auto_preset'
+
+item_1488:
+  material: 'BAMBOO'
+  buy: 55056
+  sell: 25296
+  category: 'auto_preset'
+
+item_1489:
+  material: 'SUGAR_CANE'
+  buy: 55093
+  sell: 25313
+  category: 'auto_preset'
+
+item_1490:
+  material: 'DIAMOND'
+  buy: 55130
+  sell: 25330
+  category: 'auto_preset'
+
+item_1491:
+  material: 'EMERALD'
+  buy: 55167
+  sell: 25347
+  category: 'auto_preset'
+
+item_1492:
+  material: 'IRON_INGOT'
+  buy: 55204
+  sell: 25364
+  category: 'auto_preset'
+
+item_1493:
+  material: 'GOLD_INGOT'
+  buy: 55241
+  sell: 25381
+  category: 'auto_preset'
+
+item_1494:
+  material: 'ENDER_PEARL'
+  buy: 55278
+  sell: 25398
+  category: 'auto_preset'
+
+item_1495:
+  material: 'GOLDEN_APPLE'
+  buy: 55315
+  sell: 25415
+  category: 'auto_preset'
+
+item_1496:
+  material: 'TOTEM_OF_UNDYING'
+  buy: 55352
+  sell: 25432
+  category: 'auto_preset'
+
+item_1497:
+  material: 'SHULKER_BOX'
+  buy: 55389
+  sell: 25449
+  category: 'auto_preset'
+
+item_1498:
+  material: 'STONE'
+  buy: 55426
+  sell: 25466
+  category: 'auto_preset'
+
+item_1499:
+  material: 'COBBLESTONE'
+  buy: 55463
+  sell: 25483
+  category: 'auto_preset'
+
+item_1500:
+  material: 'OAK_LOG'
+  buy: 55500
+  sell: 25500
+  category: 'auto_preset'

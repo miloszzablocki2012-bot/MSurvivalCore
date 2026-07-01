@@ -1,14 +1,41 @@
 name: MSurvivalMarket
-version: 5.0
+version: 5.8
 main: pl.msurvival.market.MSurvivalMarket
-api-version: 5.0
+api-version: 5.8
+author: Milekz
 commands:
-  rynek: {usage: /rynek, aliases: [sklep, market]}
-  kasa: {usage: /kasa, aliases: [money, balance]}
-  sell: {usage: /sell}
-  sellall: {usage: /sellall}
-  kosz: {usage: /kosz}
-  pay: {usage: /pay <gracz> <kwota>}
-  rynekadmin: {usage: /rynekadmin give <gracz> <kwota>}
+  rynek:
+    usage: /rynek
+    aliases: [market]
+  sklep:
+    usage: /sklep
+  kasa:
+    usage: /kasa
+    aliases: [money, balance]
+  sell:
+    usage: /sell
+  sellall:
+    usage: /sellall
+  kosz:
+    usage: /kosz
+  pay:
+    usage: /pay <gracz> <kwota>
+  ah:
+    usage: /ah
+    aliases: [aukcje, playershop, sklepgraczy]
+  sellhand:
+    usage: /sellhand <cena>
+  buyoffer:
+    usage: /buyoffer <id>
+  canceloffer:
+    usage: /canceloffer <id>
+  mojeoferty:
+    usage: /mojeoferty
+  moneyadmin:
+    usage: /moneyadmin <give|take|set> <gracz> <kwota>
+    aliases: [kasaadmin]
+  rynekadmin:
+    usage: /rynekadmin <reload|clearoffers>
 permissions:
-  msurvival.market.admin: {default: op}
+  msurvival.market.admin:
+    default: op

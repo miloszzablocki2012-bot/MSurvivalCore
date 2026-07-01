@@ -1,0 +1,38 @@
+server:
+  name: 'MSURVIVAL'
+  ip: 'msurvival.6mc.pl'
+menus:
+  main-title: '&6&l✦ MSURVIVAL PRO ✦'
+  profile-title: '&e&lPROFIL GRACZA'
+  settings-title: '&b&lUSTAWIENIA'
+messages:
+  prefix: '&6&lMSurvival &8» &r'
+  reload: '&aPrzeładowano MSurvivalPro.'
+  no-permission: '&cNie masz uprawnień.'
+  warp-set: '&aUstawiono warp &e%warp%&a.'
+  warp-deleted: '&cUsunięto warp &e%warp%&c.'
+  warp-not-found: '&cNie znaleziono warpa.'
+  teleported: '&aPrzeteleportowano.'
+  alert-format:
+    - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+    - '&6&lMSURVIVAL &8» &f%message%'
+    - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+regulamin:
+  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+  - '&6&lREGULAMIN MSURVIVAL'
+  - '&c✘ &fZakaz cheatów, X-Ray, macro i exploitów.'
+  - '&c✘ &fZakaz griefu i kradzieży.'
+  - '&c✘ &fZakaz obrażania graczy i administracji.'
+  - '&a✔ &fGraj uczciwie i baw się dobrze.'
+  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+media:
+  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+  - '&c▶ &fYouTube: &e@Milekz'
+  - '&d♫ &fTikTok: &e@Milekz'
+  - '&9✦ &fDiscord: &7Link na kanale YouTube.'
+  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+donate:
+  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+  - '&d❤ &fDonate: &bhttps://tipply.pl/@milekz'
+  - '&7Wsparcie pomaga rozwijać serwer.'
+  - '&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━'

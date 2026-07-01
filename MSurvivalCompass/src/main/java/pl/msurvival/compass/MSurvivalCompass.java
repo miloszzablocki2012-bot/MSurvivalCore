@@ -11,6 +11,7 @@ import org.bukkit.inventory.*;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.java.JavaPlugin;
+
 import java.io.File;
 import java.util.*;
 
@@ -19,151 +20,272 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
     private File dataFile;
     private YamlConfiguration data;
 
+    @Override
     public void onEnable() {
         saveDefaultConfig();
         compassKey = new NamespacedKey(this, "msurvival_compass");
         dataFile = new File(getDataFolder(), "data.yml");
-        try { getDataFolder().mkdirs(); if (!dataFile.exists()) dataFile.createNewFile(); } catch (Exception ignored) {}
+        try {
+            getDataFolder().mkdirs();
+            if (!dataFile.exists()) dataFile.createNewFile();
+        } catch (Exception ignored) {}
         data = YamlConfiguration.loadConfiguration(dataFile);
         Bukkit.getPluginManager().registerEvents(this, this);
+
         Bukkit.getScheduler().runTaskTimer(this, () -> {
-            for (Player p : Bukkit.getOnlinePlayers()) {
-                if (isLobby(p)) giveCompassSafely(p); else removeAllCompasses(p);
+            if (!getConfig().getBoolean("compass.enabled", true)) return;
+            for (Player player : Bukkit.getOnlinePlayers()) {
+                if (isLobby(player)) giveCompassSafely(player);
+                else removeAllCompasses(player);
             }
         }, 40L, 100L);
     }
 
-    public void onDisable() { saveData(); }
+    @Override
+    public void onDisable() {
+        saveData();
+    }
 
+    @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         String cmd = command.getName().toLowerCase(Locale.ROOT);
+
         if (cmd.equals("compassreload")) {
             if (!sender.hasPermission("msurvival.compass.admin")) return true;
-            reloadConfig(); sender.sendMessage(msg("reload")); return true;
+            reloadConfig();
+            data = YamlConfiguration.loadConfiguration(dataFile);
+            sender.sendMessage(msg("reload"));
+            return true;
         }
-        if (!(sender instanceof Player p)) return true;
+
+        if (!(sender instanceof Player player)) return true;
 
         if (cmd.equals("setmsspawn")) {
-            if (!p.hasPermission("msurvival.compass.admin")) return true;
+            if (!player.hasPermission("msurvival.compass.admin")) return true;
             if (args.length < 1 || (!args[0].equalsIgnoreCase("lobby") && !args[0].equalsIgnoreCase("survival"))) {
-                p.sendMessage(color("&c/setmsspawn <lobby|survival>"));
+                player.sendMessage(color("&c/setmsspawn <lobby|survival>"));
                 return true;
             }
-            saveSpawn(args[0].toLowerCase(Locale.ROOT), p.getLocation());
-            p.sendMessage(msg("spawn-set").replace("%type%", args[0].toLowerCase(Locale.ROOT)));
+            saveSpawn(args[0].toLowerCase(Locale.ROOT), player.getLocation());
+            player.sendMessage(msg("spawn-set")
+                    .replace("%type%", args[0].toLowerCase(Locale.ROOT))
+                    .replace("%world%", player.getWorld().getName()));
+            return true;
+        }
+
+        if (cmd.equals("msspawns")) {
+            if (!player.hasPermission("msurvival.compass.admin")) return true;
+            sendSpawnInfo(player, "lobby");
+            sendSpawnInfo(player, "survival");
             return true;
         }
 
         if (cmd.equals("compassbypass")) {
-            if (!p.hasPermission("msurvival.compass.bypass")) return true;
-            if (args.length < 1) { p.sendMessage(color("&c/compassbypass <on|off>")); return true; }
+            if (!player.hasPermission("msurvival.compass.bypass")) return true;
+            if (args.length < 1) {
+                player.sendMessage(color("&c/compassbypass <on|off>"));
+                return true;
+            }
             boolean enabled = args[0].equalsIgnoreCase("on") || args[0].equalsIgnoreCase("true");
-            data.set("bypass." + p.getUniqueId(), enabled); saveData();
-            if (enabled) { removeAllCompasses(p); p.sendMessage(msg("bypass-on")); }
-            else { p.sendMessage(msg("bypass-off")); if (isLobby(p)) giveCompassSafely(p); }
+            data.set("bypass." + player.getUniqueId(), enabled);
+            saveData();
+            if (enabled) {
+                removeAllCompasses(player);
+                player.sendMessage(msg("bypass-on"));
+            } else {
+                player.sendMessage(msg("bypass-off"));
+                if (isLobby(player)) giveCompassSafely(player);
+            }
             return true;
         }
 
-        if (cmd.equals("lobby")) { toLobby(p); return true; }
-        if (cmd.equals("survival")) { toSurvival(p); return true; }
-        if (cmd.equals("menu")) { openMenu(p); return true; }
+        if (cmd.equals("lobby")) {
+            teleportNamed(player, "lobby", true);
+            return true;
+        }
+
+        if (cmd.equals("survival")) {
+            teleportNamed(player, "survival", true);
+            return true;
+        }
+
+        if (cmd.equals("menu")) {
+            openMenu(player);
+            return true;
+        }
+
         return true;
     }
 
-    @EventHandler public void join(PlayerJoinEvent e) {
-        Bukkit.getScheduler().runTaskLater(this, () -> { Player p=e.getPlayer(); if(p.isOnline()) { if(isLobby(p)) giveCompassSafely(p); else removeAllCompasses(p); }}, 10L);
+    @EventHandler
+    public void onJoin(PlayerJoinEvent event) {
+        Bukkit.getScheduler().runTaskLater(this, () -> {
+            Player player = event.getPlayer();
+            if (!player.isOnline()) return;
+            if (isLobby(player)) giveCompassSafely(player);
+            else removeAllCompasses(player);
+        }, 20L);
     }
-    @EventHandler public void world(PlayerChangedWorldEvent e) { if (isLobby(e.getPlayer())) giveCompassSafely(e.getPlayer()); else removeAllCompasses(e.getPlayer()); }
-    @EventHandler public void interact(PlayerInteractEvent e) { if (isCompass(e.getItem())) { e.setCancelled(true); openMenu(e.getPlayer()); } }
-    @EventHandler public void drop(PlayerDropItemEvent e) { if (isCompass(e.getItemDrop().getItemStack())) e.setCancelled(true); }
 
-    @EventHandler public void click(InventoryClickEvent e) {
-        if (!(e.getWhoClicked() instanceof Player p)) return;
-        if (e.getView().getTitle().equals(color(getConfig().getString("menu.title")))) {
-            e.setCancelled(true);
-            ItemStack item = e.getCurrentItem();
+    @EventHandler
+    public void onWorldChange(PlayerChangedWorldEvent event) {
+        Player player = event.getPlayer();
+        Bukkit.getScheduler().runTaskLater(this, () -> {
+            if (isLobby(player)) giveCompassSafely(player);
+            else removeAllCompasses(player);
+        }, 5L);
+    }
+
+    @EventHandler
+    public void onInteract(PlayerInteractEvent event) {
+        if (isCompass(event.getItem())) {
+            event.setCancelled(true);
+            openMenu(event.getPlayer());
+        }
+    }
+
+    @EventHandler
+    public void onDrop(PlayerDropItemEvent event) {
+        if (isCompass(event.getItemDrop().getItemStack())) event.setCancelled(true);
+    }
+
+    @EventHandler
+    public void onClick(InventoryClickEvent event) {
+        if (!(event.getWhoClicked() instanceof Player player)) return;
+
+        if (event.getView().getTitle().equals(color(getConfig().getString("menu.title")))) {
+            event.setCancelled(true);
+            ItemStack item = event.getCurrentItem();
             if (item == null || !item.hasItemMeta()) return;
             String name = ChatColor.stripColor(item.getItemMeta().getDisplayName()).toLowerCase(Locale.ROOT);
-            p.closeInventory();
-            if (name.contains("survival")) toSurvival(p);
-            else if (name.contains("klucze")) p.performCommand("keysmenu");
-            else if (name.contains("kity")) p.performCommand("kits");
-            else if (name.contains("rynek")) p.performCommand("rynek");
+            player.closeInventory();
+
+            if (name.contains("survival")) teleportNamed(player, "survival", true);
+            else if (name.contains("klucze")) player.performCommand("keysmenu");
+            else if (name.contains("kity")) player.performCommand("kits");
+            else if (name.contains("rynek")) player.performCommand("rynek");
             return;
         }
-        if (isCompass(e.getCurrentItem()) || isCompass(e.getCursor())) e.setCancelled(true);
+
+        if (isCompass(event.getCurrentItem()) || isCompass(event.getCursor())) event.setCancelled(true);
     }
 
-    private void toLobby(Player p) {
-        teleportToSpawn(p, "lobby", getConfig().getString("worlds.lobby", "Lobby"));
-        Bukkit.getScheduler().runTaskLater(this, () -> giveCompassSafely(p), 5L);
-        p.sendMessage(msg("lobby"));
+    private void teleportNamed(Player player, String type, boolean message) {
+        if (type.equals("survival")) removeAllCompasses(player);
+
+        Location target = getSpawn(type);
+        if (target == null) {
+            String worldName = getConfig().getString("worlds." + type, type.equals("lobby") ? "Lobby" : "world");
+            World world = Bukkit.getWorld(worldName);
+            if (world == null) {
+                player.sendMessage(msg("no-world").replace("%world%", worldName));
+                return;
+            }
+            target = centered(world.getSpawnLocation());
+        }
+
+        final Location finalTarget = centered(target);
+        player.teleport(finalTarget);
+
+        if (getConfig().getBoolean("teleport.double-teleport-fix", true)) {
+            long delay = getConfig().getLong("teleport.second-teleport-delay-ticks", 8L);
+            Bukkit.getScheduler().runTaskLater(this, () -> {
+                if (player.isOnline()) player.teleport(finalTarget);
+            }, Math.max(1L, delay));
+        }
+
+        if (type.equals("lobby")) {
+            Bukkit.getScheduler().runTaskLater(this, () -> giveCompassSafely(player), 10L);
+            if (message) player.sendMessage(msg("lobby"));
+        } else {
+            Bukkit.getScheduler().runTaskLater(this, () -> removeAllCompasses(player), 10L);
+            if (message) player.sendMessage(msg("survival"));
+        }
     }
 
-    private void toSurvival(Player p) {
-        removeAllCompasses(p);
-        teleportToSpawn(p, "survival", getConfig().getString("worlds.survival", "world"));
-        p.sendMessage(msg("survival"));
+    private Location centered(Location location) {
+        if (!getConfig().getBoolean("teleport.safe-center-block", true)) return location;
+        Location clone = location.clone();
+        clone.setX(clone.getBlockX() + 0.5);
+        clone.setZ(clone.getBlockZ() + 0.5);
+        return clone;
     }
 
-    private void teleportToSpawn(Player p, String type, String fallbackWorldName) {
-        Location saved = getSpawn(type);
-        if (saved != null) { p.teleport(saved); return; }
-        World w = Bukkit.getWorld(fallbackWorldName);
-        if (w == null) { p.sendMessage(msg("no-world").replace("%world%", fallbackWorldName)); return; }
-        p.teleport(w.getSpawnLocation());
-    }
-
-    private void saveSpawn(String type, Location loc) {
+    private void saveSpawn(String type, Location location) {
         String path = "spawns." + type;
-        getConfig().set(path + ".world", loc.getWorld().getName());
-        getConfig().set(path + ".x", loc.getX());
-        getConfig().set(path + ".y", loc.getY());
-        getConfig().set(path + ".z", loc.getZ());
-        getConfig().set(path + ".yaw", loc.getYaw());
-        getConfig().set(path + ".pitch", loc.getPitch());
-        saveConfig();
+        data.set(path + ".world", location.getWorld().getName());
+        data.set(path + ".x", location.getX());
+        data.set(path + ".y", location.getY());
+        data.set(path + ".z", location.getZ());
+        data.set(path + ".yaw", location.getYaw());
+        data.set(path + ".pitch", location.getPitch());
+        saveData();
     }
 
     private Location getSpawn(String type) {
         String path = "spawns." + type;
-        String worldName = getConfig().getString(path + ".world");
+        String worldName = data.getString(path + ".world");
         if (worldName == null) return null;
         World world = Bukkit.getWorld(worldName);
         if (world == null) return null;
-        return new Location(world, getConfig().getDouble(path+".x"), getConfig().getDouble(path+".y"), getConfig().getDouble(path+".z"), (float)getConfig().getDouble(path+".yaw"), (float)getConfig().getDouble(path+".pitch"));
+        return new Location(world,
+                data.getDouble(path + ".x"),
+                data.getDouble(path + ".y"),
+                data.getDouble(path + ".z"),
+                (float) data.getDouble(path + ".yaw"),
+                (float) data.getDouble(path + ".pitch"));
     }
 
-    private void openMenu(Player p) {
+    private void sendSpawnInfo(Player player, String type) {
+        Location loc = getSpawn(type);
+        if (loc == null) {
+            player.sendMessage(msg("spawn-missing").replace("%type%", type));
+            return;
+        }
+        player.sendMessage(color("&6" + type + " &8» &e" + loc.getWorld().getName() + " &7"
+                + loc.getBlockX() + " " + loc.getBlockY() + " " + loc.getBlockZ()));
+    }
+
+    private void openMenu(Player player) {
         Inventory inv = Bukkit.createInventory(null, 27, color(getConfig().getString("menu.title", "&6&lMSURVIVAL MENU")));
         ItemStack glass = named(Material.BLACK_STAINED_GLASS_PANE, " ");
-        for (int i=0;i<inv.getSize();i++) inv.setItem(i, glass);
+        for (int i = 0; i < inv.getSize(); i++) inv.setItem(i, glass);
         inv.setItem(10, named(Material.GRASS_BLOCK, getConfig().getString("menu.survival-name")));
         inv.setItem(12, named(Material.TRIPWIRE_HOOK, getConfig().getString("menu.keys-name")));
         inv.setItem(14, named(Material.CHEST, getConfig().getString("menu.kits-name")));
         inv.setItem(16, named(Material.GOLD_INGOT, getConfig().getString("menu.market-name")));
-        p.openInventory(inv);
+        player.openInventory(inv);
     }
 
-    private void giveCompassSafely(Player p) {
-        removeAllCompasses(p);
-        if (data.getBoolean("bypass." + p.getUniqueId(), false)) return;
+    private void giveCompassSafely(Player player) {
+        if (!getConfig().getBoolean("compass.enabled", true)) return;
+        removeAllCompasses(player);
+        if (data.getBoolean("bypass." + player.getUniqueId(), false)) return;
+
         ItemStack compass = compass();
         int slot = getConfig().getInt("compass.slot", 4);
-        if (slot >= 0 && slot < p.getInventory().getSize()) {
-            ItemStack current = p.getInventory().getItem(slot);
-            if (current == null || current.getType() == Material.AIR) { p.getInventory().setItem(slot, compass); return; }
+
+        if (slot >= 0 && slot < player.getInventory().getSize()) {
+            ItemStack current = player.getInventory().getItem(slot);
+            if (current == null || current.getType() == Material.AIR) {
+                player.getInventory().setItem(slot, compass);
+                return;
+            }
         }
-        int empty = p.getInventory().firstEmpty();
-        if (empty != -1) p.getInventory().setItem(empty, compass);
+
+        int empty = player.getInventory().firstEmpty();
+        if (empty != -1) player.getInventory().setItem(empty, compass);
     }
 
-    private void removeAllCompasses(Player p) {
+    private void removeAllCompasses(Player player) {
         boolean removeNormal = getConfig().getBoolean("compass.remove-normal-compasses-in-lobby", true);
-        ItemStack[] contents = p.getInventory().getContents();
-        for (int i=0;i<contents.length;i++) {
+        ItemStack[] contents = player.getInventory().getContents();
+
+        for (int i = 0; i < contents.length; i++) {
             ItemStack item = contents[i];
-            if (isCompass(item) || (removeNormal && isLobby(p) && item != null && item.getType() == Material.COMPASS)) p.getInventory().setItem(i, null);
+            if (isCompass(item) || (removeNormal && isLobby(player) && item != null && item.getType() == Material.COMPASS)) {
+                player.getInventory().setItem(i, null);
+            }
         }
     }
 
@@ -180,10 +302,34 @@ public final class MSurvivalCompass extends JavaPlugin implements Listener {
         return item;
     }
 
-    private boolean isCompass(ItemStack item) { return item != null && item.hasItemMeta() && item.getItemMeta().getPersistentDataContainer().has(compassKey, PersistentDataType.STRING); }
-    private boolean isLobby(Player p) { return p.getWorld().getName().equalsIgnoreCase(getConfig().getString("worlds.lobby", "Lobby")); }
-    private ItemStack named(Material mat, String name) { ItemStack item = new ItemStack(mat); ItemMeta meta = item.getItemMeta(); meta.setDisplayName(color(name)); item.setItemMeta(meta); return item; }
-    private void saveData() { try { data.save(dataFile); } catch(Exception ignored) {} }
-    private String msg(String key) { return color(getConfig().getString("messages.prefix", "") + getConfig().getString("messages." + key, "")); }
-    private String color(String text) { return ChatColor.translateAlternateColorCodes('&', text == null ? "" : text); }
+    private boolean isCompass(ItemStack item) {
+        return item != null
+                && item.hasItemMeta()
+                && item.getItemMeta().getPersistentDataContainer().has(compassKey, PersistentDataType.STRING);
+    }
+
+    private boolean isLobby(Player player) {
+        String lobbyWorld = getConfig().getString("worlds.lobby", "Lobby");
+        return player.getWorld().getName().equalsIgnoreCase(lobbyWorld);
+    }
+
+    private ItemStack named(Material mat, String name) {
+        ItemStack item = new ItemStack(mat);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName(color(name));
+        item.setItemMeta(meta);
+        return item;
+    }
+
+    private void saveData() {
+        try { data.save(dataFile); } catch (Exception ignored) {}
+    }
+
+    private String msg(String key) {
+        return color(getConfig().getString("messages.prefix", "") + getConfig().getString("messages." + key, ""));
+    }
+
+    private String color(String text) {
+        return ChatColor.translateAlternateColorCodes('&', text == null ? "" : text);
+    }
 }

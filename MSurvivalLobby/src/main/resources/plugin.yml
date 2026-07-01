@@ -1,7 +1,7 @@
 name: MSurvivalLobby
-version: 5.5
+version: 5.8
 main: pl.msurvival.lobby.MSurvivalLobby
-api-version: '1.21'
+api-version: 5.8
 author: Milekz
 commands:
   setlobby:

@@ -3,6 +3,9 @@ sell:
   SUGAR_CANE: 40
   CACTUS: 28
   NETHER_WART: 55
+  WHEAT: 16
+  CARROT: 18
+  POTATO: 18
   DIAMOND: 900
   EMERALD: 850
   IRON_INGOT: 180
@@ -10,6 +13,7 @@ sell:
   NETHERITE_INGOT: 18000
   SHULKER_SHELL: 3500
   NETHER_STAR: 250000
+
 keys:
   klasyczny: 25000
   zelazny: 75000
@@ -18,7 +22,33 @@ keys:
   legendarny: 850000
   mityczny: 1500000
   boski: 3000000
+
+server-shop:
+  OAK_LOG: 500
+  COBBLESTONE: 120
+  IRON_INGOT: 2500
+  GOLD_INGOT: 3500
+  DIAMOND: 15000
+  ENDER_PEARL: 7000
+  GOLDEN_APPLE: 25000
+  TOTEM_OF_UNDYING: 250000
+  SHULKER_BOX: 300000
+
+settings:
+  player-market-tax-percent: 5.0
+  max-offers-per-player: 20
+  offer-expire-hours: 168
+
 messages:
   prefix: '&6&lRynek &8» &r'
+  no-permission: '&cNie masz uprawnień.'
   no-money: '&cNie masz tyle pieniędzy.'
-  balance: '&aKasa: &e%money%$'
+  balance: '&aStan konta: &e%money%$'
+  paid: '&aWysłano &e%amount%$ &ado &e%player%&a.'
+  received: '&aOtrzymano &e%amount%$ &aod &e%player%&a.'
+  admin-money: '&aZmieniono kasę gracza &e%player%&a. Nowy stan: &e%money%$'
+  offer-created: '&aWystawiono ofertę ID &e%id% &aza &e%price%$&a.'
+  offer-bought: '&aKupiono ofertę ID &e%id%&a.'
+  offer-sold: '&aTwoja oferta ID &e%id% &azostała sprzedana. Otrzymano &e%money%$&a.'
+  offer-cancelled: '&aAnulowano ofertę ID &e%id%&a.'
+  max-offers: '&cMasz maksymalną liczbę ofert.'

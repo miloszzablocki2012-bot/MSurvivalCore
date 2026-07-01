@@ -1,0 +1,35 @@
+name: MSurvivalPro
+version: 5.8
+main: pl.msurvival.pro.MSurvivalPro
+api-version: '1.21'
+author: Milekz
+commands:
+  mspro:
+    usage: /mspro
+  profil:
+    usage: /profil
+  ustawienia:
+    usage: /ustawienia
+  warp:
+    usage: /warp [nazwa]
+  setwarp:
+    usage: /setwarp <nazwa>
+  delwarp:
+    usage: /delwarp <nazwa>
+  warpy:
+    usage: /warpy
+  regulamin:
+    usage: /regulamin
+  media:
+    usage: /media
+  donate:
+    usage: /donate
+  event:
+    usage: /event
+  alert:
+    usage: /alert <tekst>
+  broadcastpro:
+    usage: /broadcastpro <tekst>
+permissions:
+  msurvival.pro.admin:
+    default: op
