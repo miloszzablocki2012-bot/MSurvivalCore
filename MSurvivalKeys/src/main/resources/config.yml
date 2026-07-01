@@ -1,35 +1,40 @@
 settings:
   survival-world: 'world'
+  daily-cooldown-seconds: 86400
   weekly-cooldown-seconds: 604800
 
 key-item:
   material: TRIPWIRE_HOOK
 
 keys:
-  klasyczny: '&f&lKlucz Klasyczny'
-  zelazny: '&7&lKlucz Żelazny'
+  codzienny: '&a&lCodzienny Klucz'
+  cotygodniowy: '&e&lCotygodniowy Klucz'
+  klasyczny: '&7&lKlucz Klasyczny'
+  zelazny: '&f&lKlucz Żelazny'
+  zloty: '&6&lKlucz Złoty'
   diamentowy: '&b&lKlucz Diamentowy'
+  szmaragdowy: '&a&lKlucz Szmaragdowy'
   epic: '&5&lKlucz Epic'
   legendarny: '&6&lKlucz Legendarny'
   mityczny: '&d&lKlucz Mityczny'
   boski: '&4&lKlucz Boski'
+  administracyjny: '&c&lKlucz Administracyjny'
 
 messages:
   prefix: '&6MSurvival &8» &r'
   no-permission: '&cNie masz uprawnień.'
   only-survival: '&cKlucze i E-Kity odbierasz tylko na Survivalu.'
-  disabled-ppm: '&cKlucza nie używasz PPM. Otwórz /kits.'
+  disabled-ppm: '&cKlucza nie używasz PPM. Otwórz /kits albo /keysmenu.'
   no-key: '&cNie masz klucza: %key%'
   withdrawn: '&aWyjęto klucz: %key%'
   admin-give: '&aDodano &e%amount%x %key% &adla &e%player%'
   opened: '&aOtworzono E-Kit: &e%kit%'
   weekly-ready:
-    - '&6Cotygodniowy klucz &8» &aMożesz odebrać swój klucz komendą &e/weeklykey&a.'
-    - '&7Szanse: Klasyczny 89.0000%, Żelazny 10.0000%, Diamentowy 0.9000%, Epic 0.0900%, Legendarny 0.0090%, Mityczny 0.0002%, Boski 0.0001%.'
+    - '&6Cotygodniowy Klucz &8» &aMożesz odebrać swój klucz komendą &e/weeklykey&a.'
+    - '&7Szanse: Klasyczny 65%, Żelazny 18%, Złoty 8%, Diamentowy 5%, Szmaragdowy 2%, Epic 1.2%, Legendarny 0.55%, Mityczny 0.2%, Boski 0.05%.'
   weekly-claimed:
-    - '&6Cotygodniowy klucz &8» &aOdebrano klucz.'
+    - '&6Cotygodniowy Klucz &8» &aOdebrano klucz.'
     - '&7Wylosowano: %key%'
-    - '&7Szanse: Klasyczny 89.0000%, Żelazny 10.0000%, Diamentowy 0.9000%, Epic 0.0900%, Legendarny 0.0090%, Mityczny 0.0002%, Boski 0.0001%.'
   weekly-cooldown:
-    - '&6Cotygodniowy klucz &8» &cKlucz został już odebrany.'
+    - '&6Cotygodniowy Klucz &8» &cKlucz został już odebrany.'
     - '&7Następny odbiór za: &e%time%'

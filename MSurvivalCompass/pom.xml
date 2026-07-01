@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>pl.msurvival</groupId>
   <artifactId>MSurvivalCompass</artifactId>
-  <version>5.8</version>
+  <version>6.4</version>
   <packaging>jar</packaging>
 
   <properties>

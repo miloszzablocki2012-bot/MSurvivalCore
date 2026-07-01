@@ -1,31 +1,33 @@
 settings:
   premium-auto-login: true
+  premium-first-join-register: true
   require-repeat-register-password: false
   center-title: true
-  bypass:
-    - 'Milekz21'
-  force-password:
-    - 'Milekz21'
+  bypass: []
+  force-password: []
 
 messages:
   prefix: '&6Auth &8» &r'
-  register: '&eNie masz konta. Zarejestruj się komendą: &6/register <hasło>'
+  register: '&eNie masz konta. Zabezpiecz nick komendą: &6/register <hasło>'
   login: '&eZaloguj się komendą: &6/login <hasło>'
-  registered: '&aZarejestrowano i zalogowano.'
+  premium-first-register: '&eWykryto konto Premium. Najpierw zabezpiecz nick komendą &6/register <hasło>&e. Po tym kolejne wejścia Premium będą automatyczne.'
+  registered: '&aZarejestrowano i zalogowano. Twoje konto jest zabezpieczone.'
   logged: '&aZalogowano.'
   wrong: '&cBłędne hasło.'
   already-registered: '&cMasz już konto. Użyj &e/login <hasło>&c.'
   not-registered: '&cNie masz konta. Użyj &e/register <hasło>&c.'
-  premium: '&aKonto premium wykryte. Zalogowano automatycznie.'
+  premium: '&aKonto Premium wykryte. Zalogowano automatycznie, bo konto było już zabezpieczone.'
   bypassed: '&aBypass logowania aktywny. Zalogowano.'
   changed: '&aZmieniono hasło.'
   premium-on: '&aWłączono automatyczne logowanie premium.'
-  premium-off: '&cWyłączono automatyczne logowanie premium. Premium też musi się logować.'
+  premium-off: '&cWyłączono automatyczne logowanie premium. Premium też musi się logować hasłem.'
   premium-status: '&eAutomatyczne logowanie premium: &f%status%'
 titles:
   logged-title: '&a&lZALOGOWANO'
   logged-subtitle: '&7Miłej gry na &6MSURVIVAL'
-  registered-title: '&a&lZAREJESTROWANO I ZALOGOWANO'
-  registered-subtitle: '&7Twoje konto zostało zabezpieczone'
-  premium-title: '&a&lZALOGOWANO'
-  premium-subtitle: '&7Konto premium wykryte'
+  registered-title: '&a&lKONTO ZABEZPIECZONE'
+  registered-subtitle: '&7Premium będzie mogło logować się automatycznie'
+  premium-title: '&a&lZALOGOWANO PREMIUM'
+  premium-subtitle: '&7Konto było wcześniej zabezpieczone'
+  premium-first-title: '&e&lWYKRYTO PREMIUM'
+  premium-first-subtitle: '&7Najpierw wpisz /register <hasło>'

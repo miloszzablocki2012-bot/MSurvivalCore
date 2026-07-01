@@ -7,42 +7,44 @@ settings:
 
 title:
   enabled: true
-  title: '&6&lWITAJ NA MSURVIVAL'
-  subtitle: '&fNajlepszy Survival Minecraft 1.21.8'
+  title: '&6&l👁 WITAJ NA MSURVIVAL'
+  subtitle: '&fSurvival 1.21.8 z ekonomią, rynkiem i klanami'
   fade-in: 15
-  stay: 60
+  stay: 70
   fade-out: 20
 
 actionbar:
-  login: '&a✔ Konto zostało pomyślnie zalogowane.'
+  login: '&a✔ Konto zostało poprawnie zweryfikowane'
 
 bossbar:
   enabled: true
-  title: '&6Miłej gry! Otwórz MENU kompasem znajdującym się w ekwipunku.'
+  title: '&6👁 Miłej gry na MSurvival! Menu otworzysz kompasem.'
   color: YELLOW
   style: SOLID
-  remove-after-ticks: 160
+  remove-after-ticks: 180
 
 sounds:
   title:
     sound: ENTITY_PLAYER_LEVELUP
     volume: 0.6
-    pitch: 1.2
+    pitch: 1.15
 
 sequence:
   title:
-    delay-ticks: 30       # 1.5 sekundy po wejściu
+    delay-ticks: 30
   actionbar:
-    delay-ticks: 80       # 4 sekundy
+    delay-ticks: 80
   bossbar:
-    delay-ticks: 140      # 7 sekund
+    delay-ticks: 140
   chat:
-    start-delay-ticks: 200 # 10 sekund
-    section-gap-ticks: 120 # co 6 sekund
+    start-delay-ticks: 200
+    section-gap-ticks: 140
     sections:
       - welcome-main
       - account-info
-      - commands
+      - player-commands-1
+      - player-commands-2
+      - rules
       - economy
       - keys
       - community
@@ -54,89 +56,99 @@ skip:
 
 messages:
   welcome-main:
-    - '&6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
-    - ''
-    - '&eWitaj &6%player%&e!'
-    - ''
-    - '&fDziękujemy za dołączenie na serwer &6%server%&f.'
-    - '&fPrzed Tobą survival z ekonomią, rynkiem, kluczami,'
-    - '&fklanami, domami, teleportami i rozwojem własnej bazy.'
-    - ''
-    - '&6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+    - '&6&l👁 WITAJ NA MSURVIVAL'
+    - '&fCześć &e%player%&f! Trafiłeś na serwer survival przygotowany pod długą rozgrywkę.'
+    - '&fZnajdziesz tutaj ekonomię, aukcje graczy, sklep serwerowy, klucze, klany, domy, RTP i rozbudowane GUI.'
+    - '&fSerwer działa na wersji &e1.21.8&f. Wszystkie najważniejsze systemy są po polsku i mają być proste dla gracza.'
+    - '&fNa start użyj kompasu albo wpisz &e/menu&f, żeby otworzyć główne menu serwera.'
   account-info:
-    - '&b&lINFORMACJE O KONCIE'
-    - ''
-    - '&a✔ Konto zostało poprawnie zalogowane.'
-    - '&a✔ Dane gracza zostały wczytane.'
-    - '&a✔ Ranga i prefix zostały zsynchronizowane.'
-    - '&a✔ Ekonomia została połączona z serwerem.'
-    - '&a✔ Możesz już normalnie grać.'
-  commands:
-    - '&6&lNAJWAŻNIEJSZE KOMENDY'
-    - ''
-    - '&e/menu &7- menu główne serwera'
-    - '&e/spawn &7- teleport na spawn'
-    - '&e/sethome &7- ustaw dom'
-    - '&e/home &7- wróć do domu'
-    - '&e/tpa &7- teleport do gracza'
-    - '&e/rtp &7- losowa bezpieczna teleportacja'
-    - '&e/ah &7- aukcje graczy'
-    - '&e/sklep &7- sklep serwerowy'
-    - '&e/kasa &7- stan konta'
-    - '&e/clan &7- system klanów'
+    - '&b&l👤 TWOJE KONTO'
+    - '&a✔ Konto zostało poprawnie zweryfikowane.'
+    - '&a✔ Ranga, prefix i dane gracza zostały wczytane.'
+    - '&a✔ Ekwipunek, ekonomia i statystyki zostały zsynchronizowane.'
+    - '&a✔ Jeżeli masz konto Premium i konto jest już zabezpieczone hasłem, kolejne wejścia mogą być automatyczne.'
+    - '&fJeżeli coś się nie zgadza, zgłoś to administracji zamiast próbować bugować system.'
+  player-commands-1:
+    - '&e&l📜 KOMENDY DLA GRACZY'
+    - '&e/menu &8» &fmenu główne serwera'
+    - '&e/pomoc &8» &flista pomocy'
+    - '&e/spawn &8» &fteleport na spawn survivalu'
+    - '&e/lobby &8» &fpowrót na lobby'
+    - '&e/rtp &8» &flosowa bezpieczna teleportacja'
+    - '&e/sethome &8» &fustawienie domu'
+    - '&e/home &8» &fteleport do domu'
+    - '&e/delhome &8» &fusunięcie domu'
+    - '&e/home list &8» &flista domów'
+  player-commands-2:
+    - '&e&l📜 KOMENDY DLA GRACZY'
+    - '&e/tpa <gracz> &8» &fprośba o teleport'
+    - '&e/tpaccept &8» &fakceptacja teleportu'
+    - '&e/tpdeny &8» &fodrzucenie teleportu'
+    - '&e/tpacancel &8» &fanulowanie teleportu'
+    - '&e/kasa &8» &fstan konta'
+    - '&e/bal &8» &fstan konta'
+    - '&e/pay <gracz> <kwota> &8» &fprzelew'
+    - '&e/bank &8» &fbank gracza'
+    - '&e/ah &8» &fsklep graczy'
+    - '&e/sellhand <cena> &8» &fwystaw item z ręki'
+    - '&e/sklep &8» &fsklep serwera'
+    - '&e/keysmenu &8» &fmenu kluczy'
+    - '&e/weeklykey &8» &fcotygodniowy klucz'
+    - '&e/clan &8» &fsystem klanów'
+  rules:
+    - '&c&l⚠ REGULAMIN SERWERA'
+    - '&f1. Zakaz cheatów, X-Ray, macro, autoclickera i wspomagaczy.'
+    - '&f2. Zakaz duplikowania itemów, wykorzystywania bugów i obchodzenia zabezpieczeń.'
+    - '&f3. Zakaz podszywania się pod administrację, graczy i twórców.'
+    - '&f4. Zakaz celowego lagowania serwera, spamowania i floodowania czatu.'
+    - '&f5. Handel rób uczciwie. Oszustwa i próby kradzieży mogą skończyć się karą.'
+    - '&f6. Administracja ma prawo cofnąć skutki buga, duplikacji albo nieuczciwej transakcji.'
+    - '&eGrając dalej akceptujesz regulamin i zasady fair play.'
   economy:
-    - '&d&lEKONOMIA I RYNEK'
-    - ''
-    - '&fNa serwerze działa rozbudowany system ekonomii.'
-    - '&fZarabiaj przez kopanie, farmienie, handel i sprzedaż itemów.'
-    - '&fSklep serwera znajdziesz pod &e/sklep&f.'
-    - '&fRynek graczy znajdziesz pod &e/ah&f.'
+    - '&a&l💰 EKONOMIA I RYNEK'
+    - '&fZarabiasz przez kopanie, farmienie, sprzedaż itemów, handel z graczami i aukcje.'
+    - '&fSklep serwera jest pod &e/sklep&f. Sklep graczy jest pod &e/ah&f.'
     - '&fItem z ręki wystawisz komendą &e/sellhand <cena>&f.'
-    - '&fPieniądze możesz trzymać w banku i odbierać odsetki.'
+    - '&fPieniądze trzymaj w portfelu albo w banku. Bank może naliczać dzienne odsetki.'
+    - '&fNajważniejsze komendy ekonomii: &e/kasa&f, &e/bal&f, &e/pay&f, &e/bank&f, &e/baltop&f.'
   keys:
-    - '&6&lSKRZYNKI I NAGRODY'
-    - ''
-    - '&fCodziennie możesz odebrać &aDailyKey&f.'
-    - '&fCo tydzień dostępny jest &eWeeklyKey&f.'
-    - '&fKlucze mają procentowe szanse na nagrody.'
-    - '&fDostępne skrzynki: Klasyczna, Żelazna, Diamentowa,'
-    - '&fEpic, Legendarna, Mityczna i Boska.'
+    - '&d&l🔑 KLUCZE I NAGRODY'
+    - '&fDostępne klucze: &aCodzienny&f, &eCotygodniowy&f, &7Klasyczny&f, &fŻelazny&f, &6Złoty&f, &bDiamentowy&f, &aSzmaragdowy&f, &5Epic&f, &6Legendarny&f, &dMityczny&f, &4Boski&f, &cAdministracyjny&f.'
+    - '&fKlucz Boski jest bardzo mocny, ale Administracyjny zostaje najwyższym kluczem specjalnym.'
+    - '&fKlucze kupisz w rynku, odbierzesz z nagród albo dostaniesz podczas eventów.'
+    - '&fMenu kluczy otworzysz przez &e/keysmenu&f.'
   community:
-    - '&a&lSPOŁECZNOŚĆ'
-    - ''
+    - '&9&l🌐 SPOŁECZNOŚĆ'
     - '&fIP serwera: &e%ip%'
     - '&fOnline teraz: &a%online%'
     - '&fDiscord: &ediscord.gg/msurvival'
     - '&fYouTube: &e@Milekz'
     - '&fTikTok: &e@Milekz'
+    - '&fZgłaszaj błędy administracji. Nie wykorzystuj ich na swoją korzyść.'
   finish:
-    - '&6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
-    - ''
-    - '&aTo już wszystko!'
-    - '&fŻyczymy Ci udanej gry na serwerze &6%server%&f.'
-    - '&fKompas w ekwipunku otwiera menu główne.'
-    - '&fW razie problemów wpisz &e/pomoc&f.'
-    - ''
-    - '&6━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+    - '&6&l👁 START GRY'
+    - '&aTo już wszystko, %player%.'
+    - '&fMożesz rozpocząć grę. Otwórz &e/menu&f, odbierz nagrody i zacznij survival.'
+    - '&fPowodzenia na &6%server%&f!'
 
 help:
-  - '&6Pomoc &8» &e/menu &7- menu główne'
-  - '&6Pomoc &8» &e/sklep &7- rynek serwera'
-  - '&6Pomoc &8» &e/ah &7- sklep graczy'
-  - '&6Pomoc &8» &e/sellhand <cena> &7- wystaw item z ręki'
-  - '&6Pomoc &8» &e/kasa &7- sprawdź pieniądze'
-  - '&6Pomoc &8» &e/bank &7- bank'
-  - '&6Pomoc &8» &e/daily &7- codzienna nagroda'
-  - '&6Pomoc &8» &e/weeklykey &7- cotygodniowy klucz'
-  - '&6Pomoc &8» &e/sethome, /home &7- dom'
-  - '&6Pomoc &8» &e/tpa &7- teleport do gracza'
-  - '&6Pomoc &8» &e/rtp &7- losowy teleport'
+  - '&6Pomoc &8» &e/menu &7menu główne'
+  - '&6Pomoc &8» &e/sklep &7sklep serwera'
+  - '&6Pomoc &8» &e/ah &7sklep graczy'
+  - '&6Pomoc &8» &e/sellhand <cena> &7wystaw item z ręki'
+  - '&6Pomoc &8» &e/kasa &7sprawdź pieniądze'
+  - '&6Pomoc &8» &e/bank &7bank'
+  - '&6Pomoc &8» &e/keysmenu &7menu kluczy'
+  - '&6Pomoc &8» &e/weeklykey &7cotygodniowy klucz'
+  - '&6Pomoc &8» &e/sethome, /home, /delhome &7domy'
+  - '&6Pomoc &8» &e/tpa, /tpaccept, /tpdeny, /tpacancel &7teleporty'
+  - '&6Pomoc &8» &e/rtp &7losowy teleport'
 
 regulamin:
-  - '&cRegulamin &8» &fZakaz cheatów, X-Ray, macro, bugowania i duplikowania.'
-  - '&cRegulamin &8» &fZakaz kradzieży, griefu i niszczenia serwera.'
-  - '&cRegulamin &8» &fZakaz obrażania graczy i administracji.'
-  - '&cRegulamin &8» &fGraj uczciwie i z kulturą.'
+  - '&cRegulamin &8» &fZakaz cheatów, X-Ray, macro i wspomagaczy.'
+  - '&cRegulamin &8» &fZakaz duplikowania, bugowania i lagowania serwera.'
+  - '&cRegulamin &8» &fZakaz podszywania się i oszustw na handlu.'
+  - '&cRegulamin &8» &fZgłaszaj błędy administracji.'
 
 media:
   - '&cYouTube &8» &e@Milekz'

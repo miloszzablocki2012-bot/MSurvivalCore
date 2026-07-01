@@ -15,24 +15,79 @@ sell:
   NETHER_STAR: 250000
 
 keys:
+  codzienny: 2500
+  cotygodniowy: 10000
   klasyczny: 5000
   zelazny: 15000
+  zloty: 35000
   diamentowy: 75000
+  szmaragdowy: 125000
   epic: 250000
   legendarny: 750000
   mityczny: 1500000
-  boski: 5000000
+  boski: 3500000
+  administracyjny: 10000000
 
 server-shop:
   OAK_LOG: 500
+  SPRUCE_LOG: 500
+  DARK_OAK_LOG: 650
   COBBLESTONE: 120
+  STONE: 180
+  GLASS: 250
+  WHITE_WOOL: 300
   IRON_INGOT: 2500
   GOLD_INGOT: 3500
   DIAMOND: 15000
+  EMERALD: 14000
   ENDER_PEARL: 7000
+  BLAZE_ROD: 9000
   GOLDEN_APPLE: 25000
   TOTEM_OF_UNDYING: 250000
   SHULKER_BOX: 300000
+  NETHERITE_SCRAP: 120000
+  NETHERITE_INGOT: 550000
+
+categories:
+  budowlane:
+    name: '&e&lBudowlane'
+    icon: BRICKS
+  dekoracje:
+    name: '&d&lDekoracje'
+    icon: FLOWER_POT
+  kolorowe-bloki:
+    name: '&b&lKolorowe Bloki'
+    icon: CYAN_CONCRETE
+  drewno:
+    name: '&6&lDrewno'
+    icon: OAK_LOG
+  kamien:
+    name: '&7&lKamień'
+    icon: STONE
+  surowce:
+    name: '&a&lSurowce'
+    icon: EMERALD
+  jedzenie:
+    name: '&c&lJedzenie'
+    icon: COOKED_BEEF
+  farma:
+    name: '&2&lFarma'
+    icon: WHEAT
+  nether:
+    name: '&4&lNether'
+    icon: NETHERRACK
+  end:
+    name: '&5&lEnd'
+    icon: END_STONE
+  narzedzia:
+    name: '&b&lNarzędzia'
+    icon: DIAMOND_PICKAXE
+  klucze:
+    name: '&6&lKlucze'
+    icon: TRIPWIRE_HOOK
+  specjalne:
+    name: '&c&lSpecjalne'
+    icon: NETHER_STAR
 
 settings:
   player-market-tax-percent: 5.0

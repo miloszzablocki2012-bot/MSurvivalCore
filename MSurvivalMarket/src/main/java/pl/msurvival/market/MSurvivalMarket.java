@@ -237,8 +237,7 @@ public final class MSurvivalMarket extends JavaPlugin implements Listener {
                 ItemStack display = item.clone();
                 ItemMeta meta = display.getItemMeta();
                 List<String> lore = meta.hasLore() ? new ArrayList<>(meta.getLore()) : new ArrayList<>();
-                lore.add(color("&8━━━━━━━━━━━━━━━━"));
-                lore.add(color("&7ID: &e" + id));
+                                lore.add(color("&7ID: &e" + id));
                 lore.add(color("&7Cena: &a" + money(offers.getDouble("offers." + id + ".price")) + "$"));
                 lore.add(color("&7Sprzedawca: &e" + offers.getString("offers." + id + ".seller")));
                 lore.add(color(""));
@@ -276,8 +275,7 @@ public final class MSurvivalMarket extends JavaPlugin implements Listener {
                 ItemStack display = item.clone();
                 ItemMeta meta = display.getItemMeta();
                 List<String> lore = meta.hasLore() ? new ArrayList<>(meta.getLore()) : new ArrayList<>();
-                lore.add(color("&8━━━━━━━━━━━━━━━━"));
-                lore.add(color("&7ID: &e" + id));
+                                lore.add(color("&7ID: &e" + id));
                 lore.add(color("&7Cena: &a" + money(offers.getDouble("offers." + id + ".price")) + "$"));
                 lore.add(color("&cKliknij, aby anulować."));
                 meta.setLore(lore);

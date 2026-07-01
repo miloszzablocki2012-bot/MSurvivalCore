@@ -1,5 +1,5 @@
 name: MSurvivalLobby
-version: 6.3
+version: 6.4
 main: pl.msurvival.lobby.MSurvivalLobby
 api-version: '1.21'
 author: Milekz

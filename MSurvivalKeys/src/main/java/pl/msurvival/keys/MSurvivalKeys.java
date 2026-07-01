@@ -76,12 +76,12 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
         addVirtual(p.getName(), key, 1);
         saveData();
         p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1f, 1f);
-        p.sendTitle(color("&6&lWEEKLY KEY"), display(key), 5, 55, 10);
+        p.sendTitle(color("&e&lCOTYGODNIOWY KLUCZ"), display(key), 5, 55, 10);
         sendList(p, "messages.weekly-claimed", Map.of("%key%", display(key)));
         if (key.equals("boski") || key.equals("mityczny") || key.equals("legendarny")) {
-            Bukkit.broadcastMessage(color("&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━"));
+            
             Bukkit.broadcastMessage(color("&6&lMSurvival &8» &e" + p.getName() + " &fwylosował " + display(key) + "&f z &6WeeklyKey&f!"));
-            Bukkit.broadcastMessage(color("&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━"));
+            
         }
     }
 
@@ -100,23 +100,19 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
         Inventory inv = Bukkit.createInventory(null, 54, color("&6&lKLUCZE SERWERA"));
         fill(inv);
         inv.setItem(4, gui(Material.CHEST, "&6&lCotygodniowy Klucz", "weekly", List.of(
-                "&8━━━━━━━━━━━━━━━━",
                 "&7Szanse na top klucze:",
-                "&4Boski &8- &c1:1 000 000",
-                "&dMityczny &8- &d1:500 000",
-                "&6Legendarny &8- &61:100 000",
+                "&4Boski &8» &c0.05%",
+                "&dMityczny &8» &d0.20%",
+                "&6Legendarny &8» &60.55%",
                 "",
-                "&aKliknij, aby odebrać.",
-                "&8━━━━━━━━━━━━━━━━"
+                "&aKliknij, aby odebrać."
         )));
         int slot = 10;
         for (String key : getConfig().getConfigurationSection("keys").getKeys(false)) {
             inv.setItem(slot, gui(Material.TRIPWIRE_HOOK, display(key), "withdraw:" + key, List.of(
-                    "&8━━━━━━━━━━━━━━━━",
-                    "&7Wirtualne: &e" + getVirtual(p.getName(), key),
-                    "&7Fizyczne: &e" + countPhysical(p, key),
-                    "&aKliknij, aby wyjąć 1 klucz",
-                    "&8━━━━━━━━━━━━━━━━"
+                    "&7Wirtualne &8» &e" + getVirtual(p.getName(), key),
+                    "&7Fizyczne &8» &e" + countPhysical(p, key),
+                    "&aKliknij, aby wyjąć 1 klucz"
             )));
             slot++;
             if (slot == 17 || slot == 26 || slot == 35) slot += 2;
@@ -211,7 +207,7 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
         ItemStack item = new ItemStack(Material.valueOf(getConfig().getString("key-item.material", "TRIPWIRE_HOOK")), amount);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(color("&6&l✦ " + display(key) + " &6&l✦"));
-        meta.setLore(List.of(color("&8━━━━━━━━━━━━━━━━"), color("&7Klucz do E-Kita."), color("&eUżyj &6/kits&e na Survivalu."), color("&8━━━━━━━━━━━━━━━━")));
+        meta.setLore(List.of(color("&7Klucz do E-Kita."), color("&eUżyj &6/kits&e na Survivalu.")));
         meta.addEnchant(Enchantment.UNBREAKING, 1, true);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS, ItemFlag.HIDE_ATTRIBUTES);
         meta.getPersistentDataContainer().set(keyType, PersistentDataType.STRING, key);
@@ -234,7 +230,7 @@ public final class MSurvivalKeys extends JavaPlugin implements Listener {
         ItemStack item = new ItemStack(mat);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(color(name));
-        meta.setLore(List.of(color("&8━━━━━━━━━━━━━━━━"), color("&6&lMSURVIVAL"), color("&8━━━━━━━━━━━━━━━━")));
+        meta.setLore(List.of(color("&6&lMSURVIVAL")));
         item.setItemMeta(meta);
         return item;
     }

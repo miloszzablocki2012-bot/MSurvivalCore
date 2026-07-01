@@ -81,9 +81,16 @@ public final class MSurvivalAuth extends JavaPlugin implements Listener {
 
         if (!(sender instanceof Player p)) return true;
 
-        if (!forcePassword(p) && (premium(p) || bypass(p))) {
+        if (!forcePassword(p) && bypass(p)) {
             logged.add(p.getUniqueId());
-            p.sendMessage(premium(p) ? msg("premium") : msg("bypassed"));
+            p.sendMessage(msg("bypassed"));
+            title(p, "titles.logged-title", "titles.logged-subtitle");
+            return true;
+        }
+
+        if (!forcePassword(p) && premium(p) && registered(p)) {
+            logged.add(p.getUniqueId());
+            p.sendMessage(msg("premium"));
             title(p, "titles.premium-title", "titles.premium-subtitle");
             return true;
         }
@@ -130,17 +137,25 @@ public final class MSurvivalAuth extends JavaPlugin implements Listener {
 
     @EventHandler public void join(PlayerJoinEvent e) {
         Player p = e.getPlayer();
-        if (!forcePassword(p) && premium(p)) {
-            logged.add(p.getUniqueId());
-            Bukkit.getScheduler().runTaskLater(this, () -> { p.sendMessage(msg("premium")); title(p, "titles.premium-title", "titles.premium-subtitle"); }, 10L);
-            return;
-        }
         if (!forcePassword(p) && bypass(p)) {
             logged.add(p.getUniqueId());
             Bukkit.getScheduler().runTaskLater(this, () -> { p.sendMessage(msg("bypassed")); title(p, "titles.logged-title", "titles.logged-subtitle"); }, 10L);
             return;
         }
-        Bukkit.getScheduler().runTaskLater(this, () -> { if (p.isOnline()) p.sendMessage(registered(p) ? msg("login") : msg("register")); }, 20L);
+        if (!forcePassword(p) && premium(p) && registered(p)) {
+            logged.add(p.getUniqueId());
+            Bukkit.getScheduler().runTaskLater(this, () -> { p.sendMessage(msg("premium")); title(p, "titles.premium-title", "titles.premium-subtitle"); }, 10L);
+            return;
+        }
+        Bukkit.getScheduler().runTaskLater(this, () -> {
+            if (!p.isOnline()) return;
+            if (premium(p) && !registered(p) && getConfig().getBoolean("settings.premium-first-join-register", true)) {
+                p.sendMessage(msg("premium-first-register"));
+                title(p, "titles.premium-first-title", "titles.premium-first-subtitle");
+                return;
+            }
+            p.sendMessage(registered(p) ? msg("login") : msg("register"));
+        }, 20L);
     }
 
     @EventHandler public void quit(PlayerQuitEvent e) { logged.remove(e.getPlayer().getUniqueId()); }
