@@ -1,7 +1,7 @@
 name: MSurvivalPro
-version: 5.8
+version: 6.0
 main: pl.msurvival.pro.MSurvivalPro
-api-version: '1.21'
+api-version: 6.0
 author: Milekz
 commands:
   mspro:

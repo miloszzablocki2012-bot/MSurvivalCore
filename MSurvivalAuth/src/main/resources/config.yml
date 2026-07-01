@@ -3,22 +3,20 @@ settings:
   require-repeat-register-password: false
   bypass:
     - 'Milekz21'
-  # Force-password = nawet premium/bypass musi mieć /register i /login.
-  # Dobre dla adminów, żeby na non-premium nikt nie wszedł na nick.
   force-password:
     - 'Milekz21'
 
 messages:
   prefix: '&6&lAuth &8» &r'
-  register: '&eZarejestruj się: &6/register <hasło>'
-  login: '&eZaloguj się: &6/login <hasło>'
+  register: '&eNie masz konta. Zarejestruj się komendą: &6/register <hasło>'
+  login: '&eZaloguj się komendą: &6/login <hasło>'
   registered: '&aZarejestrowano i zalogowano.'
   logged: '&aZalogowano.'
   wrong: '&cBłędne hasło.'
   already-registered: '&cMasz już konto. Użyj &e/login <hasło>&c.'
   not-registered: '&cNie masz konta. Użyj &e/register <hasło>&c.'
-  premium: '&aKonto premium: automatycznie zalogowano.'
-  bypassed: '&aMasz bypass logowania.'
+  premium: '&aKonto premium wykryte. Zalogowano automatycznie.'
+  bypassed: '&aBypass logowania aktywny. Zalogowano.'
   changed: '&aZmieniono hasło.'
   force-on: '&aWłączono wymaganie hasła dla &e%player%&a.'
   force-off: '&cWyłączono wymaganie hasła dla &e%player%&c.'

@@ -1,7 +1,7 @@
 name: MSurvivalAuth
-version: 5.8
+version: 6.0
 main: pl.msurvival.auth.MSurvivalAuth
-api-version: 5.8
+api-version: 6.0
 author: Milekz
 commands:
   register:

@@ -3,40 +3,46 @@ sidebar:
   update-ticks: 60
   title: '&6&l✦ MSURVIVAL ✦'
   lines:
-    - '&8&m━━━━━━━━━━━━━━'
+    - '&8&m━━━━━━━━━━━━━━━━'
     - '&6♛ &e&lPROFIL'
     - '&8» &fNick: &e%player%'
     - '&8» &fRanga: %rank%'
     - '&8» &fKlan: &b%clan%'
     - '&8» &fWygasa: &e%expires%'
     - ''
-    - '&a$ &2&lKASA'
+    - '&a$ &2&lEKONOMIA'
     - '&8» &fPortfel: &a%money%$'
-    - '&8» &fBank: &e/bank'
+    - '&8» &fBank: &e%bank%$'
+    - ''
+    - '&c⚔ &4&lSTATYSTYKI'
+    - '&8» &fZabójstwa: &c%kills%'
+    - '&8» &fŚmierci: &c%deaths%'
+    - '&8» &fBloki: &a%blocks%'
+    - '&8» &fCzas gry: &b%playtime%'
     - ''
     - '&6🏪 &e&lRYNEK'
-    - '&8» &fSklep: &e/rynek'
-    - '&8» &fGracze: &6/ah'
-    - '&8» &fSprzedaj: &a/sellhand'
-    - ''
-    - '&b⚡ &3&lSERWER'
-    - '&8» &fOnline: &a%online%'
-    - '&8» &fPing: &a%ping%ms'
+    - '&8» &fRynek: &e/rynek'
+    - '&8» &fAukcje: &6/ah'
+    - '&8» &fWystaw: &a/sellhand'
     - ''
     - '&d🎁 &5&lNAGRODY'
     - '&8» &fDaily: &e/daily'
     - '&8» &fWeekly: &6/weeklykey'
     - ''
-    - '&6🌐 &e&lIP'
+    - '&b⚡ &3&lSERWER'
+    - '&8» &fOnline: &a%online%'
+    - '&8» &fPing: &a%ping%ms'
+    - ''
+    - '&6🌐 &e&lIP SERWERA'
     - '&8» &fmsurvival.6mc.pl'
-    - '&8&m━━━━━━━━━━━━━━'
+    - '&8&m━━━━━━━━━━━━━━━━'
 
 ranks:
   wlasciciel: {display: '&6&lWŁAŚCICIEL', prefix: '&6&l👑 WŁAŚCICIEL &6'}
   admin: {display: '&c&lADMIN', prefix: '&c&l🛡 ADMIN &c'}
-  mod: {display: '&2&lMOD', prefix: '&2&l🔨 MOD &2'}
-  helper: {display: '&a&lHELPER', prefix: '&a&l💬 HELPER &a'}
-  youtuber: {display: '&c&lYOUTUBE', prefix: '&c&l🎥 YOUTUBE &c'}
+  mod: {display: '&2&lMODERATOR', prefix: '&2&l🔨 MOD &2'}
+  helper: {display: '&a&lPOMOCNIK', prefix: '&a&l💬 POMOCNIK &a'}
+  youtuber: {display: '&c&lYOUTUBER', prefix: '&c&l🎥 YOUTUBE &c'}
   sponsor: {display: '&b&lSPONSOR', prefix: '&b&l💎 SPONSOR &b'}
   vipplus: {display: '&e&lVIP+', prefix: '&e&l⭐ VIP+ &e'}
   vip: {display: '&e&lVIP', prefix: '&e&l✦ VIP &e'}
@@ -48,11 +54,13 @@ aliases:
   vip+: 'vipplus'
   yt: 'youtuber'
   youtube: 'youtuber'
+  pomocnik: 'helper'
+  moderator: 'mod'
 
 messages:
   prefix: '&6&lMSurvival &8» &r'
   no-permission: '&cNie masz uprawnień.'
-  reload: '&aPrzeładowano rangi.'
+  reload: '&aPrzeładowano sidebar i rangi.'
   rank-not-found: '&cNie ma takiej rangi.'
   rank-set: '&aUstawiono rangę %rank% &adla &e%player%&a.'
   rank-temp-set: '&aUstawiono rangę %rank% &adla &e%player% &ana &e%time%&a.'
